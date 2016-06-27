@@ -54,6 +54,37 @@ def calculateCat(count, output, timeSlice, new, sliceTotal):#-----CALCULATE-CAT
     #calculate overall
     overall = (overallNew/total)*100                        #percent of new overall
     line.append(str(overall) + "%")
+
+def stem(unique):#---------------------------------------------------------STEM
+    stem = SnowballStemmer("english")
+    newList = list()
+    
+    for word in unique:
+        newList.append(stem.stem(word))
+        
+        
+    return newList
+
+def lem(unique):#-----------------------------------------------------------LEM
+    lem = WordNetLemmatizer()
+    newList = list()
+    
+    for word in unique:
+        newList.append(lem.lemmatize(word))
+        
+    return newList
+    
+    
+def format(line):#-------------------------------------------------------FORMAT
+    stopwords = nltk.corpus.stopwords.words('english')      #list of stopwords
+    real = list()
+    
+    line[1] = line[1].strip('"')                                  #eliminate quotes
+    line[1] = line[1].split()                                     #cut stop words
+    real += [word.lower() for word in line[1] if word.lower() not in stopwords]
+    line[1] = sorted(real)
+    line[1] = lem(line[1])
+    line[1] = stem(line[1])  
     
 def evaluate(file):#---------------------------------------------------EVALUATE
     #var dictionary
@@ -68,6 +99,7 @@ def evaluate(file):#---------------------------------------------------EVALUATE
     totalIdeas = 0                                  #total ideas per timeSlice
     output = []                                     #output array
     i = 0                                           #index for while loop
+    file.sort(key=itemgetter(2))
     
     
     
@@ -123,6 +155,75 @@ def evaluate(file):#---------------------------------------------------EVALUATE
         calculateCat(count, output, timeSlice, newIdeaCount, totalIdeas)
         
     return output
+def evaluate2(file):#-------------------------------------------------EVALUATE2
+    #var dictionary
+    #file                                           #raw input file
+    #start                                          #starting point for intervals
+    #end                                            #end point for current interval
+    count = Counter()                               #counter for frequencies
+    timeSlice = 1                                   #timeSlice ID
+    newIdea = 'false'                               #true/false:
+                                                        #new bin in the time slice?
+    newIdeaCount = 0                                #number of new ideas so far
+    totalIdeas = 0                                  #total ideas per timeSlice
+    output = []                                     #output array
+    i = 0                                           #index for while loop
+    file.sort(key=itemgetter(3))
+    
+    
+    
+    if(INTERVAL_MODE == 'time'):
+        start = int(file[0][3])                     #unix time of first row
+        end = start + INTERVAL
+    elif(INTERVAL_MODE == 'count'):
+        start = 0
+        end = start + INTERVAL
+        
+    output.append(["Time Slice",                        #file header
+                "New Category?", 
+                "# of New Categories", 
+                "Total Ideas in Time Slice",
+                "Probability of New Bin",
+                "%New Categories in Time Slice",
+                "%New Categories Overall",
+                "Counter"])
+    while(i < len(file)):                                   #while more ideas still exist
+        line = file[i]                                      #a line in a file
+        
+        if(INTERVAL_MODE == 'time'):
+            current = int(line[3])
+        elif(INTERVAL_MODE == 'count'):
+            current = i          
+        if(current <= end):                            #for each time slice
+            format(line)                                    #convert idea content to list of relivant words
+            for word in line[1]:
+                oldCount = count[word]
+                count[word] += 1
+                newCount = count[word]
+
+                if newCount == 1:                           #was this a new bin?
+                    newIdea = 'true'                            #if yes,
+                    newIdeaCount += 1
+                totalIdeas += 1
+            i += 1 
+        else:                                                   #at the end of each time slice
+            if(totalIdeas > 0):
+                output.append([timeSlice, newIdea, newIdeaCount, totalIdeas])
+                estimateNewIdea(count, output[timeSlice])
+                calculateCat(count, output, timeSlice, newIdeaCount, totalIdeas)
+                timeSlice += 1                                  #increment time slice id
+                
+            start = end                                         #update time slice markers
+            end = start + INTERVAL
+            newIdea = 'false'
+            newIdeaCount = 0
+            totalIdeas = 0
+    if(totalIdeas > 0):
+        output.append([timeSlice, newIdea, newIdeaCount, totalIdeas])
+        estimateNewIdea(count, output[timeSlice])
+        calculateCat(count, output, timeSlice, newIdeaCount, totalIdeas)
+    
+    return output
     
     
 def writeOut(output, fileName):#--------------------------------------WRITE_OUT
@@ -139,27 +240,27 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
 
 #--------------------------------------------------------------------------MAIN
 
-INPUT_FILE = "Input/ideas.csv"            
+INPUT_FILE = "Input/ideas2.csv"            
 OUTPUT_FILE = "Data Output/00 BasicTest" 
 INTERVAL_MODE = 'time'                              #options: time, count;
                                                     #options: words, categories;
 #INTERVAL = 60000                                    #1 minute
-INTERVAL = 600000                                  #10 minutes
-#INTERVAL = 1800000                                 #30 minutes
-#INTERVAL = 3600000                                 # 1 hour
+INTERVAL = 600000                                    #10 minutes
+#INTERVAL = 1800000                                  #30 minutes
+#INTERVAL = 3600000                                  # 1 hour
 #INTERVAL = 30
-out = []                                         #output to print
+out = []                                            #output to print
 
 #getInput
 file = getInputFile(INPUT_FILE)
-file.sort(key = itemgetter(2))                      #sort
 
 #process
-out = evaluate(file)
+out = evaluate2(file)
 for line in out:
     print line
 #evaluate:      basic; category as bin
-#evaluate2:     
+#evaluate2:     words as bins 
+#evaluate3:     words as bins; separate by theme
 
 #printResults
 writeOut(out, OUTPUT_FILE)
