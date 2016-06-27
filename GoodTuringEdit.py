@@ -21,7 +21,7 @@ def getInputFile(fileName):#-========----------------------------GET_INPUT_FILE
     #read each line and add to file
     for line in csv.reader(open(fileName), skipinitialspace = True):
         file.append(line)
-    #file.sort(key = itemgetter(sortBy))                  #sort
+    return file
 
 def get_fof(count):#----------------------------------------------------GET_FOF
 #in: Counter containing frequency of element bins
@@ -69,7 +69,7 @@ def evaluate(file):#---------------------------------------------------EVALUATE
     output = []                                     #output array
     i = 0                                           #index for while loop
     
-    file.sort(key = itemgetter(2))                  #sort
+    
     
     if(INTERVAL_MODE == 'time'):
         start = int(file[0][2])                     #unix time of first row
@@ -78,7 +78,14 @@ def evaluate(file):#---------------------------------------------------EVALUATE
         start = 0
         end = start + INTERVAL
         
-    
+    output.append(["Time Slice",                        #file header
+                "New Category?", 
+                "# of New Categories", 
+                "Total Ideas in Time Slice",
+                "Probability of New Bin",
+                "%New Categories in Time Slice",
+                "%New Categories Overall",
+                "Counter"])
         
         
     while(i < len(file)):                                   #while more ideas still exist
@@ -134,25 +141,25 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
 
 INPUT_FILE = "Input/ideas.csv"            
 OUTPUT_FILE = "Data Output/00 BasicTest" 
-INTERVAL_MODE = "time"
-output = []                                         #output to print
+INTERVAL_MODE = 'time'                              #options: time, count;
+                                                    #options: words, categories;
+#INTERVAL = 60000                                    #1 minute
+INTERVAL = 600000                                  #10 minutes
+#INTERVAL = 1800000                                 #30 minutes
+#INTERVAL = 3600000                                 # 1 hour
+#INTERVAL = 30
+out = []                                         #output to print
 
 #getInput
 file = getInputFile(INPUT_FILE)
+file.sort(key = itemgetter(2))                      #sort
 
 #process
-output.append(["Time Slice",                        #file header
-                "New Category?", 
-                "# of New Categories", 
-                "Total Ideas in Time Slice",
-                "Probability of New Bin",
-                "%New Categories in Time Slice",
-                "%New Categories Overall",
-                "Counter"])
-
-output.append(evaluate(file))
+out = evaluate(file)
+for line in out:
+    print line
 #evaluate:      basic; category as bin
 #evaluate2:     
 
 #printResults
-writeOut(output, OUTPUT_FILE)
+writeOut(out, OUTPUT_FILE)

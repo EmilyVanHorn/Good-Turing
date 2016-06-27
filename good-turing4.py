@@ -164,12 +164,13 @@ def getGroup(count, word):
     
     print "01 Word: ", word
     
-    
+    #get synset
     if(wn.synsets(word)):
         wordSyn = wn.synsets(word)[0]
     elif(wn.morphy(word)):
         wordSyn = wn.morphy(word)[0]
     else:
+        #no synset; use word
         print "Return"
         return word
     
