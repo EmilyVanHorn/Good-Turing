@@ -77,14 +77,70 @@ def lem(unique):#-----------------------------------------------------------LEM
     
 def format(line):#-------------------------------------------------------FORMAT
     stopwords = nltk.corpus.stopwords.words('english')      #list of stopwords
-    real = list()
+    real = list() 
     
     line[1] = line[1].strip('"')                                  #eliminate quotes
     line[1] = line[1].split()                                     #cut stop words
     real += [word.lower() for word in line[1] if word.lower() not in stopwords]
     line[1] = sorted(real)
-    line[1] = lem(line[1])
-    line[1] = stem(line[1])  
+    if(VERSION < 4):
+        line[1] = lem(line[1])
+        line[1] = stem(line[1])  
+
+def getGroup(count, word):
+    word = "".join(l for l in word if l not in string.punctuation)
+    best = 0
+    group = word
+    
+    print "01 Word: ", word
+    
+    #searchForExisting
+    if(wordsSeen.has_key(word)):
+        print "Found"
+        return wordsSeen.get(word)
+    
+    #get synset
+    if(wn.synsets(word)):
+        wordSyn = wn.synsets(word)[0]
+    elif(wn.morphy(word)):
+        wordSyn = wn.morphy(word)[0]
+    else:
+        #no synset; use word
+        print "Return"
+        wordsSeen.update({word: group})
+        return word
+    
+    print "02 Synset of Word: ", wordSyn
+    
+    for item in count.elements():
+        print "03 Item: ", item
+        itemSyn = item
+        if(itemsSeen.has_key(item)):
+            itemSyn = itemsSeen.get(item)
+        else:
+            if(wn.synsets(item)):
+                itemSyn = wn.synsets(item)[0]
+            elif(wn.morphy(item)):
+                itemSyn = wn.morphy(item)[0]
+            elif(itemSyn == word):
+                wordsSeen.update({word: itemSyn})
+                return itemSyn
+            else:
+                print "Continue"
+                continue
+            
+        print "04 Synset of item: ", itemSyn
+        
+        if(itemSyn.path_similarity(wordSyn) >= 0.5 and itemSyn.path_similarity(wordSyn) > best):
+        #if this word is similar to an already existing one, add it as that group
+            group = item
+            best = itemSyn.path_similarity(wordSyn)
+            
+        print "05 Group: ", group
+        wordsSeen.update({word: group})
+    print "Finished"
+    
+    return group
     
 def evaluate(file):#---------------------------------------------------EVALUATE
     #var dictionary
@@ -305,21 +361,24 @@ def evaluate3(file):#-------------------------------------------------EVALUATE3
 
     for line in file:
         themeName = line[4]
-        print themeName
-        print currentTheme
+        print "themeName:", themeName
+        print "currentTheme:", currentTheme
         if (themeName == currentTheme):
+            print "append"
             ideasByTheme.append(line)
         else:
+            print "else"
             ideasByTheme.sort(key=itemgetter(3))
             output.append([currentTheme, "", "", "", "", ""])
 
+            print "EVALUATE"
             evaluate3_1(ideasByTheme, output)
 
             ideasByTheme = []
             currentTheme = themeName
             ideasByTheme.append(line)
     
-        if(ideasByTheme.length > 0){
+        if(len(ideasByTheme) > 0):
             ideasByTheme.sort(key=itemgetter(3))
             output.append([currentTheme, "", "", "", "", ""])
 
@@ -328,10 +387,80 @@ def evaluate3(file):#-------------------------------------------------EVALUATE3
             ideasByTheme = []
             currentTheme = themeName
             ideasByTheme.append(line)
-        }
+        
                 
     return output
+
+def evaluate4(file):#-------------------------------------------------EVALUATE4
+    #var dictionary
+    #file                                           #raw input file
+    #start                                          #starting point for intervals
+    #end                                            #end point for current interval
+    count = Counter()                               #counter for frequencies
+    timeSlice = 1                                   #timeSlice ID
+    newIdea = 'false'                               #true/false:
+                                                        #new bin in the time slice?
+    newIdeaCount = 0                                #number of new ideas so far
+    totalIdeas = 0                                  #total ideas per timeSlice
+    output = []                                     #output array
+    i = 0                                           #index for while loop
+    file.sort(key=itemgetter(3))
     
+    
+    
+    if(INTERVAL_MODE == 'time'):
+        start = int(file[0][3])                     #unix time of first row
+        end = start + INTERVAL
+    elif(INTERVAL_MODE == 'count'):
+        start = 0
+        end = start + INTERVAL
+        
+    output.append(["Time Slice",                        #file header
+                "New Category?", 
+                "# of New Categories", 
+                "Total Ideas in Time Slice",
+                "Probability of New Bin",
+                "%New Categories in Time Slice",
+                "%New Categories Overall",
+                "Counter"])
+    
+    while(i < len(file)):                                   #while more ideas still exist
+        line = file[i]                                      #a line in a file
+        if(INTERVAL_MODE == 'time'):
+            current = int(line[3])
+        elif(INTERVAL_MODE == 'count'):
+            current = i          
+        if(current <= end):                            #for each time slice
+            format(line)                                    #convert idea content to list of relivant words                                  
+            for word in line[1]:                            #add to counter
+                group = getGroup(count, word)
+                oldCount = count[group]
+                count[group] += 1
+                newCount = count[group]
+
+                if newCount == 1:                           #was this a new bin?
+                    newIdea = 'true'                            #if yes,
+                    newIdeaCount += 1
+                totalIdeas += 1
+            i += 1 
+        else:                                                   #at the end of each time slice
+            if(totalIdeas > 0):
+                output.append([timeSlice, newIdea, newIdeaCount, totalIdeas])
+                estimateNewIdea(count, output[timeSlice])
+                calculateCat(count, output, timeSlice, newIdeaCount, totalIdeas)
+                timeSlice += 1                                  #increment time slice id
+                
+            start = end                                         #update time slice markers
+            end = start + INTERVAL
+            newIdea = 'false'
+            newIdeaCount = 0
+            totalIdeas = 0
+    if(totalIdeas > 0):
+        output.append([timeSlice, newIdea, newIdeaCount, totalIdeas])
+        estimateNewIdea(count, output[timeSlice])
+        calculateCat(count, output, timeSlice, newIdeaCount, totalIdeas)
+    
+    return output
     
 def writeOut(output, fileName):#--------------------------------------WRITE_OUT
     #var dictionary
@@ -347,8 +476,9 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
 
 #--------------------------------------------------------------------------MAIN
 
-INPUT_FILE = "Input/ideas_corrected.csv"            
+INPUT_FILE = "Input/smallIdeas.csv"            
 OUTPUT_FILE = "Data Output/00 BasicTest.csv" 
+VERSION = 4
 INTERVAL_MODE = 'time'                              #options: time, count;
                                                     #options: words, categories;
 #INTERVAL = 60000                                    #1 minute
@@ -357,22 +487,35 @@ INTERVAL = 600000                                    #10 minutes
 #INTERVAL = 3600000                                  # 1 hour
 #INTERVAL = 30
 out = []                                            #output to print
+wordsSeen = {}
+itemsSeen = {}
 
 #getInput
 file = getInputFile(INPUT_FILE)
 
 #process
-out = evaluate3(file)
+if(VERSION == 1):
+    out = evaluate(file)
+elif(VERSION == 2):
+    out = evaluate2(file)
+elif(VERSION == 3):
+    out = evaluate3(file)
+elif(VERSION == 4):
+    out = evaluate4(file)
+    
+print wordsSeen
+
 for line in out:
     print line
-#evaluate:      basic; category as bin              DONE
+
+#VERSION 1:     basic; category as bin              DONE
 #               ideas.csv
-#evaluate2:     words as bins                       DONE    
+#VERSION 2:     words as bins                       DONE    
 #               ideas2.csv
-#evaluate3:     words as bins; separate by theme    DONE
+#VERSION 3:     words as bins; separate by theme    IN-PROGRESS
 #               ideas_corrected.csv
 #               smallIdeas.csv
-#evaluate4:     super-words as bins                 IN-PROGRESS
+#VERSION 4:     super-words as bins                 IN-PROGRESS
 
 #printResults
 writeOut(out, OUTPUT_FILE)
