@@ -8,7 +8,7 @@ from nltk.stem import *
 from nltk.corpus import wordnet as wn
 import string
 
-def getInputFile(fileName):#-========----------------------------GET_INPUT_FILE
+def getInputFile(fileName):#-------------------------------------GET_INPUT_FILE
     #var dictionary
     file = []                                       #file as a list of entries
     #fileName                                       #name of input file
@@ -372,6 +372,7 @@ for line in out:
 #evaluate3:     words as bins; separate by theme    DONE
 #               ideas_corrected.csv
 #               smallIdeas.csv
+#evaluate4:     super-words as bins                 IN-PROGRESS
 
 #printResults
 writeOut(out, OUTPUT_FILE)
