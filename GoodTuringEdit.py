@@ -77,11 +77,14 @@ def lem(unique):#-----------------------------------------------------------LEM
     
 def format(line):#-------------------------------------------------------FORMAT
     stopwords = nltk.corpus.stopwords.words('english')      #list of stopwords
+    useless = ["would", "could", "in", "use"];
     real = list() 
     
     line[1] = line[1].strip('"')                                  #eliminate quotes
     line[1] = line[1].split()                                     #cut stop words
-    real += [word.lower() for word in line[1] if word.lower() not in stopwords]
+    real += [word.lower() for word in line[1] if 
+             word.lower() not in stopwords and 
+             word.lower() not in useless]
     line[1] = sorted(real)
     if(VERSION < 4):
         line[1] = lem(line[1])
@@ -92,11 +95,8 @@ def getGroup(count, word):
     best = 0
     group = word
     
-    print "01 Word: ", word
-    
     #searchForExisting
     if(wordsSeen.has_key(word)):
-        print "Found"
         return wordsSeen.get(word)
     
     #get synset
@@ -106,14 +106,10 @@ def getGroup(count, word):
         wordSyn = wn.morphy(word)[0]
     else:
         #no synset; use word
-        print "Return"
         wordsSeen.update({word: group})
         return word
     
-    print "02 Synset of Word: ", wordSyn
-    
     for item in count.elements():
-        print "03 Item: ", item
         itemSyn = item
         if(itemsSeen.has_key(item)):
             itemSyn = itemsSeen.get(item)
@@ -126,21 +122,64 @@ def getGroup(count, word):
                 wordsSeen.update({word: itemSyn})
                 return itemSyn
             else:
-                print "Continue"
                 continue
-            
-        print "04 Synset of item: ", itemSyn
         
-        if(itemSyn.path_similarity(wordSyn) >= 0.5 and itemSyn.path_similarity(wordSyn) > best):
+        #if(itemSyn.path_similarity(wordSyn) >= 0.5 and itemSyn.path_similarity(wordSyn) > best):
         #if this word is similar to an already existing one, add it as that group
-            group = item
-            best = itemSyn.path_similarity(wordSyn)
+            #group = item
+            #best = itemSyn.path_similarity(wordSyn)
             
-        print "05 Group: ", group
-        wordsSeen.update({word: group})
-    print "Finished"
+        if(itemSyn.path_similarity(wordSyn) >= 0.5):
+            group = item
+            break;
+        
+    wordsSeen.update({word: group})
     
     return group
+
+def getGroup2(count, word):
+    #creates a dictionary/hash table of synonyms
+    #nltk version
+    #later try PyDictionary
+    word = "".join(l for l in word if l not in string.punctuation)
+    group = word
+    
+    #search hash table for existing entry (word)
+    if(wordsSeen.has_key(word)):
+        return wordsSeen.get(word)
+    
+    #get synset
+    if(wn.synsets(word)):
+        wordSyn = wn.synsets(word)
+    elif(wn.morphy(word)):
+        wordSyn = wn.morphy(word)
+    else:
+        #no synset; use word
+        wordsSeen.update({word: group})
+        return word
+    
+    
+    #not entirly accurate
+    for syn in wordSyn:
+        for lem in syn.lemmas():
+            if(wordsSeen.has_key(lem.name())):
+                group = wordsSeen.get(lem.name())
+            else:
+                wordsSeen.update({lem.name(): group})
+            
+    return group
+        
+    #if not found: 
+        #search english dictionary
+            #if found in english dictionary:
+                #add word and all synonymns with word as value
+                #return word
+            #if not found in english dictionary: 
+                #stub: print        --> see what comes out and then decide
+                #throw away?        --> probably a typo
+                #return word?       --> lots of words are not in the dictionary
+    
+    
     
 def evaluate(file):#---------------------------------------------------EVALUATE
     #var dictionary
@@ -432,8 +471,9 @@ def evaluate4(file):#-------------------------------------------------EVALUATE4
             current = i          
         if(current <= end):                            #for each time slice
             format(line)                                    #convert idea content to list of relivant words                                  
+            print line[1]
             for word in line[1]:                            #add to counter
-                group = getGroup(count, word)
+                group = getGroup2(count, word)
                 oldCount = count[group]
                 count[group] += 1
                 newCount = count[group]
@@ -459,7 +499,7 @@ def evaluate4(file):#-------------------------------------------------EVALUATE4
         output.append([timeSlice, newIdea, newIdeaCount, totalIdeas])
         estimateNewIdea(count, output[timeSlice])
         calculateCat(count, output, timeSlice, newIdeaCount, totalIdeas)
-    
+    print count
     return output
     
 def writeOut(output, fileName):#--------------------------------------WRITE_OUT
@@ -476,7 +516,7 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
 
 #--------------------------------------------------------------------------MAIN
 
-INPUT_FILE = "Input/smallIdeas.csv"            
+INPUT_FILE = "Input/ideas_corrected.csv"            
 OUTPUT_FILE = "Data Output/00 BasicTest.csv" 
 VERSION = 4
 INTERVAL_MODE = 'time'                              #options: time, count;
@@ -502,8 +542,8 @@ elif(VERSION == 3):
     out = evaluate3(file)
 elif(VERSION == 4):
     out = evaluate4(file)
-    
-print wordsSeen
+
+#print wordsSeen
 
 for line in out:
     print line
