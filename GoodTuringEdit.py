@@ -160,6 +160,13 @@ def getGroup2(count, word):
     
     
     #not entirly accurate
+    #if a synonym is found, update group to that value
+        #problem1: multiple synonyms may exist with differnt values
+            #which to use?
+            #update them to be the same?
+        #problem2: synonymns' values to update to may change halfway through
+            #search in a separate loop and then update? --> problem 1 still an issue, but
+                #maybe less so if synonymns usually don't have different values
     for syn in wordSyn:
         for lem in syn.lemmas():
             if(wordsSeen.has_key(lem.name())):
@@ -178,8 +185,32 @@ def getGroup2(count, word):
                 #stub: print        --> see what comes out and then decide
                 #throw away?        --> probably a typo
                 #return word?       --> lots of words are not in the dictionary
+                
+def countUniqueWords(file):
+    stopwords = nltk.corpus.stopwords.words('english')
+    useless = ["would", "could", "in", "use"]
+    listOfWords = []
+    count = Counter()
+    newIdeaCount = 0
     
+    for line in file:
+        words = line[1].strip('"')
+        words = line[1].split()
+        listOfWords.append([w.lower() for w in words if
+                            w.lower() not in stopwords and
+                            w.lower() not in useless])
+    listOfWords = sorted(listOfWords)
     
+    for word in listOfWords:
+        group = getGroup2(count, word)
+        oldCount = count[group]
+        count[group] += 1
+        newCount = count[group]
+
+        if newCount == 1:                           #was this a new bin?
+            newIdeaCount += 1
+    
+    print "# of new Ideas: ", newIdeaCount    
     
 def evaluate(file):#---------------------------------------------------EVALUATE
     #var dictionary
@@ -430,7 +461,7 @@ def evaluate3(file):#-------------------------------------------------EVALUATE3
                 
     return output
 
-def evaluate4(file):#-------------------------------------------------EVALUATE4
+def evaluate4(file, logs):#-------------------------------------------------EVALUATE4
     #var dictionary
     #file                                           #raw input file
     #start                                          #starting point for intervals
@@ -445,8 +476,7 @@ def evaluate4(file):#-------------------------------------------------EVALUATE4
     i = 0                                           #index for while loop
     file.sort(key=itemgetter(3))
     
-    
-    
+    logs.append(["--------------- START EXECUTION ---------------"])
     if(INTERVAL_MODE == 'time'):
         start = int(file[0][3])                     #unix time of first row
         end = start + INTERVAL
@@ -462,7 +492,7 @@ def evaluate4(file):#-------------------------------------------------EVALUATE4
                 "%New Categories in Time Slice",
                 "%New Categories Overall",
                 "Counter"])
-    
+    logs.append([str(timeSlice) + "------ TIME_SLICE" + str(timeSlice) + " -----"])
     while(i < len(file)):                                   #while more ideas still exist
         line = file[i]                                      #a line in a file
         if(INTERVAL_MODE == 'time'):
@@ -470,8 +500,9 @@ def evaluate4(file):#-------------------------------------------------EVALUATE4
         elif(INTERVAL_MODE == 'count'):
             current = i          
         if(current <= end):                            #for each time slice
-            format(line)                                    #convert idea content to list of relivant words                                  
-            print line[1]
+            format(line)                                    #convert idea content to list of relivant words
+            logs.append(["\tIDEA " + str(i) + " -----"])
+            
             for word in line[1]:                            #add to counter
                 group = getGroup2(count, word)
                 oldCount = count[group]
@@ -482,13 +513,15 @@ def evaluate4(file):#-------------------------------------------------EVALUATE4
                     newIdea = 'true'                            #if yes,
                     newIdeaCount += 1
                 totalIdeas += 1
-            i += 1 
+                logs.append(["\t\t" + word + ":\t" + group + "--> \t" + str(newCount)])
+            i += 1
         else:                                                   #at the end of each time slice
             if(totalIdeas > 0):
                 output.append([timeSlice, newIdea, newIdeaCount, totalIdeas])
                 estimateNewIdea(count, output[timeSlice])
                 calculateCat(count, output, timeSlice, newIdeaCount, totalIdeas)
                 timeSlice += 1                                  #increment time slice id
+                logs.append([str(timeSlice) + "------ TIME_SLICE" + str(timeSlice) + " -----"])
                 
             start = end                                         #update time slice markers
             end = start + INTERVAL
@@ -501,6 +534,13 @@ def evaluate4(file):#-------------------------------------------------EVALUATE4
         calculateCat(count, output, timeSlice, newIdeaCount, totalIdeas)
     print count
     return output
+
+def errorLog(errorCode):#---------------------------------------------ERROR_LOG
+    if(errorCode == 0):
+        return "ERROR: NO VERSION SPECIFIED"
+    else:
+        return "THERE WAS AN ERROR"
+        
     
 def writeOut(output, fileName):#--------------------------------------WRITE_OUT
     #var dictionary
@@ -512,26 +552,40 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
         writer = csv.writer(file)
         for row in output:
             writer.writerow(row)
-        print "Results written to ", fileName
+        if(output == logs):
+            print "Log file written to ", fileName
+        else:
+            print "Results written to ", fileName
+            logs.append(["Results written to " + fileName])
 
 #--------------------------------------------------------------------------MAIN
 
-INPUT_FILE = "Input/ideas_corrected.csv"            
-OUTPUT_FILE = "Data Output/00 BasicTest.csv" 
+INPUT_FILE = "Input/smallIdeas.csv"            
+OUTPUT_FILE = "Data Output/00 BasicTest.csv"
+LOG_FILE = "log.txt"
 VERSION = 4
 INTERVAL_MODE = 'time'                              #options: time, count;
                                                     #options: words, categories;
-#INTERVAL = 60000                                    #1 minute
-INTERVAL = 600000                                    #10 minutes
+INTERVAL = 60000                                    #1 minute
+#INTERVAL = 600000                                    #10 minutes
 #INTERVAL = 1800000                                  #30 minutes
 #INTERVAL = 3600000                                  # 1 hour
 #INTERVAL = 30
-out = []                                            #output to print
-wordsSeen = {}
-itemsSeen = {}
+out = []                                            #data output to print
+logs = []                                           #log  output to print
+wordsSeen = {}                                      #dictionary in key-value form where
+                                                        #key = words and their synonymns
+                                                        #value = the group that is entered
+                                                            #the counter for that word
+itemsSeen = {}                                            
 
 #getInput
 file = getInputFile(INPUT_FILE)
+
+#setup Log File
+logs.append(["VERSION:\t" + str(VERSION)])
+logs.append(["INPUT_FILE:\t" + INPUT_FILE])
+logs.append(["INTERVAL_MODE:\t" + INTERVAL_MODE])
 
 #process
 if(VERSION == 1):
@@ -541,21 +595,43 @@ elif(VERSION == 2):
 elif(VERSION == 3):
     out = evaluate3(file)
 elif(VERSION == 4):
-    out = evaluate4(file)
+    out = evaluate4(file, logs)
+else:
+    print "NO VERSION SPECIFIED"
+    logs.append([errorLog(0)])
+    writeOut(logs, LOG_FILE)
+    quit()
 
 #print wordsSeen
+#countUniqueWords(file)
 
+#print output to screen
 for line in out:
     print line
 
-#VERSION 1:     basic; category as bin              DONE
-#               ideas.csv
-#VERSION 2:     words as bins                       DONE    
-#               ideas2.csv
-#VERSION 3:     words as bins; separate by theme    IN-PROGRESS
-#               ideas_corrected.csv
-#               smallIdeas.csv
+#VERSION 1:     basic; category as bin              IN-PROGRESS -- functional
+#               INPUTS:
+#                   ideas.csv
+#               TODO:
+#                   - implement log
+#VERSION 2:     words as bins                       IN-PROGRESS -- functional   
+#               INPUTS:
+#                   ideas2.csv
+#               TODO:
+#                   - implement log
+#VERSION 3:     words as bins; separate by theme    IN-PROGRESS -- not functional
+#               INPUTS:
+#                   ideas_corrected.csv
+#                   smallIdeas.csv
+#               TODO:
+#                   - fix bugs that arose in compilation
+#                   - implement log
 #VERSION 4:     super-words as bins                 IN-PROGRESS
+#               log implemented
+#               INPUTS:
+#                   ideas_corrected.csv
+#                   smallIdeas.csv
 
 #printResults
 writeOut(out, OUTPUT_FILE)
+writeOut(logs, LOG_FILE)
