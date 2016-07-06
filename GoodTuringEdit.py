@@ -35,8 +35,8 @@ def estimateNewIdea(count, line):#----------------------------ESTIMATE_NEW_IDEA
     c = 1                                                   
     n = float(sum(map(itemgetter(1), count.items())))       #total number of items
     
-    #line.append(str((n1/n)*100) + "%")
-    line.append(str((nc1 * (c+1))/n * 100) + "%")
+    line.append(str((n1/n)*100) + "%")
+    #line.append(str((nc1 * (c+1))/n * 100) + "%")
     
 def calculateCat(count, output, timeSlice, new, sliceTotal):#-----CALCULATE-CAT
     total = float(sum(map(itemgetter(1), count.items())))   #total number of items
@@ -124,14 +124,14 @@ def getGroup(count, word):
             else:
                 continue
         
-        #if(itemSyn.path_similarity(wordSyn) >= 0.5 and itemSyn.path_similarity(wordSyn) > best):
+        if(itemSyn.path_similarity(wordSyn) >= 0.5 and itemSyn.path_similarity(wordSyn) > best):
         #if this word is similar to an already existing one, add it as that group
-            #group = item
-            #best = itemSyn.path_similarity(wordSyn)
-            
-        if(itemSyn.path_similarity(wordSyn) >= 0.5):
             group = item
-            break;
+            best = itemSyn.path_similarity(wordSyn)
+            
+        #if(itemSyn.path_similarity(wordSyn) >= 0.5):
+         #   group = item
+        #   break;
         
     wordsSeen.update({word: group})
     
@@ -504,7 +504,7 @@ def evaluate4(file, logs):#-------------------------------------------------EVAL
             logs.append(["\tIDEA " + str(i) + " -----"])
             
             for word in line[1]:                            #add to counter
-                group = getGroup2(count, word)
+                group = getGroup(count, word)
                 oldCount = count[group]
                 count[group] += 1
                 newCount = count[group]
@@ -626,11 +626,12 @@ for line in out:
 #               TODO:
 #                   - fix bugs that arose in compilation
 #                   - implement log
-#VERSION 4:     super-words as bins                 IN-PROGRESS
-#               log implemented
+#VERSION 4:     super-words as bins                 IN-PROGRESS -- functional
 #               INPUTS:
 #                   ideas_corrected.csv
 #                   smallIdeas.csv
+#               TODO:
+#                   improve time/accuracy 
 
 #printResults
 writeOut(out, OUTPUT_FILE)
