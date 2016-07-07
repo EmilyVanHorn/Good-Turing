@@ -1,3 +1,4 @@
+from __future__ import division
 from operator import *
 from collections import Counter
 import csv
@@ -7,6 +8,8 @@ from nltk import FreqDist
 from nltk.stem import *
 from nltk.corpus import wordnet as wn
 import string
+import gensim
+from gensim import models
 
 def getInputFile(fileName):#-------------------------------------GET_INPUT_FILE
     #var dictionary
@@ -186,6 +189,35 @@ def getGroup2(count, word):
                 #throw away?        --> probably a typo
                 #return word?       --> lots of words are not in the dictionary
                 
+def getGroup3(count, word, model):
+    word = "".join(l for l in word if l not in string.punctuation)
+    best = 0
+    group = word
+    
+    #searchForExisting
+    if(wordsSeen.has_key(word)):
+        return wordsSeen.get(word)
+    
+    
+    for item in count.elements():
+        try:
+            sim = model.similarity(item, word)
+        except:
+            continue
+               
+        if(sim >= 0.8 and sim > best):
+        #if this word is similar to an already existing one, add it as that group
+            group = item
+            best = sim
+            
+        #if(itemSyn.path_similarity(wordSyn) >= 0.5):
+         #   group = item
+        #   break;
+        
+    wordsSeen.update({word: group})
+    
+    return group
+                
 def countUniqueWords(file):
     stopwords = nltk.corpus.stopwords.words('english')
     useless = ["would", "could", "in", "use"]
@@ -277,7 +309,7 @@ def evaluate(file):#---------------------------------------------------EVALUATE
             totalIdeas = 0
     if(totalIdeas > 0):
         output.append([timeSlice, newIdea, newIdeaCount, totalIdeas])
-        estimateNewIdea(count, output[timeSlice])
+        estimateNewIdea(count, output)
         calculateCat(count, output, timeSlice, newIdeaCount, totalIdeas)
         
     return output
@@ -406,7 +438,7 @@ def evaluate3_1(file, realOutput):#---------------------------------EVALUATE3.1
         else:                                                   #at the end of each time slice
             if(totalIdeas > 0):
                 output.append([timeSlice, newIdea, newIdeaCount, totalIdeas])
-                estimateNewIdea(count, output[0])
+                estimateNewIdea(count, output)
                 calculateCat(count, output, 0, newIdeaCount, totalIdeas)
                 timeSlice += 1                                  #increment time slice id
                 realOutput.append(output[0])
@@ -474,7 +506,8 @@ def evaluate4(file, logs):#-------------------------------------------------EVAL
     totalIdeas = 0                                  #total ideas per timeSlice
     output = []                                     #output array
     i = 0                                           #index for while loop
-    file.sort(key=itemgetter(3))
+    model = models.Word2Vec.load("MODEL")
+    #file.sort(key=itemgetter(3))
     
     logs.append(["--------------- START EXECUTION ---------------"])
     if(INTERVAL_MODE == 'time'):
@@ -504,7 +537,7 @@ def evaluate4(file, logs):#-------------------------------------------------EVAL
             logs.append(["\tIDEA " + str(i) + " -----"])
             
             for word in line[1]:                            #add to counter
-                group = getGroup(count, word)
+                group = getGroup3(count, word, model)
                 oldCount = count[group]
                 count[group] += 1
                 newCount = count[group]
@@ -535,6 +568,115 @@ def evaluate4(file, logs):#-------------------------------------------------EVAL
     print count
     return output
 
+def evaluate5_1(file, realOutput, model):#---------------------------------EVALUATE5.1
+    #var dictionary
+    #file                                           #raw input file
+    #start                                          #starting point for intervals
+    #end                                            #end point for current interval
+    count = Counter()                               #counter for frequencies
+    timeSlice = 1                                   #timeSlice ID
+    newIdea = 'false'                               #true/false:
+                                                        #new bin in the time slice?
+    newIdeaCount = 0                                #number of new ideas so far
+    totalIdeas = 0                                  #total ideas per timeSlice
+    output = []                                     #output array
+    i = 0                                           #index for while loop
+    file.sort(key=itemgetter(3))
+    
+    if(INTERVAL_MODE == 'time'):
+        start = int(file[0][3])                     #unix time of first row
+        end = start + INTERVAL
+    elif(INTERVAL_MODE == 'count'):
+        start = 0
+        end = start + INTERVAL
+        
+    while(i < len(file)):                                   #while more ideas still exist
+        line = file[i]                                      #a line in a file  
+        
+        if(INTERVAL_MODE == 'time'):
+            current = int(line[3])
+        elif(INTERVAL_MODE == 'count'):
+            current = i            
+        if(current <= end):                            #for each time slice
+            format(line)                                    #convert idea content to list of relivant words 
+            
+            for word in line[1]:                            #add to counter
+                group = getGroup3(count, word, model)
+                oldCount = count[group]
+                count[group] += 1
+                newCount = count[group]
+
+                if newCount == 1:                           #was this a new bin?
+                    newIdea = 'true'                            #if yes,
+                    newIdeaCount += 1
+                totalIdeas += 1
+            i += 1 
+        else:                                                   #at the end of each time slice
+            if(totalIdeas > 0):
+                #output.append([timeSlice, newIdea, newIdeaCount, totalIdeas])
+                estimateNewIdea(count, output)
+                #calculateCat(count, output, 0, newIdeaCount, totalIdeas)
+                
+                
+                timeSlice += 1                                  #increment time slice id
+                #realOutput.append(output[0])
+                for item in output:
+                    realOutput.append(item)
+                
+                
+            start = end                                         #update time slice markers
+            end = start + INTERVAL
+            newIdea = 'false'
+            newIdeaCount = 0
+            totalIdeas = 0
+    if(totalIdeas > 0):
+        #output.append([timeSlice, newIdea, newIdeaCount, totalIdeas])
+        estimateNewIdea(count, output)
+        #calculateCat(count, output, 0, newIdeaCount, totalIdeas)
+
+def evaluate5(file, logs):#-------------------------------------------------EVALUATE5
+    file.sort(key=itemgetter(4))
+    currentTheme = file[0][4]                               #sortBy category
+    ideasByTheme = []
+    row= []
+    output = []
+    model = models.Word2Vec.load("MODEL")
+
+    for line in file:
+        themeName = line[4]
+        logs.append("themeName:" + themeName)
+        if (themeName == currentTheme):
+            ideasByTheme.append(line)
+            continue
+        else:
+            ideasByTheme.sort(key=itemgetter(3))
+            row.append(currentTheme)
+            #output.append([currentTheme, "", "", "", "", ""])
+
+            evaluate5_1(ideasByTheme, row, model)
+            output.append(row)
+
+            ideasByTheme = []
+            row = []
+            currentTheme = themeName
+            ideasByTheme.append(line)
+            continue
+    
+        if(len(ideasByTheme) > 0):
+            ideasByTheme.sort(key=itemgetter(3))
+            #output.append([currentTheme, "", "", "", "", ""])
+                
+            evaluate5_1(ideasByTheme, row, model)
+            output.append(row)
+
+            ideasByTheme = []
+            row = []
+            currentTheme = themeName
+            ideasByTheme.append(line)
+        
+                
+    return output
+
 def errorLog(errorCode):#---------------------------------------------ERROR_LOG
     if(errorCode == 0):
         return "ERROR: NO VERSION SPECIFIED"
@@ -560,17 +702,17 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
 
 #--------------------------------------------------------------------------MAIN
 
-INPUT_FILE = "Input/smallIdeas.csv"            
-OUTPUT_FILE = "Data Output/00 BasicTest.csv"
+INPUT_FILE = "Input/ideas_corrected.csv"            
+OUTPUT_FILE = "Data Output/00 Verseion5.csv"
 LOG_FILE = "log.txt"
-VERSION = 4
-INTERVAL_MODE = 'time'                              #options: time, count;
+VERSION = 5
+INTERVAL_MODE = 'count'                              #options: time, count;
                                                     #options: words, categories;
-INTERVAL = 60000                                    #1 minute
+#INTERVAL = 60000                                    #1 minute
 #INTERVAL = 600000                                    #10 minutes
 #INTERVAL = 1800000                                  #30 minutes
 #INTERVAL = 3600000                                  # 1 hour
-#INTERVAL = 30
+INTERVAL = 3
 out = []                                            #data output to print
 logs = []                                           #log  output to print
 wordsSeen = {}                                      #dictionary in key-value form where
@@ -596,6 +738,8 @@ elif(VERSION == 3):
     out = evaluate3(file)
 elif(VERSION == 4):
     out = evaluate4(file, logs)
+elif(VERSION == 5):
+    out = evaluate5(file, logs)
 else:
     print "NO VERSION SPECIFIED"
     logs.append([errorLog(0)])
@@ -632,6 +776,8 @@ for line in out:
 #                   smallIdeas.csv
 #               TODO:
 #                   improve time/accuracy 
+#VERSION 5:     super-words as bins;                IN-PROGRESS -- functional
+#               separate by theme
 
 #printResults
 writeOut(out, OUTPUT_FILE)

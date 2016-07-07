@@ -1,568 +1,1169 @@
-VERSION:	4
-INPUT_FILE:	Input/smallIdeas.csv
-INTERVAL_MODE:	time
---------------- START EXECUTION ---------------
-1------ TIME_SLICE1 -----
-	IDEA 0 -----
-		approach.:	approach--> 	1
-		clients:	clients--> 	1
-		clients.:	clients--> 	2
-		cloth:	cloth--> 	1
-		coupled:	coupled--> 	1
-		display:	display--> 	1
-		display:	display--> 	2
-"		displays,:	display--> 	3"
-		exciting:	exciting--> 	1
-		go:	go--> 	1
-		like:	like--> 	1
-		may:	may--> 	1
-		novel:	novel--> 	1
-		presents:	presents--> 	1
-		prospective:	prospective--> 	1
-		reel:	reel--> 	1
-		showcase::	showcase--> 	1
-"		this,:	this--> 	1"
-		traditional:	traditional--> 	1
-		used:	used--> 	1
-		used:	used--> 	2
-		videographers:	videographers--> 	1
-		videography:	videography--> 	1
-		way:	way--> 	1
-2------ TIME_SLICE2 -----
-	IDEA 1 -----
-		art:	art--> 	1
-		hammer:	hammer--> 	1
-"		juggleing,:	juggleing--> 	1"
-"		legs,:	legs--> 	1"
-"		pieces,:	go--> 	2"
-		table:	table--> 	1
-3------ TIME_SLICE3 -----
-	IDEA 2 -----
-"		activities,:	activities--> 	1"
-		actual:	actual--> 	1
-		actually:	actually--> 	1
-		areas:	areas--> 	1
-		art.:	art--> 	2
-		artists:	artists--> 	1
-		available:	available--> 	1
-		billboards:	billboards--> 	1
-		creating:	creating--> 	1
-		device:	device--> 	1
-		different:	different--> 	1
-		different:	different--> 	2
-		different:	different--> 	3
-		electronic:	electronic--> 	1
-		even:	even--> 	1
-"		event,:	event--> 	1"
-		event.:	event--> 	2
-		event.:	event--> 	3
-		event.:	event--> 	4
-		fabric:	cloth--> 	2
-		festival.:	festival--> 	1
-		flexible:	flexible--> 	1
-		food:	food--> 	1
-		give:	presents--> 	2
-		hanging:	hanging--> 	1
-		happening:	happening--> 	1
-		idea:	idea--> 	1
-		information:	information--> 	1
-		kinds:	kinds--> 	1
-		like:	like--> 	2
-		like:	like--> 	3
-		like:	like--> 	4
-		live:	go--> 	3
-		map:	presents--> 	3
-		merchandise:	merchandise--> 	1
-		much:	much--> 	1
-		outdoor:	outdoor--> 	1
-		people:	people--> 	1
-		portable.:	portable--> 	1
-		prepared:	prepared--> 	1
-		product:	merchandise--> 	2
-		sale.:	sale--> 	1
-		show:	display--> 	4
-		show:	display--> 	5
-		show:	display--> 	6
-		show:	display--> 	7
-		show:	display--> 	8
-		streams:	streams--> 	1
-		things:	things--> 	1
-		used:	used--> 	3
-		using:	used--> 	4
-		vendors:	vendors--> 	1
-		wearing:	wearing--> 	1
-4------ TIME_SLICE4 -----
-	IDEA 3 -----
-		anatomy:	anatomy--> 	1
-		body.:	body--> 	1
-		class:	kinds--> 	2
-		human:	pieces--> 	1
-		inthe:	inthe--> 	1
-		room:	way--> 	2
-		shows:	display--> 	9
-		tshirt:	tshirt--> 	1
-5------ TIME_SLICE5 -----
-	IDEA 4 -----
-		also:	also--> 	1
-		beat:	beat--> 	1
-		better:	better--> 	1
-		body:	body--> 	2
-		body.:	body--> 	3
-		cancer:	cancer--> 	1
-		certain:	certain--> 	1
-		diseases:	diseases--> 	1
-		either:	either--> 	1
-		even:	even--> 	2
-		exercise:	used--> 	5
-		heart:	heart--> 	1
-		heart.:	heart--> 	2
-"		inside,:	inside--> 	1"
-"		instance,:	showcase--> 	2"
-		like:	like--> 	5
-		look:	look--> 	1
-		lungs:	lungs--> 	1
-		medical:	medical--> 	1
-		people:	people--> 	2
-		professionals.:	professionals--> 	1
-		shock:	shock--> 	1
-		shows:	display--> 	10
-		smoking:	smoking--> 	1
-		spreads:	spreads--> 	1
-		synchronize:	synchronize--> 	1
-		teach:	teach--> 	1
-		teaching:	teach--> 	2
-		tool:	tool--> 	1
-		value:	value--> 	1
-6------ TIME_SLICE6 -----
-	IDEA 5 -----
-		appearance:	display--> 	11
-		artist:	artists--> 	2
-		change:	change--> 	1
-		clothing:	wearing--> 	2
-7------ TIME_SLICE7 -----
-	IDEA 6 -----
-		wallpaper:	wallpaper--> 	1
-	IDEA 7 -----
-		buildings:	anatomy--> 	2
-		wrap:	wrap--> 	1
-	IDEA 8 -----
-		cars:	cars--> 	1
-		trucks:	trucks--> 	1
-		wrap:	wrap--> 	2
-8------ TIME_SLICE8 -----
-	IDEA 9 -----
-		also:	also--> 	2
-		apartments:	apartments--> 	1
-		change:	change--> 	2
-		changing:	change--> 	3
-		children's:	childrens--> 	1
-		confined.:	confined--> 	1
-		creating:	creating--> 	2
-		decorating:	decorating--> 	1
-		environment:	environment--> 	1
-		especially:	especially--> 	1
-		feel:	heart--> 	3
-		get:	go--> 	4
-		landscapes:	landscapes--> 	1
-		living:	living--> 	1
-		may:	may--> 	2
-		much:	much--> 	2
-		nature:	nature--> 	1
-		parents:	parents--> 	1
-		people:	people--> 	3
-		popular:	popular--> 	1
-		popular:	popular--> 	2
-		rooms:	way--> 	3
-		scenery.:	scenery--> 	1
-		see:	look--> 	2
-		small:	small--> 	1
-		spaces:	spaces--> 	1
-		stimulating:	exciting--> 	2
-		think:	think--> 	1
-		think:	think--> 	2
-		urban:	urban--> 	1
-		various:	various--> 	1
-		wallpaper:	wallpaper--> 	2
-		young:	young--> 	1
-9------ TIME_SLICE9 -----
-	IDEA 10 -----
-		5:	5--> 	1
-		children:	children--> 	1
-		develop:	prepared--> 	2
-		good:	better--> 	2
-		senses:	senses--> 	1
-		young:	young--> 	2
-	IDEA 11 -----
-		autism:	autism--> 	1
-		good:	better--> 	3
-		kids:	children--> 	2
-		learner:	learner--> 	1
-		visual:	visual--> 	1
-10------ TIME_SLICE10 -----
-	IDEA 12 -----
-		design:	design--> 	1
-		good:	better--> 	4
-		people:	people--> 	4
-		tshirts:	tshirts--> 	1
-		want:	want--> 	1
-	IDEA 13 -----
-		clothing:	clothing--> 	1
-		designers:	designers--> 	1
-		display:	display--> 	12
-		good:	better--> 	5
-		ideas:	idea--> 	2
-		instantly:	instantly--> 	1
-11------ TIME_SLICE11 -----
-	IDEA 14 -----
-		curtain:	curtain--> 	1
-		designers:	designers--> 	2
-	IDEA 15 -----
-		blanket:	blanket--> 	1
-		designers:	designers--> 	3
-12------ TIME_SLICE12 -----
-	IDEA 16 -----
-		designers:	designers--> 	4
-		designs:	design--> 	2
-		display.:	display--> 	13
-		fabric:	cloth--> 	3
-		fabric:	cloth--> 	4
-		frabics:	frabics--> 	1
-		good:	better--> 	6
-		ideas:	idea--> 	3
-		instantly:	instantly--> 	2
-		kinds:	kinds--> 	3
-		make:	creating--> 	3
-		using:	using--> 	1
-13------ TIME_SLICE13 -----
-	IDEA 17 -----
-"		accessories,:	accessories--> 	1"
-		alternate:	alternate--> 	1
-		clothing:	clothing--> 	2
-		clothing:	clothing--> 	3
-		different:	different--> 	4
-		display:	display--> 	14
-		every:	every--> 	1
-		match:	coupled--> 	2
-		mix:	mix--> 	1
-		often.:	much--> 	3
-		outfits:	outfits--> 	1
-		store:	store--> 	1
-		ways:	way--> 	4
-14------ TIME_SLICE14 -----
-	IDEA 18 -----
-		art:	art--> 	3
-		attention:	attention--> 	1
-"		class,:	class--> 	1"
-		class.:	class--> 	2
-		keep:	living--> 	2
-		school:	school--> 	1
-		student's:	students--> 	1
-15------ TIME_SLICE15 -----
-	IDEA 19 -----
-		ad:	hanging--> 	2
-		different:	different--> 	5
-		get:	go--> 	5
-		interested:	interested--> 	1
-		mall:	heart--> 	4
-		people:	people--> 	5
-		products:	merchandise--> 	3
-		purchasing.:	purchasing--> 	1
-		sell:	sell--> 	1
-		setting:	exercise--> 	1
-		show:	display--> 	15
-		space:	spaces--> 	2
-		stores:	store--> 	2
-	IDEA 20 -----
-		art:	art--> 	4
-		direct:	direct--> 	1
-		gallery:	gallery--> 	1
-		great:	great--> 	1
-		introduction.:	introduction--> 	1
-"		it,:	it--> 	1"
-		museum:	museum--> 	1
-		people:	people--> 	6
-		see:	look--> 	3
-		show:	display--> 	16
-"		there,:	there--> 	1"
-16------ TIME_SLICE16 -----
-	IDEA 21 -----
-"		""scenes"":	scenery--> 	2"
-"		accessories,:	accessories--> 	2"
-		backgrounds:	setting--> 	1
-		believe:	think--> 	3
-		blossom:	spreads--> 	2
-		computer:	computer--> 	1
-		cool:	cool--> 	1
-		customer-driven:	customerdriven--> 	1
-		customers:	clients--> 	3
-		designer:	designers--> 	5
-		display:	display--> 	17
-		do!:	exercise--> 	2
-		effect.:	event--> 	5
-		even:	even--> 	3
-		eyes!:	heart--> 	5
-		fabric:	cloth--> 	5
-"		fabrics,:	cloth--> 	6"
-		from...i:	fromi--> 	1
-		fun:	fun--> 	1
-		furnish:	display--> 	18
-		furniture:	furniture--> 	1
-		furniture:	furniture--> 	2
-"		furniture,:	furniture--> 	3"
-		get:	go--> 	6
-		ideas:	idea--> 	4
-		interior:	inside--> 	2
-"		lamps,:	lamps--> 	1"
-		make:	creating--> 	4
-		match:	coupled--> 	3
-		mix:	mix--> 	2
-		neat:	great--> 	2
-		pop:	popular--> 	3
-"		program,:	design--> 	3"
-		really:	actually--> 	2
-		room:	way--> 	5
-		room:	way--> 	6
-"		rugs,:	rugs--> 	1"
-		see:	look--> 	4
-		show:	display--> 	19
-		size:	size--> 	1
-		store:	store--> 	3
-"		textures,:	textures--> 	1"
-		true:	true--> 	1
-		trying:	trying--> 	1
-		useful:	useful--> 	1
-		visual:	visual--> 	2
-17------ TIME_SLICE17 -----
-	IDEA 22 -----
-		showing:	display--> 	20
-		work:	go--> 	7
-		work:	go--> 	8
-	IDEA 23 -----
-		art:	art--> 	5
-		interactive:	interactive--> 	1
-		platform:	design--> 	4
-18------ TIME_SLICE18 -----
-	IDEA 24 -----
-		movie:	display--> 	21
-		screen:	screen--> 	1
-	IDEA 25 -----
-		art.:	art--> 	6
-		draw:	draw--> 	1
-		idea.:	idea--> 	5
-		interact:	interact--> 	1
-		kind:	kinds--> 	4
-		letting:	letting--> 	1
-		make:	creating--> 	5
-		people:	people--> 	7
-		person:	person--> 	1
-		someone:	person--> 	2
-		spot:	spaces--> 	3
-		spot:	spaces--> 	4
-		touches:	spaces--> 	5
-		wants:	want--> 	2
-		whatever:	whatever--> 	1
-19------ TIME_SLICE19 -----
-	IDEA 26 -----
-		art:	art--> 	7
-		canvas:	canvas--> 	1
-		help:	attention--> 	2
-		hung:	hanging--> 	3
-		large:	great--> 	3
-		like:	like--> 	6
-		make:	creating--> 	6
-		others:	others--> 	1
-		sheet:	canvas--> 	2
-		smaller:	small--> 	2
-		something:	something--> 	1
-		teach:	teach--> 	3
-		using:	using--> 	2
-		work:	go--> 	9
-	IDEA 27 -----
-		able:	able--> 	1
-		it's:	it--> 	2
-		proof:	proof--> 	1
-		since:	since--> 	1
-		water:	water--> 	1
-		water:	water--> 	2
-		work:	go--> 	10
-	IDEA 28 -----
-		billboards:	billboards--> 	2
-		changed:	change--> 	4
-		easily:	better--> 	7
-		giant:	giant--> 	1
-		handmade:	handmade--> 	1
-		led:	go--> 	11
-		models:	models--> 	1
-		replace:	change--> 	5
-20------ TIME_SLICE20 -----
-	IDEA 29 -----
-"		""black:	black--> 	1"
-"		""mosaic"":	mosaic--> 	1"
-"		""piece"":	pieces--> 	2"
-"		""pre-made"":	premade--> 	1"
-		abilities:	abilities--> 	1
-		able:	able--> 	2
-		able:	able--> 	3
-		able:	able--> 	4
-		actually:	actually--> 	3
-		add:	add--> 	1
-		add:	add--> 	2
-		adult:	adult--> 	1
-		allow:	letting--> 	2
-		allow:	letting--> 	3
-		allowing:	letting--> 	4
-		also:	also--> 	3
-		array:	array--> 	1
-		art:	art--> 	8
-		art:	art--> 	9
-		art:	art--> 	10
-		art:	art--> 	11
-		art:	art--> 	12
-		art:	art--> 	13
-		art.:	art--> 	14
-		artist:	artists--> 	3
-		artist:	artists--> 	4
-		artist:	artists--> 	5
-		artist:	artists--> 	6
-		artist:	artists--> 	7
-		artist:	artists--> 	8
-		artist:	artists--> 	9
-		artist:	artists--> 	10
-		artist:	artists--> 	11
-		assuming:	wearing--> 	3
-		attention:	attention--> 	3
-		audience:	audience--> 	1
-		awesome:	awesome--> 	1
-		basically:	basically--> 	1
-		basically:	basically--> 	2
-		believe:	think--> 	4
-		believe:	think--> 	5
-		big:	great--> 	4
-		books.:	books--> 	1
-"		canvas,:	canvas--> 	3"
-		canvas.:	canvas--> 	4
-		change:	change--> 	6
-		choose:	choose--> 	1
-		chose:	choose--> 	2
-		cloth:	cloth--> 	7
-		collectible.:	collectible--> 	1
-		collection.:	collection--> 	1
-		color:	color--> 	1
-		coloring:	color--> 	2
-		colors:	color--> 	3
-		come:	come--> 	1
-		coming:	approach--> 	2
-		computer:	computer--> 	2
-		connect:	connect--> 	1
-		could.:	could--> 	1
-		create:	creating--> 	7
-		detract:	detract--> 	1
-		draw;:	draw--> 	2
-		electronic:	electronic--> 	2
-		especially:	especially--> 	2
-		even:	even--> 	4
-		even:	even--> 	5
-		even:	even--> 	6
-		even:	even--> 	7
-		event:	event--> 	6
-		event:	event--> 	7
-		exhibit:	display--> 	22
-		exhibit:	display--> 	23
-		feel:	heart--> 	6
-"		from,:	from--> 	1"
-		fun:	fun--> 	2
-		fun:	fun--> 	3
-		fun:	fun--> 	4
-		fun:	fun--> 	5
-		generally:	generally--> 	1
-		give:	presents--> 	4
-		he's:	hes--> 	1
-		holding:	confined--> 	2
-		however:	however--> 	1
-		idea:	idea--> 	6
-		image:	image--> 	1
-		images:	image--> 	2
-		in.:	in--> 	1
-"		included,:	included--> 	1"
-		interactively:	interactively--> 	1
-		interesting:	interested--> 	2
-		issue:	event--> 	8
-		item:	item--> 	1
-		items:	item--> 	2
-		kind:	kinds--> 	5
-		large:	great--> 	5
-		large:	great--> 	6
-		lot:	draw--> 	3
-		many:	many--> 	1
-		memorabilia:	memorabilia--> 	1
-		memorable:	memorable--> 	1
-		might:	abilities--> 	2
-		might:	might--> 	1
-		mosaic.:	mosaic--> 	2
-		nearby:	nearby--> 	1
-		new:	novel--> 	2
-		participate:	participate--> 	1
-		participate:	participate--> 	2
-		patrons:	attention--> 	4
-		paying:	paying--> 	1
-		people:	people--> 	8
-		people:	people--> 	9
-		people:	people--> 	10
-		people:	people--> 	11
-		people:	people--> 	12
-		people:	people--> 	13
-		person:	person--> 	3
-		person's:	person--> 	4
-		piece:	pieces--> 	3
-		piece:	pieces--> 	4
-		piece:	pieces--> 	5
-		pieces:	go--> 	12
-		pieces:	go--> 	13
-		pieces:	go--> 	14
-		place:	spaces--> 	6
-		plus:	plus--> 	1
-		possible:	possible--> 	1
-		possibly:	possibly--> 	1
-		possibly:	possibly--> 	2
-		possibly:	possibly--> 	3
-		possibly:	possibly--> 	4
-		post-:	presents--> 	5
-		pre-:	pre--> 	1
-		pre-set:	preset--> 	1
-		print:	print--> 	1
-		prints:	print--> 	2
-		push:	push--> 	1
-		really:	actually--> 	4
-		really:	actually--> 	5
-		remember:	think--> 	6
-		request.:	request--> 	1
-		save-able:	saveable--> 	1
-		select:	go--> 	15
-		select:	go--> 	16
-		selected:	spaces--> 	7
-		sell:	sell--> 	2
-		sensing:	senses--> 	2
-		set:	pieces--> 	6
-		set:	pieces--> 	7
-		show:	display--> 	24
-		show:	display--> 	25
-		show:	display--> 	26
-		show:	display--> 	27
-		skill:	skill--> 	1
-		smaller:	smaller--> 	1
-		smaller:	smaller--> 	2
-		someone:	person--> 	5
-		something:	something--> 	2
-		spot:	spaces--> 	8
-"		spot,:	spaces--> 	9"
-		super:	super--> 	1
-		tablet:	tablet--> 	1
-		touch:	spaces--> 	10
-		want:	want--> 	3
-		wanted:	want--> 	4
-		way:	way--> 	7
-		way:	way--> 	8
-		way:	way--> 	9
-"		white"":	white--> 	1"
-		work:	go--> 	17
-Results written to Data Output/00 BasicTest.csv
+VERSION:	5
+INPUT_FILE:	Input/ideas_corrected.csv
+INTERVAL_MODE:	count
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,0
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,e,d,u,c,a,t,i,o,n
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,g,a,m,e,s
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,i,n,t,e,r,i,o,r,D,e,s,i,g,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,l,i,v,e,E,n,t,e,r,t,a,i,n
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,m,a,r,k,e,t,i,n,g
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,e,r,s,o,n,a,l,W,e,l,l,n,e,s,s
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,p,r,o,d,u,c,t,i,v,i,t,y
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,r,e,s,t,a,u,r,a,n,t,s
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,s,a,f,e,t,y
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+t,h,e,m,e,N,a,m,e,:,v,i,s,u,a,l,A,r,t,s
+Results written to Data Output/00 Verseion5.csv
