@@ -11,6 +11,8 @@ import string
 import gensim
 from gensim import models
 
+
+
 def getInputFile(fileName):#-------------------------------------GET_INPUT_FILE
     #var dictionary
     file = []                                       #file as a list of entries
@@ -194,28 +196,27 @@ def getGroup3(count, word, model):
     best = 0
     group = word
     
+    #print word
     #searchForExisting
     if(wordsSeen.has_key(word)):
         return wordsSeen.get(word)
     
     
-    for item in count.elements():
+    for item in count.keys():
         try:
+            #print "\t", item, " vs. ", word
             sim = model.similarity(item, word)
+            #print "\t\t", sim
         except:
             continue
                
-        if(sim >= 0.8 and sim > best):
+        if(sim >= 0.5 and sim > best):
         #if this word is similar to an already existing one, add it as that group
             group = item
             best = sim
-            
-        #if(itemSyn.path_similarity(wordSyn) >= 0.5):
-         #   group = item
-        #   break;
-        
-    wordsSeen.update({word: group})
-    
+    #print "\tBest: ", best
+    #print "\tGroup: ", group
+    wordsSeen.update({word: group})    
     return group
                 
 def countUniqueWords(file):
@@ -506,7 +507,7 @@ def evaluate4(file, logs):#-------------------------------------------------EVAL
     totalIdeas = 0                                  #total ideas per timeSlice
     output = []                                     #output array
     i = 0                                           #index for while loop
-    model = models.Word2Vec.load("MODEL")
+    model = models.Word2Vec.load("text8Model")
     #file.sort(key=itemgetter(3))
     
     logs.append(["--------------- START EXECUTION ---------------"])
@@ -703,9 +704,9 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
 #--------------------------------------------------------------------------MAIN
 
 INPUT_FILE = "Input/ideas_corrected.csv"            
-OUTPUT_FILE = "Data Output/00 Verseion5.csv"
+OUTPUT_FILE = "Data Output/01 Version4.csv"
 LOG_FILE = "log.txt"
-VERSION = 5
+VERSION = 4
 INTERVAL_MODE = 'count'                              #options: time, count;
                                                     #options: words, categories;
 #INTERVAL = 60000                                    #1 minute
@@ -715,11 +716,13 @@ INTERVAL_MODE = 'count'                              #options: time, count;
 INTERVAL = 3
 out = []                                            #data output to print
 logs = []                                           #log  output to print
-wordsSeen = {}                                      #dictionary in key-value form where
+f = open('dict.file', 'r')
+wordsSeen = eval(f.read())                          #dictionary in key-value form where
                                                         #key = words and their synonymns
                                                         #value = the group that is entered
                                                             #the counter for that word
-itemsSeen = {}                                            
+f.close()
+itemsSeen = {}
 
 #getInput
 file = getInputFile(INPUT_FILE)
@@ -750,6 +753,10 @@ else:
 #countUniqueWords(file)
 
 #print output to screen
+f = open('dict.file', 'w')
+f.write(str(wordsSeen))
+f.close()
+
 for line in out:
     print line
 
