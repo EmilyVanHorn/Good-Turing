@@ -110,7 +110,7 @@ def format(line):#-------------------------------------------------------FORMAT
         line[1] = lem(line[1])
         line[1] = stem(line[1])  
 
-def getGroup(count, word, threshold, wordsSeen):
+def getGroup(count, word, threshold, wordsSeen, groups):
     word = "".join(l for l in word if l not in string.punctuation)
     best = 0
     group = word
@@ -206,10 +206,11 @@ def getGroup2(count, word):
                 #throw away?        --> probably a typo
                 #return word?       --> lots of words are not in the dictionary
                 
-def getGroup3(count, word, model, threshold, wordsSeen):
+def getGroup3(count, word, model, threshold, wordsSeen, groups, groupsDictOut):
     word = "".join(l for l in word if l not in string.punctuation)
     best = 0
     group = word
+    
     
     #print word
     #searchForExisting
@@ -218,22 +219,31 @@ def getGroup3(count, word, model, threshold, wordsSeen):
     
     
     for super_word in count.keys():
-        # comparisons = super_words(super_word) # assume that comparisons is an array of words that make up the super_word
+        groupsLine = []
+        comparisons = groups.get(super_word) # assume that comparisons is an array of words that make up the super_word
         try:
             #print "\t", item, " vs. ", word
-            sim = model.similarity(item, word)
-            # sim = model.n_similarity([word], comparisons)
+            #sim = model.similarity(item, word)
+            sim = model.n_similarity([word], comparisons)
             #print "\t\t", sim
         except:
             continue
                
         if(sim >= threshold and sim > best):
         #if this word is similar to an already existing one, add it as that group
-            group = item
+            group = super_word
             best = sim
     #print "\tBest: ", best
     #print "\tGroup: ", group
-    wordsSeen.update({word: group})    
+    if(groups.has_key(group)):
+        newValue = groups.get(group)
+        newValue.update([word])
+        groups.update({group: newValue})
+    else:
+        newValue = set()
+        newValue.update([word])
+        groups.update({group: newValue})
+    wordsSeen.update({word: group})  
     return group
                 
 def countUniqueWords(file):
@@ -512,7 +522,10 @@ def evaluate3(file):#-------------------------------------------------EVALUATE3
     return output
 
 def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUATE4
+    groupsDictOut = []
+    groupsDictOut.append(["Super_Word", "Value"])
     wordsSeen = {}
+    groups = {}
     itemsSeen = {}
     #var dictionary
     #file                                           #raw input file
@@ -558,9 +571,9 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
             # print groupType
             for word in line[1]:                            #add to counter
                 if(method == "nltk"):
-                    group = getGroup(count, word, threshold, wordsSeen)
+                    group = getGroup(count, word, threshold, wordsSeen, groups)
                 elif(method == "word2vec"):
-                    group = getGroup3(count, word, model, threshold, wordsSeen)
+                    group = getGroup3(count, word, model, threshold, wordsSeen, groups, groupsDictOut)
                 oldCount = count[group]
                 count[group] += 1
                 newCount = count[group]
@@ -593,6 +606,13 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
     dictionary_out = open(dictionary_to_save, 'w')
     dictionary_out.write(json.dumps(wordsSeen, indent=2))
     dictionary_out.close()
+    for key in groups.keys():
+        groupsDictOut.append([key, groups.get(key)])
+    
+    
+    for line in groupsDictOut:
+        print line
+    writeOut(groupsDictOut, "Dictionaries/groupsDictOut.csv")
     return output
 
 def evaluate5_1(file, realOutput, model):#---------------------------------EVALUATE5.1
