@@ -9,6 +9,7 @@ from nltk.stem import *
 from nltk.corpus import wordnet as wn
 import string
 import gensim
+import json
 from gensim import models
 
 def func1():
@@ -109,7 +110,7 @@ def format(line):#-------------------------------------------------------FORMAT
         line[1] = lem(line[1])
         line[1] = stem(line[1])  
 
-def getGroup(count, word, threshold):
+def getGroup(count, word, threshold, wordsSeen):
     word = "".join(l for l in word if l not in string.punctuation)
     best = 0
     group = word
@@ -205,7 +206,7 @@ def getGroup2(count, word):
                 #throw away?        --> probably a typo
                 #return word?       --> lots of words are not in the dictionary
                 
-def getGroup3(count, word, model, threshold):
+def getGroup3(count, word, model, threshold, wordsSeen):
     word = "".join(l for l in word if l not in string.punctuation)
     best = 0
     group = word
@@ -216,10 +217,12 @@ def getGroup3(count, word, model, threshold):
         return wordsSeen.get(word)
     
     
-    for item in count.keys():
+    for super_word in count.keys():
+        # comparisons = super_words(super_word) # assume that comparisons is an array of words that make up the super_word
         try:
             #print "\t", item, " vs. ", word
             sim = model.similarity(item, word)
+            # sim = model.n_similarity([word], comparisons)
             #print "\t\t", sim
         except:
             continue
@@ -508,7 +511,9 @@ def evaluate3(file):#-------------------------------------------------EVALUATE3
                 
     return output
 
-def evaluate4(file, logs, groupType, threshold):#-------------------EVALUATE4
+def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUATE4
+    wordsSeen = {}
+    itemsSeen = {}
     #var dictionary
     #file                                           #raw input file
     #start                                          #starting point for intervals
@@ -550,12 +555,12 @@ def evaluate4(file, logs, groupType, threshold):#-------------------EVALUATE4
         if(current <= end):                            #for each time slice
             format(line)                                    #convert idea content to list of relivant words
             logs.append(["\tIDEA " + str(i) + " -----"])
-            
+            # print groupType
             for word in line[1]:                            #add to counter
-                if(groupType == "getGroup"):
-                    group = getGroup(count, word, threshold)
-                elif(groupType == "getGroup3"):
-                    group = getGroup(count, word, model, threshold)
+                if(method == "nltk"):
+                    group = getGroup(count, word, threshold, wordsSeen)
+                elif(method == "word2vec"):
+                    group = getGroup3(count, word, model, threshold, wordsSeen)
                 oldCount = count[group]
                 count[group] += 1
                 newCount = count[group]
@@ -584,6 +589,10 @@ def evaluate4(file, logs, groupType, threshold):#-------------------EVALUATE4
         estimateNewIdea(count, output[timeSlice -1])
         calculateCat(count, output, timeSlice - 1, newIdeaCount, totalIdeas)
     print count
+    dictionary_to_save = "Dictionaries/%s_%s_%.2f" %(dataset, method, threshold)
+    dictionary_out = open(dictionary_to_save, 'w')
+    dictionary_out.write(json.dumps(wordsSeen, indent=2))
+    dictionary_out.close()
     return output
 
 def evaluate5_1(file, realOutput, model):#---------------------------------EVALUATE5.1
@@ -696,39 +705,55 @@ def evaluate5(file, logs):#-------------------------------------------------EVAL
     return output
 
 def evaluate6(file, logs):#-------------------------------------------------EVALUATE6
-    datasets = ['SuperBoring','Boring','Normal',
-                'NewAtEnd','Exciting']              #the list of input filenames
-    versions = [evaluate4(file, logs, "getGroup", 0.5)]       #array of functions to try out
-                #evaluate4(file, logs, "getGroup", 0.9),
-                #evaluate4(file, logs, "getGroup3", 0.5),
-                #evaluate4(file, logs, "getGroup3", 0.9)]    
+    # datasets = ['SuperBoring',
+    #             'Boring',
+    #             'Normal',
+    #             'NewAtEnd',
+    #             'Exciting']              #the list of input filenames
+    datasets = ['SuperBoring']
+    # versions = [evaluate4(file, logs, "getGroup", 0.5)]       #array of functions to try out
+    #             evaluate4(file, logs, "getGroup", 0.9),
+    #             evaluate4(file, logs, "getGroup3", 0.5),
+    #             evaluate4(file, logs, "getGroup3", 0.9)]
+    # methods = ["nltk", "word2vec"]
+    methods = ["word2vec"]
+    # method_names = {"getGroup": 'nltk', 'getGroup3': 'word2vec'}
+    # thresholds = [0.2, 0.4, 0.6, 0.8]
+    thresholds = [0.5]
     vText = ['nltk 0.5','nltk 0.9',                 #strings associated with the function of 
              'word2vec 0.5','word2vec 0.9']                       
                                                     #"versions[]"
     output = []                                     #output to be sent to csv
     outLine = []                                    #one line of output taken from "returnedOut"
-    i = 0
+    # i = 0
 
     output.append(["dataset", "method",             #header
-               "timeSlice", "probability"])
+               "timeSlice", "GT_predict", "true"])
 
-    for input_file in datasets:                     #for each dataset
-        print "datasets: ", input_file              
-        j = 0                   
-        for function in versions:                       #run each version of the program
-            returnedOut = function                      #output from this version
-            print "\treturnedOut: ", returnedOut
-            for line in returnedOut:                    #rotate output to desired format
-                print "\t\tline: ", line                    #and save to "output[]"
-                outLine = []
-                outLine.append(datasets[i])
-                outLine.append(vText[j])
-                outLine.append(line[0])
-                outLine.append(line[4])             #---> !!!this will be 4 in the real code!!!
-                print "\t\t\t", outLine
-                output.append(outLine) 
-            j = j+1                       
-        i = i+1
+    for dataset in datasets:                     #for each dataset
+        input_file = "Input/%s.csv" %dataset
+        print "datasets: ", dataset              
+        # j = 0                   
+        # for function in versions:                       #run each version of the program
+        for method in methods:
+            print "method: ", method
+            for threshold in thresholds:
+                print "threshold: ", threshold
+                opened_input = getInputFile(input_file)
+                returnedOut = evaluate4(opened_input, logs, method, threshold, dataset)                      #output from this version
+                print "\treturnedOut: ", returnedOut
+                for line in returnedOut:                    #rotate output to desired format
+                    print "\t\tline: ", line                    #and save to "output[]"
+                    outLine = []
+                    outLine.append(dataset)
+                    outLine.append("%s_%.2f" %(method, threshold))
+                    outLine.append(line[0])
+                    outLine.append(line[4])
+                    outLine.append(line[5])             
+                    print "\t\t\t", outLine
+                    output.append(outLine) 
+            # j = j+1                       
+        # i = i+1
     
     print "Output"                                  #print output to terminal 
     for item in output:
@@ -760,8 +785,8 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
 #--------------------------------------------------------------------------MAIN
 
 INPUT_FILE = "Input/Normal.csv"            
-OUTPUT_FILE = "Data Output/01 Version4.csv"
-LOG_FILE = "log.txt"
+OUTPUT_FILE = "Data Output/ParamSearch_Experiment.csv"
+LOG_FILE = "log_ParamSearch_Experiment.txt"
 VERSION = 6
 INTERVAL_MODE = 'count'                              #options: time, count;
                                                     #options: words, categories;
