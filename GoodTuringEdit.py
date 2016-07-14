@@ -110,7 +110,7 @@ def format(line):#-------------------------------------------------------FORMAT
         line[1] = lem(line[1])
         line[1] = stem(line[1])  
 
-def getGroup(count, word, threshold, wordsSeen, groups):
+def getGroup(count, word, threshold, wordsSeen, groups, groupsDictOut):
     word = "".join(l for l in word if l not in string.punctuation)
     best = 0
     group = word
@@ -119,7 +119,7 @@ def getGroup(count, word, threshold, wordsSeen, groups):
     if(wordsSeen.has_key(word)):
         return wordsSeen.get(word)
     
-    #get synset
+    #get synset of word
     if(wn.synsets(word)):
         wordSyn = wn.synsets(word)[0]
     elif(wn.morphy(word)):
@@ -127,33 +127,68 @@ def getGroup(count, word, threshold, wordsSeen, groups):
     else:
         #no synset; use word
         wordsSeen.update({word: group})
+        
+        if(groups.has_key(group)):
+            newValue = groups.get(group)
+            newValue.update([word])
+            groups.update({group: newValue})
+        else:
+            newValue = set()
+            newValue.update([word])
+            groups.update({group: newValue})
+            wordsSeen.update({word: group}) 
         return word
     
-    for item in count.elements():
-        itemSyn = item
-        if(itemsSeen.has_key(item)):
-            itemSyn = itemsSeen.get(item)
-        else:
-            if(wn.synsets(item)):
-                itemSyn = wn.synsets(item)[0]
-            elif(wn.morphy(item)):
-                itemSyn = wn.morphy(item)[0]
-            elif(itemSyn == word):
-                wordsSeen.update({word: itemSyn})
-                return itemSyn
+    #compare to each group
+        # is there a way to compare one word to many words?
+    for item in count.keys():
+        avg = 0;
+        total = 0;
+        #get synset of group being tested against
+        comparisons = groups.get(item)
+        for word in comparisons:
+            itemSyn = word
+            if(itemsSeen.has_key(word)):
+                itemSyn = itemsSeen.get(word)
             else:
-                continue
-        
-        if(itemSyn.path_similarity(wordSyn) >= threshold and itemSyn.path_similarity(wordSyn) > best):
-        #if this word is similar to an already existing one, add it as that group
-            group = item
-            best = itemSyn.path_similarity(wordSyn)
-            
-        #if(itemSyn.path_similarity(wordSyn) >= 0.5):
-         #   group = item
-        #   break;
+                if(wn.synsets(item)):
+                    itemSyn = wn.synsets(word)[0]
+                    #compare
+                    sim = itemSyn.path_similarity(wordSyn)
+                    if(sim == None):
+                        sim = 0
+                    print "sim: ", sim
+                    print "WordSyn, ", wordSyn
+                    print "itemSyn, ", itemSyn
+                    total = total + 1
+                    avg = (avg + sim)/total
+                elif(wn.morphy(item)):
+                    itemSyn = wn.morphy(word)[0]
+                    #compare
+                    sim = itemSyn.path_similarity(wordSyn)
+                    if(sim == None):
+                        sim = 0
+                    print "sim: ", sim
+                    print "WordSyn, ", wordSyn
+                    print "itemSyn, ", itemSyn
+                    total = total + 1
+                    avg = (avg + sim)/total
+                else:
+                    continue
+            if(avg > best):
+                best = avg
+                group = item
         
     wordsSeen.update({word: group})
+    if(groups.has_key(group)):
+        newValue = groups.get(group)
+        newValue.update([word])
+        groups.update({group: newValue})
+    else:
+        newValue = set()
+        newValue.update([word])
+        groups.update({group: newValue})
+    wordsSeen.update({word: group}) 
     
     return group
 
@@ -193,6 +228,8 @@ def getGroup2(count, word):
                 group = wordsSeen.get(lem.name())
             else:
                 wordsSeen.update({lem.name(): group})
+                
+            
             
     return group
         
@@ -219,7 +256,6 @@ def getGroup3(count, word, model, threshold, wordsSeen, groups, groupsDictOut):
     
     
     for super_word in count.keys():
-        groupsLine = []
         comparisons = groups.get(super_word) # assume that comparisons is an array of words that make up the super_word
         try:
             #print "\t", item, " vs. ", word
@@ -571,7 +607,7 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
             # print groupType
             for word in line[1]:                            #add to counter
                 if(method == "nltk"):
-                    group = getGroup(count, word, threshold, wordsSeen, groups)
+                    group = getGroup(count, word, threshold, wordsSeen, groups, groupsDictOut)
                 elif(method == "word2vec"):
                     group = getGroup3(count, word, model, threshold, wordsSeen, groups, groupsDictOut)
                 oldCount = count[group]
@@ -736,7 +772,7 @@ def evaluate6(file, logs):#-------------------------------------------------EVAL
     #             evaluate4(file, logs, "getGroup3", 0.5),
     #             evaluate4(file, logs, "getGroup3", 0.9)]
     # methods = ["nltk", "word2vec"]
-    methods = ["word2vec"]
+    methods = ["nltk"]
     # method_names = {"getGroup": 'nltk', 'getGroup3': 'word2vec'}
     # thresholds = [0.2, 0.4, 0.6, 0.8]
     thresholds = [0.5]

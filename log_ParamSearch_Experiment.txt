@@ -7,53 +7,53 @@ INTERVAL_MODE:	count
 		display:	display--> 	1
 		reviews:	reviews--> 	1
 	IDEA 1 -----
-		menu:	display--> 	2
+		menu:	menu--> 	1
 	IDEA 2 -----
 		cocktail:	cocktail--> 	1
 		give:	give--> 	1
 		info:	info--> 	1
-		interactive:	info--> 	2
+		interactive:	interactive--> 	1
 		napkins:	napkins--> 	1
 	IDEA 3 -----
-		(touchscreen):	cocktail--> 	2
+		(touchscreen):	touchscreen--> 	1
 		bill:	bill--> 	1
-		pay:	give--> 	2
+		pay:	pay--> 	1
 2------ TIME_SLICE2 -----
 	IDEA 4 -----
-		display:	display--> 	3
+		display:	display--> 	2
 		television:	television--> 	1
 	IDEA 5 -----
-		movies:	television--> 	2
+		movies:	movies--> 	1
 	IDEA 6 -----
-		specials:	television--> 	3
+		specials:	specials--> 	1
 3------ TIME_SLICE3 -----
 	IDEA 7 -----
-		interactive:	info--> 	3
-		mats:	cocktail--> 	3
+		interactive:	interactive--> 	2
+		mats:	mats--> 	1
 		place:	place--> 	1
 	IDEA 8 -----
-		announce:	give--> 	3
-		specials:	television--> 	4
-		waiter:	cocktail--> 	4
+		announce:	announce--> 	1
+		specials:	specials--> 	2
+		waiter:	waiter--> 	1
 	IDEA 9 -----
-		check:	give--> 	4
+		check:	check--> 	1
 4------ TIME_SLICE4 -----
 	IDEA 10 -----
 		needing:	needing--> 	1
 		waiter/waitress:	waiterwaitress--> 	1
 	IDEA 11 -----
-		customers:	give--> 	5
+		customers:	customers--> 	1
 		rather:	rather--> 	1
-		screens:	display--> 	4
-		tables:	display--> 	5
-		tv:	television--> 	5
+		screens:	screens--> 	1
+		tables:	tables--> 	1
+		tv:	television--> 	2
 		walls:	walls--> 	1
-		want:	needing--> 	2
-		watch:	give--> 	6
+		want:	want--> 	1
+		watch:	watch--> 	1
 	IDEA 12 -----
-		bathroom:	cocktail--> 	5
+		bathroom:	bathroom--> 	1
 		directions:	directions--> 	1
-		give:	give--> 	7
+		give:	give--> 	2
 5------ TIME_SLICE5 -----
 	IDEA 13 -----
 		also:	also--> 	1
@@ -64,70 +64,70 @@ INTERVAL_MODE:	count
 		comments:	comments--> 	1
 		contain:	contain--> 	1
 		convenient:	convenient--> 	1
-		designed:	built--> 	2
+		designed:	designed--> 	1
 		even:	even--> 	1
 		even:	even--> 	2
 		fingertips:	fingertips--> 	1
-		functions:	directions--> 	2
-		functions:	directions--> 	3
-		incorporate:	contain--> 	2
-		incorporated:	built--> 	3
-		leave:	give--> 	8
+		functions:	functions--> 	1
+		functions:	functions--> 	2
+		incorporate:	incorporate--> 	1
+		incorporated:	incorporate--> 	2
+		leave:	leave--> 	1
 "		meal,:	meal--> 	1"
-		necessary:	convenient--> 	2
+		necessary:	necessary--> 	1
 		one:	one--> 	1
 		order:	order--> 	1
-		pay:	give--> 	9
-		pay:	give--> 	10
-		practical.:	convenient--> 	3
-		receive:	give--> 	11
-		restaurant:	cocktail--> 	6
-		screen.:	display--> 	6
-		shirt:	cocktail--> 	7
-		shirt.:	cocktail--> 	8
+		pay:	pay--> 	2
+		pay:	pay--> 	3
+		practical.:	practical--> 	1
+		receive:	receive--> 	1
+		restaurant:	restaurant--> 	1
+		screen.:	screens--> 	2
+		shirt:	shirt--> 	1
+		shirt.:	shirt--> 	2
 		simply:	simply--> 	1
 		simply:	simply--> 	2
-		suggestions.:	comments--> 	2
-		table:	display--> 	7
-		tablecloth:	beautifully--> 	2
-		tablecloth.:	beautifully--> 	3
-		tip:	tip--> 	1
-		touch:	cocktail--> 	9
-		touching:	cocktail--> 	10
-		waiter:	cocktail--> 	11
-		wear:	give--> 	12
+		suggestions.:	suggestions--> 	1
+		table:	tables--> 	2
+		tablecloth:	tablecloth--> 	1
+		tablecloth.:	tablecloth--> 	2
+		tip:	fingertips--> 	2
+		touch:	touch--> 	1
+		touching:	touch--> 	2
+		waiter:	waiter--> 	2
+		wear:	wear--> 	1
 	IDEA 14 -----
-"		""save:	give--> 	13"
-		able:	needing--> 	3
-		announce:	give--> 	14
-		asked:	needing--> 	4
-		chef:	cocktail--> 	12
-		chef:	cocktail--> 	13
-		customer:	customer--> 	1
+"		""save:	save--> 	1"
+		able:	able--> 	1
+		announce:	announce--> 	2
+		asked:	asked--> 	1
+		chef:	chef--> 	1
+		chef:	chef--> 	2
+		customer:	customers--> 	2
 		describe:	describe--> 	1
-		dessert:	meal--> 	2
-		dessert?:	meal--> 	3
-		desserts.:	meal--> 	4
-		dish:	meal--> 	5
-		dish.:	meal--> 	6
+		dessert:	dessert--> 	1
+		dessert?:	dessert--> 	2
+		desserts.:	dessert--> 	3
+		dish:	dish--> 	1
+		dish.:	dish--> 	2
 		due:	due--> 	1
 		end:	end--> 	1
-		go:	give--> 	15
-		hear:	give--> 	16
-		instead:	simply--> 	3
-		prepare:	give--> 	17
-		prepared:	needing--> 	5
+		go:	go--> 	1
+		hear:	hear--> 	1
+		instead:	instead--> 	1
+		prepare:	prepare--> 	1
+		prepared:	prepare--> 	2
 		process:	process--> 	1
-		room:	cocktail--> 	14
+		room:	bathroom--> 	2
 		sales:	sales--> 	1
 		see:	see--> 	1
 		seeing:	seeing--> 	1
 		sever:	sever--> 	1
-		specials:	television--> 	6
+		specials:	specials--> 	3
 		technology:	technology--> 	1
 		way:	way--> 	1
 	IDEA 15 -----
-		let:	needing--> 	6
+		let:	let--> 	1
 		order.:	order--> 	2
 		see:	see--> 	2
 		someone:	someone--> 	1
@@ -136,175 +136,175 @@ INTERVAL_MODE:	count
 	IDEA 16 -----
 		different:	different--> 	1
 		interact:	interact--> 	1
-		let:	needing--> 	7
+		let:	let--> 	2
 		people:	people--> 	1
-		tables.:	display--> 	8
-		used:	available--> 	2
+		tables.:	tables--> 	3
+		used:	used--> 	1
 	IDEA 17 -----
 		list:	list--> 	1
-		make:	give--> 	18
-		specials.:	television--> 	7
+		make:	make--> 	1
+		specials.:	specials--> 	4
 	IDEA 18 -----
-		bars:	cocktail--> 	15
+		bars:	bars--> 	1
 "		big,:	big--> 	1"
 		captivating.:	captivating--> 	1
-		display:	display--> 	9
-		display:	display--> 	10
-		display:	display--> 	11
-		entertainment:	television--> 	8
-		everyone:	someone--> 	2
-		fabric:	display--> 	12
-		fabric:	display--> 	13
+		display:	display--> 	3
+		display:	display--> 	4
+		display:	display--> 	5
+		entertainment:	entertainment--> 	1
+		everyone:	everyone--> 	1
+		fabric:	fabric--> 	1
+		fabric:	fabric--> 	2
 		large:	large--> 	1
-		larger:	large--> 	2
+		larger:	larger--> 	1
 		like:	like--> 	1
-		make:	give--> 	19
+		make:	make--> 	2
 		projection:	projection--> 	1
 		projection:	projection--> 	2
-		restaurants:	meal--> 	7
+		restaurants:	restaurant--> 	2
 		scale:	scale--> 	1
 		see:	see--> 	3
 		see.:	see--> 	4
 		think:	think--> 	1
-		tv's:	meal--> 	8
-		used:	available--> 	3
+		tv's:	television--> 	3
+		used:	used--> 	2
 		uses:	uses--> 	1
 7------ TIME_SLICE7 -----
 	IDEA 19 -----
-		food:	meal--> 	9
-		items:	display--> 	14
+		food:	food--> 	1
+		items:	items--> 	1
 		list:	list--> 	2
-		menu:	display--> 	15
+		menu:	menu--> 	2
 	IDEA 20 -----
-		food:	meal--> 	10
+		food:	food--> 	2
 		history:	history--> 	1
 	IDEA 21 -----
 		linked:	linked--> 	1
-		menu:	display--> 	16
-		recipes:	meal--> 	11
+		menu:	menu--> 	3
+		recipes:	recipes--> 	1
 8------ TIME_SLICE8 -----
 	IDEA 22 -----
-		customers:	give--> 	20
+		customers:	customers--> 	3
 		different:	different--> 	2
-		dish:	meal--> 	12
-		images:	display--> 	17
+		dish:	dish--> 	3
+		images:	images--> 	1
 		photographed:	photographed--> 	1
 	IDEA 23 -----
-		calculate:	give--> 	21
-		dinner:	cocktail--> 	16
-		tip:	tip--> 	2
+		calculate:	calculate--> 	1
+		dinner:	meal--> 	2
+		tip:	fingertips--> 	3
 		total:	total--> 	1
 	IDEA 24 -----
-		able:	needing--> 	8
-		ask:	give--> 	22
-		ingredients:	meal--> 	13
-		specific:	different--> 	3
+		able:	able--> 	2
+		ask:	asked--> 	2
+		ingredients:	ingredients--> 	1
+		specific:	specific--> 	1
 9------ TIME_SLICE9 -----
 	IDEA 25 -----
-		articles:	comments--> 	3
-		meal:	meal--> 	14
-		media:	reviews--> 	2
-		reading:	comments--> 	4
+		articles:	articles--> 	1
+		meal:	meal--> 	3
+		media:	media--> 	1
+		reading:	reading--> 	1
 		social:	social--> 	1
-		waiting:	needing--> 	9
+		waiting:	waiting--> 	1
 	IDEA 26 -----
-		interactive:	info--> 	4
-		keep:	give--> 	23
-		kids:	cocktail--> 	17
+		interactive:	interactive--> 	3
+		keep:	keep--> 	1
+		kids:	kids--> 	1
 		occupied:	occupied--> 	1
-		tablecloth:	beautifully--> 	4
+		tablecloth:	tablecloth--> 	3
 	IDEA 27 -----
-		direction:	way--> 	2
-		interactive:	info--> 	5
-		map:	projection--> 	3
+		direction:	directions--> 	2
+		interactive:	interactive--> 	4
+		map:	map--> 	1
 10------ TIME_SLICE10 -----
 	IDEA 28 -----
-		map:	projection--> 	4
-		restaurants:	meal--> 	15
-		used:	available--> 	4
+		map:	map--> 	2
+		restaurants:	restaurant--> 	3
+		used:	used--> 	3
 		weather:	weather--> 	1
 	IDEA 29 -----
 		ad:	ad--> 	1
-		cloth:	meal--> 	16
-		display:	display--> 	18
-		meal:	meal--> 	17
-		raise:	give--> 	24
-		relevant:	convenient--> 	4
-		revenue:	sales--> 	2
-		suggestion:	suggestion--> 	1
-		table:	display--> 	19
+		cloth:	fabric--> 	3
+		display:	display--> 	6
+		meal:	meal--> 	4
+		raise:	raise--> 	1
+		relevant:	relevant--> 	1
+		revenue:	revenue--> 	1
+		suggestion:	suggestions--> 	2
+		table:	tables--> 	4
 	IDEA 30 -----
-		customers:	give--> 	25
+		customers:	customers--> 	4
 		directly:	directly--> 	1
-		function:	directions--> 	4
+		function:	functions--> 	3
 		order:	order--> 	3
 		place:	place--> 	2
-		table:	display--> 	20
-		touch:	cocktail--> 	18
+		table:	tables--> 	5
+		touch:	touch--> 	3
 11------ TIME_SLICE11 -----
 	IDEA 31 -----
-		bring:	give--> 	26
+		bring:	bring--> 	1
 		calm:	calm--> 	1
-		eat.:	give--> 	27
-		enjoy:	give--> 	28
-		entertained:	photographed--> 	2
+		eat.:	eat--> 	1
+		enjoy:	enjoy--> 	1
+		entertained:	entertained--> 	1
 		family:	family--> 	1
 		hard:	hard--> 	1
-		helps:	needing--> 	10
-		interactive:	info--> 	6
-		keep:	give--> 	29
-		kids:	cocktail--> 	19
-		kids:	cocktail--> 	20
-		night:	cocktail--> 	21
+		helps:	helps--> 	1
+		interactive:	interactive--> 	5
+		keep:	keep--> 	2
+		kids:	kids--> 	2
+		kids:	kids--> 	3
+		night:	night--> 	1
 		out.:	out--> 	1
 		people:	people--> 	2
-		tablecloth:	beautifully--> 	5
+		tablecloth:	tablecloth--> 	4
 		time:	time--> 	1
-		used:	available--> 	5
+		used:	used--> 	4
 		whole:	whole--> 	1
 	IDEA 32 -----
 		ad:	ad--> 	2
-		ads:	customer--> 	2
-"		ads,:	customer--> 	3"
+		ads:	ad--> 	3
+"		ads,:	ad--> 	4"
 		also:	also--> 	2
 		also:	also--> 	3
 		also:	also--> 	4
 		also:	also--> 	5
 		also:	also--> 	6
-		answers.:	comments--> 	5
-		appliance:	customer--> 	4
-		call:	give--> 	30
-		cam:	info--> 	7
-		certain:	different--> 	4
-		cloth:	meal--> 	18
-		cloth.:	meal--> 	19
+		answers.:	answers--> 	1
+		appliance:	appliance--> 	1
+		call:	call--> 	1
+		cam:	cam--> 	1
+		certain:	certain--> 	1
+		cloth:	fabric--> 	4
+		cloth.:	fabric--> 	5
 "		competition,:	competition--> 	1"
-		content:	display--> 	21
-		content:	display--> 	22
-		cookware:	beautifully--> 	6
-		customers:	give--> 	31
-		customers:	give--> 	32
-		customers:	give--> 	33
-		direct:	convenient--> 	5
-		dishes:	meal--> 	20
-		eliminate:	give--> 	34
-		encourage:	give--> 	35
-		ensure:	give--> 	36
-		entertainment:	television--> 	9
+		content:	content--> 	1
+		content:	content--> 	2
+		cookware:	cookware--> 	1
+		customers:	customers--> 	5
+		customers:	customers--> 	6
+		customers:	customers--> 	7
+		direct:	direct--> 	1
+		dishes:	dish--> 	4
+		eliminate:	eliminate--> 	1
+		encourage:	encourage--> 	1
+		ensure:	ensure--> 	1
+		entertainment:	entertainment--> 	2
 		estimate:	estimate--> 	1
 		faster.:	faster--> 	1
 		festivals.:	festivals--> 	1
-		find:	give--> 	37
-		food:	meal--> 	21
-		food:	meal--> 	22
-		food:	meal--> 	23
-		food:	meal--> 	24
+		find:	find--> 	1
+		food:	food--> 	3
+		food:	food--> 	4
+		food:	food--> 	5
+		food:	food--> 	6
 		full:	full--> 	1
-		go:	give--> 	38
-		include:	contain--> 	3
+		go:	go--> 	2
+		include:	contain--> 	2
 		increasing:	increasing--> 	1
-		interactive:	info--> 	8
-		know:	think--> 	2
+		interactive:	interactive--> 	6
+		know:	know--> 	1
 		like:	like--> 	2
 		like:	like--> 	3
 		list:	list--> 	3
@@ -312,12 +312,12 @@ INTERVAL_MODE:	count
 		local:	local--> 	1
 "		maker,:	maker--> 	1"
 "		makers,:	maker--> 	2"
-		meals:	meal--> 	25
-		menu:	display--> 	23
-		menu:	display--> 	24
-		might:	needing--> 	11
-		movie:	television--> 	10
-		multimedia:	info--> 	9
+		meals:	meal--> 	5
+		menu:	menu--> 	4
+		menu:	menu--> 	5
+		might:	might--> 	1
+		movie:	movies--> 	2
+		multimedia:	multimedia--> 	1
 		new:	new--> 	1
 		of.:	of--> 	1
 		order:	order--> 	4
@@ -325,667 +325,667 @@ INTERVAL_MODE:	count
 		partners:	partners--> 	1
 		perhaps:	perhaps--> 	1
 		placed:	placed--> 	1
-		potential:	increasing--> 	2
-		potential:	increasing--> 	3
+		potential:	potential--> 	1
+		potential:	potential--> 	2
 		preparation.:	preparation--> 	1
-"		prepare,:	give--> 	39"
-		questions:	comments--> 	6
-		receive:	give--> 	40
-		restaurant:	cocktail--> 	22
-		restaurant:	cocktail--> 	23
-		restaurants:	meal--> 	26
-		right:	right--> 	1
-		sales:	sales--> 	3
-		selected:	photographed--> 	3
-		sell:	give--> 	41
-		show:	television--> 	11
+"		prepare,:	prepare--> 	3"
+		questions:	questions--> 	1
+		receive:	receive--> 	2
+		restaurant:	restaurant--> 	4
+		restaurant:	restaurant--> 	5
+		restaurants:	restaurant--> 	6
+		right:	due--> 	2
+		sales:	sales--> 	2
+		selected:	selected--> 	1
+		sell:	sell--> 	1
+		show:	entertainment--> 	3
 		showing:	showing--> 	1
-		space:	projection--> 	5
-		suggestion.:	suggestion--> 	2
-		table:	display--> 	25
-		table:	display--> 	26
-		theaters:	television--> 	12
+		space:	space--> 	1
+		suggestion.:	suggestions--> 	3
+		table:	tables--> 	6
+		table:	tables--> 	7
+		theaters:	theaters--> 	1
 		time:	time--> 	2
 		time:	time--> 	3
-		try:	give--> 	42
-		utilize:	give--> 	43
-		videos:	television--> 	13
-		wait:	give--> 	44
-		waiter:	cocktail--> 	24
+		try:	try--> 	1
+		utilize:	used--> 	5
+		videos:	videos--> 	1
+		wait:	wait--> 	1
+		waiter:	waiter--> 	3
 	IDEA 33 -----
-		bartender:	cocktail--> 	25
-		display:	display--> 	27
-		drink:	meal--> 	27
-		ideas:	comments--> 	7
+		bartender:	bartender--> 	1
+		display:	display--> 	7
+		drink:	drink--> 	1
+		ideas:	suggestions--> 	4
 12------ TIME_SLICE12 -----
 	IDEA 34 -----
-		busy:	calm--> 	2
+		busy:	occupied--> 	2
 		dresigns:	dresigns--> 	1
-		fun:	cocktail--> 	26
-		keep:	give--> 	45
-		kids:	cocktail--> 	27
-		make:	give--> 	46
-		wear:	give--> 	47
+		fun:	fun--> 	1
+		keep:	keep--> 	3
+		kids:	kids--> 	4
+		make:	make--> 	3
+		wear:	wear--> 	2
 	IDEA 35 -----
 		across:	across--> 	1
 		also:	also--> 	7
-		bar:	cocktail--> 	28
-		bar:	cocktail--> 	29
-		bingo:	beautifully--> 	7
-		bingo.:	beautifully--> 	8
+		bar:	bar--> 	1
+		bar:	bar--> 	2
+		bingo:	bingo--> 	1
+		bingo.:	bingo--> 	2
 		board:	board--> 	1
-		computer:	technology--> 	2
-		display:	display--> 	28
-		display:	display--> 	29
+		computer:	computer--> 	1
+		display:	display--> 	8
+		display:	display--> 	9
 		event:	event--> 	1
 "		games,:	games--> 	1"
 		interact:	interact--> 	2
 		lay:	lay--> 	1
-"		menu,:	display--> 	30"
-		monitor:	info--> 	10
-		monitor:	info--> 	11
-		patrons:	patrons--> 	1
-		person:	someone--> 	3
-		play:	games--> 	2
+"		menu,:	menu--> 	6"
+		monitor:	monitor--> 	1
+		monitor:	monitor--> 	2
+		patrons:	customers--> 	8
+		person:	someone--> 	2
+		play:	play--> 	1
 		seat:	seat--> 	1
-		sporting:	festivals--> 	2
-		table:	display--> 	31
-		table.:	display--> 	32
-		television:	television--> 	14
-		tv:	television--> 	15
-		watch:	give--> 	48
-		watch:	give--> 	49
+		sporting:	sporting--> 	1
+		table:	tables--> 	8
+		table.:	tables--> 	9
+		television:	television--> 	4
+		tv:	television--> 	5
+		watch:	watch--> 	2
+		watch:	watch--> 	3
 		with.:	with--> 	1
 	IDEA 36 -----
-		happy:	calm--> 	3
+		happy:	happy--> 	1
 		hour:	hour--> 	1
-		specials:	television--> 	16
+		specials:	specials--> 	5
 13------ TIME_SLICE13 -----
 	IDEA 37 -----
-		certain:	different--> 	5
-		food:	meal--> 	28
+		certain:	certain--> 	2
+		food:	food--> 	7
 		history:	history--> 	2
-		items:	display--> 	33
-		origins:	history--> 	3
+		items:	items--> 	2
+		origins:	origins--> 	1
 	IDEA 38 -----
-		deals:	interact--> 	3
+		deals:	deals--> 	1
 		next:	next--> 	1
-		weeks:	hour--> 	2
+		weeks:	weeks--> 	1
 	IDEA 39 -----
-		restaurant:	cocktail--> 	30
-		website:	info--> 	12
+		restaurant:	restaurant--> 	7
+		website:	computer--> 	2
 14------ TIME_SLICE14 -----
 	IDEA 40 -----
-		attractions:	festivals--> 	3
+		attractions:	attractions--> 	1
 "		locally,:	locally--> 	1"
-"		parks,:	festivals--> 	4"
-		places:	festivals--> 	5
-"		theatres,:	festivals--> 	6"
+"		parks,:	parks--> 	1"
+		places:	place--> 	3
+"		theatres,:	theaters--> 	2"
 		visit:	visit--> 	1
 	IDEA 41 -----
-		games:	games--> 	3
-		guest:	television--> 	17
-		napkin:	beautifully--> 	9
+		games:	games--> 	2
+		guest:	guest--> 	1
+		napkin:	napkins--> 	2
 		order:	order--> 	6
-		played:	games--> 	4
-		simple:	convenient--> 	6
-		table:	display--> 	34
-		waits:	cocktail--> 	31
+		played:	played--> 	1
+		simple:	simple--> 	1
+		table:	tables--> 	10
+		waits:	wait--> 	2
 	IDEA 42 -----
 		aged:	aged--> 	1
 		also:	also--> 	8
 		also:	also--> 	9
 		also:	also--> 	10
 		area.:	area--> 	1
-		attractions:	festivals--> 	7
-		attractions:	festivals--> 	8
+		attractions:	attractions--> 	2
+		attractions:	attractions--> 	3
 		based:	based--> 	1
-"		beaches,:	festivals--> 	9"
+"		beaches,:	beaches--> 	1"
 		calories:	calories--> 	1
 		calories/nutrition:	caloriesnutrition--> 	1
-		carriage:	cocktail--> 	32
-"		clubs,:	festivals--> 	10"
+		carriage:	carriage--> 	1
+"		clubs,:	clubs--> 	1"
 		dance:	dance--> 	1
-		dish:	meal--> 	29
-		drinks:	meal--> 	30
-		drinks:	meal--> 	31
-"		drinks,:	meal--> 	32"
-		eat...:	give--> 	50
-		expensive:	hard--> 	2
-		familiar:	interact--> 	4
-		food:	meal--> 	33
-		food.:	meal--> 	34
+		dish:	dish--> 	5
+		drinks:	drink--> 	2
+		drinks:	drink--> 	3
+"		drinks,:	drink--> 	4"
+		eat...:	eat--> 	2
+		expensive:	expensive--> 	1
+		familiar:	familiar--> 	1
+		food:	food--> 	8
+		food.:	food--> 	9
 "		from,:	from--> 	1"
 		from.:	from--> 	2
 		from.:	from--> 	3
-		guide:	info--> 	13
-		history:	history--> 	4
-"		info,:	info--> 	14"
+		guide:	guide--> 	1
+		history:	history--> 	3
+"		info,:	info--> 	2"
 		inspired:	inspired--> 	1
-		interactive:	info--> 	15
-		interactive:	info--> 	16
+		interactive:	interactive--> 	7
+		interactive:	interactive--> 	8
 		it.:	it--> 	1
 		liqour:	liqour--> 	1
 "		liqour,:	liqour--> 	2"
 		local:	local--> 	2
-		login:	info--> 	17
+		login:	login--> 	1
 "		made,:	made--> 	1"
-		making:	made--> 	2
-		menu:	display--> 	35
-		menu:	display--> 	36
-"		menu,:	display--> 	37"
+		making:	making--> 	1
+		menu:	menu--> 	7
+		menu:	menu--> 	8
+"		menu,:	menu--> 	9"
 		mixed:	mixed--> 	1
-		newsletters:	beautifully--> 	10
+		newsletters:	newsletters--> 	1
 		order:	order--> 	7
-		origins:	history--> 	5
-"		parks,:	festivals--> 	11"
-		past:	past--> 	1
-		places:	festivals--> 	12
-		preferred:	available--> 	6
+		origins:	origins--> 	2
+"		parks,:	parks--> 	2"
+		past:	history--> 	4
+		places:	place--> 	4
+		preferred:	preferred--> 	1
 		process:	process--> 	2
-"		purchases,:	sales--> 	4"
+"		purchases,:	purchases--> 	1"
 		recommendations:	recommendations--> 	1
 		recommendations.:	recommendations--> 	2
-		restaurant.:	cocktail--> 	33
-		restaurant.:	cocktail--> 	34
-"		rides,:	cocktail--> 	35"
-"		season,:	hour--> 	3"
+		restaurant.:	restaurant--> 	8
+		restaurant.:	restaurant--> 	9
+"		rides,:	rides--> 	1"
+"		season,:	season--> 	1"
 		see:	see--> 	5
 		sign:	sign--> 	1
-		take:	give--> 	51
-"		theatres,:	festivals--> 	13"
-		theme:	television--> 	18
-		tour:	hour--> 	4
-		tourists:	festivals--> 	14
-		video:	television--> 	19
-		video:	television--> 	20
-		videos:	television--> 	21
-		videos:	television--> 	22
+		take:	take--> 	1
+"		theatres,:	theaters--> 	3"
+		theme:	theme--> 	1
+		tour:	tour--> 	1
+		tourists:	tourists--> 	1
+		video:	videos--> 	2
+		video:	videos--> 	3
+		videos:	videos--> 	4
+		videos:	videos--> 	5
 		view:	view--> 	1
 		view:	view--> 	2
 		view:	view--> 	3
 		view:	view--> 	4
 		view:	view--> 	5
-		vineyard:	beautifully--> 	11
-		watch:	give--> 	52
+		vineyard:	vineyard--> 	1
+		watch:	watch--> 	4
 		website/menu:	websitemenu--> 	1
-		wines:	meal--> 	35
-		within:	across--> 	2
+		wines:	wines--> 	1
+		within:	within--> 	1
 15------ TIME_SLICE15 -----
 	IDEA 43 -----
-		affixed:	cocktail--> 	36
+		affixed:	affixed--> 	1
 		afterwards:	afterwards--> 	1
 		along:	along--> 	1
 		appetizer:	appetizer--> 	1
 		area:	area--> 	2
-		card:	games--> 	5
+		card:	card--> 	1
 		choice:	choice--> 	1
-		clean:	hard--> 	3
-		clip:	television--> 	23
-		device:	display--> 	38
-		displays:	display--> 	39
+		clean:	clean--> 	1
+		clip:	clip--> 	1
+		device:	appliance--> 	2
+		displays:	display--> 	10
 		example.:	example--> 	1
-		expanded:	built--> 	4
-		free:	free--> 	1
-		games:	games--> 	6
-		games:	games--> 	7
-		get:	give--> 	53
-		get:	give--> 	54
-		go:	give--> 	55
-		guest:	television--> 	24
-		guest:	television--> 	25
-		guest:	television--> 	26
-		history:	history--> 	6
+		expanded:	expanded--> 	1
+		free:	people--> 	3
+		games:	games--> 	3
+		games:	games--> 	4
+		get:	get--> 	1
+		get:	get--> 	2
+		go:	go--> 	3
+		guest:	guest--> 	2
+		guest:	guest--> 	3
+		guest:	guest--> 	4
+		history:	history--> 	5
 		in.:	in--> 	1
-		interface:	display--> 	40
+		interface:	interface--> 	1
 		lay:	lay--> 	2
 		like:	like--> 	4
-		loyalty:	give--> 	56
-		maybe:	maybe--> 	1
-		napkin:	beautifully--> 	12
-		options.:	customer--> 	5
+		loyalty:	loyalty--> 	1
+		maybe:	perhaps--> 	2
+		napkin:	napkins--> 	3
+		options.:	options--> 	1
 		order:	order--> 	8
-		played:	games--> 	8
+		played:	played--> 	2
 		points:	points--> 	1
 		points:	points--> 	2
 		prizes:	prizes--> 	1
-		program.:	customer--> 	6
-		quick:	hard--> 	4
-		read.:	comments--> 	8
-		restaurant:	cocktail--> 	37
-		server:	customer--> 	7
-		simple:	convenient--> 	7
-		table:	display--> 	41
-		table.:	display--> 	42
-		takes:	takes--> 	1
-		used:	available--> 	7
+		program.:	program--> 	1
+		quick:	quick--> 	1
+		read.:	read--> 	1
+		restaurant:	restaurant--> 	10
+		server:	waiter--> 	4
+		simple:	simple--> 	2
+		table:	tables--> 	11
+		table.:	tables--> 	12
+		takes:	take--> 	2
+		used:	used--> 	6
 	IDEA 44 -----
-		display:	display--> 	43
-		games:	games--> 	9
-		tablecloth:	beautifully--> 	13
+		display:	display--> 	11
+		games:	games--> 	5
+		tablecloth:	tablecloth--> 	5
 	IDEA 45 -----
-		attach:	give--> 	57
-		entertainment:	television--> 	27
-		napkins:	napkins--> 	2
-		show:	television--> 	28
+		attach:	affixed--> 	2
+		entertainment:	entertainment--> 	4
+		napkins:	napkins--> 	4
+		show:	entertainment--> 	5
 16------ TIME_SLICE16 -----
 	IDEA 46 -----
 		affects:	affects--> 	1
 		announcements:	announcements--> 	1
-		attach:	give--> 	58
-		decorative:	meal--> 	36
-		show:	television--> 	29
-		tablecloth:	beautifully--> 	14
+		attach:	affixed--> 	3
+		decorative:	decorative--> 	1
+		show:	entertainment--> 	6
+		tablecloth:	tablecloth--> 	6
 	IDEA 47 -----
-		animated:	television--> 	30
-		cloth:	meal--> 	37
-		create:	give--> 	59
-		food:	meal--> 	38
+		animated:	inspired--> 	2
+		cloth:	fabric--> 	6
+		create:	built--> 	2
+		food:	food--> 	10
 		fully:	fully--> 	1
-		menus:	display--> 	44
-		pictures:	television--> 	31
+		menus:	menu--> 	10
+		pictures:	pictures--> 	1
 	IDEA 48 -----
-"		""fabric:	display--> 	45"
+"		""fabric:	fabric--> 	7"
 		-:	--> 	1
 		-:	--> 	2
 		-:	--> 	3
 		-:	--> 	4
-		adults:	aged--> 	2
+		adults:	someone--> 	3
 		along:	along--> 	2
 		arrives:	arrives--> 	1
-		art:	art--> 	1
-		available:	available--> 	8
-		believe:	think--> 	3
+		art:	dance--> 	2
+		available:	available--> 	2
+		believe:	believe--> 	1
 		book:	book--> 	1
 		books:	book--> 	2
 "		books,:	book--> 	3"
-		changing:	increasing--> 	4
-		children:	aged--> 	3
-		children:	aged--> 	4
-"		children,:	aged--> 	5"
-		choose.:	give--> 	60
-		coloring:	beautifully--> 	15
-		concept:	view--> 	6
-		crab:	beautifully--> 	16
+		changing:	prepare--> 	4
+		children:	kids--> 	5
+		children:	kids--> 	6
+"		children,:	kids--> 	7"
+		choose.:	selected--> 	2
+		coloring:	coloring--> 	1
+		concept:	whole--> 	2
+		crab:	crab--> 	1
 		decor:	decor--> 	1
-		dining:	festivals--> 	15
+		dining:	dining--> 	1
 		directly:	directly--> 	2
-		display:	display--> 	46
-		display:	display--> 	47
-		display:	display--> 	48
-		display:	display--> 	49
-"		display"":	display--> 	50"
-		displays:	display--> 	51
+		display:	display--> 	12
+		display:	display--> 	13
+		display:	display--> 	14
+		display:	display--> 	15
+"		display"":	display--> 	16"
+		displays:	display--> 	17
 		doesn't:	doesnt--> 	1
 		doesn't:	doesnt--> 	2
-		done:	done--> 	1
-		electronics:	technology--> 	3
-		enjoy:	give--> 	61
-		enjoy.:	give--> 	62
-		entertained:	photographed--> 	4
-"		entertained,:	photographed--> 	5"
-		entertainment:	television--> 	32
-		entertainment:	television--> 	33
-		entire:	whole--> 	2
+		done:	made--> 	2
+		electronics:	electronics--> 	1
+		enjoy:	enjoy--> 	2
+		enjoy.:	enjoy--> 	3
+		entertained:	entertained--> 	2
+"		entertained,:	entertained--> 	3"
+		entertainment:	entertainment--> 	7
+		entertainment:	entertainment--> 	8
+		entire:	entire--> 	1
 		etc.:	etc--> 	1
 		even:	even--> 	3
 		even:	even--> 	4
-		expanded:	built--> 	5
-		experience:	view--> 	7
-		fabric:	display--> 	52
-"		fact,:	fact--> 	1"
-		families:	aged--> 	6
-		family:	family--> 	2
+		expanded:	expanded--> 	2
+		experience:	experience--> 	1
+		fabric:	fabric--> 	8
+"		fact,:	specific--> 	2"
+		families:	family--> 	2
 		family:	family--> 	3
-"		family,:	family--> 	4"
+		family:	family--> 	4
+"		family,:	family--> 	5"
 		family/patrons:	familypatrons--> 	1
-		flowing:	tip--> 	3
-		food:	meal--> 	39
-		food.:	meal--> 	40
-		functional:	directions--> 	5
-		further!:	further--> 	1
-		future:	past--> 	2
-		games:	games--> 	10
-		games:	games--> 	11
-		games:	games--> 	12
-		games:	games--> 	13
-		games.:	games--> 	14
-		go:	give--> 	63
+		flowing:	flowing--> 	1
+		food:	food--> 	11
+		food.:	food--> 	12
+		functional:	functional--> 	1
+		further!:	encourage--> 	2
+		future:	future--> 	1
+		games:	games--> 	6
+		games:	games--> 	7
+		games:	games--> 	8
+		games:	games--> 	9
+		games.:	games--> 	10
+		go:	go--> 	4
 		grab:	grab--> 	1
-		guests:	patrons--> 	2
-		interactive:	info--> 	18
-		interactive:	info--> 	19
-		interactive:	info--> 	20
-		interactive.:	info--> 	21
-		introduced:	built--> 	6
-		invention:	maker--> 	3
-		keep:	give--> 	64
-		keep:	give--> 	65
-		kids:	cocktail--> 	38
+		guests:	guest--> 	5
+		interactive:	interactive--> 	9
+		interactive:	interactive--> 	10
+		interactive:	interactive--> 	11
+		interactive.:	interactive--> 	12
+		introduced:	introduced--> 	1
+		invention:	invention--> 	1
+		keep:	keep--> 	4
+		keep:	keep--> 	5
+		kids:	kids--> 	8
 		like:	like--> 	5
-		limitless:	beautifully--> 	17
-		look:	give--> 	66
-		look:	give--> 	67
-		man:	someone--> 	4
-		many:	different--> 	6
-		menus:	display--> 	53
-		menus:	display--> 	54
-		movies:	television--> 	34
-		music:	dance--> 	2
-		ninja:	beautifully--> 	18
-		offer:	give--> 	68
+		limitless:	limitless--> 	1
+		look:	look--> 	1
+		look:	look--> 	2
+		man:	man--> 	1
+		many:	many--> 	1
+		menus:	menu--> 	11
+		menus:	menu--> 	12
+		movies:	movies--> 	3
+		music:	music--> 	1
+		ninja:	ninja--> 	1
+		offer:	offer--> 	1
 		one:	one--> 	2
-		part:	part--> 	1
+		part:	items--> 	3
 		passive:	passive--> 	1
-		people:	people--> 	3
-		play:	games--> 	15
-		pokemon:	beautifully--> 	19
-		possibilities:	directions--> 	6
-"		pots,:	meal--> 	41"
-		proper:	convenient--> 	8
-		read:	comments--> 	9
-		readable:	display--> 	55
+		people:	people--> 	4
+		play:	play--> 	2
+		pokemon:	pokemon--> 	1
+		possibilities:	possibilities--> 	1
+"		pots,:	cookware--> 	2"
+		proper:	proper--> 	1
+		read:	read--> 	2
+		readable:	readable--> 	1
 		reseteraunts:	reseteraunts--> 	1
 		reseteraunts:	reseteraunts--> 	2
 		resteraunt:	resteraunt--> 	1
 		resteraunt:	resteraunt--> 	2
 		resteraunt:	resteraunt--> 	3
-		seafood:	meal--> 	42
+		seafood:	seafood--> 	1
 		set:	set--> 	1
 		set:	set--> 	2
-		stationary:	tip--> 	4
-		step:	process--> 	3
-		stop:	give--> 	69
-		systems:	directions--> 	7
-		table:	display--> 	56
-		table:	display--> 	57
-		table:	display--> 	58
-		table:	display--> 	59
-"		table,:	display--> 	60"
-"		tablecloth,:	beautifully--> 	20"
-		tables:	display--> 	61
-		tables:	display--> 	62
-		tables.:	display--> 	63
+		stationary:	stationary--> 	1
+		step:	step--> 	1
+		stop:	stop--> 	1
+		systems:	systems--> 	1
+		table:	tables--> 	13
+		table:	tables--> 	14
+		table:	tables--> 	15
+		table:	tables--> 	16
+"		table,:	tables--> 	17"
+"		tablecloth,:	tablecloth--> 	7"
+		tables:	tables--> 	18
+		tables:	tables--> 	19
+		tables.:	tables--> 	20
 		tablets:	tablets--> 	1
-		take:	give--> 	70
-		take:	give--> 	71
-"		television,:	television--> 	35"
-"		themed,:	television--> 	36"
-"		themed,:	television--> 	37"
+		take:	take--> 	3
+		take:	take--> 	4
+"		television,:	television--> 	6"
+"		themed,:	themed--> 	1"
+"		themed,:	themed--> 	2"
 		too.:	too--> 	1
 		top:	top--> 	1
-		trivia:	television--> 	38
-		trivia:	television--> 	39
+		trivia:	trivia--> 	1
+		trivia:	trivia--> 	2
 		turn:	turn--> 	1
 		turn:	turn--> 	2
-		turtle:	beautifully--> 	21
+		turtle:	turtle--> 	1
 		type:	type--> 	1
 		upon:	upon--> 	1
-		video:	television--> 	40
-		videos:	television--> 	41
-		visual:	display--> 	64
-		waiting:	needing--> 	12
-		waiting:	needing--> 	13
-"		waiting,:	needing--> 	14"
-		waiting.:	needing--> 	15
-		wants:	needing--> 	16
-		watch:	give--> 	72
-		watch:	give--> 	73
-		water:	tip--> 	5
-		whatever:	simply--> 	4
+		video:	videos--> 	6
+		videos:	videos--> 	7
+		visual:	visual--> 	1
+		waiting:	waiting--> 	2
+		waiting:	waiting--> 	3
+"		waiting,:	waiting--> 	4"
+		waiting.:	waiting--> 	5
+		wants:	want--> 	2
+		watch:	watch--> 	5
+		watch:	watch--> 	6
+		water:	water--> 	1
+		whatever:	whatever--> 	1
 		whole:	whole--> 	3
 		wihere:	wihere--> 	1
-		wish:	needing--> 	17
+		wish:	wish--> 	1
 		wtth:	wtth--> 	1
 		youtube:	youtube--> 	1
 17------ TIME_SLICE17 -----
 	IDEA 49 -----
-		menu:	display--> 	65
+		menu:	menu--> 	13
 	IDEA 50 -----
 		placemats:	placemats--> 	1
 	IDEA 51 -----
 "		appetizers,etc.:	appetizersetc--> 	1"
-"		desserts,:	meal--> 	43"
-"		drinks,:	meal--> 	44"
-"		menus,:	display--> 	66"
-		specific:	different--> 	7
+"		desserts,:	dessert--> 	4"
+"		drinks,:	drink--> 	5"
+"		menus,:	menu--> 	14"
+		specific:	specific--> 	3
 18------ TIME_SLICE18 -----
 	IDEA 52 -----
-		display:	display--> 	67
-		interests.:	partners--> 	2
-		media:	reviews--> 	3
-		news:	reviews--> 	4
+		display:	display--> 	18
+		interests.:	interests--> 	1
+		media:	media--> 	2
+		news:	info--> 	3
 		social:	social--> 	2
 	IDEA 53 -----
-		light:	tip--> 	6
-		table.:	display--> 	68
-		used:	available--> 	9
+		light:	light--> 	1
+		table.:	tables--> 	21
+		used:	used--> 	7
 	IDEA 54 -----
-		give:	give--> 	74
-		info:	info--> 	22
+		give:	give--> 	3
+		info:	info--> 	4
 		waiter/waitress:	waiterwaitress--> 	2
 19------ TIME_SLICE19 -----
 	IDEA 55 -----
 		drawing:	drawing--> 	1
-		kids:	cocktail--> 	39
-		pad:	display--> 	69
+		kids:	kids--> 	9
+		pad:	pad--> 	1
 	IDEA 56 -----
-		add:	give--> 	75
-		customize:	grab--> 	2
-		flavors:	meal--> 	45
-		ins.:	customer--> 	8
+		add:	add--> 	1
+		customize:	customize--> 	1
+		flavors:	flavors--> 	1
+		ins.:	ins--> 	1
 	IDEA 57 -----
-		food:	meal--> 	46
+		food:	food--> 	13
 		like.:	like--> 	6
-		look:	give--> 	76
-		pictures:	television--> 	42
+		look:	look--> 	3
+		pictures:	pictures--> 	2
 20------ TIME_SLICE20 -----
 	IDEA 58 -----
 		bill:	bill--> 	3
-		give:	give--> 	77
-		info:	info--> 	23
+		give:	give--> 	4
+		info:	info--> 	5
 	IDEA 59 -----
-		history:	history--> 	7
-		restaurant:	cocktail--> 	40
-		show:	television--> 	43
+		history:	history--> 	6
+		restaurant:	restaurant--> 	11
+		show:	entertainment--> 	9
 	IDEA 60 -----
-		give:	give--> 	78
-		ideas:	comments--> 	10
-		outings:	beautifully--> 	22
+		give:	give--> 	5
+		ideas:	suggestions--> 	5
+		outings:	outings--> 	1
 		town/city:	towncity--> 	1
 21------ TIME_SLICE21 -----
 	IDEA 61 -----
-		advertise:	give--> 	79
-		specials:	television--> 	44
+		advertise:	announce--> 	3
+		specials:	specials--> 	6
 	IDEA 62 -----
-		able:	needing--> 	18
-		able:	needing--> 	19
-		activities:	partners--> 	3
+		able:	able--> 	3
+		able:	able--> 	4
+		activities:	preparation--> 	2
 		addition:	addition--> 	1
-		adults:	aged--> 	7
-		adults:	aged--> 	8
-		advertising:	reviews--> 	5
-		appear:	contain--> 	4
-"		appreciation,:	view--> 	8"
+		adults:	someone--> 	4
+		adults:	someone--> 	5
+		advertising:	ad--> 	5
+		appear:	appear--> 	1
+"		appreciation,:	appreciation--> 	1"
 "		arrives,:	arrives--> 	2"
 "		arrives,:	arrives--> 	3"
-		best:	best--> 	1
+		best:	try--> 	2
 		bill:	bill--> 	4
-		busy.:	calm--> 	4
-		city:	area--> 	3
-		color:	display--> 	70
-		color.:	display--> 	71
+		busy.:	occupied--> 	3
+		city:	city--> 	1
+		color:	color--> 	1
+		color.:	color--> 	2
 		cooler.to:	coolerto--> 	1
-		customers.:	give--> 	80
-		deals.:	interact--> 	5
-		display:	display--> 	72
-		display:	display--> 	73
-		display:	display--> 	74
-		displayed:	placed--> 	2
-		done.:	done--> 	2
-		draw:	give--> 	81
-		explore:	give--> 	82
-		fabric:	display--> 	75
-		fabric:	display--> 	76
-		fabric.:	display--> 	77
-		finished:	hour--> 	5
-		food:	meal--> 	47
-		food:	meal--> 	48
-		good:	calm--> 	5
-		guests:	patrons--> 	3
-		guests:	patrons--> 	4
-		guests:	patrons--> 	5
-		guests:	patrons--> 	6
-		history:	history--> 	8
-"		history,:	history--> 	9"
+		customers.:	customers--> 	9
+		deals.:	deals--> 	2
+		display:	display--> 	19
+		display:	display--> 	20
+		display:	display--> 	21
+		displayed:	displayed--> 	1
+		done.:	made--> 	3
+		draw:	draw--> 	1
+		explore:	explore--> 	1
+		fabric:	fabric--> 	9
+		fabric:	fabric--> 	10
+		fabric.:	fabric--> 	11
+		finished:	finished--> 	1
+		food:	food--> 	14
+		food:	food--> 	15
+		good:	good--> 	1
+		guests:	guest--> 	6
+		guests:	guest--> 	7
+		guests:	guest--> 	8
+		guests:	guest--> 	9
+		history:	history--> 	7
+"		history,:	history--> 	8"
 		ideal:	ideal--> 	1
 		idles:	idles--> 	1
-		info.:	info--> 	24
+		info.:	info--> 	6
 		inviting:	inviting--> 	1
-		keep:	give--> 	83
-		keep:	give--> 	84
-		kids:	cocktail--> 	41
-		light:	tip--> 	7
-		mat:	cocktail--> 	42
-		mat:	cocktail--> 	43
-		menu:	display--> 	78
-		menus:	display--> 	79
-"		neutral,:	passive--> 	2"
-		option:	customer--> 	9
-		option:	customer--> 	10
-		option.:	customer--> 	11
+		keep:	keep--> 	6
+		keep:	keep--> 	7
+		kids:	kids--> 	10
+		light:	light--> 	2
+		mat:	mats--> 	2
+		mat:	mats--> 	3
+		menu:	menu--> 	15
+		menus:	menu--> 	16
+"		neutral,:	someone--> 	6"
+		option:	options--> 	2
+		option:	options--> 	3
+		option.:	options--> 	4
 		order:	order--> 	9
-		ordering.:	directions--> 	8
-		paper.:	paper--> 	1
-		place:	place--> 	3
-		place:	place--> 	4
-		repeat:	give--> 	85
-		satisfaction:	choice--> 	2
-		save:	give--> 	86
+		ordering.:	ordering--> 	1
+		paper.:	card--> 	2
+		place:	place--> 	5
+		place:	place--> 	6
+		repeat:	repeat--> 	1
+		satisfaction:	satisfaction--> 	1
+		save:	save--> 	2
 		see:	see--> 	6
-		specials.:	television--> 	45
-		statement:	choice--> 	3
-		table.:	display--> 	80
+		specials.:	specials--> 	7
+		statement:	answers--> 	2
+		table.:	tables--> 	22
 		tablet:	tablets--> 	2
-		temp.:	beautifully--> 	23
-"		thanks,:	due--> 	2"
-		think:	think--> 	4
+		temp.:	temp--> 	1
+"		thanks,:	thanks--> 	1"
+		think:	think--> 	2
 		timed:	timed--> 	1
 		turn:	turn--> 	3
-		used:	available--> 	10
-		view:	view--> 	9
+		used:	used--> 	8
+		view:	view--> 	6
 		waiter/waitress:	waiterwaitress--> 	3
-		warmer:	faster--> 	2
-		within:	across--> 	3
+		warmer:	warmer--> 	1
+		within:	within--> 	2
 		work:	work--> 	1
 		work:	work--> 	2
 	IDEA 63 -----
-		animate:	beautifully--> 	24
-		cartoons:	television--> 	46
+		animate:	inspired--> 	3
+		cartoons:	cartoons--> 	1
 22------ TIME_SLICE22 -----
 	IDEA 64 -----
-		maps:	projection--> 	6
-		modern:	modern--> 	1
+		maps:	map--> 	3
+		modern:	someone--> 	7
 	IDEA 65 -----
-		approximate:	estimate--> 	2
+		approximate:	approximate--> 	1
 		arrives:	arrives--> 	4
-		cloths:	beautifully--> 	25
-		display:	display--> 	81
-		food:	meal--> 	49
-		left:	right--> 	2
-		table:	display--> 	82
+		cloths:	fabric--> 	12
+		display:	display--> 	22
+		food:	food--> 	16
+		left:	left--> 	1
+		table:	tables--> 	23
 		time:	time--> 	4
 	IDEA 66 -----
-		cloths:	beautifully--> 	26
-		menus:	display--> 	83
-		table:	display--> 	84
+		cloths:	fabric--> 	13
+		menus:	menu--> 	17
+		table:	tables--> 	24
 23------ TIME_SLICE23 -----
 	IDEA 67 -----
-		clothes:	cocktail--> 	44
-		servers:	customer--> 	12
-		show:	television--> 	47
-		tables:	display--> 	85
-		waiting:	needing--> 	20
+		clothes:	clothes--> 	1
+		servers:	waiter--> 	5
+		show:	entertainment--> 	10
+		tables:	tables--> 	25
+		waiting:	waiting--> 	6
 	IDEA 68 -----
-		changing:	increasing--> 	5
-		cloth:	meal--> 	50
-		customers:	give--> 	87
+		changing:	prepare--> 	5
+		cloth:	fabric--> 	14
+		customers:	customers--> 	10
 		order:	order--> 	10
-		ready:	needing--> 	21
-		show:	television--> 	48
-		something:	someone--> 	5
-		table:	display--> 	86
+		ready:	ready--> 	1
+		show:	entertainment--> 	11
+		something:	something--> 	1
+		table:	tables--> 	26
 	IDEA 69 -----
-		dishes:	meal--> 	51
+		dishes:	dish--> 	6
 		popular:	popular--> 	1
-		show:	television--> 	49
-		something:	someone--> 	6
-		today:	modern--> 	2
+		show:	entertainment--> 	12
+		something:	something--> 	2
+		today:	today--> 	1
 24------ TIME_SLICE24 -----
 	IDEA 70 -----
-		show:	television--> 	50
-		table:	display--> 	87
+		show:	entertainment--> 	13
+		table:	tables--> 	27
 		time:	time--> 	5
-		wait:	give--> 	88
+		wait:	wait--> 	3
 	IDEA 71 -----
 "		addition,:	addition--> 	2"
-"		allergies,:	beautifully--> 	27"
-		beverages:	meal--> 	52
+"		allergies,:	allergies--> 	1"
+		beverages:	food--> 	17
 "		bill,:	bill--> 	5"
-		bring:	give--> 	89
+		bring:	bring--> 	2
 		calorie:	calories--> 	2
-		clear:	convenient--> 	9
-		communicate:	give--> 	90
-"		content,:	display--> 	88"
-		customer:	customer--> 	13
-		customer:	customer--> 	14
-		customer:	customer--> 	15
-		customer:	customer--> 	16
-		different:	different--> 	8
+		clear:	clear--> 	1
+		communicate:	communicate--> 	1
+"		content,:	content--> 	3"
+		customer:	customers--> 	11
+		customer:	customers--> 	12
+		customer:	customers--> 	13
+		customer:	customers--> 	14
+		different:	different--> 	3
 		directly:	directly--> 	3
 		directly:	directly--> 	4
-		eliminate:	give--> 	91
+		eliminate:	eliminate--> 	2
 		empty.:	empty--> 	1
 		etc.:	etc--> 	2
-		find:	give--> 	92
-		flip:	display--> 	89
-		food:	meal--> 	53
-		included:	included--> 	1
-		information:	info--> 	25
-		interactive:	info--> 	26
-"		item,:	empty--> 	2"
-"		kitchen,:	cocktail--> 	45"
-		lot:	calm--> 	6
-		menu:	display--> 	90
-		menu:	display--> 	91
-"		menu,:	display--> 	92"
-		mix-up:	beautifully--> 	28
-		need:	needing--> 	22
+		find:	find--> 	2
+		flip:	flip--> 	1
+		food:	food--> 	18
+		included:	contain--> 	3
+		information:	info--> 	7
+		interactive:	interactive--> 	13
+"		item,:	items--> 	4"
+"		kitchen,:	kitchen--> 	1"
+		lot:	lot--> 	1
+		menu:	menu--> 	18
+		menu:	menu--> 	19
+"		menu,:	menu--> 	20"
+		mix-up:	mixup--> 	1
+		need:	need--> 	1
 		order:	order--> 	11
-		ordering.:	directions--> 	9
-		plates:	tip--> 	8
-		possible:	convenient--> 	10
-		quite:	too--> 	2
-		right:	right--> 	3
-		save:	give--> 	93
-		sent:	photographed--> 	6
-		server:	customer--> 	17
-		server.:	customer--> 	18
-		server.:	customer--> 	19
-		server.:	customer--> 	20
-		simply:	simply--> 	5
-"		table,:	display--> 	93"
-		tablecloth:	beautifully--> 	29
-"		tablecloth,:	beautifully--> 	30"
-		tablecloth.:	beautifully--> 	31
-		things:	someone--> 	7
+		ordering.:	ordering--> 	2
+		plates:	plates--> 	1
+		possible:	possible--> 	1
+		quite:	quite--> 	1
+		right:	due--> 	3
+		save:	save--> 	3
+		sent:	sent--> 	1
+		server:	waiter--> 	6
+		server.:	waiter--> 	7
+		server.:	waiter--> 	8
+		server.:	waiter--> 	9
+		simply:	simply--> 	3
+"		table,:	tables--> 	28"
+		tablecloth:	tablecloth--> 	8
+"		tablecloth,:	tablecloth--> 	9"
+		tablecloth.:	tablecloth--> 	10
+		things:	things--> 	1
 		time.:	time--> 	6
-		wait:	give--> 	94
-		wait:	give--> 	95
-		wants:	needing--> 	23
+		wait:	wait--> 	4
+		wait:	wait--> 	5
+		wants:	want--> 	3
 		wave:	wave--> 	1
-		without:	simply--> 	6
-		without:	simply--> 	7
-		without:	simply--> 	8
+		without:	without--> 	1
+		without:	without--> 	2
+		without:	without--> 	3
 Results written to Dictionaries/groupsDictOut.csv
 Results written to Data Output/ParamSearch_Experiment.csv

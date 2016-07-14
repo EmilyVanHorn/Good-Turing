@@ -1,175 +1,382 @@
 Super_Word,Value
 ,set([''])
-think,"set(['believe', 'think', 'know'])"
-dance,"set(['dance', 'music'])"
-paper,set(['paper'])
-tablets,"set(['tablets', 'tablet'])"
-appetizersetc,set(['appetizersetc'])
-afterwards,set(['afterwards'])
-partners,"set(['interests', 'partners', 'activities'])"
-based,set(['based'])
-passive,"set(['passive', 'neutral'])"
-board,set(['board'])
-local,set(['local'])
-photographed,"set(['selected', 'sent', 'entertained', 'photographed'])"
-info,"set(['info', 'website', 'monitor', 'information', 'multimedia', 'cam', 'login', 'guide', 'interactive'])"
-someone,"set(['someone', 'things', 'person', 'everyone', 'something', 'man'])"
-captivating,set(['captivating'])
-maker,"set(['invention', 'maker', 'makers'])"
-big,set(['big'])
-showing,set(['showing'])
-choice,"set(['satisfaction', 'statement', 'choice'])"
-walls,set(['walls'])
-like,set(['like'])
-resteraunt,set(['resteraunt'])
-inviting,set(['inviting'])
-fully,set(['fully'])
-list,set(['list'])
-large,"set(['large', 'larger'])"
-doesnt,set(['doesnt'])
-recommendations,set(['recommendations'])
-popular,set(['popular'])
-done,set(['done'])
-grab,"set(['customize', 'grab'])"
-meal,"set(['decorative', 'flavors', 'beverages', 'dishes', 'ingredients', 'food', 'dessert', 'recipes', 'drink', 'pots', 'tvs', 'meals', 'seafood', 'desserts', 'wines', 'dish', 'drinks', 'meal', 'cloth', 'restaurants'])"
-view,"set(['appreciation', 'concept', 'experience', 'view'])"
+incorporate,"set(['incorporate', 'incorporated'])"
+selected,"set(['selected', 'choose'])"
 set,set(['set'])
-art,set(['art'])
-people,set(['people'])
-hard,"set(['quick', 'hard', 'clean', 'expensive'])"
-competition,set(['competition'])
-sign,set(['sign'])
-past,"set(['past', 'future'])"
+themed,set(['themed'])
+dance,"set(['dance', 'art'])"
+bring,set(['bring'])
+theaters,"set(['theatres', 'theaters'])"
+dish,"set(['dish', 'dishes'])"
+appetizersetc,set(['appetizersetc'])
+find,set(['find'])
+content,set(['content'])
+coloring,set(['coloring'])
+based,set(['based'])
+calculate,set(['calculate'])
+menu,"set(['menu', 'menus'])"
+theme,set(['theme'])
+program,set(['program'])
+helps,set(['helps'])
+videos,"set(['video', 'videos'])"
+announce,"set(['announce', 'advertise'])"
+local,set(['local'])
+sent,set(['sent'])
+eliminate,set(['eliminate'])
+info,"set(['info', 'news', 'information'])"
+touchscreen,set(['touchscreen'])
+get,set(['get'])
+dessert,"set(['dessert', 'desserts'])"
+watch,set(['watch'])
+preferred,set(['preferred'])
+appetizer,set(['appetizer'])
+entire,set(['entire'])
+increasing,set(['increasing'])
+bar,set(['bar'])
+resteraunt,set(['resteraunt'])
+list,set(['list'])
+large,set(['large'])
+cartoons,set(['cartoons'])
+recommendations,set(['recommendations'])
+quick,set(['quick'])
+grab,set(['grab'])
+view,set(['view'])
+enjoy,set(['enjoy'])
+bars,set(['bars'])
+expanded,set(['expanded'])
+direct,set(['direct'])
+seat,set(['seat'])
+chef,set(['chef'])
+go,set(['go'])
 see,set(['see'])
+computer,"set(['website', 'computer'])"
 placemats,set(['placemats'])
-fingertips,set(['fingertips'])
-further,set(['further'])
-event,set(['event'])
-best,set(['best'])
-out,set(['out'])
 even,set(['even'])
-preparation,set(['preparation'])
-scale,set(['scale'])
 websitemenu,set(['websitemenu'])
-affects,set(['affects'])
-comments,"set(['articles', 'read', 'suggestions', 'ideas', 'answers', 'comments', 'questions', 'reading'])"
-work,set(['work'])
-caloriesnutrition,set(['caloriesnutrition'])
+pictures,set(['pictures'])
+multimedia,set(['multimedia'])
+waiting,set(['waiting'])
+flowing,set(['flowing'])
 new,set(['new'])
-increasing,"set(['changing', 'increasing', 'potential'])"
-across,"set(['within', 'across'])"
-convenient,"set(['relevant', 'necessary', 'simple', 'convenient', 'clear', 'direct', 'possible', 'practical', 'proper'])"
-available,"set(['available', 'used', 'preferred'])"
+reading,set(['reading'])
+across,set(['across'])
+available,set(['available'])
 full,set(['full'])
-contain,"set(['incorporate', 'include', 'appear', 'contain'])"
-free,set(['free'])
-wtth,set(['wtth'])
-directions,"set(['function', 'functions', 'ordering', 'functional', 'possibilities', 'systems', 'directions'])"
+invention,set(['invention'])
+partners,set(['partners'])
+answers,"set(['statement', 'answers'])"
+water,set(['water'])
+explore,set(['explore'])
+let,set(['let'])
+wear,set(['wear'])
+directions,"set(['directions', 'direction'])"
 towncity,set(['towncity'])
 along,set(['along'])
-of,set(['of'])
-inspired,set(['inspired'])
-needing,"set(['wants', 'wish', 'needing', 'able', 'prepared', 'need', 'waiting', 'let', 'helps', 'want', 'ready', 'might', 'asked'])"
-calories,"set(['calorie', 'calories'])"
-display,"set(['tables', 'fabric', 'menus', 'color', 'menu', 'screen', 'readable', 'flip', 'screens', 'device', 'visual', 'pad', 'displays', 'items', 'images', 'table', 'content', 'interface', 'display'])"
-wihere,set(['wihere'])
+wait,"set(['waits', 'wait'])"
+kids,"set(['kids', 'children'])"
+restaurant,"set(['restaurants', 'restaurant'])"
+receive,set(['receive'])
+deals,set(['deals'])
+inspired,"set(['inspired', 'animated', 'animate'])"
+larger,set(['larger'])
+experience,set(['experience'])
+example,set(['example'])
 etc,set(['etc'])
-patrons,"set(['patrons', 'guests'])"
-suggestion,set(['suggestion'])
+tour,set(['tour'])
+games,set(['games'])
 social,set(['social'])
-timed,set(['timed'])
-whole,"set(['entire', 'whole'])"
-interact,"set(['deals', 'familiar', 'interact'])"
-seeing,set(['seeing'])
-reseteraunts,set(['reseteraunts'])
-projection,"set(['map', 'maps', 'projection', 'space'])"
-family,set(['family'])
-wave,set(['wave'])
+login,set(['login'])
+whole,"set(['concept', 'whole'])"
+options,"set(['options', 'option'])"
+relevant,set(['relevant'])
+afterwards,set(['afterwards'])
+family,"set(['families', 'family'])"
+color,set(['color'])
+sign,set(['sign'])
 waiterwaitress,set(['waiterwaitress'])
-one,set(['one'])
-weather,set(['weather'])
-simply,"set(['instead', 'without', 'simply', 'whatever'])"
-directly,set(['directly'])
-festivals,"set(['places', 'attractions', 'sporting', 'parks', 'dining', 'clubs', 'theatres', 'festivals', 'tourists', 'beaches'])"
+whatever,set(['whatever'])
+screens,"set(['screens', 'screen'])"
+interface,set(['interface'])
+simply,set(['simply'])
+festivals,set(['festivals'])
 total,set(['total'])
-estimate,"set(['estimate', 'approximate'])"
+expensive,set(['expensive'])
+flavors,set(['flavors'])
+bathroom,"set(['bathroom', 'room'])"
 from,set(['from'])
-takes,set(['takes'])
-area,"set(['city', 'area'])"
+raise,set(['raise'])
 addition,set(['addition'])
-top,set(['top'])
 locally,set(['locally'])
 visit,set(['visit'])
-due,"set(['due', 'thanks'])"
+due,"set(['right', 'due'])"
 next,set(['next'])
+vineyard,set(['vineyard'])
 live,set(['live'])
-too,"set(['too', 'quite'])"
-way,"set(['direction', 'way'])"
+call,set(['call'])
+calm,set(['calm'])
+crab,set(['crab'])
+kitchen,set(['kitchen'])
 type,set(['type'])
-empty,"set(['item', 'empty'])"
-calm,"set(['good', 'busy', 'calm', 'lot', 'happy'])"
-modern,"set(['modern', 'today'])"
-sales,"set(['purchases', 'sales', 'revenue'])"
-part,set(['part'])
+today,set(['today'])
+systems,set(['systems'])
+affixed,"set(['attach', 'affixed'])"
+wish,set(['wish'])
+visual,set(['visual'])
+cookware,"set(['cookware', 'pots'])"
 prizes,set(['prizes'])
 dresigns,set(['dresigns'])
-seat,set(['seat'])
-with,set(['with'])
-customer,"set(['customer', 'ads', 'servers', 'appliance', 'server', 'program', 'ins', 'options', 'option'])"
-television,"set(['television', 'trivia', 'guest', 'videos', 'entertainment', 'tv', 'movie', 'show', 'theme', 'specials', 'movies', 'theaters', 'video', 'cartoons', 'clip', 'pictures', 'themed', 'animated'])"
-made,"set(['making', 'made'])"
-hour,"set(['season', 'weeks', 'finished', 'tour', 'hour'])"
+bartender,set(['bartender'])
+look,set(['look'])
+hour,set(['hour'])
+leave,set(['leave'])
 bill,set(['bill'])
-reviews,"set(['reviews', 'media', 'advertising', 'news'])"
-placed,"set(['placed', 'displayed'])"
-napkins,set(['napkins'])
-idles,set(['idles'])
-fact,set(['fact'])
-example,set(['example'])
-history,"set(['origins', 'history'])"
-liqour,set(['liqour'])
-ad,set(['ad'])
-give,"set(['enjoy', 'give', 'choose', 'bring', 'draw', 'go', 'advertise', 'check', 'sell', 'try', 'calculate', 'prepare', 'pay', 'make', 'offer', 'utilize', 'find', 'attach', 'encourage', 'call', 'eliminate', 'announce', 'save', 'take', 'customers', 'repeat', 'get', 'stop', 'watch', 'loyalty', 'explore', 'add', 'hear', 'wear', 'ask', 'eat', 'raise', 'communicate', 'look', 'receive', 'wait', 'keep', 'leave', 'ensure', 'create'])"
-process,"set(['process', 'step'])"
-describe,set(['describe'])
+entertained,set(['entertained'])
+reviews,set(['reviews'])
+movies,"set(['movies', 'movie'])"
+napkins,"set(['napkins', 'napkin'])"
+cam,set(['cam'])
+items,"set(['items', 'part', 'item'])"
+fun,set(['fun'])
+making,set(['making'])
+guide,set(['guide'])
+history,"set(['past', 'history'])"
+decorative,set(['decorative'])
+purchases,set(['purchases'])
+played,set(['played'])
+process,set(['process'])
+newsletters,set(['newsletters'])
+suggestions,"set(['suggestions', 'ideas', 'suggestion'])"
 it,set(['it'])
-right,"set(['right', 'left'])"
-beautifully,"set(['bingo', 'coloring', 'napkin', 'turtle', 'temp', 'cloths', 'newsletters', 'limitless', 'vineyard', 'allergies', 'cookware', 'crab', 'beautifully', 'ninja', 'tablecloth', 'outings', 'pokemon', 'animate', 'mixup'])"
-aged,"set(['aged', 'families', 'adults', 'children'])"
-occupied,set(['occupied'])
-linked,set(['linked'])
+good,set(['good'])
+something,set(['something'])
+want,"set(['wants', 'want'])"
+beautifully,set(['beautifully'])
+ready,set(['ready'])
+technology,set(['technology'])
 sever,set(['sever'])
-different,"set(['specific', 'certain', 'different', 'many'])"
-end,set(['end'])
-built,"set(['introduced', 'expanded', 'built', 'incorporated', 'designed'])"
-turn,set(['turn'])
-rather,set(['rather'])
-technology,"set(['electronics', 'computer', 'technology'])"
-tip,"set(['light', 'tip', 'water', 'flowing', 'plates', 'stationary'])"
-also,set(['also'])
-ideal,set(['ideal'])
-book,"set(['book', 'books'])"
-announcements,set(['announcements'])
-status,set(['status'])
-arrives,set(['arrives'])
-games,"set(['play', 'games', 'card', 'played'])"
-cocktail,"set(['bars', 'chef', 'touch', 'bathroom', 'mats', 'waits', 'carriage', 'kitchen', 'rides', 'touchscreen', 'mat', 'cocktail', 'affixed', 'touching', 'bar', 'shirt', 'kids', 'bartender', 'room', 'restaurant', 'waiter', 'dinner', 'night', 'fun', 'clothes'])"
-upon,set(['upon'])
+wihere,set(['wihere'])
 decor,set(['decor'])
-mixed,set(['mixed'])
+end,set(['end'])
+shirt,set(['shirt'])
+rather,set(['rather'])
+pay,set(['pay'])
+make,set(['make'])
+linked,set(['linked'])
+read,set(['read'])
+interact,set(['interact'])
+familiar,set(['familiar'])
+instead,set(['instead'])
+status,set(['status'])
+map,"set(['map', 'maps'])"
+arrives,set(['arrives'])
+cocktail,set(['cocktail'])
+clothes,set(['clothes'])
+stop,set(['stop'])
+drink,"set(['drink', 'drinks'])"
+upon,set(['upon'])
+loyalty,set(['loyalty'])
+timed,set(['timed'])
 uses,set(['uses'])
 lay,set(['lay'])
-included,set(['included'])
-appetizer,set(['appetizer'])
-coolerto,set(['coolerto'])
+tablecloth,set(['tablecloth'])
+choice,set(['choice'])
+man,set(['man'])
 in,set(['in'])
-faster,"set(['warmer', 'faster'])"
-maybe,set(['maybe'])
-youtube,set(['youtube'])
+light,set(['light'])
+many,set(['many'])
+asked,"set(['ask', 'asked'])"
+perhaps,"set(['perhaps', 'maybe'])"
+without,set(['without'])
+readable,set(['readable'])
 drawing,set(['drawing'])
-perhaps,set(['perhaps'])
-points,set(['points'])
-place,set(['place'])
-time,set(['time'])
+left,set(['left'])
+things,set(['things'])
+sporting,set(['sporting'])
+displayed,set(['displayed'])
+tablets,"set(['tablets', 'tablet'])"
+thanks,set(['thanks'])
+questions,set(['questions'])
+touch,"set(['touch', 'touching'])"
+mixup,set(['mixup'])
+projection,set(['projection'])
+tables,"set(['tables', 'table'])"
+monitor,set(['monitor'])
+also,set(['also'])
+passive,set(['passive'])
+simple,set(['simple'])
+add,set(['add'])
+potential,set(['potential'])
+board,set(['board'])
+pad,set(['pad'])
+weeks,set(['weeks'])
+save,set(['save'])
+might,set(['might'])
+photographed,set(['photographed'])
+customers,"set(['customer', 'customers', 'patrons'])"
+someone,"set(['person', 'neutral', 'someone', 'modern', 'adults'])"
+captivating,set(['captivating'])
+maker,"set(['maker', 'makers'])"
+food,"set(['food', 'beverages'])"
+big,set(['big'])
+showing,set(['showing'])
+possible,set(['possible'])
+walls,set(['walls'])
+try,"set(['try', 'best'])"
+know,set(['know'])
+plates,set(['plates'])
+ninja,set(['ninja'])
+articles,set(['articles'])
+necessary,set(['necessary'])
+like,set(['like'])
+inviting,set(['inviting'])
+fully,set(['fully'])
+possibilities,set(['possibilities'])
+weather,set(['weather'])
+allergies,set(['allergies'])
+night,set(['night'])
+popular,set(['popular'])
+wtth,set(['wtth'])
+stationary,set(['stationary'])
+meal,"set(['dinner', 'meal', 'meals'])"
+turtle,set(['turtle'])
+everyone,set(['everyone'])
+people,"set(['free', 'people'])"
+hard,set(['hard'])
+draw,set(['draw'])
+competition,set(['competition'])
+clubs,set(['clubs'])
+used,"set(['used', 'utilize'])"
+warmer,set(['warmer'])
+fingertips,"set(['tip', 'fingertips'])"
+images,set(['images'])
+event,set(['event'])
+out,set(['out'])
+specific,"set(['specific', 'fact'])"
+scale,set(['scale'])
+mats,"set(['mats', 'mat'])"
+entertainment,"set(['show', 'entertainment'])"
+affects,set(['affects'])
+comments,set(['comments'])
+outings,set(['outings'])
+encourage,"set(['further', 'encourage'])"
+caloriesnutrition,set(['caloriesnutrition'])
+electronics,set(['electronics'])
+bingo,set(['bingo'])
+wines,set(['wines'])
+contain,"set(['included', 'include', 'contain'])"
+communicate,set(['communicate'])
+quite,set(['quite'])
+step,set(['step'])
+estimate,set(['estimate'])
+beaches,set(['beaches'])
+fabric,"set(['cloth', 'fabric', 'cloths'])"
+origins,set(['origins'])
+waiter,"set(['waiter', 'servers', 'server'])"
+of,set(['of'])
+recipes,set(['recipes'])
+needing,set(['needing'])
+calories,"set(['calorie', 'calories'])"
+keep,set(['keep'])
+practical,set(['practical'])
+turn,set(['turn'])
+ensure,set(['ensure'])
+mixed,set(['mixed'])
+introduced,set(['introduced'])
+think,set(['think'])
+designed,set(['designed'])
+seeing,set(['seeing'])
+reseteraunts,set(['reseteraunts'])
+revenue,set(['revenue'])
+attractions,set(['attractions'])
+wave,set(['wave'])
+within,set(['within'])
+functional,set(['functional'])
+one,set(['one'])
+clear,set(['clear'])
+doesnt,set(['doesnt'])
+directly,set(['directly'])
+pokemon,set(['pokemon'])
+city,set(['city'])
+guest,"set(['guest', 'guests'])"
+prepare,"set(['changing', 'prepare', 'prepared'])"
+area,set(['area'])
+ordering,set(['ordering'])
+top,set(['top'])
+approximate,set(['approximate'])
+too,set(['too'])
+way,set(['way'])
+music,set(['music'])
+tourists,set(['tourists'])
+happy,set(['happy'])
+interests,set(['interests'])
+media,set(['media'])
+lot,set(['lot'])
+offer,set(['offer'])
+season,set(['season'])
+satisfaction,set(['satisfaction'])
+appreciation,set(['appreciation'])
+hear,set(['hear'])
+believe,set(['believe'])
+with,set(['with'])
+eat,set(['eat'])
+card,"set(['paper', 'card'])"
+television,"set(['tv', 'television', 'tvs'])"
+made,"set(['made', 'done'])"
+temp,set(['temp'])
+specials,set(['specials'])
+appliance,"set(['device', 'appliance'])"
+flip,set(['flip'])
+different,set(['different'])
+preparation,"set(['preparation', 'activities'])"
+placed,set(['placed'])
+carriage,set(['carriage'])
+future,set(['future'])
+empty,set(['empty'])
+display,"set(['display', 'displays'])"
+interactive,set(['interactive'])
+liqour,set(['liqour'])
+ad,"set(['advertising', 'ad', 'ads'])"
+clip,set(['clip'])
+certain,set(['certain'])
+describe,set(['describe'])
+sales,set(['sales'])
+ins,set(['ins'])
+proper,set(['proper'])
+idles,set(['idles'])
+need,set(['need'])
+aged,set(['aged'])
+occupied,"set(['busy', 'occupied'])"
+check,set(['check'])
+sell,set(['sell'])
+functions,"set(['function', 'functions'])"
+built,"set(['create', 'built'])"
+ingredients,set(['ingredients'])
+convenient,set(['convenient'])
+able,set(['able'])
+parks,set(['parks'])
+dining,set(['dining'])
+ideal,set(['ideal'])
+book,"set(['book', 'books'])"
+take,"set(['take', 'takes'])"
+announcements,set(['announcements'])
+trivia,set(['trivia'])
+rides,set(['rides'])
+play,set(['play'])
+repeat,set(['repeat'])
+customize,set(['customize'])
+limitless,set(['limitless'])
+work,set(['work'])
+coolerto,set(['coolerto'])
+appear,set(['appear'])
+give,set(['give'])
+faster,set(['faster'])
+seafood,set(['seafood'])
+space,set(['space'])
+youtube,set(['youtube'])
+finished,set(['finished'])
 order,"set(['order', 'orders'])"
+points,set(['points'])
+place,"set(['place', 'places'])"
+clean,set(['clean'])
+time,set(['time'])
 familypatrons,set(['familypatrons'])
