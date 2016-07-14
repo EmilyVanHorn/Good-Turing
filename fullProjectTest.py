@@ -1,17 +1,17 @@
-#import gensim
-#from gensim import models
+import csv
 
-#model = models.Word2Vec.load('text8Model')
-#dict = open('dict.file', 'r')
-#dict = eval(dict.read())
-#newDict = {}
-
-#for word in dict.keys():
-#    current = dict.get(word)
-#    best = model.similarity(word, current)
-#    working = current
-#    for word in dict.keys()
-
+def writeOut(output, fileName):#--------------------------------------WRITE_OUT
+    #var dictionary
+    #filename                                       #file to write to
+    #output                                         #data to write
+    #writer                                         #csv writer object
+    
+    with open(fileName, 'w') as file:               
+        writer = csv.writer(file)
+        for row in output:
+            writer.writerow(row)
+        else:
+            print "Results written to ", fileName
 
 def func1():
     return [["1", "2", "3", "4"],
@@ -31,29 +31,39 @@ def func4():
 
 
 
-
-datasets = ['g','r','e','e','n']
-versions = [func1(),func2(),func3(),func4()]
-vText = ['p','i','n','k','!']
-output = []
-outLine = []
+OUTPUT_FILE = "Data Output/fullProjectTest.csv"
+datasets = ['g','r','e','e','n']                #the list of input filenames
+versions = [func1(),func2(),func3(),func4()]    #array of functions to try out
+vText = ['p','i','n','k']                       #strings associated with the function of 
+                                                    #"versions[]"
+output = []                                     #output to be sent to csv
+outLine = []                                    #one line of output taken from "returnedOut"
 i = 0
 
-for input_file in datasets:
-    print "datasets: ", input_file
-    for function in versions:
-        returnedOut = function
+output.append(["dataset", "method",             #header
+               "timeSlice", "probability"])
+
+for input_file in datasets:                     #for each dataset
+    print "datasets: ", input_file              
+    j = 0                   
+    for function in versions:                       #run each version of the program
+        returnedOut = function                      #output from this version
         print "\treturnedOut: ", returnedOut
-        for line in returnedOut:
-            print "\t\tline: ", line
+        for line in returnedOut:                    #rotate output to desired format
+            print "\t\tline: ", line                    #and save to "output[]"
             outLine = []
             outLine.append(datasets[i])
-            outLine.append(vText[i])
-            outLine.append(line[3])
+            outLine.append(vText[j])
+            outLine.append(line[0])
+            outLine.append(line[3])             #---> !!!this will be 4 in the real code!!!
             print "\t\t\t", outLine
-        output.append([outLine])
+        j = j+1
+        output.append(outLine)                      
     i = i+1
     
-print "Output"    
+print "Output"                                  #print output to terminal 
 for item in output:
     print item
+    
+    
+writeOut(output, OUTPUT_FILE)

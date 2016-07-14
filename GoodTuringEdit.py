@@ -11,7 +11,21 @@ import string
 import gensim
 from gensim import models
 
+def func1():
+    return [["1", "2", "3", "4"],
+            ["one", "two", "three", "four"]]
+    
+def func2():
+    return [["one", "two", "three", "four"],
+            ["1", "2", "3", "4"]]
+    
+def func3():
+    return [["a", "b", "c", "d"],
+            ["one", "two", "three", "four"]]
 
+def func4():
+    return [["z", "y", "x", "w"],
+            ["one", "two", "three", "four"]]
 
 def getInputFile(fileName):#-------------------------------------GET_INPUT_FILE
     #var dictionary
@@ -95,7 +109,7 @@ def format(line):#-------------------------------------------------------FORMAT
         line[1] = lem(line[1])
         line[1] = stem(line[1])  
 
-def getGroup(count, word):
+def getGroup(count, word, threshold):
     word = "".join(l for l in word if l not in string.punctuation)
     best = 0
     group = word
@@ -129,7 +143,7 @@ def getGroup(count, word):
             else:
                 continue
         
-        if(itemSyn.path_similarity(wordSyn) >= 0.5 and itemSyn.path_similarity(wordSyn) > best):
+        if(itemSyn.path_similarity(wordSyn) >= threshold and itemSyn.path_similarity(wordSyn) > best):
         #if this word is similar to an already existing one, add it as that group
             group = item
             best = itemSyn.path_similarity(wordSyn)
@@ -191,7 +205,7 @@ def getGroup2(count, word):
                 #throw away?        --> probably a typo
                 #return word?       --> lots of words are not in the dictionary
                 
-def getGroup3(count, word, model):
+def getGroup3(count, word, model, threshold):
     word = "".join(l for l in word if l not in string.punctuation)
     best = 0
     group = word
@@ -210,7 +224,7 @@ def getGroup3(count, word, model):
         except:
             continue
                
-        if(sim >= 0.5 and sim > best):
+        if(sim >= threshold and sim > best):
         #if this word is similar to an already existing one, add it as that group
             group = item
             best = sim
@@ -494,7 +508,7 @@ def evaluate3(file):#-------------------------------------------------EVALUATE3
                 
     return output
 
-def evaluate4(file, logs):#-------------------------------------------------EVALUATE4
+def evaluate4(file, logs, groupType, threshold):#-------------------EVALUATE4
     #var dictionary
     #file                                           #raw input file
     #start                                          #starting point for intervals
@@ -518,14 +532,14 @@ def evaluate4(file, logs):#-------------------------------------------------EVAL
         start = 0
         end = start + INTERVAL
         
-    output.append(["Time Slice",                        #file header
-                "New Category?", 
-                "# of New Categories", 
-                "Total Ideas in Time Slice",
-                "Probability of New Bin",
-                "%New Categories in Time Slice",
-                "%New Categories Overall",
-                "Counter"])
+    #output.append(["Time Slice",                        #file header
+    #            "New Category?", 
+    #            "# of New Categories", 
+    #            "Total Ideas in Time Slice",
+    #            "Probability of New Bin",
+    #            "%New Categories in Time Slice",
+    #            "%New Categories Overall",
+    #            "Counter"])
     logs.append([str(timeSlice) + "------ TIME_SLICE" + str(timeSlice) + " -----"])
     while(i < len(file)):                                   #while more ideas still exist
         line = file[i]                                      #a line in a file
@@ -538,7 +552,10 @@ def evaluate4(file, logs):#-------------------------------------------------EVAL
             logs.append(["\tIDEA " + str(i) + " -----"])
             
             for word in line[1]:                            #add to counter
-                group = getGroup3(count, word, model)
+                if(groupType == "getGroup"):
+                    group = getGroup(count, word, threshold)
+                elif(groupType == "getGroup3"):
+                    group = getGroup(count, word, model, threshold)
                 oldCount = count[group]
                 count[group] += 1
                 newCount = count[group]
@@ -552,8 +569,8 @@ def evaluate4(file, logs):#-------------------------------------------------EVAL
         else:                                                   #at the end of each time slice
             if(totalIdeas > 0):
                 output.append([timeSlice, newIdea, newIdeaCount, totalIdeas])
-                estimateNewIdea(count, output[timeSlice])
-                calculateCat(count, output, timeSlice, newIdeaCount, totalIdeas)
+                estimateNewIdea(count, output[timeSlice - 1])
+                calculateCat(count, output, timeSlice - 1, newIdeaCount, totalIdeas)
                 timeSlice += 1                                  #increment time slice id
                 logs.append([str(timeSlice) + "------ TIME_SLICE" + str(timeSlice) + " -----"])
                 
@@ -564,8 +581,8 @@ def evaluate4(file, logs):#-------------------------------------------------EVAL
             totalIdeas = 0
     if(totalIdeas > 0):
         output.append([timeSlice, newIdea, newIdeaCount, totalIdeas])
-        estimateNewIdea(count, output[timeSlice])
-        calculateCat(count, output, timeSlice, newIdeaCount, totalIdeas)
+        estimateNewIdea(count, output[timeSlice -1])
+        calculateCat(count, output, timeSlice - 1, newIdeaCount, totalIdeas)
     print count
     return output
 
@@ -678,6 +695,45 @@ def evaluate5(file, logs):#-------------------------------------------------EVAL
                 
     return output
 
+def evaluate6(file, logs):#-------------------------------------------------EVALUATE6
+    datasets = ['SuperBoring','Boring','Normal',
+                'NewAtEnd','Exciting']              #the list of input filenames
+    versions = [evaluate4(file, logs, "getGroup", 0.5)]       #array of functions to try out
+                #evaluate4(file, logs, "getGroup", 0.9),
+                #evaluate4(file, logs, "getGroup3", 0.5),
+                #evaluate4(file, logs, "getGroup3", 0.9)]    
+    vText = ['nltk 0.5','nltk 0.9',                 #strings associated with the function of 
+             'word2vec 0.5','word2vec 0.9']                       
+                                                    #"versions[]"
+    output = []                                     #output to be sent to csv
+    outLine = []                                    #one line of output taken from "returnedOut"
+    i = 0
+
+    output.append(["dataset", "method",             #header
+               "timeSlice", "probability"])
+
+    for input_file in datasets:                     #for each dataset
+        print "datasets: ", input_file              
+        j = 0                   
+        for function in versions:                       #run each version of the program
+            returnedOut = function                      #output from this version
+            print "\treturnedOut: ", returnedOut
+            for line in returnedOut:                    #rotate output to desired format
+                print "\t\tline: ", line                    #and save to "output[]"
+                outLine = []
+                outLine.append(datasets[i])
+                outLine.append(vText[j])
+                outLine.append(line[0])
+                outLine.append(line[4])             #---> !!!this will be 4 in the real code!!!
+                print "\t\t\t", outLine
+                output.append(outLine) 
+            j = j+1                       
+        i = i+1
+    
+    print "Output"                                  #print output to terminal 
+    for item in output:
+        print item
+
 def errorLog(errorCode):#---------------------------------------------ERROR_LOG
     if(errorCode == 0):
         return "ERROR: NO VERSION SPECIFIED"
@@ -703,10 +759,10 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
 
 #--------------------------------------------------------------------------MAIN
 
-INPUT_FILE = "Input/ideas_corrected.csv"            
+INPUT_FILE = "Input/Normal.csv"            
 OUTPUT_FILE = "Data Output/01 Version4.csv"
 LOG_FILE = "log.txt"
-VERSION = 4
+VERSION = 6
 INTERVAL_MODE = 'count'                              #options: time, count;
                                                     #options: words, categories;
 #INTERVAL = 60000                                    #1 minute
@@ -716,12 +772,18 @@ INTERVAL_MODE = 'count'                              #options: time, count;
 INTERVAL = 3
 out = []                                            #data output to print
 logs = []                                           #log  output to print
-f = open('dict.file', 'r')
-wordsSeen = eval(f.read())                          #dictionary in key-value form where
+#f = open('dictNLTK.file', 'r')
+#word2Vec = eval(f.read())                          #dictionary in key-value form where
                                                         #key = words and their synonymns
                                                         #value = the group that is entered
                                                             #the counter for that word
-f.close()
+#f.close()
+
+#f = open('dict.file', 'r')
+#nltk = eval(f.read())
+#f.close()
+
+wordsSeen = {}
 itemsSeen = {}
 
 #getInput
@@ -743,6 +805,8 @@ elif(VERSION == 4):
     out = evaluate4(file, logs)
 elif(VERSION == 5):
     out = evaluate5(file, logs)
+elif(VERSION == 6):
+    evaluate6(file, logs)
 else:
     print "NO VERSION SPECIFIED"
     logs.append([errorLog(0)])
@@ -753,9 +817,13 @@ else:
 #countUniqueWords(file)
 
 #print output to screen
-f = open('dict.file', 'w')
-f.write(str(wordsSeen))
-f.close()
+#f = open('dictNLTK.file', 'w')
+#f.write(str(word2Vec))
+#f.close()
+
+#f = open('dict.file', 'w')
+#f.write(str(nltk))
+#f.close()
 
 for line in out:
     print line
@@ -785,6 +853,9 @@ for line in out:
 #                   improve time/accuracy 
 #VERSION 5:     super-words as bins;                IN-PROGRESS -- functional
 #               separate by theme
+#               TODO:
+#                   - flip data 
+#VERSION 6:     full test                           IN-PROGRESS -- not functional
 
 #printResults
 writeOut(out, OUTPUT_FILE)
