@@ -628,8 +628,8 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
         output.append([timeSlice, newIdea, newIdeaCount, totalIdeas])
         estimateNewIdea(count, output[timeSlice -1])
         calculateCat(count, output, timeSlice - 1, newIdeaCount, totalIdeas)
-    print count
-    dictionary_to_save = "Dictionaries/%s_%s_%.2f" %(dataset, method, threshold)
+    #print count
+    dictionary_to_save = "Dictionaries/wordkey_%s_%s_%.2f" %(dataset, method, threshold)
     dictionary_out = open(dictionary_to_save, 'w')
     dictionary_out.write(json.dumps(wordsSeen, indent=2))
     dictionary_out.close()
@@ -639,7 +639,7 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
     
     for line in groupsDictOut:
         print line
-    writeOut(groupsDictOut, "Dictionaries/groupsDictOutWord2Vec.csv")
+    writeOut(groupsDictOut, "Dictionaries/groupkey_%s_%s_%.2f.csv" %(dataset, method, threshold))
     return output
 
 def evaluate5_1(file, realOutput, model):#---------------------------------EVALUATE5.1
@@ -752,21 +752,21 @@ def evaluate5(file, logs):#-------------------------------------------------EVAL
     return output
 
 def evaluate6(file, logs):#-------------------------------------------------EVALUATE6
-    # datasets = ['SuperBoring',
-    #             'Boring',
-    #             'Normal',
-    #             'NewAtEnd',
-    #             'Exciting']              #the list of input filenames
-    datasets = ['SuperBoring']
+    datasets = ['SuperBoring',
+                 'Boring',
+                 'Normal',
+                 'NewAtEnd',
+                 'Exciting']              #the list of input filenames
+#datasets = ['SuperBoring']
     # versions = [evaluate4(file, logs, "getGroup", 0.5)]       #array of functions to try out
     #             evaluate4(file, logs, "getGroup", 0.9),
     #             evaluate4(file, logs, "getGroup3", 0.5),
     #             evaluate4(file, logs, "getGroup3", 0.9)]
-    # methods = ["nltk", "word2vec"]
-    methods = ["word2vec"]
+    methods = ["nltk", "word2vec"]
+    #methods = ["word2vec"]
     # method_names = {"getGroup": 'nltk', 'getGroup3': 'word2vec'}
-    # thresholds = [0.2, 0.4, 0.6, 0.8]
-    thresholds = [0.5]
+    thresholds = [0.2, 0.4, 0.6, 0.8]
+    #thresholds = [0.5]
     vText = ['nltk 0.5','nltk 0.9',                 #strings associated with the function of 
              'word2vec 0.5','word2vec 0.9']                       
                                                     #"versions[]"
@@ -801,10 +801,8 @@ def evaluate6(file, logs):#-------------------------------------------------EVAL
                     output.append(outLine) 
             # j = j+1                       
         # i = i+1
-    
-    print "Output"                                  #print output to terminal 
-    for item in output:
-        print item
+        
+    writeOut(output, OUTPUT_FILE)
 
 def errorLog(errorCode):#---------------------------------------------ERROR_LOG
     if(errorCode == 0):
@@ -855,8 +853,8 @@ logs = []                                           #log  output to print
 #nltk = eval(f.read())
 #f.close()
 
-wordsSeen = {}
-itemsSeen = {}
+#wordsSeen = {}
+#itemsSeen = {}
 
 #getInput
 file = getInputFile(INPUT_FILE)
@@ -897,8 +895,8 @@ else:
 #f.write(str(nltk))
 #f.close()
 
-for line in out:
-    print line
+#for line in out:
+#   print line
 
 #VERSION 1:     basic; category as bin              IN-PROGRESS -- functional
 #               INPUTS:
@@ -930,5 +928,5 @@ for line in out:
 #VERSION 6:     full test                           IN-PROGRESS -- not functional
 
 #printResults
-writeOut(out, OUTPUT_FILE)
+#writeOut(out, OUTPUT_FILE)
 writeOut(logs, LOG_FILE)

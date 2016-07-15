@@ -1,0 +1,107 @@
+Super_Word,Value
+,set([''])
+seasonal,"set(['seasonal', 'scenery', 'drain', 'water', 'hot', 'outdoor', 'lamps', 'interior', 'streams', 'beneath', 'nearby', 'cool'])"
+spreads,"set(['feed', 'canvas', 'trucks', 'cloth', 'spreads', 'rack', 'paint', 'lamp', 'touched', 'wrap', 'clothes', 'clothing', 'sliding', 'instantly'])"
+hoodies,set(['hoodies'])
+childrens,set(['childrens'])
+cancer,"set(['heart', 'cancer', 'diseases', 'lungs', 'professionals', 'medical', 'shock', 'worker', 'anatomy', 'human', 'smoking', 'activities', 'autism', 'stimulating'])"
+point,"set(['location', 'point'])"
+color,"set(['textures', 'fabric', 'images', 'color', 'text', 'image', 'colors', 'drawing', 'mix', 'visual', 'paper', 'displays', 'background', 'pen', 'screen', 'piece', 'display'])"
+able,"set(['letting', 'wants', 'sure', 'chose', 'wanted', 'may', 'could', 'able', 'prepared', 'need', 'let', 'allowing', 'want', 'ready', 'trying', 'might', 'helps'])"
+requester,set(['requester'])
+fromi,set(['fromi'])
+replace,"set(['exhibit', 'respond', 'help', 'give', 'interact', 'replace', 'accommodate', 'go', 'connect', 'participate', 'carry', 'advertise', 'select', 'sell', 'develop', 'appear', 'giving', 'pay', 'make', 'submit', 'write', 'add', 'choose', 'take', 'draw', 'buy', 'get', 'stop', 'ask', 'affect', 'come', 'generate', 'wait', 'remember', 'keep', 'adjust', 'ensure', 'allow', 'push', 'create'])"
+table,"set(['table', 'plus', 'item'])"
+its,set(['its'])
+ad,set(['ad'])
+giant,"set(['wearing', 'giant', 'jackets', 'blossom', 'shirt', 'blanket', 'bat', 'neat', 'shirts', 'towels', 'curtain', 'black', 'white', 'pants', 'hammer', 'dresses', 'kid'])"
+frabics,set(['frabics'])
+based,"set(['based', 'depending'])"
+instance,set(['instance'])
+festival,"set(['festival', 'wedding'])"
+saveable,set(['saveable'])
+young,"set(['living', 'children', 'young', 'parents', 'adult'])"
+suits,"set(['buildings', 'uniforms', 'kinds', 'memorabilia', 'works', 'items', 'prints', 'backgrounds', 'scenes', 'collection', 'pieces', 'books', 'patrons', 'rooms', 'accessories', 'poems', 'furniture', 'suits', 'landscapes', 'fabrics', 'glasses'])"
+clicker,set(['clicker'])
+board,"set(['department', 'staff', 'request', 'board', 'bulletin'])"
+inthe,set(['inthe'])
+match,"set(['play', 'played', 'beat', 'teams', 'club', 'game', 'match', 'super', 'card'])"
+sort,"set(['code', 'portable', 'computer', 'array', 'technology', 'slot', 'information', 'menu', 'virtual', 'platform', 'program', 'digital', 'print', 'email', 'store', 'sort', 'tool', 'phone', 'device', 'using', 'data', 'electronic', 'advertising', 'interactive'])"
+do,set(['do'])
+around,set(['around'])
+assuming,set(['assuming'])
+introduction,set(['introduction'])
+possibly,set(['possibly'])
+blazers,set(['blazers'])
+tshirts,set(['tshirts'])
+every,set(['every'])
+new,set(['new'])
+one,"set(['since', 'in', 'one'])"
+with,set(['with'])
+easily,"set(['even', 'easily', 'actual', 'much', 'rather', 'always', 'generally', 'direct', 'whatever', 'quickly', 'better', 'this', 'appropriate', 'without', 'either', 'it', 'actually', 'often'])"
+school,"set(['students', 'school'])"
+made,set(['made'])
+like,set(['like'])
+hour,"set(['cycle', 'starting', 'hour', 'opening'])"
+artist,"set(['styles', 'style', 'designer', 'art', 'exciting', 'artist', 'showcase', 'pop', 'audience', 'artists', 'voice'])"
+finalized,set(['finalized'])
+unigue,set(['unigue'])
+single,"set(['single', 'part', 'whole'])"
+napkins,set(['napkins'])
+videographers,set(['videographers'])
+situation,"set(['abilities', 'idea', 'flexibility', 'skill', 'ordering', 'self', 'environment', 'way', 'approach', 'exercise', 'product', 'senses', 'interest', 'nature', 'attention', 'effect', 'situation', 'kind', 'interaction', 'issue', 'value', 'ways', 'representation', 'proof'])"
+alternate,set(['alternate'])
+similar,"set(['large', 'different', 'smaller', 'traditional', 'certain', 'basic', 'specific', 'various', 'many', 'small', 'similar'])"
+available,"set(['available', 'used', 'useful', 'coupled', 'interesting', 'possible', 'fast', 'done', 'basically', 'confined', 'flexible'])"
+vest,"set(['vest', 'af', 'customize', 'qc', 'tailor', 'sells', 'decorating', 'furnish'])"
+changed,"set(['changed', 'however', 'current', 'changing', 'changes', 'change'])"
+juggleing,set(['juggleing'])
+handkerchief,"set(['sheets', 'handkerchief', 'scan', 'cloths', 'awesome', 'hassle', 'rugs', 'coloring', 'pens', 'tablet', 'rewind', 'thru', 'collectible', 'atlases', 'booths', 'wallpaper', 'plugging', 'preset', 'detract', 'immersive', 'sheet', 'reel', 'pencils', 'videography', 'interactively', 'outfits', 'synchronize', 'sensing'])"
+people,"set(['someone', 'happening', 'people', 'things', 'person', 'persons', 'good', 'something', 'others', 'you', 'thing', 'true', 'really'])"
+there,set(['there'])
+billboards,"set(['baby', 'sketch', 'kids', 'mess', 'restaurant', 'waiter', 'big', 'billboards', 'watching', 'handmade', 'presenter', 'talk', 'lot', 'fun', 'waitress', 'happy'])"
+customerdriven,set(['customerdriven'])
+talking,"set(['look', 'feel', 'work', 'learner', 'ideas', 'looking', 'talking', 'interested', 'learn', 'teaching', 'teach', 'believe', 'think'])"
+see,set(['see'])
+street,"set(['street', 'apartments'])"
+changeable,set(['changeable'])
+tells,"set(['presents', 'tells'])"
+best,set(['best'])
+mood,"set(['progression', 'mood', 'somewhat', 'moods'])"
+for,set(['for'])
+space,"set(['spaces', 'space'])"
+literally,set(['literally'])
+premade,set(['premade'])
+revolves,set(['revolves'])
+also,"set(['also', 'still'])"
+5,set(['5'])
+someones,set(['someones'])
+aprons,set(['aprons'])
+urban,set(['urban'])
+body,"set(['body', 'eyes', 'touches', 'door', 'room', 'hung', 'inside', 'spot', 'walking', 'bed', 'down', 'front', 'touching', 'holding', 'hanging', 'touch', 'legs', 'target'])"
+picture,"set(['picture', 'story', 'novel', 'show', 'pictures', 'showing', 'appearance', 'event', 'live', 'setting', 'video', 'movie', 'memorable', 'events', 'shows'])"
+led,"set(['led', 'reacted'])"
+creating,set(['creating'])
+power,"set(['control', 'power'])"
+missing,set(['missing'])
+models,"set(['designs', 'schemes', 'models', 'cars', 'clients', 'vendors', 'design', 'designers', 'options'])"
+class,set(['class'])
+galeries,set(['galeries'])
+coming,set(['coming'])
+included,"set(['included', 'filmed', 'updated', 'selected', 'displayed'])"
+from,set(['from'])
+post,"set(['pre', 'post'])"
+happpen,set(['happpen'])
+mosaic,set(['mosaic'])
+recent,"set(['popular', 'recent'])"
+bras,"set(['bras', 'website', 'map', 'photo', 'demographics', 'museum', 'photos', 'maps', 'mall', 'gallery'])"
+great,set(['great'])
+especially,set(['especially'])
+certian,set(['certian'])
+age,"set(['age', 'times', 'least', 'time'])"
+hes,set(['hes'])
+sale,"set(['paying', 'purchase', 'customers', 'stores', 'prospective', 'food', 'sale', 'purchasing', 'products', 'prices', 'advertisers', 'providing', 'merchandise'])"
+etc,set(['etc'])
+range,"set(['scale', 'number', 'roughly', 'range', 'set', 'size'])"
+place,"set(['place', 'places', 'areas'])"
+tshirt,set(['tshirt'])
