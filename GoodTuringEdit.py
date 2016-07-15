@@ -11,6 +11,7 @@ import string
 import gensim
 import json
 from gensim import models
+import xlsxwriter
 
 def func1():
     return [["1", "2", "3", "4"],
@@ -109,6 +110,27 @@ def format(line):#-------------------------------------------------------FORMAT
     if(VERSION < 4):
         line[1] = lem(line[1])
         line[1] = stem(line[1])  
+    
+    
+#def createScatterPlot(datasets, methods, thresholds):
+ #   workbook = xlsxwriter.Workbook('Data Output/ExcelTesting.xlsx')
+#  worksheet = workbook.add_worksheet()
+#    chart5 = workbook.add_chart({'type': 'scatter',
+#                                 'subtype':'smooth'})
+    
+#    chart5.add_series({
+#        'name': 'test',
+#        'categories
+#    })
+    #for set in datasets:
+    #    for method in methods:
+    #        for threshold in thresholds:
+    #            i = 1
+    #            chart5.add_series({
+    #                'name':
+    #                'categories':     "=Sheet1!$" + i + "  
+    #            })
+    
     
 def nSim(inputSyn, comparisons):
     avg = 0
@@ -830,7 +852,7 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
 #--------------------------------------------------------------------------MAIN
 
 INPUT_FILE = "Input/Normal.csv"            
-OUTPUT_FILE = "Data Output/ParamSearch_Experiment.csv"
+OUTPUT_FILE = "Data Output/NEWParamSearch_Experiment.csv"
 LOG_FILE = "log_ParamSearch_Experiment.txt"
 VERSION = 6
 INTERVAL_MODE = 'count'                              #options: time, count;
