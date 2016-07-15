@@ -109,8 +109,28 @@ def format(line):#-------------------------------------------------------FORMAT
     if(VERSION < 4):
         line[1] = lem(line[1])
         line[1] = stem(line[1])  
+    
+def nSim(inputSyn, comparisons):
+    avg = 0
+    for existing in comparisons:
+        existingSyn = existing
+        #get synset of existingSyn
+        if(wn.synsets(existing)):
+            existingSyn = wn.synsets(existing)[0]
+        elif(wn.morphy(existing)):
+            existingSyn = wn.morphy(existing)[0]
+        else:
+            #no synset; skip
+            continue
+            
+        #compare input and existing
+        sim = existingSyn.path_similarity(inputSyn)
+        if(sim == None):
+            sim = 0
+        avg = (avg + sim)/2
+    return avg
 
-def getGroup(count, word, threshold, wordsSeen, groups, groupsDictOut):
+def getGroup(count, word, threshold, wordsSeen, groups):
     word = "".join(l for l in word if l not in string.punctuation)
     best = 0
     group = word
@@ -141,44 +161,15 @@ def getGroup(count, word, threshold, wordsSeen, groups, groupsDictOut):
     
     #compare to each group
         # is there a way to compare one word to many words?
-    for item in count.keys():
-        avg = 0;
-        total = 0;
+    for super_word in count.keys():
         #get synset of group being tested against
-        comparisons = groups.get(item)
-        for word in comparisons:
-            itemSyn = word
-            if(itemsSeen.has_key(word)):
-                itemSyn = itemsSeen.get(word)
-            else:
-                if(wn.synsets(item)):
-                    itemSyn = wn.synsets(word)[0]
-                    #compare
-                    sim = itemSyn.path_similarity(wordSyn)
-                    if(sim == None):
-                        sim = 0
-                    print "sim: ", sim
-                    print "WordSyn, ", wordSyn
-                    print "itemSyn, ", itemSyn
-                    total = total + 1
-                    avg = (avg + sim)/total
-                elif(wn.morphy(item)):
-                    itemSyn = wn.morphy(word)[0]
-                    #compare
-                    sim = itemSyn.path_similarity(wordSyn)
-                    if(sim == None):
-                        sim = 0
-                    print "sim: ", sim
-                    print "WordSyn, ", wordSyn
-                    print "itemSyn, ", itemSyn
-                    total = total + 1
-                    avg = (avg + sim)/total
-                else:
-                    continue
-            if(avg > best):
-                best = avg
-                group = item
+        comparisons = groups.get(super_word)
+        sim = nSim(wordSyn, comparisons)
         
+        if(sim >= threshold and sim > best):
+            group = super_word
+            best = sim
+            
     wordsSeen.update({word: group})
     if(groups.has_key(group)):
         newValue = groups.get(group)
@@ -243,7 +234,7 @@ def getGroup2(count, word):
                 #throw away?        --> probably a typo
                 #return word?       --> lots of words are not in the dictionary
                 
-def getGroup3(count, word, model, threshold, wordsSeen, groups, groupsDictOut):
+def getGroup3(count, word, model, threshold, wordsSeen, groups):
     word = "".join(l for l in word if l not in string.punctuation)
     best = 0
     group = word
@@ -607,9 +598,9 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
             # print groupType
             for word in line[1]:                            #add to counter
                 if(method == "nltk"):
-                    group = getGroup(count, word, threshold, wordsSeen, groups, groupsDictOut)
+                    group = getGroup(count, word, threshold, wordsSeen, groups)
                 elif(method == "word2vec"):
-                    group = getGroup3(count, word, model, threshold, wordsSeen, groups, groupsDictOut)
+                    group = getGroup3(count, word, model, threshold, wordsSeen, groups)
                 oldCount = count[group]
                 count[group] += 1
                 newCount = count[group]
@@ -648,7 +639,7 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
     
     for line in groupsDictOut:
         print line
-    writeOut(groupsDictOut, "Dictionaries/groupsDictOut.csv")
+    writeOut(groupsDictOut, "Dictionaries/groupsDictOutWord2Vec.csv")
     return output
 
 def evaluate5_1(file, realOutput, model):#---------------------------------EVALUATE5.1
@@ -772,7 +763,7 @@ def evaluate6(file, logs):#-------------------------------------------------EVAL
     #             evaluate4(file, logs, "getGroup3", 0.5),
     #             evaluate4(file, logs, "getGroup3", 0.9)]
     # methods = ["nltk", "word2vec"]
-    methods = ["nltk"]
+    methods = ["word2vec"]
     # method_names = {"getGroup": 'nltk', 'getGroup3': 'word2vec'}
     # thresholds = [0.2, 0.4, 0.6, 0.8]
     thresholds = [0.5]
