@@ -1,0 +1,11 @@
+dataset,method,timeSlice,GT_predict,true
+smallIdeas,word2vec_0.60,1,98.2719049548%,50.2824858757%
+smallIdeas,word2vec_0.60,2,95.3052250388%,36.1111111111%
+smallIdeas,word2vec_0.60,3,94.2719287393%,41.1764705882%
+smallIdeas,word2vec_0.60,4,93.2692307692%,25.0%
+smallIdeas,word2vec_0.60,5,93.0909530136%,43.75%
+smallIdeas,word2vec_0.60,6,90.0742217791%,36.8421052632%
+smallIdeas,word2vec_0.60,7,89.3219099363%,42.8571428571%
+smallIdeas,word2vec_0.60,8,85.5264367816%,40.0%
+smallIdeas,word2vec_0.60,9,84.2142985128%,21.2121212121%
+smallIdeas,word2vec_0.60,10,81.7563784692%,25.4237288136%

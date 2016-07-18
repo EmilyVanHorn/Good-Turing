@@ -153,6 +153,32 @@ def nSim(inputSyn, comparisons):
         avg = (avg + sim)/2
     return avg
 
+
+def getCombos(groupList):
+    combos = set()
+    print "START"
+    
+    x = 0
+    while(x < len(groupList) - 1):
+        print "\tX: ", x
+        word1 = groupList[x]
+        y = 1
+        while(y < len(groupList)):
+            print "\tY: ", y
+            word2 = groupList[y]
+            print "\tWord: ", word1
+            print "\tNextWord: ", word2
+            if(word1 == word2):
+                print "\tequal"
+            else:
+                c = word1 + "-" + word2
+                combos.update([c])
+                print "\tCombo: ", c
+            y = y + 1
+        x = x + 1
+            
+    return combos
+    
 def getGroup(count, word, threshold, wordsSeen, groups):
     word = "".join(l for l in word if l not in string.punctuation)
     best = 0
@@ -619,6 +645,7 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
             format(line)                                    #convert idea content to list of relivant words
             logs.append(["\tIDEA " + str(i) + " -----"])
             # print groupType
+            groupList = []
             for word in line[1]:                            #add to counter
                 if(method == "nltk"):
                     group = getGroup(count, word, threshold, wordsSeen, groups)
@@ -627,12 +654,25 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
                 oldCount = count[group]
                 count[group] += 1
                 newCount = count[group]
+                groupList.append(group)
 
                 if newCount == 1:                           #was this a new bin?
                     newIdea = 'true'                            #if yes,
                     newIdeaCount += 1
                 totalIdeas += 1
                 logs.append(["\t\t" + word + ":\t" + group + "--> \t" + str(newCount)])
+            for group in groupList:
+                print group
+                
+            groupList = getCombos(groupList)
+            for combo in groupList:
+                oldCount = count[combo]
+                count[combo] += 1
+                newCount = count[combo]
+                
+                if(newCount == 1 and newIdea == "false"):
+                    newIdeaCount += 1
+                logs.append(["\t\t" + str(line[1]) + ":\t" + combo + "--> \t" + str(newCount)])
             i += 1
         else:                                                   #at the end of each time slice
             if(totalIdeas > 0):
@@ -652,7 +692,7 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
         estimateNewIdea(count, output[timeSlice -1])
         calculateCat(count, output, timeSlice - 1, newIdeaCount, totalIdeas)
     #print count
-    dictionary_to_save = "Dictionaries/wordkeyWithStemmingTest_%s_%s_%.2f" %(dataset, method, threshold)
+    dictionary_to_save = "Dictionaries/wordkeyCombosTest_%s_%s_%.2f" %(dataset, method, threshold)
     dictionary_out = open(dictionary_to_save, 'w')
     dictionary_out.write(json.dumps(wordsSeen, indent=2))
     dictionary_out.close()
@@ -662,7 +702,8 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
     
     for line in groupsDictOut:
         print line
-    writeOut(groupsDictOut, "Dictionaries/groupkeyWithStemmingTest_%s_%s_%.2f.csv" %(dataset, method, threshold))
+    print count
+    writeOut(groupsDictOut, "Dictionaries/groupkeyCombosTest_%s_%s_%.2f.csv" %(dataset, method, threshold))
     return output
 
 def evaluate5_1(file, realOutput, model):#---------------------------------EVALUATE5.1
@@ -775,21 +816,21 @@ def evaluate5(file, logs):#-------------------------------------------------EVAL
     return output
 
 def evaluate6(file, logs):#-------------------------------------------------EVALUATE6
-    datasets = ['SuperBoring',
-                 'Boring',
-                 'Normal',
-                 'NewAtEnd',
-                 'Exciting']              #the list of input filenames
-    #datasets = ['Normal']
+    #datasets = ['SuperBoring',
+    #             'Boring',
+    #             'Normal',
+    #             'NewAtEnd',
+    #             'Exciting']              #the list of input filenames
+    datasets = ['smallIdeas']
     # versions = [evaluate4(file, logs, "getGroup", 0.5)]       #array of functions to try out
     #             evaluate4(file, logs, "getGroup", 0.9),
     #             evaluate4(file, logs, "getGroup3", 0.5),
     #             evaluate4(file, logs, "getGroup3", 0.9)]
-    methods = ["nltk", "word2vec"]
-    #methods = ["nltk"]
+    #methods = ["nltk", "word2vec"]
+    methods = ["word2vec"]
     # method_names = {"getGroup": 'nltk', 'getGroup3': 'word2vec'}
-    thresholds = [0.2, 0.4, 0.6, 0.8]
-    #thresholds = [0.6]
+    #thresholds = [0.2, 0.4, 0.6, 0.8]
+    thresholds = [0.6]
     vText = ['nltk 0.5','nltk 0.9',                 #strings associated with the function of 
              'word2vec 0.5','word2vec 0.9']                       
                                                     #"versions[]"
@@ -824,7 +865,6 @@ def evaluate6(file, logs):#-------------------------------------------------EVAL
                     output.append(outLine) 
             # j = j+1                       
         # i = i+1
-        
     writeOut(output, OUTPUT_FILE)
 
 def errorLog(errorCode):#---------------------------------------------ERROR_LOG
@@ -853,7 +893,7 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
 #--------------------------------------------------------------------------MAIN
 
 INPUT_FILE = "Input/Normal.csv"            
-OUTPUT_FILE = "Data Output/withStemmingandNewDataExperiment.csv"
+OUTPUT_FILE = "Data Output/combosTest.csv"
 LOG_FILE = "withStemmingTest.txt"
 VERSION = 6
 INTERVAL_MODE = 'count'                              #options: time, count;
