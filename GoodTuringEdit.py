@@ -109,7 +109,8 @@ def format(line):#-------------------------------------------------------FORMAT
     line[1] = sorted(real)
     if(VERSION < 4):
         line[1] = lem(line[1])
-        line[1] = stem(line[1])  
+        line[1] = stem(line[1]) 
+    line[1] = lem(line[1])
     
     
 #def createScatterPlot(datasets, methods, thresholds):
@@ -651,7 +652,7 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
         estimateNewIdea(count, output[timeSlice -1])
         calculateCat(count, output, timeSlice - 1, newIdeaCount, totalIdeas)
     #print count
-    dictionary_to_save = "Dictionaries/wordkey_%s_%s_%.2f" %(dataset, method, threshold)
+    dictionary_to_save = "Dictionaries/wordkeyWithStemmingTest_%s_%s_%.2f" %(dataset, method, threshold)
     dictionary_out = open(dictionary_to_save, 'w')
     dictionary_out.write(json.dumps(wordsSeen, indent=2))
     dictionary_out.close()
@@ -661,7 +662,7 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
     
     for line in groupsDictOut:
         print line
-    writeOut(groupsDictOut, "Dictionaries/groupkey_%s_%s_%.2f.csv" %(dataset, method, threshold))
+    writeOut(groupsDictOut, "Dictionaries/groupkeyWithStemmingTest_%s_%s_%.2f.csv" %(dataset, method, threshold))
     return output
 
 def evaluate5_1(file, realOutput, model):#---------------------------------EVALUATE5.1
@@ -779,16 +780,16 @@ def evaluate6(file, logs):#-------------------------------------------------EVAL
                  'Normal',
                  'NewAtEnd',
                  'Exciting']              #the list of input filenames
-#datasets = ['SuperBoring']
+    #datasets = ['Normal']
     # versions = [evaluate4(file, logs, "getGroup", 0.5)]       #array of functions to try out
     #             evaluate4(file, logs, "getGroup", 0.9),
     #             evaluate4(file, logs, "getGroup3", 0.5),
     #             evaluate4(file, logs, "getGroup3", 0.9)]
     methods = ["nltk", "word2vec"]
-    #methods = ["word2vec"]
+    #methods = ["nltk"]
     # method_names = {"getGroup": 'nltk', 'getGroup3': 'word2vec'}
     thresholds = [0.2, 0.4, 0.6, 0.8]
-    #thresholds = [0.5]
+    #thresholds = [0.6]
     vText = ['nltk 0.5','nltk 0.9',                 #strings associated with the function of 
              'word2vec 0.5','word2vec 0.9']                       
                                                     #"versions[]"
@@ -852,8 +853,8 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
 #--------------------------------------------------------------------------MAIN
 
 INPUT_FILE = "Input/Normal.csv"            
-OUTPUT_FILE = "Data Output/NEWParamSearch_Experiment.csv"
-LOG_FILE = "log_ParamSearch_Experiment.txt"
+OUTPUT_FILE = "Data Output/withStemmingandNewDataExperiment.csv"
+LOG_FILE = "withStemmingTest.txt"
 VERSION = 6
 INTERVAL_MODE = 'count'                              #options: time, count;
                                                     #options: words, categories;
