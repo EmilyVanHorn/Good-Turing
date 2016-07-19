@@ -654,7 +654,7 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
                 oldCount = count[group]
                 count[group] += 1
                 newCount = count[group]
-                groupList.append(group)
+                #groupList.append(group)
 
                 if newCount == 1:                           #was this a new bin?
                     newIdea = 'true'                            #if yes,
@@ -663,16 +663,17 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
                 logs.append(["\t\t" + word + ":\t" + group + "--> \t" + str(newCount)])
             for group in groupList:
                 print group
-                
-            groupList = getCombos(groupList)
-            for combo in groupList:
-                oldCount = count[combo]
-                count[combo] += 1
-                newCount = count[combo]
-                
-                if(newCount == 1 and newIdea == "false"):
-                    newIdeaCount += 1
-                logs.append(["\t\t" + str(line[1]) + ":\t" + combo + "--> \t" + str(newCount)])
+            
+            #COMBOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            #groupList = getCombos(groupList)
+            #for combo in groupList:
+            #    oldCount = count[combo]
+            #    count[combo] += 1
+            #    newCount = count[combo]
+            #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    
+            #    if(newCount == 1 and newIdea == "false"):
+            #        newIdeaCount += 1
+            #    logs.append(["\t\t" + str(line[1]) + ":\t" + combo + "--> \t" + str(newCount)])
             i += 1
         else:                                                   #at the end of each time slice
             if(totalIdeas > 0):
@@ -692,7 +693,7 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
         estimateNewIdea(count, output[timeSlice -1])
         calculateCat(count, output, timeSlice - 1, newIdeaCount, totalIdeas)
     #print count
-    dictionary_to_save = "Dictionaries/wordkeyCombosTest_%s_%s_%.2f" %(dataset, method, threshold)
+    dictionary_to_save = "Dictionaries/wordkeyMyData_%s_%s_%.2f" %(dataset, method, threshold)
     dictionary_out = open(dictionary_to_save, 'w')
     dictionary_out.write(json.dumps(wordsSeen, indent=2))
     dictionary_out.close()
@@ -703,7 +704,7 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
     for line in groupsDictOut:
         print line
     print count
-    writeOut(groupsDictOut, "Dictionaries/groupkeyCombosTest_%s_%s_%.2f.csv" %(dataset, method, threshold))
+    writeOut(groupsDictOut, "Dictionaries/groupkeyMyData_%s_%s_%.2f.csv" %(dataset, method, threshold))
     return output
 
 def evaluate5_1(file, realOutput, model):#---------------------------------EVALUATE5.1
@@ -816,12 +817,12 @@ def evaluate5(file, logs):#-------------------------------------------------EVAL
     return output
 
 def evaluate6(file, logs):#-------------------------------------------------EVALUATE6
-    #datasets = ['SuperBoring',
-    #             'Boring',
-    #             'Normal',
-    #             'NewAtEnd',
-    #             'Exciting']              #the list of input filenames
-    datasets = ['smallIdeas']
+    datasets = ['SuperBoring',
+                 'Boring',
+                 'Normal',
+                 'NewAtEnd',
+                 'Exciting']              #the list of input filenames
+    #datasets = ['smallIdeas']
     # versions = [evaluate4(file, logs, "getGroup", 0.5)]       #array of functions to try out
     #             evaluate4(file, logs, "getGroup", 0.9),
     #             evaluate4(file, logs, "getGroup3", 0.5),
@@ -829,8 +830,8 @@ def evaluate6(file, logs):#-------------------------------------------------EVAL
     #methods = ["nltk", "word2vec"]
     methods = ["word2vec"]
     # method_names = {"getGroup": 'nltk', 'getGroup3': 'word2vec'}
-    #thresholds = [0.2, 0.4, 0.6, 0.8]
-    thresholds = [0.6]
+    thresholds = [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+    #thresholds = [0.6]
     vText = ['nltk 0.5','nltk 0.9',                 #strings associated with the function of 
              'word2vec 0.5','word2vec 0.9']                       
                                                     #"versions[]"
@@ -842,7 +843,7 @@ def evaluate6(file, logs):#-------------------------------------------------EVAL
                "timeSlice", "GT_predict", "true"])
 
     for dataset in datasets:                     #for each dataset
-        input_file = "Input/%s.csv" %dataset
+        input_file = "Input/MyData/%s.csv" %dataset
         print "datasets: ", dataset              
         # j = 0                   
         # for function in versions:                       #run each version of the program
@@ -893,8 +894,8 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
 #--------------------------------------------------------------------------MAIN
 
 INPUT_FILE = "Input/Normal.csv"            
-OUTPUT_FILE = "Data Output/combosTest.csv"
-LOG_FILE = "withStemmingTest.txt"
+OUTPUT_FILE = "Data Output/MyDataWord2VecWithStemming.csv"
+LOG_FILE = "MyDataWord2VecWithStemming.txt"
 VERSION = 6
 INTERVAL_MODE = 'count'                              #options: time, count;
                                                     #options: words, categories;

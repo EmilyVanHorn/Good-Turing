@@ -1,0 +1,78 @@
+Super_Word,Value
+everyone,"set(['person', 'everyone'])"
+art,set(['art'])
+gold,set(['gold'])
+image,set([u'image'])
+whie,set(['whie'])
+displayed,set(['displayed'])
+product,set(['product'])
+mural,set(['mural'])
+presenentations,set(['presenentations'])
+see,set(['see'])
+computer,"set(['computer', 'portable'])"
+caution,set(['caution'])
+eaisily,set(['eaisily'])
+want,"set(['know', 'want'])"
+claimed,set(['claimed'])
+table,set(['table'])
+message,"set(['program', u'message', u'warning'])"
+updatable,set(['updatable'])
+redo,set(['redo'])
+cold,"set(['cold', 'hot'])"
+appear,"set(['seem', 'appear'])"
+unusual,set(['unusual'])
+powerpoint,"set(['powerpoint', 'diy'])"
+fabric,"set(['monitors', 'monitor', u'color', 'screen', 'scoreboard', 'display', 'slide', 'frame', 'fabric'])"
+space,set(['space'])
+tv,"set(['picture', 'television', 'theater', 'show', 'tv', u'movie', 'artwork', 'charts', u'poster', 'filming', 'video', 'photo', u'billboard'])"
+large,set(['large'])
+create,"set(['create', 'replace', 'reflect', 'collect', 'build', 'make', 'take'])"
+there,set(['there'])
+system,set(['system'])
+virtual,"set(['web', u'resource', u'map', 'customizable', 'virtual', 'maps', 'chat', 'news'])"
+reality,set(['reality'])
+note,set([u'note'])
+outside,set(['outside'])
+way,set(['way'])
+set,set(['set'])
+finished,set(['finished'])
+presentation,"set(['design', u'presentation'])"
+correct,"set(['impossible', 'difficult', 'correct', 'actually'])"
+televisions,set(['televisions'])
+colorchanging,set(['colorchanging'])
+ceiling,"set(['ceiling', 'camping', 'floor', 'wall', 'inside', u'surface', 'doorway', 'projecting', 'interior', 'tent'])"
+project,set([u'project'])
+ability,set([u'ability'])
+emergency,set(['emergency'])
+easily,"set(['easily', 'normally'])"
+watch,"set(['hang', 'rush', 'watch', 'talking'])"
+doorbell,set(['doorbell'])
+park,set(['park'])
+giant,set(['giant'])
+capture,set(['capture'])
+game,"set([u'player', u'game', u'sport', 'play', 'team'])"
+management,set(['management'])
+zoomable,set(['zoomable'])
+put,set(['put'])
+redesign,set(['redesign'])
+decorating,"set(['adjustable', 'wallpaper', 'draped', 'invisibility', 'decorating', 'tablecloth'])"
+change,set(['change'])
+room,"set(['room', 'desk'])"
+entire,set(['entire'])
+school,set(['school'])
+smartphones,set(['smartphones'])
+like,set(['like'])
+covering,set(['covering'])
+meeting,set([u'meeting'])
+ring,set([u'ring'])
+youre,set(['youre'])
+youtube,set(['youtube'])
+flag,set(['flag'])
+theyre,set(['theyre'])
+unsual,set(['unsual'])
+fashion,set(['fashion'])
+neighbor,set([u'neighbor'])
+piece,set([u'piece'])
+onto,set(['onto'])
+side,set(['side'])
+clothes,"set(['feed', 'food', 'cloak', 'cloth', u'dish', 'clothing', 'clothes'])"

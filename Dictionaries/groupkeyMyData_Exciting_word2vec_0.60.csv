@@ -1,0 +1,115 @@
+Super_Word,Value
+adjustable,set(['adjustable'])
+set,set(['set'])
+gold,set(['gold'])
+show,set(['show'])
+wall,set(['wall'])
+photo,set(['photo'])
+image,set([u'image'])
+desk,set(['desk'])
+displayed,set(['displayed'])
+system,set(['system'])
+fashion,set(['fashion'])
+eaisily,set(['eaisily'])
+table,set(['table'])
+message,set([u'message'])
+redo,set(['redo'])
+giant,set(['giant'])
+management,set(['management'])
+fabric,"set([u'dish', 'cloth', 'clothing', 'fabric'])"
+filming,"set(['filming', 'rush'])"
+tv,"set(['tv', u'movie', 'television', 'video'])"
+create,"set(['create', 'replace', 'reflect', 'collect', 'build', 'make'])"
+there,set(['there'])
+charts,"set([u'billboard', 'charts'])"
+actually,set(['actually'])
+player,"set([u'player', 'team'])"
+color,set([u'color'])
+program,"set([u'project', 'program'])"
+way,set(['way'])
+meeting,set([u'meeting'])
+outside,set(['outside'])
+televisions,set(['televisions'])
+colorchanging,set(['colorchanging'])
+ceiling,"set(['ceiling', 'projecting', 'doorway', 'floor'])"
+emergency,set(['emergency'])
+entire,set(['entire'])
+food,set(['food'])
+scoreboard,set(['scoreboard'])
+doorbell,set(['doorbell'])
+park,set(['park'])
+draped,set(['draped'])
+game,set([u'game'])
+mural,set(['mural'])
+artwork,set(['artwork'])
+redesign,set(['redesign'])
+room,set(['room'])
+easily,"set(['easily', 'normally'])"
+school,set(['school'])
+smartphones,set(['smartphones'])
+resource,set([u'resource'])
+like,set(['like'])
+covering,set(['covering'])
+customizable,"set(['customizable', 'web', 'chat'])"
+presentation,set([u'presentation'])
+ring,set([u'ring'])
+theyre,set(['theyre'])
+unsual,set(['unsual'])
+slide,"set(['monitors', 'slide', 'monitor', 'screen', 'display'])"
+warning,set([u'warning'])
+diy,set(['diy'])
+caution,set(['caution'])
+piece,set([u'piece'])
+side,set(['side'])
+clothes,"set(['cloak', 'clothes'])"
+everyone,set(['everyone'])
+frame,set(['frame'])
+whie,set(['whie'])
+finished,set(['finished'])
+product,set(['product'])
+surface,set([u'surface'])
+presenentations,set(['presenentations'])
+talking,set(['talking'])
+see,set(['see'])
+computer,set(['computer'])
+design,set(['design'])
+want,"set(['know', 'want'])"
+claimed,set(['claimed'])
+sport,set([u'sport'])
+cold,set(['cold'])
+capture,set(['capture'])
+appear,"set(['seem', 'appear'])"
+camping,"set(['decorating', 'camping'])"
+space,set(['space'])
+large,set(['large'])
+virtual,set(['virtual'])
+reality,set(['reality'])
+note,set([u'note'])
+maps,"set(['maps', u'map'])"
+hot,set(['hot'])
+take,set(['take'])
+poster,set([u'poster'])
+interior,set(['interior'])
+correct,"set(['impossible', 'correct', 'difficult'])"
+tent,set(['tent'])
+picture,set(['picture'])
+play,set(['play'])
+ability,set([u'ability'])
+watch,set(['watch'])
+wallpaper,set(['wallpaper'])
+hang,"set(['feed', 'hang'])"
+unusual,set(['unusual'])
+put,set(['put'])
+news,set(['news'])
+tablecloth,"set(['tablecloth', 'invisibility'])"
+change,set(['change'])
+theater,"set(['art', 'theater'])"
+youre,set(['youre'])
+youtube,set(['youtube'])
+flag,set(['flag'])
+updatable,set(['updatable'])
+person,set(['person'])
+neighbor,set([u'neighbor'])
+onto,"set(['inside', 'onto'])"
+powerpoint,"set(['powerpoint', 'portable'])"
+zoomable,set(['zoomable'])

@@ -1,0 +1,24 @@
+Super_Word,Value
+colorchanging,set(['colorchanging'])
+doorbell,set(['doorbell'])
+gold,"set(['food', 'gold'])"
+image,"set(['web', 'art', u'map', 'photo', u'image', 'mural', u'project', 'maps', 'diy', 'news', 'powerpoint'])"
+whie,set(['whie'])
+presenentations,set(['presenentations'])
+see,"set([u'note', 'see'])"
+eaisily,set(['eaisily'])
+claimed,set(['claimed'])
+cold,"set(['cold', 'hot'])"
+theyre,set(['theyre'])
+redo,set(['redo'])
+like,set(['like'])
+school,"set(['school', 'management', 'emergency', 'system', 'program', u'meeting'])"
+smartphones,set(['smartphones'])
+fabric,"set(['feed', 'set', 'wall', 'frame', 'displayed', 'product', u'surface', u'warning', 'design', 'chat', u'dish', 'table', u'message', 'clothing', 'tablecloth', 'capture', 'giant', 'fabric', 'camping', 'space', 'adjustable', 'create', 'cloak', 'virtual', u'color', 'outside', 'invisibility', 'interior', 'tent', 'ceiling', 'park', 'wallpaper', 'hang', 'scoreboard', 'draped', 'cloth', 'flag', 'desk', 'build', 'decorating', 'monitor', 'entire', u'resource', 'room', 'covering', 'customizable', 'inside', 'floor', 'display', 'large', 'slide', 'projecting', 'doorway', u'neighbor', u'piece', 'onto', 'side', u'ring', 'clothes'])"
+tv,"set(['fashion', 'portable', 'show', 'talking', 'computer', 'video', u'billboard', u'sport', 'monitors', 'tv', u'movie', 'charts', 'filming', u'presentation', 'televisions', 'picture', 'play', u'poster', 'screen', 'watch', 'rush', u'game', 'artwork', 'redesign', 'television', 'theater', u'player', 'finished', 'team'])"
+youre,set(['youre'])
+youtube,set(['youtube'])
+updatable,set(['updatable'])
+unsual,set(['unsual'])
+correct,"set(['everyone', 'replace', 'caution', 'want', 'impossible', 'seem', 'actually', 'unusual', 'appear', 'person', 'make', 'there', 'reality', 'take', 'way', 'correct', 'difficult', u'ability', 'reflect', 'know', 'put', 'change', 'easily', 'collect', 'normally'])"
+zoomable,set(['zoomable'])

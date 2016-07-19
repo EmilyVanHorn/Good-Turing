@@ -1,0 +1,32 @@
+Super_Word,Value
+everyone,"set(['easily', 'person', 'everyone', 'way', 'actually'])"
+school,set(['school'])
+displayed,"set(['seem', 'displayed', 'appear'])"
+whie,set(['whie'])
+park,"set(['photo', 'park', 'theater', 'marathon'])"
+unusual,set(['unusual'])
+presenentations,set(['presenentations'])
+talking,set(['talking'])
+see,set(['see'])
+zoomable,set(['zoomable'])
+put,"set(['put', 'make'])"
+tablecloth,"set(['tablecloth', 'adjustable'])"
+change,set(['change'])
+like,set(['like'])
+unsual,set(['unsual'])
+giant,"set(['draped', 'giant'])"
+netflix,set(['netflix'])
+fabric,"set(['ceiling', 'fabric', 'camping', 'floor', 'wall', 'scoreboard', 'frame', 'hang', 'monitor', u'surface', 'cloth', 'slide', 'upside', 'desk', 'table', 'display', 'tent'])"
+space,set(['space'])
+tv,"set(['picture', 'play', 'show', 'tv', u'movie', 'screen', 'watch', 'television', 'charts', 'filming', u'game', 'computer', 'video', 'artwork', u'sport'])"
+meeting,set([u'meeting'])
+binge,set(['binge'])
+there,set(['there'])
+youtube,set(['youtube'])
+theyre,set(['theyre'])
+note,set([u'note'])
+maps,"set([u'map', u'resource', 'web', 'maps', 'chat', 'powerpoint'])"
+neighbor,"set([u'friend', u'neighbor'])"
+presentation,set([u'presentation'])
+side,set(['side'])
+youre,set(['youre'])

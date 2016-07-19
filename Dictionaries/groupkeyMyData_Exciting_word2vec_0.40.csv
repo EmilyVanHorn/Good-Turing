@@ -1,0 +1,48 @@
+Super_Word,Value
+everyone,"set(['person', 'team', 'everyone', u'player'])"
+art,set(['art'])
+image,"set(['photo', u'image', u'map'])"
+whie,set(['whie'])
+displayed,"set(['seem', 'displayed', 'appear', 'want', 'know'])"
+presenentations,set(['presenentations'])
+talking,"set(['talking', 'rush'])"
+see,set(['see'])
+eaisily,set(['eaisily'])
+claimed,set(['claimed'])
+cold,"set(['cold', 'hot'])"
+updatable,set(['updatable'])
+redo,set(['redo'])
+unsual,set(['unsual'])
+unusual,set(['unusual'])
+fabric,"set(['adjustable', 'wall', 'frame', u'surface', 'table', u'ring', 'fabric', 'camping', 'floor', 'doorway', u'color', 'interior', 'tent', 'ceiling', 'wallpaper', 'hang', 'cloth', 'desk', 'room', 'inside', 'side', 'slide', 'projecting', u'piece', 'onto', 'display', 'clothes'])"
+space,"set(['system', 'web', 'program', 'management', u'resource', 'monitor', 'space', 'customizable', 'product', 'virtual', 'powerpoint', u'project', 'maps', 'computer', 'design', 'diy', 'chat', 'monitors', 'portable'])"
+tv,"set(['picture', 'play', 'theater', 'show', 'tv', u'movie', 'screen', u'poster', 'watch', 'television', 'scoreboard', 'charts', 'filming', u'game', 'video', 'artwork', u'billboard', 'news', u'sport'])"
+create,"set(['capture', 'create', 'replace', 'reflect', 'collect', 'build', 'make', 'take'])"
+there,set(['there'])
+reality,"set(['fashion', u'ability', 'reality', 'way', u'message', u'presentation'])"
+note,set([u'note'])
+outside,set(['outside'])
+meeting,set([u'meeting'])
+correct,"set(['easily', 'actually', 'caution', 'impossible', 'normally', 'correct', 'change', 'difficult'])"
+televisions,set(['televisions'])
+colorchanging,set(['colorchanging'])
+emergency,"set([u'warning', 'emergency'])"
+doorbell,set(['doorbell'])
+park,"set(['park', 'mural'])"
+giant,set(['giant'])
+finished,set(['finished'])
+zoomable,set(['zoomable'])
+put,"set(['put', 'set'])"
+redesign,set(['redesign'])
+decorating,"set(['feed', 'gold', 'food', 'cloak', 'draped', 'invisibility', u'dish', 'decorating', 'clothing', 'tablecloth'])"
+entire,set(['entire'])
+school,set(['school'])
+smartphones,set(['smartphones'])
+like,set(['like'])
+covering,set(['covering'])
+youre,set(['youre'])
+youtube,set(['youtube'])
+flag,set(['flag'])
+theyre,set(['theyre'])
+large,set(['large'])
+neighbor,set([u'neighbor'])

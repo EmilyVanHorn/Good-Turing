@@ -1,0 +1,51 @@
+Super_Word,Value
+everyone,"set(['easily', 'everyone', u'ability', 'actually', 'person', 'caution', 'way', 'impossible', 'reality', 'normally', 'correct', 'difficult'])"
+art,set(['art'])
+gold,set(['gold'])
+image,set([u'image'])
+whie,set(['whie'])
+displayed,"set(['appear', 'displayed', 'reflect', 'know', 'want', 'seem'])"
+presenentations,set(['presenentations'])
+talking,"set(['talking', 'rush'])"
+see,set(['see'])
+fashion,set(['fashion'])
+design,"set(['redesign', 'product', 'design', 'portable'])"
+eaisily,set(['eaisily'])
+claimed,set(['claimed'])
+cold,"set(['cold', 'hot'])"
+updatable,set(['updatable'])
+redo,set(['redo'])
+unsual,set(['unsual'])
+unusual,set(['unusual'])
+fabric,"set(['wall', 'frame', 'scoreboard', u'surface', 'table', u'ring', 'fabric', 'camping', 'floor', 'doorway', u'color', 'interior', 'tent', 'ceiling', 'hang', 'cloth', 'desk', 'monitor', 'room', 'inside', 'slide', 'projecting', u'piece', 'onto', 'display'])"
+space,set(['space'])
+tv,"set(['picture', 'play', 'show', 'tv', u'movie', 'screen', 'team', 'watch', 'television', 'charts', u'player', 'filming', u'game', 'computer', 'video', 'artwork', u'billboard', u'sport', 'monitors'])"
+there,set(['there'])
+note,set([u'note'])
+maps,"set([u'map', u'resource', 'web', 'covering', 'virtual', 'maps', 'chat', 'news', 'powerpoint'])"
+outside,set(['outside'])
+set,set(['set'])
+meeting,set([u'meeting'])
+televisions,set(['televisions'])
+colorchanging,set(['colorchanging'])
+emergency,"set(['management', 'emergency'])"
+doorbell,set(['doorbell'])
+park,"set(['photo', 'park', 'theater', 'mural', u'poster'])"
+giant,"set(['draped', 'giant'])"
+flag,set(['flag'])
+zoomable,set(['zoomable'])
+put,"set(['capture', 'make', 'replace', 'collect', 'build', 'put', 'create', 'take'])"
+tablecloth,"set(['adjustable', 'customizable', 'wallpaper', 'diy', 'tablecloth', 'decorating', 'invisibility'])"
+change,set(['change'])
+entire,set(['entire'])
+school,set(['school'])
+smartphones,set(['smartphones'])
+like,set(['like'])
+presentation,"set([u'presentation', 'system', u'project', 'program', u'message', u'warning'])"
+youre,set(['youre'])
+youtube,set(['youtube'])
+finished,set(['finished'])
+theyre,set(['theyre'])
+large,set(['large'])
+neighbor,"set(['feed', 'food', 'cloak', u'neighbor', u'dish', 'clothing', 'clothes'])"
+side,set(['side'])
