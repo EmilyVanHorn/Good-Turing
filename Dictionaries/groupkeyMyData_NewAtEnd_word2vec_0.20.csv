@@ -1,0 +1,22 @@
+Super_Word,Value
+colorchanging,set(['colorchanging'])
+doorbell,set(['doorbell'])
+gold,"set(['food', 'gold'])"
+whie,set(['whie'])
+presenentations,set(['presenentations'])
+see,"set([u'note', 'see', 'there'])"
+zoomable,set(['zoomable'])
+claimed,"set(['claimed', 'finished'])"
+cold,"set(['cold', 'hot'])"
+theyre,set(['theyre'])
+redo,set(['redo'])
+change,"set(['everyone', 'replace', 'fashion', 'caution', 'want', 'impossible', 'seem', 'reality', 'clothing', 'unusual', 'appear', 'person', 'make', 'actually', 'take', 'way', 'correct', 'difficult', u'ability', 'reflect', 'know', 'change', 'easily', 'like', 'collect', 'normally', 'create', 'clothes'])"
+school,"set(['school', 'management', 'emergency', 'system', u'project', 'program', u'meeting'])"
+smartphones,set(['smartphones'])
+fabric,"set(['feed', 'adjustable', 'set', 'wall', 'frame', 'scoreboard', 'product', u'surface', u'warning', 'design', 'redesign', u'dish', 'table', u'ring', 'decorating', 'capture', 'fabric', 'camping', 'space', 'cloak', 'virtual', u'color', 'outside', 'invisibility', 'interior', u'image', 'tent', u'map', 'ceiling', 'park', 'wallpaper', 'hang', 'draped', 'cloth', 'flag', 'mural', 'desk', 'put', 'build', 'tablecloth', 'monitor', 'entire', u'resource', 'room', 'covering', 'inside', 'floor', 'side', 'large', 'slide', 'projecting', 'doorway', u'neighbor', u'piece', 'onto', 'display'])"
+tv,"set(['art', 'portable', 'show', 'photo', 'displayed', 'talking', 'computer', 'video', 'chat', u'billboard', u'message', u'sport', 'monitors', 'web', 'giant', 'filming', 'tv', u'movie', 'charts', 'maps', u'presentation', 'televisions', 'picture', 'play', u'poster', 'screen', 'watch', 'rush', u'game', 'artwork', 'news', 'television', 'theater', u'player', 'customizable', 'diy', 'team', 'powerpoint'])"
+youre,set(['youre'])
+youtube,set(['youtube'])
+updatable,set(['updatable'])
+unsual,set(['unsual'])
+eaisily,set(['eaisily'])

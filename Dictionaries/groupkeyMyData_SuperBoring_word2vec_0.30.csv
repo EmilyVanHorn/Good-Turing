@@ -1,0 +1,21 @@
+Super_Word,Value
+note,set([u'note'])
+school,"set(['school', u'meeting', u'friend'])"
+everyone,"set(['easily', 'person', 'everyone', 'way', 'actually'])"
+whie,set(['whie'])
+fabric,"set(['adjustable', 'wall', 'frame', 'scoreboard', u'surface', 'table', 'fabric', 'camping', 'floor', 'tent', 'ceiling', 'hang', 'draped', 'cloth', 'desk', 'tablecloth', 'monitor', 'side', 'slide', 'upside', u'neighbor', 'display'])"
+netflix,set(['netflix'])
+tv,"set(['talking', 'picture', 'play', 'theater', 'show', 'tv', u'movie', 'screen', 'watch', 'television', 'charts', 'filming', u'game', 'computer', 'video', 'artwork', u'sport', u'presentation', 'marathon'])"
+displayed,"set(['put', 'make', 'displayed', 'appear', 'seem'])"
+there,set(['there'])
+unusual,"set(['unusual', 'like'])"
+park,"set(['web', 'giant', u'resource', 'space', 'photo', 'park', 'maps', u'map', 'chat', 'powerpoint'])"
+youtube,set(['youtube'])
+theyre,set(['theyre'])
+unsual,set(['unsual'])
+see,set(['see'])
+zoomable,set(['zoomable'])
+presenentations,set(['presenentations'])
+binge,set(['binge'])
+change,set(['change'])
+youre,set(['youre'])

@@ -1,0 +1,50 @@
+Super_Word,Value
+fashion,"set(['fashion', 'way'])"
+art,"set(['theater', 'art'])"
+whie,set(['whie'])
+replace,"set(['capture', 'make', 'hang', 'replace', 'collect', 'build', 'create', 'take'])"
+billboard,"set([u'billboard', 'charts'])"
+see,set(['see'])
+computer,"set(['portable', u'color', 'frame', 'scoreboard', u'player', 'computer', 'design', 'table', u'message', u'sport', 'monitors', 'program', u'presentation', 'play', u'screen', 'game', 'desk', 'redesign', 'slide', 'team', 'video', u'piece', 'display'])"
+caution,set(['caution'])
+eaisily,set(['eaisily'])
+claimed,"set(['claimed', 'displayed'])"
+cold,"set(['cold', 'hot'])"
+theyre,set(['theyre'])
+redo,set(['redo'])
+ring,"set([u'ring', 'adjustable'])"
+unsual,set(['unsual'])
+space,set(['space'])
+large,set(['large'])
+there,set(['there'])
+system,set(['system'])
+note,set([u'note'])
+interior,"set(['ceiling', 'room', 'floor', 'wall', 'inside', 'outside', u'surface', 'doorway', 'projecting', 'interior', 'onto', 'side'])"
+meeting,set([u'meeting'])
+televisions,"set(['televisions', 'picture', 'television', 'show', 'tv', u'movie', 'watch', 'filming'])"
+colorchanging,set(['colorchanging'])
+product,set(['product'])
+ability,"set(['unusual', u'ability', 'want', 'impossible', 'correct', 'difficult'])"
+emergency,"set(['management', u'resource', 'monitor', 'emergency', u'warning', 'chat', 'powerpoint'])"
+poster,"set([u'poster', u'image', 'artwork', 'photo'])"
+doorbell,set(['doorbell'])
+finished,set(['finished'])
+know,"set(['person', 'everyone', 'reality', 'know', 'talking'])"
+put,"set(['put', 'set'])"
+news,"set([u'map', 'covering', 'virtual', 'maps', 'web', 'news'])"
+presenentations,set(['presenentations'])
+change,"set(['reflect', 'seem', 'appear', 'change'])"
+entire,set(['entire'])
+school,set(['school'])
+smartphones,set(['smartphones'])
+like,set(['like'])
+customizable,"set(['camping', 'customizable', 'wallpaper', 'park', 'mural', 'invisibility', 'decorating', 'tent', 'tablecloth', 'diy'])"
+youre,set(['youre'])
+youtube,set(['youtube'])
+flag,set(['flag'])
+updatable,set(['updatable'])
+project,set([u'project'])
+neighbor,set([u'neighbor'])
+zoomable,set(['zoomable'])
+normally,"set(['easily', 'normally', 'actually'])"
+clothes,"set(['feed', 'rush', 'giant', 'fabric', 'gold', 'food', 'cloak', 'draped', 'cloth', u'dish', 'clothing', 'clothes'])"

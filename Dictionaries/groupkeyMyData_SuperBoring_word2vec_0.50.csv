@@ -1,0 +1,44 @@
+Super_Word,Value
+everyone,"set(['person', 'everyone'])"
+wall,set(['wall'])
+whie,set(['whie'])
+displayed,set(['displayed'])
+presenentations,set(['presenentations'])
+see,set(['see'])
+computer,set(['computer'])
+marathon,set(['marathon'])
+giant,set(['giant'])
+appear,"set(['seem', 'appear'])"
+space,set(['space'])
+adjustable,set(['adjustable'])
+binge,set(['binge'])
+there,set(['there'])
+actually,set(['actually'])
+note,set([u'note'])
+maps,"set(['maps', u'map'])"
+way,set(['way'])
+presentation,set([u'presentation'])
+side,set(['side'])
+ceiling,"set(['ceiling', 'park', 'camping', 'tent'])"
+watch,"set(['hang', 'watch', 'talking'])"
+unusual,set(['unusual'])
+draped,"set(['draped', 'cloth', 'tablecloth'])"
+game,"set([u'game', u'sport', 'play'])"
+zoomable,set(['zoomable'])
+desk,"set(['web', u'resource', 'monitor', 'chat', 'desk', 'powerpoint'])"
+put,set(['put'])
+change,set(['change'])
+fabric,"set(['fabric', 'floor', 'screen', 'scoreboard', u'surface', 'display', 'slide', 'table', 'frame'])"
+easily,set(['easily'])
+school,set(['school'])
+like,set(['like'])
+netflix,set(['netflix'])
+meeting,set([u'meeting'])
+youre,set(['youre'])
+youtube,set(['youtube'])
+theyre,set(['theyre'])
+unsual,set(['unsual'])
+tv,"set(['picture', 'television', 'theater', 'show', 'tv', u'movie', 'artwork', 'charts', 'filming', 'video', 'photo'])"
+upside,set(['upside'])
+neighbor,"set([u'friend', u'neighbor'])"
+make,set(['make'])

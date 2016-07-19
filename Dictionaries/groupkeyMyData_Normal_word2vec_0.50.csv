@@ -1,0 +1,74 @@
+Super_Word,Value
+fashion,set(['fashion'])
+art,"set(['theater', 'art'])"
+gold,set(['gold'])
+youre,set(['youre'])
+image,set([u'image'])
+whie,set(['whie'])
+displayed,set(['displayed'])
+mural,"set(['ceiling', 'room', 'floor', 'wall', 'inside', 'mural', 'doorway', u'surface', 'onto', 'side'])"
+replace,"set(['make', 'hang', 'replace', 'collect', 'take', 'create', 'build'])"
+billboard,"set([u'billboard', 'charts'])"
+see,set(['see'])
+computer,set(['computer'])
+design,"set([u'presentation', 'design'])"
+eaisily,set(['eaisily'])
+want,"set(['know', 'want'])"
+redesign,set(['redesign'])
+claimed,set(['claimed'])
+cold,"set(['cold', 'hot'])"
+theyre,set(['theyre'])
+redo,set(['redo'])
+message,"set(['web', 'virtual', 'program', 'chat', 'desk', u'message', u'warning', 'powerpoint'])"
+capture,set(['capture'])
+giant,set(['giant'])
+management,"set(['management', u'resource'])"
+appear,"set(['seem', 'appear'])"
+space,set(['space'])
+large,set(['large'])
+there,set(['there'])
+system,set(['system'])
+reality,set(['reality'])
+note,set([u'note'])
+maps,"set(['maps', u'map'])"
+outside,set(['outside'])
+way,set(['way'])
+interior,set(['interior'])
+set,set(['set'])
+meeting,set([u'meeting'])
+tent,"set(['park', 'tent'])"
+colorchanging,set(['colorchanging'])
+product,set(['product'])
+ability,"set(['correct', 'impossible', u'ability', 'difficult'])"
+emergency,set(['emergency'])
+poster,"set([u'poster', 'artwork', 'photo'])"
+screen,"set(['fabric', u'color', u'screen', 'slide', 'frame', 'table', 'display', 'monitor'])"
+doorbell,set(['doorbell'])
+school,set(['school'])
+finished,set(['finished'])
+game,"set([u'player', 'game', u'sport', 'play', 'team'])"
+zoomable,set(['zoomable'])
+put,set(['put'])
+news,set(['news'])
+decorating,"set(['adjustable', 'camping', 'wallpaper', 'scoreboard', 'draped', 'projecting', 'invisibility', 'decorating', 'tablecloth', 'diy'])"
+presenentations,set(['presenentations'])
+change,"set(['reflect', 'change'])"
+entire,set(['entire'])
+rush,"set(['talking', 'filming', 'rush', 'watch', 'show'])"
+smartphones,set(['smartphones'])
+like,set(['like'])
+covering,set(['covering'])
+customizable,"set(['televisions', 'picture', 'television', 'portable', 'customizable', u'movie', 'tv', 'video', 'monitors'])"
+ring,set([u'ring'])
+unusual,set(['unusual'])
+youtube,set(['youtube'])
+flag,set(['flag'])
+updatable,set(['updatable'])
+project,set([u'project'])
+everyone,"set(['person', 'everyone'])"
+neighbor,set([u'neighbor'])
+caution,set(['caution'])
+piece,set([u'piece'])
+normally,"set(['easily', 'normally', 'actually'])"
+unsual,set(['unsual'])
+clothes,"set(['feed', 'food', 'cloak', 'cloth', u'dish', 'clothing', 'clothes'])"

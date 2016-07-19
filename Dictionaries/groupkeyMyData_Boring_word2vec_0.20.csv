@@ -1,0 +1,23 @@
+Super_Word,Value
+colorchanging,set(['colorchanging'])
+doorbell,set(['doorbell'])
+emergency,"set(['person', u'warning', 'normally', 'emergency'])"
+whie,set(['whie'])
+replace,"set(['feed', 'everyone', 'replace', 'caution', 'want', 'impossible', 'seem', 'capture', 'unusual', 'appear', 'make', 'actually', 'take', 'way', 'correct', 'build', 'hang', 'watch', 'reflect', 'know', 'put', 'change', 'easily', 'large', 'collect', 'slide', 'difficult', 'create'])"
+see,"set([u'note', 'see', 'there'])"
+computer,"set(['set', 'portable', 'show', u'color', 'frame', 'artwork', 'scoreboard', 'product', 'charts', u'player', 'filming', 'computer', 'design', 'chat', 'news', u'billboard', 'table', u'message', u'sport', 'monitors', 'web', 'management', 'monitor', 'space', 'tv', u'movie', 'system', 'virtual', 'reality', 'maps', 'program', u'presentation', 'televisions', 'picture', 'play', u'ability', u'screen', 'game', 'desk', 'redesign', 'television', u'resource', 'powerpoint', u'project', 'diy', 'team', 'video', u'piece', 'display'])"
+eaisily,set(['eaisily'])
+claimed,"set(['claimed', 'finished', 'displayed'])"
+cold,"set(['cold', 'hot'])"
+presenentations,set(['presenentations'])
+redo,set(['redo'])
+school,"set(['theater', 'school', u'meeting'])"
+smartphones,set(['smartphones'])
+updatable,set(['updatable'])
+customizable,"set(['fashion', 'art', 'gold', 'mural', 'talking', u'dish', 'clothing', 'tablecloth', 'giant', 'fabric', 'camping', 'cloak', 'invisibility', 'food', u'poster', 'wallpaper', 'draped', 'cloth', 'decorating', 'rush', 'like', 'customizable', 'clothes'])"
+youre,set(['youre'])
+youtube,set(['youtube'])
+theyre,set(['theyre'])
+unsual,set(['unsual'])
+interior,"set(['adjustable', 'wall', 'photo', u'image', u'surface', u'ring', 'floor', 'outside', 'interior', 'tent', u'map', 'ceiling', 'park', 'flag', 'entire', 'room', 'covering', 'inside', 'doorway', 'projecting', u'neighbor', 'onto', 'side'])"
+zoomable,set(['zoomable'])
