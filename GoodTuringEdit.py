@@ -12,6 +12,7 @@ import gensim
 import json
 from gensim import models
 import xlsxwriter
+import pandas as pd
 
 def func1():
     return [["1", "2", "3", "4"],
@@ -56,8 +57,8 @@ def estimateNewIdea(count, line):#----------------------------ESTIMATE_NEW_IDEA
     c = 1                                                   
     n = float(sum(map(itemgetter(1), count.items())))       #total number of items
     
-    line.append(str((n1/n)*100) + "%")
-    #line.append(str((nc1 * (c+1))/n * 100) + "%")
+    line.append(str((n1/n)))
+    #line.append(str((nc1 * (c+1))/n))
     
 def calculateCat(count, output, timeSlice, new, sliceTotal):#-----CALCULATE-CAT
     total = float(sum(map(itemgetter(1), count.items())))   #total number of items
@@ -69,12 +70,12 @@ def calculateCat(count, output, timeSlice, new, sliceTotal):#-----CALCULATE-CAT
             overallNew += output[x][2]
     
     #calculate per slice 
-    perSlice = (new/sliceTotal)*100                         #percent of new per slice
-    line.append(str(perSlice) + "%")
+    perSlice = (new/sliceTotal)                        #percent of new per slice
+    line.append(str(perSlice))
     
     #calculate overall
-    overall = (overallNew/total)*100                        #percent of new overall
-    line.append(str(overall) + "%")
+    overall = (overallNew/total)                       #percent of new overall
+    line.append(str(overall))
 
 def stem(unique):#---------------------------------------------------------STEM
     stem = SnowballStemmer("english")
@@ -100,17 +101,29 @@ def format(line):#-------------------------------------------------------FORMAT
     stopwords = nltk.corpus.stopwords.words('english')      #list of stopwords
     useless = ["would", "could", "in", "use"];
     real = list() 
+    print "Line: "
+    print line["content"]
     
-    line[1] = line[1].strip('"')                                  #eliminate quotes
-    line[1] = line[1].split()                                     #cut stop words
-    real += [word.lower() for word in line[1] if 
+    text = line["content"].str
+    
+    print "New Line"
+    print text
+    
+    print "quit"
+    quit()
+
+    
+    text = text.strip('"')                                  #eliminate quotes
+    text = text.split()                                     #cut stop words
+    real += [word.lower() for word in text if 
              word.lower() not in stopwords and 
              word.lower() not in useless]
-    line[1] = sorted(real)
+    linetext= sorted(real)
     if(VERSION < 4):
         line[1] = lem(line[1])
         line[1] = stem(line[1]) 
-    line[1] = lem(line[1])
+    text = lem(text)
+    return text
     
     
 #def createScatterPlot(datasets, methods, thresholds):
@@ -635,14 +648,18 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
     #            "%New Categories Overall",
     #            "Counter"])
     logs.append([str(timeSlice) + "------ TIME_SLICE" + str(timeSlice) + " -----"])
-    while(i < len(file)):                                   #while more ideas still exist
-        line = file[i]                                      #a line in a file
+    while(i < len(file)+1):                                   #while more ideas still exist
+        line = file[i:i+1]                                      #a line in a file
         if(INTERVAL_MODE == 'time'):
             current = int(line[3])
         elif(INTERVAL_MODE == 'count'):
             current = i          
         if(current <= end):                            #for each time slice
-            format(line)                                    #convert idea content to list of relivant words
+            line.loc[1, "content"] = format(line)
+               
+            
+            
+            
             logs.append(["\tIDEA " + str(i) + " -----"])
             # print groupType
             groupList = []
@@ -693,7 +710,7 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
         estimateNewIdea(count, output[timeSlice -1])
         calculateCat(count, output, timeSlice - 1, newIdeaCount, totalIdeas)
     #print count
-    dictionary_to_save = "Dictionaries/wordkeyMyData_%s_%s_%.2f" %(dataset, method, threshold)
+    dictionary_to_save = "Dictionaries/Test/wordkey_%s_%s_%.2f" %(dataset, method, threshold)
     dictionary_out = open(dictionary_to_save, 'w')
     dictionary_out.write(json.dumps(wordsSeen, indent=2))
     dictionary_out.close()
@@ -704,7 +721,7 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
     for line in groupsDictOut:
         print line
     print count
-    writeOut(groupsDictOut, "Dictionaries/groupkeyMyData_%s_%s_%.2f.csv" %(dataset, method, threshold))
+    writeOut(groupsDictOut, "Dictionaries/Test/groupkey_%s_%s_%.2f.csv" %(dataset, method, threshold))
     return output
 
 def evaluate5_1(file, realOutput, model):#---------------------------------EVALUATE5.1
@@ -817,12 +834,12 @@ def evaluate5(file, logs):#-------------------------------------------------EVAL
     return output
 
 def evaluate6(file, logs):#-------------------------------------------------EVALUATE6
-    datasets = ['SuperBoring',
-                 'Boring',
-                 'Normal',
-                 'NewAtEnd',
-                 'Exciting']              #the list of input filenames
-    #datasets = ['smallIdeas']
+    #datasets = ['SuperBoring',
+    #             'Boring',
+    #             'Normal',
+    #             'NewAtEnd',
+    #             'Exciting']              #the list of input filenames
+    datasets = ['smallIdeas']
     # versions = [evaluate4(file, logs, "getGroup", 0.5)]       #array of functions to try out
     #             evaluate4(file, logs, "getGroup", 0.9),
     #             evaluate4(file, logs, "getGroup3", 0.5),
@@ -843,30 +860,31 @@ def evaluate6(file, logs):#-------------------------------------------------EVAL
                "timeSlice", "GT_predict", "true"])
 
     for dataset in datasets:                     #for each dataset
-        input_file = "Input/MyData/%s.csv" %dataset
-        print "datasets: ", dataset              
-        # j = 0                   
-        # for function in versions:                       #run each version of the program
-        for method in methods:
-            print "method: ", method
-            for threshold in thresholds:
-                print "threshold: ", threshold
-                opened_input = getInputFile(input_file)
-                returnedOut = evaluate4(opened_input, logs, method, threshold, dataset)                      #output from this version
-                print "\treturnedOut: ", returnedOut
-                for line in returnedOut:                    #rotate output to desired format
-                    print "\t\tline: ", line                    #and save to "output[]"
-                    outLine = []
-                    outLine.append(dataset)
-                    outLine.append("%s_%.2f" %(method, threshold))
-                    outLine.append(line[0])
-                    outLine.append(line[4])
-                    outLine.append(line[5])             
-                    print "\t\t\t", outLine
-                    output.append(outLine) 
+        print "datasets: ", dataset
+        input_file = data = pd.read_csv("Input/%s.csv" %dataset)
+        for theme, theme_data in input_file.groupby("theme"):
+            print "theme: ", theme
+#            print theme_data[:1]
+#            print theme_data[1:2]
+            for method in methods:
+                print "method: ", method
+                for threshold in thresholds:
+                    print "threshold: ", threshold
+                    returnedOut = evaluate4(theme_data, logs, method, threshold, dataset)                      #output from this version
+                    print "\treturnedOut: ", returnedOut
+                    for line in returnedOut:                    #rotate output to desired format
+                        print "\t\tline: ", line                    #and save to "output[]"
+                        outLine = []
+                        outLine.append(theme)
+                        outLine.append("%s_%.2f" %(method, threshold))
+                        outLine.append(line[0])
+                        outLine.append(line[4])
+                        outLine.append(line[5])             
+                        print "\t\t\t", outLine
+                        output.append(outLine) 
             # j = j+1                       
         # i = i+1
-    writeOut(output, OUTPUT_FILE)
+    #writeOut(output, OUTPUT_FILE)
 
 def errorLog(errorCode):#---------------------------------------------ERROR_LOG
     if(errorCode == 0):
@@ -894,8 +912,8 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
 #--------------------------------------------------------------------------MAIN
 
 INPUT_FILE = "Input/Normal.csv"            
-OUTPUT_FILE = "Data Output/MyDataWord2VecWithStemming.csv"
-LOG_FILE = "MyDataWord2VecWithStemming.txt"
+OUTPUT_FILE = "Data Output/Test/byTheme.csv"
+LOG_FILE = "log.txt"
 VERSION = 6
 INTERVAL_MODE = 'count'                              #options: time, count;
                                                     #options: words, categories;
