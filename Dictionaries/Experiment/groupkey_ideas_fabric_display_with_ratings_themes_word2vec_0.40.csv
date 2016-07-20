@@ -1,0 +1,12 @@
+Super_Word,Value
+perhaps,set(['perhaps'])
+certain,"set(['certain', 'them'])"
+screen,"set(['touch', 'screen', 'medium', 'fabric', 'single'])"
+changed,set(['changed'])
+expands,set(['expands'])
+replace,"set(['keep', 'replace'])"
+state,set(['state'])
+new,set(['new'])
+newspaper,"set(['newspaper', 'magazine', u'book', 'pages', 'page'])"
+article,set([u'article'])
+saved,set(['saved'])

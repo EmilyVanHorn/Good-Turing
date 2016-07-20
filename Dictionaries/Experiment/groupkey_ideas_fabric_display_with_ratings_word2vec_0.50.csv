@@ -1,0 +1,87 @@
+Super_Word,Value
+dont,set(['dont'])
+office,set(['office'])
+color,"set(['color', 'screen', 'display'])"
+image,set(['image'])
+trade,set(['trade'])
+protest,set([u'protest'])
+sleep,"set(['wedding', 'sleep', 'room', 'bed', 'night'])"
+seats,"set(['candidate', 'seats'])"
+lesson,"set([u'classroom', u'lesson'])"
+its,set(['its'])
+childrens,set(['childrens'])
+colorspatterns,set(['colorspatterns'])
+based,set(['based'])
+working,set(['working'])
+start,set(['start'])
+support,set(['support'])
+distracted,set(['distracted'])
+redecorate,set(['redecorate'])
+brighter,"set(['brighter', 'darker'])"
+much,"set(['little', 'much'])"
+music,set(['music'])
+helps,set(['helps'])
+curtain,set([u'curtain'])
+type,set(['type'])
+booth,set(['booth'])
+direction,set([u'direction'])
+blanket,"set(['tablecloth', 'sweating', 'blanket', 'sweat', u'stain', u'pillow', 'carpet'])"
+back,set(['back'])
+whichever,set(['whichever'])
+sons,set(['sons'])
+adult,"set([u'worker', 'adult', 'child'])"
+embarassed,set(['embarassed'])
+promote,"set(['reflect', 'promote'])"
+day,set(['day'])
+case,set(['case'])
+school,"set(['school', 'college', u'student'])"
+like,set(['like'])
+presentation,"set(['design', u'presentation'])"
+runway,set(['runway'])
+cry,"set(['girl', u'cry', 'shirt', 'sleeve', u'kid'])"
+laying,"set(['shifting', 'laying'])"
+car,set(['car'])
+ie,set(['ie'])
+ex,set(['ex'])
+square,set(['square'])
+often,set(['often'])
+people,set(['people'])
+halloween,"set(['halloween', 'holidays'])"
+play,"set(['play', u'show'])"
+mural,"set(['painting', 'mural'])"
+need,"set(['need', 'want'])"
+tshirt,set(['tshirt'])
+something,set(['something'])
+in,set(['in'])
+billboard,set(['billboard'])
+logo,"set([u'logo', 'flag'])"
+clothing,"set(['shop', 'hunting', 'dancing', 'wear', 'decorate', 'clothes', 'clothing', u'costume'])"
+trip,set(['trip'])
+different,"set(['certain', 'different', 'various'])"
+cape,set(['cape'])
+etc,set(['etc'])
+movie,"set(['movie', 'superhero'])"
+note,set([u'note'])
+also,set(['also'])
+slideshows,set(['slideshows'])
+buildings,"set(['wall', 'buildings', 'construction', 'campus', 'road'])"
+used,set(['used'])
+time,set([u'time'])
+collection,set(['collection'])
+hand,set(['hand'])
+reason,"set([u'reason', u'purpose'])"
+regular,"set(['regular', 'uniform'])"
+advertisement,"set([u'video', 'projector', u'advertisement', 'interactive'])"
+teach,"set(['look', 'give', 'watch', 'make', u'get', 'hang', 'keep', 'put', 'take', 'go', 'teach'])"
+data,"set(['load', u'message', 'data', 'frame'])"
+change,set([u'change'])
+on,set(['on'])
+theater,set([u'theater'])
+older,set(['older'])
+later,set(['later'])
+running,set(['running'])
+anytime,set(['anytime'])
+turn,set([u'turn'])
+camo,set(['camo'])
+reception,set(['reception'])
+pattern,"set([u'pattern', u'sheet', 'fabric', 'reflective'])"

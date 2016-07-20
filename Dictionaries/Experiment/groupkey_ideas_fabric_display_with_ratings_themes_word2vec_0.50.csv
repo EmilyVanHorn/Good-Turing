@@ -1,0 +1,17 @@
+Super_Word,Value
+them,set(['them'])
+medium,"set(['medium', 'fabric'])"
+perhaps,set(['perhaps'])
+certain,set(['certain'])
+screen,"set(['touch', 'screen'])"
+changed,set(['changed'])
+state,set(['state'])
+saved,set(['saved'])
+replace,"set(['keep', 'replace'])"
+single,set(['single'])
+book,set([u'book'])
+new,set(['new'])
+newspaper,"set(['newspaper', 'magazine'])"
+article,set([u'article'])
+expands,set(['expands'])
+pages,"set(['pages', 'page'])"

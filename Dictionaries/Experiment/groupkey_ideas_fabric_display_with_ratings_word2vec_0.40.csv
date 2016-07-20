@@ -1,0 +1,55 @@
+Super_Word,Value
+square,"set(['buildings', 'square', 'wall', 'runway', 'mural', 'construction', 'campus', 'road'])"
+dont,"set(['dont', 'anytime'])"
+people,set(['people'])
+color,"set([u'sheet', 'fabric', 'color', u'pattern', 'screen', 'uniform', 'design', 'reflective', 'type', 'frame'])"
+seats,"set(['office', 'candidate', 'seats'])"
+halloween,"set(['wedding', 'night', 'halloween', 'day', 'holidays'])"
+back,set(['back'])
+trade,set(['trade'])
+protest,set([u'protest'])
+something,"set([u'reason', 'something', u'purpose'])"
+in,set(['in'])
+billboard,set(['billboard'])
+logo,"set([u'logo', 'flag', 'image'])"
+lesson,"set(['play', 'look', 'give', 'keep', 'hang', 'make', u'cry', 'watch', 'trip', 'reflect', 'start', 'sleep', 'take', u'get', 'put', 'go', u'lesson', 'promote', 'teach', 'wear'])"
+clothing,"set(['shop', 'shirt', 'sleeve', 'room', 'car', 'blanket', 'hunting', 'painting', 'bed', u'costume', u'curtain', 'girl', 'clothes', 'clothing', 'carpet'])"
+its,set(['its'])
+childrens,set(['childrens'])
+different,"set(['certain', 'different', 'regular', 'various'])"
+colorspatterns,set(['colorspatterns'])
+based,set(['based'])
+working,set(['working'])
+movie,"set(['superhero', u'show', 'movie', 'dancing', 'music', u'video', 'booth', u'advertisement', u'theater', u'kid'])"
+support,set(['support'])
+distracted,set(['distracted'])
+redecorate,set(['redecorate'])
+embarassed,set(['embarassed'])
+note,set([u'note'])
+also,set(['also'])
+much,"set(['little', 'much'])"
+slideshows,set(['slideshows'])
+presentation,"set([u'presentation', 'projector', 'collection', 'interactive'])"
+helps,"set(['need', 'helps', 'want'])"
+used,set(['used'])
+hand,set(['hand'])
+often,set(['often'])
+whichever,set(['whichever'])
+sons,set(['sons'])
+adult,"set([u'worker', 'adult', 'child'])"
+cape,set(['cape'])
+tablecloth,"set(['sweating', u'pillow', 'decorate', 'tablecloth', u'stain', 'sweat'])"
+data,"set(['load', 'ie', u'message', 'data', 'display'])"
+change,"set([u'turn', u'direction', u'change'])"
+case,set(['case'])
+on,set(['on'])
+school,"set([u'classroom', 'school', 'college', u'student'])"
+like,set(['like'])
+older,"set(['brighter', 'darker', 'older'])"
+later,set(['later'])
+laying,"set(['shifting', 'running', 'laying'])"
+tshirt,set(['tshirt'])
+etc,set(['etc'])
+camo,set(['camo'])
+time,"set(['reception', u'time'])"
+ex,set(['ex'])

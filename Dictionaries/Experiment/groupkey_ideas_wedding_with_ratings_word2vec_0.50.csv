@@ -1,0 +1,31 @@
+Super_Word,Value
+bathing,"set(['linen', 'bathing', 'clothing', u'wear', 'loud'])"
+everyone,"set(['everyone', 'every'])"
+around,set(['around'])
+played,set(['played'])
+masquerade,set(['masquerade'])
+couple,set(['couple'])
+recipe,set(['recipe'])
+walk,"set(['swim', 'groom', 'beach', 'walk'])"
+brought,"set(['brought', 'put'])"
+email,set(['email'])
+moment,set([u'moment'])
+video,set(['video'])
+wedding,"set(['bride', 'song', 'favorite', u'guest', 'wedding'])"
+go,"set([u'go', 'play'])"
+guess,"set(['funny', 'guess'])"
+end,set(['end'])
+read,set(['read'])
+give,set(['give'])
+mask,set(['mask'])
+disco,"set(['vintage', 'disco'])"
+record,set(['record'])
+book,"set(['text', 'story', 'book'])"
+funniest,set(['funniest'])
+reception,set(['reception'])
+suit,set(['suit'])
+collected,set(['collected'])
+white,set(['white'])
+friendguests,set(['friendguests'])
+pot,set(['pot'])
+luck,set(['luck'])

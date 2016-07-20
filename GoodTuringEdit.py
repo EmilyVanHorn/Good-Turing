@@ -1,3 +1,8 @@
+#####THERE IS PROBABLY A BETTER WAY TO USE PANDAS DATAFRAME CELL VALUES AS STRINGS
+#####   SEE DEF FORMAT(LINE) FOR WORKAROUND
+
+
+
 from __future__ import division
 from operator import *
 from collections import Counter
@@ -57,7 +62,7 @@ def estimateNewIdea(count, line):#----------------------------ESTIMATE_NEW_IDEA
     c = 1                                                   
     n = float(sum(map(itemgetter(1), count.items())))       #total number of items
     
-    line.append(str((n1/n)))
+    line.append(str((n1/n)*100))
     #line.append(str((nc1 * (c+1))/n))
     
 def calculateCat(count, output, timeSlice, new, sliceTotal):#-----CALCULATE-CAT
@@ -70,11 +75,11 @@ def calculateCat(count, output, timeSlice, new, sliceTotal):#-----CALCULATE-CAT
             overallNew += output[x][2]
     
     #calculate per slice 
-    perSlice = (new/sliceTotal)                        #percent of new per slice
+    perSlice = (new/sliceTotal)*100                        #percent of new per slice
     line.append(str(perSlice))
     
     #calculate overall
-    overall = (overallNew/total)                       #percent of new overall
+    overall = (overallNew/total)*100                       #percent of new overall
     line.append(str(overall))
 
 def stem(unique):#---------------------------------------------------------STEM
@@ -101,24 +106,23 @@ def format(line):#-------------------------------------------------------FORMAT
     stopwords = nltk.corpus.stopwords.words('english')      #list of stopwords
     useless = ["would", "could", "in", "use"];
     real = list() 
-    print "Line: "
-    print line["content"]
+    listOfWords = []
+    text = line["content"]
     
-    text = line["content"].str
     
-    print "New Line"
-    print text
     
-    print "quit"
-    quit()
-
+    text = text.str.strip('"')                                  #eliminate quotes
+    text = text.str.split()                                     #cut stop words
     
-    text = text.strip('"')                                  #eliminate quotes
-    text = text.split()                                     #cut stop words
-    real += [word.lower() for word in text if 
-             word.lower() not in stopwords and 
-             word.lower() not in useless]
-    linetext= sorted(real)
+    for word in text:
+        for realWord in word:
+            listOfWords.append(realWord.lower())
+            
+    real += [word for word in listOfWords if 
+             word not in stopwords and 
+             word not in useless]
+    
+    text = sorted(real)
     if(VERSION < 4):
         line[1] = lem(line[1])
         line[1] = stem(line[1]) 
@@ -651,11 +655,11 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
     while(i < len(file)+1):                                   #while more ideas still exist
         line = file[i:i+1]                                      #a line in a file
         if(INTERVAL_MODE == 'time'):
-            current = int(line[3])
+            current = int(line["timeStamp"])###NOT TESTED!!! 
         elif(INTERVAL_MODE == 'count'):
             current = i          
         if(current <= end):                            #for each time slice
-            line.loc[1, "content"] = format(line)
+            line = format(line)          #line becomes just array content rather than the whole line
                
             
             
@@ -663,7 +667,7 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
             logs.append(["\tIDEA " + str(i) + " -----"])
             # print groupType
             groupList = []
-            for word in line[1]:                            #add to counter
+            for word in line:                            #add to counter
                 if(method == "nltk"):
                     group = getGroup(count, word, threshold, wordsSeen, groups)
                 elif(method == "word2vec"):
@@ -710,18 +714,13 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
         estimateNewIdea(count, output[timeSlice -1])
         calculateCat(count, output, timeSlice - 1, newIdeaCount, totalIdeas)
     #print count
-    dictionary_to_save = "Dictionaries/Test/wordkey_%s_%s_%.2f" %(dataset, method, threshold)
+    dictionary_to_save = "Dictionaries/Experiment/wordkey_%s_%s_%.2f" %(dataset, method, threshold)
     dictionary_out = open(dictionary_to_save, 'w')
     dictionary_out.write(json.dumps(wordsSeen, indent=2))
     dictionary_out.close()
     for key in groups.keys():
         groupsDictOut.append([key, groups.get(key)])
-    
-    
-    for line in groupsDictOut:
-        print line
-    print count
-    writeOut(groupsDictOut, "Dictionaries/Test/groupkey_%s_%s_%.2f.csv" %(dataset, method, threshold))
+    writeOut(groupsDictOut, "Dictionaries/Experiment/groupkey_%s_%s_%.2f.csv" %(dataset, method, threshold))
     return output
 
 def evaluate5_1(file, realOutput, model):#---------------------------------EVALUATE5.1
@@ -834,12 +833,16 @@ def evaluate5(file, logs):#-------------------------------------------------EVAL
     return output
 
 def evaluate6(file, logs):#-------------------------------------------------EVALUATE6
+    
     #datasets = ['SuperBoring',
     #             'Boring',
     #             'Normal',
     #             'NewAtEnd',
     #             'Exciting']              #the list of input filenames
-    datasets = ['smallIdeas']
+    datasets = ['ideas_wedding_with_ratings',
+                'ideas_fabric_display_with_ratings',
+                'ideas_remember_names_with_ratings',
+                'ideas_fabric_display_with_ratings_themes']
     # versions = [evaluate4(file, logs, "getGroup", 0.5)]       #array of functions to try out
     #             evaluate4(file, logs, "getGroup", 0.9),
     #             evaluate4(file, logs, "getGroup3", 0.5),
@@ -862,29 +865,58 @@ def evaluate6(file, logs):#-------------------------------------------------EVAL
     for dataset in datasets:                     #for each dataset
         print "datasets: ", dataset
         input_file = data = pd.read_csv("Input/%s.csv" %dataset)
-        for theme, theme_data in input_file.groupby("theme"):
-            print "theme: ", theme
-#            print theme_data[:1]
-#            print theme_data[1:2]
-            for method in methods:
-                print "method: ", method
-                for threshold in thresholds:
-                    print "threshold: ", threshold
-                    returnedOut = evaluate4(theme_data, logs, method, threshold, dataset)                      #output from this version
-                    print "\treturnedOut: ", returnedOut
-                    for line in returnedOut:                    #rotate output to desired format
-                        print "\t\tline: ", line                    #and save to "output[]"
-                        outLine = []
-                        outLine.append(theme)
-                        outLine.append("%s_%.2f" %(method, threshold))
-                        outLine.append(line[0])
-                        outLine.append(line[4])
-                        outLine.append(line[5])             
-                        print "\t\t\t", outLine
-                        output.append(outLine) 
-            # j = j+1                       
-        # i = i+1
-    #writeOut(output, OUTPUT_FILE)
+        if(dataset == "ideas_remember_names_with_ratings" or
+           dataset == "ideas_fabric_display_with_ratings_themes"):
+            for theme, theme_data in input_file.groupby("theme"):
+                print "theme: ", theme
+                for method in methods:
+                    print "method: ", method
+                    for threshold in thresholds:
+                        print "threshold: ", threshold
+                        #SORTBY TIME HERE -- NOT TESTED
+                        #theme_data.sort("timeStamp")
+                        returnedOut = evaluate4(theme_data, logs, method, threshold, dataset)                      #output from this version
+                        for line in returnedOut:                    #rotates returned output to desired 
+                                                                    #format and save to "output[]"
+                            outLine = []
+                            outLine.append(theme)
+                            outLine.append("%s_%.2f" %(method, threshold))
+                            outLine.append(line[0])
+                            outLine.append(line[4])
+                            outLine.append(line[5])             
+                            print "\t\t\t", outLine
+                            output.append(outLine) 
+                # j = j+1                       
+            # i = i+1
+            output_file = "Data Output/Experiment/%s_results.csv" %dataset
+            writeOut(output, output_file)
+            output = []
+        elif(dataset == "ideas_wedding_with_ratings" or
+             dataset == "ideas_fabric_display_with_ratings"):
+            for author, author_data in input_file.groupby("authorID"):
+                print "author: ", author
+                for method in methods:
+                    print "method: ", method
+                    for threshold in thresholds:
+                        print "threshold: ", threshold
+                        #SORTBY TIME HERE -- NOT TESTED
+                        #theme_data.sort("timeStamp")
+                        returnedOut = evaluate4(author_data, logs, method, threshold, dataset)                      #output from this version
+                        for line in returnedOut:                    #rotates returned output to desired 
+                                                                    #format and save to "output[]"
+                            outLine = []
+                            outLine.append(author)
+                            outLine.append("%s_%.2f" %(method, threshold))
+                            outLine.append(line[0])
+                            outLine.append(line[4])
+                            outLine.append(line[5])             
+                            print "\t\t\t", outLine
+                            output.append(outLine) 
+                # j = j+1                       
+            # i = i+1
+            output_file = "Data Output/Experiment/%s_results.csv" %dataset
+            writeOut(output, output_file)
+            output = []
 
 def errorLog(errorCode):#---------------------------------------------ERROR_LOG
     if(errorCode == 0):
@@ -908,11 +940,108 @@ def writeOut(output, fileName):#--------------------------------------WRITE_OUT
         else:
             print "Results written to ", fileName
             logs.append(["Results written to " + fileName])
+            
+def authorRealTime(file, logs, method, threshold, dataset):#-------------------EVALUATE4
+    groupsDictOut = []
+    groupsDictOut.append(["Super_Word", "Value"])
+    wordsSeen = {}
+    groups = {}
+    itemsSeen = {}
+    #var dictionary
+    #file                                           #raw input file
+    #start                                          #starting point for intervals
+    #end                                            #end point for current interval
+    count = Counter()                               #counter for frequencies
+    timeSlice = 1                                   #timeSlice ID
+    newIdea = 'false'                               #true/false:
+                                                        #new bin in the time slice?
+    newIdeaCount = 0                                #number of new ideas so far
+    totalIdeas = 0                                  #total ideas per timeSlice
+    output = []                                     #output array
+    i = 0                                           #index for while loop
+    model = models.Word2Vec.load("text8Model")
+    #file.sort(key=itemgetter(3))
+    
+    logs.append(["--------------- START EXECUTION ---------------"])
+    if(INTERVAL_MODE == 'time'):
+        start = int(file[0][3])                     #unix time of first row
+        end = start + INTERVAL
+    elif(INTERVAL_MODE == 'count'):
+        start = 0
+        end = start + INTERVAL
+        
+    #output.append(["Time Slice",                        #file header
+    #            "New Category?", 
+    #            "# of New Categories", 
+    #            "Total Ideas in Time Slice",
+    #            "Probability of New Bin",
+    #            "%New Categories in Time Slice",
+    #            "%New Categories Overall",
+    #            "Counter"])
+    logs.append([str(timeSlice) + "------ TIME_SLICE" + str(timeSlice) + " -----"])
+    while(i < len(file)+1):                                   #while more ideas still exist
+        newLine = file[i:i+1]                                      #a line in a file
+        if(INTERVAL_MODE == 'time'):
+            current = int(newLine["timeStamp"])###NOT TESTED!!! 
+        elif(INTERVAL_MODE == 'count'):
+            current = i          
+        if(current <= end):                            #for each time slice
+            timeSliceData.append(newLine)
+            i = i+1
+        else:
+            #runAuthor()
+            for line in timeSliceData:
+                line = format(line)       #line becomes just array content rather than the whole line
+                logs.append(["\tIDEA " + str(i) + " -----"])
+                # print groupType
+                groupList = []
+                for word in line:                            #add to counter
+                    if(method == "nltk"):
+                        group = getGroup(count, word, threshold, wordsSeen, groups)
+                    elif(method == "word2vec"):
+                        group = getGroup3(count, word, model, threshold, wordsSeen, groups)
+                    oldCount = count[group]
+                    count[group] += 1
+                    newCount = count[group]
+                    #groupList.append(group)
+
+                    if newCount == 1:                           #was this a new bin?
+                        newIdea = 'true'                            #if yes,
+                        newIdeaCount += 1
+                    totalIdeas += 1
+                    logs.append(["\t\t" + word + ":\t" + group + "--> \t" + str(newCount)])
+                for group in groupList:
+                    print group
+
+                #COMBOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                #groupList = getCombos(groupList)
+                #for combo in groupList:
+                #    oldCount = count[combo]
+                #    count[combo] += 1
+                #    newCount = count[combo]
+                #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    
+                #    if(newCount == 1 and newIdea == "false"):
+                #        newIdeaCount += 1
+                #    logs.append(["\t\t" + str(line[1]) + ":\t" + combo + "--> \t" + str(newCount)])
+                
+    if(totalIdeas > 0):
+        output.append([timeSlice, newIdea, newIdeaCount, totalIdeas])
+        estimateNewIdea(count, output[timeSlice -1])
+        calculateCat(count, output, timeSlice - 1, newIdeaCount, totalIdeas)
+    #print count
+    dictionary_to_save = "Dictionaries/Test/wordkey_%s_%s_%.2f" %(dataset, method, threshold)
+    dictionary_out = open(dictionary_to_save, 'w')
+    dictionary_out.write(json.dumps(wordsSeen, indent=2))
+    dictionary_out.close()
+    for key in groups.keys():
+        groupsDictOut.append([key, groups.get(key)])
+    writeOut(groupsDictOut, "Dictionaries/Test/groupkey_%s_%s_%.2f.csv" %(dataset, method, threshold))
+    return output
 
 #--------------------------------------------------------------------------MAIN
 
 INPUT_FILE = "Input/Normal.csv"            
-OUTPUT_FILE = "Data Output/Test/byTheme.csv"
+
 LOG_FILE = "log.txt"
 VERSION = 6
 INTERVAL_MODE = 'count'                              #options: time, count;
@@ -921,7 +1050,7 @@ INTERVAL_MODE = 'count'                              #options: time, count;
 #INTERVAL = 600000                                    #10 minutes
 #INTERVAL = 1800000                                  #30 minutes
 #INTERVAL = 3600000                                  # 1 hour
-INTERVAL = 3
+INTERVAL = 1
 out = []                                            #data output to print
 logs = []                                           #log  output to print
 #f = open('dictNLTK.file', 'r')
@@ -943,7 +1072,7 @@ file = getInputFile(INPUT_FILE)
 
 #setup Log File
 logs.append(["VERSION:\t" + str(VERSION)])
-logs.append(["INPUT_FILE:\t" + INPUT_FILE])
+#logs.append(["INPUT_FILE:\t" + INPUT_FILE])
 logs.append(["INTERVAL_MODE:\t" + INTERVAL_MODE])
 
 #process

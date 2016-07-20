@@ -1,0 +1,21 @@
+Super_Word,Value
+on,"set(['on', 'trade', 'in'])"
+square,"set(['buildings', 'square', 'wall', 'runway', 'collection', 'construction', 'college', 'mural', 'cape', 'campus', 'road'])"
+dont,"set(['dont', 'wedding', 'back', 'sleep', 'booth', 'girl', 'sweating', 'little', 'hunting', u'stain', 'decorate', u'worker', 'hand', 'sons', 'child', 'tablecloth', 'room', u'cry', 'bed', 'sweat', 'anytime', u'pillow', 'clothes'])"
+seats,"set(['office', 'candidate', 'seats'])"
+movie,"set(['shop', u'show', 'color', 'image', 'halloween', 'projector', u'costume', 'billboard', u'logo', 'clothing', 'trip', 'carpet', 'superhero', 'shirt', 'dancing', 'movie', 'music', u'curtain', 'screen', 'hang', 'blanket', 'watch', 'flag', u'advertisement', u'kid', u'theater', 'sleeve', 'car', 'running', 'night', u'video', 'painting'])"
+distracted,"set(['etc', 'distracted', 'laying', 'used', 'based'])"
+redecorate,set(['redecorate'])
+whichever,set(['whichever'])
+holidays,"set(['day', 'holidays'])"
+ex,set(['ex'])
+also,set(['also'])
+tshirt,set(['tshirt'])
+colorspatterns,set(['colorspatterns'])
+childrens,set(['childrens'])
+slideshows,set(['slideshows'])
+time,"set(['later', 'reception', u'time'])"
+embarassed,set(['embarassed'])
+lesson,"set(['give', 'go', u'protest', 'something', 'want', 'need', u'lesson', 'working', 'make', 'people', 'start', 'helps', u'presentation', 'take', 'play', u'get', 'reflect', u'reason', 'wear', u'student', 'put', 'teach', 'promote', u'change', u'classroom', 'school', 'look', 'keep', u'turn', 'support', 'adult'])"
+camo,set(['camo'])
+often,"set(['load', 'often', 'certain', 'frame', 'design', u'message', 'ie', 'its', 'different', u'sheet', 'fabric', u'pattern', 'uniform', u'note', 'brighter', 'much', 'various', 'reflective', 'type', u'direction', 'regular', 'shifting', u'purpose', 'data', 'case', 'like', 'older', 'interactive', 'display', 'darker'])"

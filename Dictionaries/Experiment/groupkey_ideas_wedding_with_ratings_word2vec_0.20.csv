@@ -1,0 +1,9 @@
+Super_Word,Value
+everyone,"set(['swim', 'bathing', 'everyone', 'give', 'couple', 'groom', 'guess', 'walk', 'brought', 'put', u'wear', 'wedding', u'go', 'beach', 'luck'])"
+funniest,set(['funniest'])
+around,"set(['every', 'end', 'around'])"
+reception,"set([u'moment', 'reception'])"
+friendguests,set(['friendguests'])
+collected,"set(['collected', 'read', 'text'])"
+mask,"set(['played', 'favorite', 'pot', 'recipe', 'video', 'clothing', 'funny', 'story', u'guest', 'linen', 'vintage', 'book', 'suit', 'white', 'play', 'song', 'masquerade', 'bride', 'mask', 'disco', 'record', 'loud'])"
+email,set(['email'])

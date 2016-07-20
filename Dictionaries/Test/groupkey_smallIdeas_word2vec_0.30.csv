@@ -1,0 +1,38 @@
+Super_Word,Value
+saveable,set(['saveable'])
+premade,set(['premade'])
+ability,"set(['letting', 'prospective', u'ability', 'may', 'could', 'able', 'possible', 'actually', 'wanted', 'might'])"
+people,"set([u'child', 'someone', u'parent', 'persons', 'people', 'person', 'either', 'possibly', 'others'])"
+tshirts,set(['tshirts'])
+showing,"set(['showing', 'image'])"
+present,set([u'present'])
+see,set(['see'])
+adult,"set(['living', 'cancer', 'heart', 'medical', 'young', u'disease', 'anatomy', u'lung', 'adult', 'human', 'smoking', 'exciting', 'autism', 'professionals'])"
+videographers,set(['videographers'])
+in,"set(['since', 'in'])"
+included,"set(['used', 'led', 'selected', 'confined', 'changed', 'included'])"
+post,"set(['pre', 'post'])"
+believe,"set(['exhibit', 'remember', 'feel', 'want', 'teach', 'believe', 'think', 'like'])"
+its,set(['its'])
+change,"set(['however', 'environment', 'place', 'detract', 'issue', 'event', 'change'])"
+childrens,set(['childrens'])
+instance,set(['instance'])
+frabics,set(['frabics'])
+from,set(['from'])
+especially,"set(['even', 'easily', 'especially', 'many', 'generally', 'traditional', 'much', 'various', 'certain', 'popular'])"
+hes,set(['hes'])
+movie,"set(['show', 'color', 'computer', u'design', 'displays', 'reel', 'using', u'billboard', 'array', 'electronic', 'showcase', 'interesting', 'handmade', 'platform', 'print', 'tool', 'collectible', u'designer', 'big', 'screen', 'visual', 'preset', 'memorable', 'super', 'videography', 'interactively', u'car', 'clients', u'space', 'item', u'client', 'plus', 'movie', 'fun', u'model', 'piece', 'sensing', 'display', 'interactive'])"
+work,"set(['attention', 'art', 'artist', 'work', 'appearance', 'idea', 'collection', 'memorabilia', 'novel', 'audience', 'books'])"
+tshirt,set(['tshirt'])
+class,set(['class'])
+large,"set(['scenery', 'urban', 'smaller', u'building', 'large', 'small', u'landscape', 'nearby'])"
+also,set(['also'])
+add,"set(['set', 'help', 'give', 'interact', 'replace', 'connect', 'participate', 'go', 'select', 'creating', 'sell', 'develop', 'create', 'add', u'spread', 'choose', 'holding', 'exercise', 'draw', 'chose', 'get', 'beat', 'allowing', 'coming', 'changing', 'come', 'paying', 'look', 'request', 'synchronize', 'allow', 'push', 'make'])"
+black,"set(['white', 'black'])"
+mosaic,"set([u'patron', 'mosaic'])"
+sens,set([u'sens'])
+assuming,"set(['value', 'kind', 'good', 'way', 'nature', 'something', 'learner', 'whatever', 'better', 'this', 'basically', 'lot', 'assuming', 'teaching', 'skill', 'proof', 'approach', 'really'])"
+new,set(['new'])
+inthe,set(['inthe'])
+awesome,"set(['coupled', 'awesome', 'wrap', 'touch', 'clothing', 'canvas', 'coloring', 'sheet', 'fabric', 'tablet', 'curtain', 'instantly', 'body', 'blanket', 'wallpaper', 'spot', 'giant', 'water', 'cloth', u'apartment', 'decorating', u'kid', u'room', 'inside', 'shock', u'truck', 'hung', 'stimulating'])"
+5,set(['5'])

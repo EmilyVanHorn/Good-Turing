@@ -1,0 +1,24 @@
+Super_Word,Value
+premade,set(['premade'])
+childrens,set(['childrens'])
+patron,set([u'patron'])
+saveable,set(['saveable'])
+tshirts,set(['tshirts'])
+showing,"set(['exhibit', 'paying', 'creating', 'sell', 'develop', 'remember', 'give', 'look', 'showing', 'get', 'replace', 'confined', 'plus', 'exercise', 'holding', 'assuming', 'go', 'make', 'select', 'like'])"
+new,"set(['new', 'class'])"
+see,set(['see'])
+sens,set([u'sens'])
+included,"set(['included', 'synchronize', 'selected', 'led', 'changed'])"
+believe,"set(['prospective', 'help', 'cancer', 'people', 'feel', 'others', 'whatever', 'good', 'something', 'want', 'participate', 'autism', 'living', 'believe', 'learner', 'young', 'teaching', 'someone', 'chose', u'parent', 'human', 'persons', u'child', 'teach', 'wanted', 'professionals', 'possibly', 'medical', u'disease', 'person', 'place', 'think'])"
+mosaic,"set(['body', 'heart', u'lung', 'wrap', 'clothing', u'landscape', u'apartment', 'canvas', 'coloring', 'sheet', 'fabric', 'tablet', 'hes', 'handmade', 'curtain', 'instantly', 'scenery', 'collectible', 'blanket', 'wallpaper', 'giant', 'memorabilia', 'water', 'cloth', 'preset', 'smoking', 'decorating', 'mosaic', u'building', 'anatomy', 'interactively', u'room', 'inside', 'shock', u'truck', 'hung', 'stimulating', 'nearby'])"
+frabics,set(['frabics'])
+from,"set(['pre', 'from', 'since', 'in', 'post', u'present'])"
+movie,"set(['displays', 'interactive', 'set', 'coupled', 'color', 'image', 'computer', 'connect', 'changing', 'touch', 'array', 'electronic', 'skill', 'letting', 'instance', u'space', 'movie', 'create', 'able', 'actually', 'environment', 'platform', 'add', 'choose', 'way', 'print', 'might', 'tool', 'draw', 'used', u'ability', 'may', 'screen', 'possible', 'visual', 'basically', 'detract', 'coming', 'using', 'come', 'change', 'could', 'clients', 'request', 'value', 'display', 'item', u'client', 'either', 'allow', 'push', 'piece', 'sensing', 'interact', 'allowing'])"
+work,"set(['kind', 'attention', 'art', 'artist', 'approach', 'work', 'appearance', 'idea', 'collection', 'novel', 'audience', 'books', u'design', u'designer', u'model', 'issue', 'nature', 'proof'])"
+tshirt,set(['tshirt'])
+also,"set(['even', 'easily', 'smaller', 'better', 'especially', 'urban', 'this', 'interesting', 'generally', 'however', 'large', 'also', 'much', 'various', 'traditional', 'many', 'popular', 'small', 'certain', 'its', u'spread'])"
+black,"set(['white', 'black', 'adult', 'event'])"
+videographers,set(['videographers'])
+inthe,set(['inthe'])
+awesome,"set([u'kid', 'videography', 'show', 'reel', 'big', 'awesome', 'showcase', 'spot', 'beat', u'billboard', 'lot', u'car', 'fun', 'memorable', 'exciting', 'super', 'really'])"
+5,set(['5'])

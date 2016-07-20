@@ -1,0 +1,178 @@
+Super_Word,Value
+,set([''])
+serenade,set(['serenade'])
+flapper,set(['flapper'])
+itd,set(['itd'])
+orgythemed,set(['orgythemed'])
+trinket,set(['trinket'])
+smartphonetablet,set(['smartphonetablet'])
+everyones,set(['everyones'])
+debate,"set(['event', 'night', u'life', 'evening', 'century', u'year', 'age', 'probably', 'debate', 'period', 'times', 'summer', 'era', 'occurred', 'time', 'events', 'post', u'thousand', 'day', 'decade'])"
+20,set([u'20'])
+scrapbook,set(['scrapbook'])
+23,set(['23'])
+snowing,set(['snowing'])
+houseplant,set(['houseplant'])
+shellpearls,set(['shellpearls'])
+presents,"set(['presents', 'depicts', u'saw', 'provides'])"
+loafers,set(['loafers'])
+bridesmaid,set(['bridesmaid'])
+board,"set(['gps', 'seating', 'set', 'telescope', 'chain', 'deck', 'battery', 'calculator', 'random', 'library', 'line', 'code', u'design', 'chat', 'field', 'ring', 'patch', 'technology', 'message', 'portable', 'microphone', 'pin', 'space', 'ballot', 'top', u'tool', u'arrangement', 'cell', 'equipment', u'setting', 'exit', 'location', u'memory', 'mail', u'bubble', 'frame', 'math', 'board', 'wheel', u'box', 'shell', 'booths', 'screen', 'simulated', u'envelope', 'collection', 'phone', 'boxes', 'construction', u'trunk', 'laser', 'ticket', 'copy', u'card', 'building', 'bar', 'room', 'shotgun', u'craft', 'flip', 'anchor', u'item', 'token', 'paper', 'car', 'entry', 'flops', 'display', 'constraints'])"
+durring,set(['durring'])
+reenact,set(['reenact'])
+cool,"set(['help', 'bring', 'participate', 'go', 'blow', 'cut', 'calculate', 'fit', 'send', 'add', 'choose', 'partake', 'friendly', 'build', 'swim', 'do', 'them', 'get', 'read', u'spell', 'know', 'cool', 'tear', 'cause', 'upload', 'leave', 'collect', 'slide', 'become', 'luck', 'enjoy', 'everyone', 'crowd', 'imitate', 'sign', 'expect', 'try', 'educate', 'lead', u'ear', 'prop', 'looking', 'encourage', 'got', 'donate', 'approach', 'explore', 'wear', 'ask', 'sing', 'throw', 'getting', 'keep', u'conversation', u'pick', 'feel', 'whatever', 'walk', u'carry', 'select', 'guess', 'deal', 'prepare', 'create', 'submit', 'fight', 'rustic', 'start', 'live', 'treat', 'way', 'too', 'breathe', 'serve', 'properly', 'gain', 'hold', 'shoot', 'join', u'look', 'wish', 'fun', 'meet', 'arrive', 'steer', 'exhibit', 'slip', 'give', 'recognize', 'contribute', 'comfortable', 'say', 'something', 'want', 'need', 'seem', 'turn', 'fill', 'sit', 'perform', 'make', u'boot', 'write', 'without', 'take', 'tie', 'play', 'ball', 'welcome', 'hang', 'stay', 'pair', 'remember', 'face', 'provide', 'maintain', 'allow', 'enter', 'spend'])"
+corralthemed,set(['corralthemed'])
+pointed,"set(['made', 'bringing', 'giving', 'brings', 'pointed', 'coming', 'making', 'leaving', 'brought', 'put', 'going', 'crossed', 'lays', 'holding', 'gotten', 'taken', 'carrying', 'arriving', 'come', 'taking', 'joining'])"
+kingdom,"set([u'kingdom', 'catholic', 'tribal', 'church', 'community', 'peoples'])"
+villian,set(['villian'])
+bouqet,set(['bouqet'])
+appetizer,set(['appetizer'])
+famous,"set(['hip', 'art', 'classic', 'dance', 'spooky', 'dancers', 'pop', 'themes', 'elegant', 'dances', 'books', 'gothic', 'rap', 'artists', 'elaborate', 'poem', 'style', 'beauty', 'dancing', 'culture', 'poetry', 'instrument', 'renaissance', 'hop', 'styles', 'solo', 'goth', 'medieval', 'colorful', u'song', 'jazz', 'famous', u'hippy', 'cult', u'sculptor', 'drum', 'romantic', 'artist', 'inspired', 'work', 'crafts', 'rock', 'stereotypical', 'painting', 'musical'])"
+every,"set(['sort', 'constant', 'phenomenon', 'it', 'rest', 'equal', 'shape', 'aspect', 'close', 'actually', u'size', 'perfect', 'end', 'interesting', 'least', 'next', 'everything', 'only', 'illusion', 'real', 'even', 'direction', 'nature', 'free', 'moment', 'everywhere', 'true', 'change', 'every', 'this', 'universe', 'single', 'value', u'element', 'amount', 'future', 'characteristic', 'variance', 'otherwise', 'whole', 'fact', 'view'])"
+werent,set(['werent'])
+pjs,set(['pjs'])
+spacerelated,set(['spacerelated'])
+glittery,set(['glittery'])
+name,set(['name'])
+hawaiin,set(['hawaiin'])
+clantonmclaurys,set(['clantonmclaurys'])
+hawaii,"set(['mardi', 'picnic', 'pirates', 'site', 'mansion', 'trip', 'barn', 'orleans', u'pearl', 'hospital', 'sail', 'zoo', 'resort', 'stadium', 'beach', 'isle', 'tent', 'website', 'entrance', 'hula', 'garden', 'farm', 'cadillac', u'gym', 'park', 'disneyland', 'cook', 'arch', 'hall', 'raptor', 'town', 'lawn', 'yard', 'geocaching', 'island', 'gras', 'venue', 'hawaii', 'volleyball', 'christmas', 'castle', 'earp', 'gardens', 'jersey', 'ski'])"
+swimsuit,"set(['taylor', 'bell', 'cloths', u'tiffany', 'nascar', u'gangster', 'couture', 'jackson', u'booth', 'relive', 'willy', 'pat', u'tablet', u'doctor', 'photographer', 'holliday', 'mason', 'hay', 'shakespearean', 'astronaut', 'shakespeare', 'bliss', 'victor', u'friend', 'mike', u'blaster', 'joy', 'hunter', 'zombie', 'paintball', 'hired', u'bun', 'wonka', 'sexy', 'roaring', 'ok', 'knight', 'michael', 'sailor', 'swimsuit', 'wyatt', 'american', u'vega', 'tombstone', 'mead', 'boa', 'racer'])"
+peasant,"set(['growing', 'especially', 'progressive', 'deeply', u'overall', 'creative', 'respectable', 'victorian', 'peasant', 'growth', 'patriotic', 'sustainable', 'enjoying'])"
+paintbrush,set(['paintbrush'])
+firescales,set(['firescales'])
+havent,set(['havent'])
+70sinspired,set(['70sinspired'])
+hardhats,set(['hardhats'])
+sneaker,set([u'sneaker'])
+lapel,set(['lapel'])
+outgoing,"set(['stove', 'fangs', 'booze', 'toast', 'elven', 'furry', 'chalice', 'recycle', 'bridal', 'gadget', u'bib', 'gonna', 'vase', u'kitten', 'squirt', u'doggy', 'towel', 'exaggerate', 'postcard', 'paddling', 'tights', 'flair', 'microphones', 'guessing', 'pastel', 'boardgames', 'ornament', 'horrible', 'clamps', 'champagne', 'outgoing', 'prettiest', 'wrapping', u'acrobat', 'scary', 'cryptic', 'volunteering', 'recorders', 'brides', 'sabers', 'appropriately', 'matrimonial', 'shovel', 'lightsabers', 'bouquet', 'poodle', 'sober', 'cheerfully', u'seashell', 'hey', 'wrapper', u'insult', 'extravagant', 'garter', 'smeared', 'grandest', 'manmade', 'clue', 'glamour', 'toga', 'hike', 'lumberjack', 'pretend', 'scabbard', 'wands', 'stunning', 'silly', 'spoils', 'laughter', 'athleticism', 'vest', 'pawn', u'petal', 'faux', u'stripper', 'decor', 'workout', 'mock', 'excite', u'bale', 'buffet', 'disgusted', 'donation', 'cucumber', 'redneck', 'celebratory', 'bondage', 'noone', 'apparel', 'yours'])"
+carbatmobile,set(['carbatmobile'])
+see,set(['see'])
+proper,"set(['collecting', 'all', 'own', 'certain', 'number', 'arrangements', 'proper', 'table', 'special', 'tables', 'different', 'variety', 'large', 'custom', 'also', 'other', 'instead', 'themselves', 'several', 'type', 'multitude', 'multiple', 'wide', 'respective', 'competing', 'using', 'numerous', 'both', 'many', 'sometimes', 'commonly', 'local', 'traditional', 'etc', 'small'])"
+home,"set(['family', 'house', 'weddings', 'crown', 'procession', u'vow', 'guests', 'home', 'chair', 'ceremony', 'lady', u'visit', 'crowns', u'bench', 'relatives', 'lord', 'place', u'nurse', 'pride', 'murder', 'thrones', 'sitting', 'couple', 'men', 'school', 'cabinet', 'gifts', 'attending', 'royalty', 'lives', u'lay', 'wedding', 'friends', 'banquet', 'celebrate', 'charity', u'throne', u'woman', 'gift', 'wife', 'married', 'feast', 'dinner', 'marriage', u'rose', 'honor', 'husband'])"
+theyre,set(['theyre'])
+pajamas,set(['pajamas'])
+best,"set(['biggest', 'funniest', 'greatest', 'best', 'first'])"
+blouse,set(['blouse'])
+cosplay,set(['cosplay'])
+candlelight,set(['candlelight'])
+leis,set(['leis'])
+eyepatch,set(['eyepatch'])
+pastainspired,set(['pastainspired'])
+centerpieces,set(['centerpieces'])
+ceterpiece,set(['ceterpiece'])
+outside,"set(['on', 'around', 'away', 'up', 'together', 'outside', 'in', 'along', 'throughout', 'open'])"
+indian,"set(['hawaiian', 'west', 'pacific', 'togo', 'indian', 'south'])"
+new,"set(['new', 'old'])"
+someway,set(['someway'])
+youll,set(['youll'])
+attendee,set([u'attendee'])
+thewir,set(['thewir'])
+cutest,set(['cutest'])
+lei,"set(['shop', 'bathing', 'fondue', 'kettle', 'hats', u'recipe', 'horseback', 'recycled', 'colors', 'skiing', u'dish', 'flavor', 'fine', 'dueling', 'lace', 'giant', 'hunting', 'jar', 'sparkling', 'suits', 'tail', 'wood', 'black', 'kites', 'hidden', 'rice', 'hat', 'smart', 'juke', 'wearing', 'food', 'dessert', 'dark', 'drinking', 'silver', 'flannel', 'shaped', 'leather', 'nude', 'belts', 'bright', 'candy', 'naked', 'tiki', 'brick', 'soft', 'glasses', 'tea', 'liquor', 'torch', 'tvs', 'hair', 'catching', 'glove', 'bake', 'canvas', u'flower', 'camping', 'bag', 'pet', 'literally', 'cooking', 'paddle', 'sparkle', 'finger', 'pets', 'attire', u'bird', u'drink', u'dwarf', 'fish', 'keg', 'lei', 'corn', 'disposable', 'outfit', 'wild', 'pasta', 'decorations', 'geocaches', 'drank', 'recipes', u'flake', 'outfits', 'clothes', 'swimming', 'feed', 'decorative', 'plenty', 'drunk', 'sweet', u'pot', 'garb', 'crazy', 'fancy', 'saddle', 'fake', 'horse', 'eye', 'sneaky', 'earthy', 'hamsters', 'cannibal', 'backyard', 'paint', 'beer', 'cats', 'prey', 'lightsaber', 'stuffed', u'ton', 'white', 'dogs', 'horses', 'anchors', 'saber', 'sunshine', u'glass', u'rabbit', 'walkway', 'flowers', 'feather', 'spice', 'fur', 'gaze', u'cap', 'smooth', 'cash', 'roof', u'cat', 'shower', u'bikini', 'lumber', 'decorate', 'outdoors', 'cake', 'grass', 'skirts', 'beautiful', u'heart', 'coconut', 'uniforms', 'wand', 'halloween', 'dildo', u'decoration', 'foods', 'necks', 'breakfast', 'clothing', 'cotton', 'pink', 'helmet', 'shirt', 'dress', 'comfort', 'debauchery', 'fitting', 'vegetable', 'instantly', 'cream', 'roll', 'surf', 'tree', 'teeth', 'masks', u'accessory', 'skirt', 'blood', 'eaten', 'tall', 'floral', 'torches', 'decorated', u'noodle', 'maybe', 'dog', 'jacket', 'bottle', 'dressed', 'basket', 'fresh', 'wine'])"
+1920s,set(['1920s'])
+tranditional,set(['tranditional'])
+nudist,set(['nudist'])
+like,"set(['represent', 'like', 'consist', 'incorporate', 'addition', 'belong', 'share', 'related', 'involve', 'lie', 'form', 'are', 'were', 'combine', 'include', 'abound'])"
+potluck,set(['potluck'])
+oompa,set(['oompa'])
+ceramony,set(['ceramony'])
+70s,set(['70s'])
+hightech,set(['hightech'])
+crossfit,set(['crossfit'])
+great,"set(['great', 'jedi'])"
+ukeles,set(['ukeles'])
+wouldnt,set(['wouldnt'])
+32,set(['32'])
+jeer,set([u'jeer'])
+foreign,"set(['initiative', 'budget', 'trade', 'bahamas', u'u', 'airline', 'international', 'foreign'])"
+phyiscal,set(['phyiscal'])
+fireinspired,set(['fireinspired'])
+pajama,set([u'pajama'])
+afterwards,"set(['eventually', 'afterwards', 'suddenly', 'after', 'seriously', 'hannibal', 'ghetto'])"
+techie,set(['techie'])
+kazoo,set([u'kazoo'])
+selfie,set(['selfie'])
+spank,set(['spank'])
+60,set([u'60'])
+doesnt,set(['doesnt'])
+eyepatches,set(['eyepatches'])
+attired,set(['attired'])
+little,"set(['everybody', 'loved', 'little', 'good', 'love', 'anything', 'fair', u'thing', u'joke', 'please', 'better', 'how', u'lot', 'memories', 'nothing', 'talking', 'you', 'nice', 'really', 'uncomfortable', 'happy'])"
+ancient,"set(['origin', 'greek', 'ancient'])"
+sunbathing,set(['sunbathing'])
+fanciest,set(['fanciest'])
+wicker,set(['wicker'])
+sleepover,set(['sleepover'])
+secret,set(['secret'])
+music,"set(['cup', 'people', 'money', 'electorate', 'player', 'ever', 'vote', 'politics', u'sport', 'basketball', 'contest', u'winner', 'sports', 'state', u'speech', 'win', 'party', 'racing', 'music', 'club', u'season', 'football', 'nation', 'baseball', 'world', 'country', 'nfl', 'teams', 'race', 'reception', 'team'])"
+wellwishes,set(['wellwishes'])
+war,"set(['fire', 'engagement', 'force', 'armor', 'powered', 'successful', u'weapon', 'peace', 'ships', 'wars', 'fighting', 'mission', 'weapons', 'spying', 'camouflage', 'navy', 'aviation', u'ship', 'air', u'war'])"
+boquet,set(['boquet'])
+festivity,set([u'festivity'])
+baloon,set(['baloon'])
+1950s,set(['1950s'])
+centered,"set(['centered', 'based'])"
+aspca,set(['aspca'])
+records,"set(['release', 'records', 'original'])"
+flag,"set(['flag', 'hand', 'behind', 'front', u'wing', 'side', 'left'])"
+part,"set(['known', 'thought', 'part'])"
+wantd,set(['wantd'])
+raunchy,set(['raunchy'])
+newlywed,set([u'newlywed'])
+must,"set(['sure', 'may', 'able', 'can', 'worthy', 'ready', 'allowing', 'might', 'must'])"
+rayban,set(['rayban'])
+smartphones,set(['smartphones'])
+vial,set([u'vial'])
+nuptuals,set(['nuptuals'])
+byob,set(['byob'])
+goingson,set(['goingson'])
+cuddle,set(['cuddle'])
+nicest,set(['nicest'])
+of,"set(['of', 'western', 'its'])"
+beachside,set(['beachside'])
+sunnies,set(['sunnies'])
+control,"set(['control', 'favor', 'support', 'controls'])"
+festiveness,set(['festiveness'])
+paparazzo,set([u'paparazzo'])
+gangsterera,set(['gangsterera'])
+general,"set(['formal', 'general'])"
+recyclable,set(['recyclable'])
+heroheroine,set(['heroheroine'])
+physiques,set(['physiques'])
+rainall,set(['rainall'])
+levity,set(['levity'])
+kiteflying,set(['kiteflying'])
+nuptials,set(['nuptials'])
+photobook,set(['photobook'])
+alcholo,set(['alcholo'])
+stargazing,set(['stargazing'])
+snorkeling,set(['snorkeling'])
+animal,"set(['nudity', 'charities', 'sex', 'couples', 'appropriate', 'individual', u'drug', u'nationality', 'casual', 'wage', 'group', 'alcohol', 'environment', 'animal', 'criminal', 'alcoholism', 'exercise', 'activities', 'families', 'relationship', 'act', 'adult', 'groups', 'practicing', 'marital', 'class', 'care', 'animals', 'experience', 'person', 'prejudice', u'activity', 'action'])"
+loompas,set(['loompas'])
+taylors,set(['taylors'])
+monoscope,set(['monoscope'])
+blue,"set([u'kite', 'gold', 'themed', u'photo', 'midnight', 'costume', 'album', u'enthusiast', 'tv', u'show', u'character', 'theme', 'jam', 'masquerade', 'big', 'horror', 'killer', 'television', u'band', 'game', 'twilight', 'mystery', 'magic', u'celebrity', 'hunt', 'alice', 'clown', 'red', 'harry', 'fairy', 'round', u'shoe', 'roleplaying', u'gun', 'video', 'wonderland', 'girl', 'wonder', 'blue', u'trick', 'superhero', 'darkness', 'cast', 'movie', 'rings', 'vampire', u'uniform', 'longtime', 'props', 'pirate', 'disney', u'pun', u'hero', 'costumes', 'toy', 'super', 'stage', 'mars', 'cowboy', 'favorite', 'games', 'apple', 'mini', u'color', 'honeymoon', 'potter', u'scene', 'fantasy', 'strip', 'comic', u'story', 'rated', u'guest', 'lego', 'hitting', 'camera', u'suit', 'mysterious', 'hollywood', 'gear', 'poster', 'xxx', 'movies', 'tiger', 'released', 'trek', 'planet', 'bride', 'orgy', 'dvd', 'piece', 'interactive', u'spy', u'angel', 'circus', 'airplane', 'serial', 'superheroes', 'vintage', 'feature', 'roses', 'book', 'sword', 'photography', u'butterfly', u'picture', 'star', 'beast', u'adventure', 'hawk', u'kid', u'centerpiece', 'doc', 'mask', 'bang', 'fictional', u'dragon', 'tale', 'dream', 'backdrop'])"
+used,"set(['declared', 'played', 'developed', 'displayed', 'held', 'donated', 'watched', 'encouraged', 'opened', 'placed', 'surrounded', 'supplied', 'planted', 'covered', 'used', 'engaged', 'designated', 'paid', 'prepared', 'revealed', 'invited', 'required', 'attached', 'offended', 'done', 'served'])"
+though,"set(['ones', 'extremely', 'though'])"
+banter,set(['banter'])
+eighty,"set(['seven', 'march', 'rs', u'eighty', 'two', 'per', 'mj', 'anniversary', 'zero', 'one'])"
+frat,set(['frat'])
+sunglass,set([u'sunglass'])
+70,set([u'70'])
+therell,set(['therell'])
+guestbook,set(['guestbook'])
+prize,set(['prize'])
+darned,set(['darned'])
+midevil,set(['midevil'])
+snuggliest,set(['snuggliest'])
+light,"set(['atmosphere', 'outdoor', 'hiking', 'mantle', 'cuisines', 'mine', 'deep', 'freeze', 'pole', 'weather', 'enclosed', 'sea', u'constellation', u'belt', 'underwater', 'northeast', 'winter', 'area', 'helium', 'balloon', 'sky', 'snow', 'ice', 'tropical', 'summers', 'hot', 'forest', 'wet', 'waste', 'inner', 'plant', 'mountain', 'shelter', 'undersea', 'rain', 'water', 'fallout', 'dust', 'sun', 'aisle', 'land', 'remote', 'frozen', 'light', 'groom', 'ocean', 'coal', 'sand', 'rainforest', 'venus', 'mining'])"
+tricorder,set(['tricorder'])
+well,"set(['high', 'full', 'well', 'long'])"
+18th,set(['18th'])
+camo,set(['camo'])
+paparazzis,set(['paparazzis'])
+keepsake,set(['keepsake'])
+tootin,set(['tootin'])
+50,set([u'50'])
