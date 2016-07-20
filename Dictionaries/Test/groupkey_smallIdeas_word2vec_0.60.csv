@@ -1,0 +1,163 @@
+Super_Word,Value
+pre,set(['pre'])
+premade,set(['premade'])
+help,set(['help'])
+saveable,set(['saveable'])
+learner,set(['learner'])
+image,set(['image'])
+exercise,set(['exercise'])
+smaller,set(['smaller'])
+spread,set([u'spread'])
+human,set(['human'])
+participate,set(['participate'])
+touch,set(['touch'])
+skill,set(['skill'])
+its,set(['its'])
+sheet,set(['sheet'])
+childrens,set(['childrens'])
+letting,set(['letting'])
+better,set(['better'])
+giant,set(['giant'])
+frabics,set(['frabics'])
+from,set(['from'])
+tablet,set(['tablet'])
+hes,set(['hes'])
+teach,set(['teach'])
+come,"set(['come', 'coming'])"
+interact,"set(['interact', 'coupled'])"
+show,set(['show'])
+young,set(['young'])
+actually,"set(['really', 'something', 'whatever', 'actually'])"
+environment,set(['environment'])
+platform,"set(['platform', u'client', 'clients'])"
+add,"set(['draw', 'develop', 'look', 'give', 'create', 'get', 'replace', 'go', 'add', 'choose', 'push', 'make', 'select', 'connect'])"
+much,set(['much'])
+black,"set(['white', 'black'])"
+mosaic,set(['mosaic'])
+lot,set(['lot'])
+curtain,set(['curtain'])
+inthe,set(['inthe'])
+instantly,set(['instantly'])
+collectible,"set(['collectible', 'coloring', 'showcase', 'wallpaper', 'handmade', 'videography', 'decorating', 'reel'])"
+good,set(['good'])
+way,set(['way'])
+prospective,set(['prospective'])
+big,set(['big'])
+showing,set(['showing'])
+possible,set(['possible'])
+possibly,set(['possibly'])
+instance,set(['instance'])
+adult,set(['adult'])
+detract,set(['detract'])
+sens,set([u'sens'])
+confined,set(['confined'])
+using,set(['using'])
+believe,"set(['feel', 'believe', 'think'])"
+present,set([u'present'])
+especially,set(['especially'])
+paying,"set(['paying', 'sell'])"
+easily,set(['easily'])
+kind,set(['kind'])
+like,set(['like'])
+artist,"set([u'designer', 'artist'])"
+this,set(['this'])
+car,"set([u'car', u'truck'])"
+inside,set(['inside'])
+work,set(['work'])
+appearance,set(['appearance'])
+tshirt,set(['tshirt'])
+value,set(['value'])
+large,"set(['large', 'small'])"
+synchronize,set(['synchronize'])
+computer,set(['computer'])
+videographers,set(['videographers'])
+either,set(['either'])
+fun,set(['fun'])
+teaching,set(['teaching'])
+piece,set(['piece'])
+medical,"set(['professionals', 'medical'])"
+interactive,"set(['visual', 'electronic', 'tool', 'interactive'])"
+exhibit,set(['exhibit'])
+heart,set(['heart'])
+set,set(['set'])
+art,set(['art'])
+patron,set([u'patron'])
+people,"set(['persons', 'people'])"
+awesome,set(['awesome'])
+idea,"set(['approach', 'idea'])"
+wrap,set(['wrap'])
+see,set(['see'])
+books,set(['books'])
+design,set([u'design'])
+want,set(['want'])
+in,set(['in'])
+billboard,set([u'billboard'])
+array,"set(['item', 'array'])"
+ability,"set(['able', u'ability'])"
+even,set(['even'])
+living,set(['living'])
+canvas,set(['canvas'])
+since,set(['since'])
+space,set([u'space'])
+movie,"set(['movie', 'novel'])"
+selected,set(['selected'])
+generally,set(['generally'])
+building,set([u'building'])
+event,set(['event'])
+also,set(['also'])
+proof,set(['proof'])
+5,set(['5'])
+landscape,"set(['scenery', u'landscape'])"
+holding,set(['holding'])
+assuming,set(['assuming'])
+print,set(['print'])
+new,set(['new'])
+issue,set(['issue'])
+blanket,set(['blanket'])
+urban,set(['urban'])
+body,set(['body'])
+creating,set(['creating'])
+used,set(['used'])
+led,set(['led'])
+chose,"set(['wanted', 'chose'])"
+parent,set([u'parent'])
+nature,set(['nature'])
+tshirts,set(['tshirts'])
+screen,"set(['color', 'screen', 'display', 'displays'])"
+attention,"set(['audience', 'attention'])"
+spot,"set(['spot', u'room'])"
+however,set(['however'])
+collection,set(['collection'])
+memorabilia,set(['memorabilia'])
+water,set(['water'])
+hung,"set(['hung', u'apartment'])"
+preset,set(['preset'])
+others,set(['others'])
+included,set(['included'])
+memorable,"set(['popular', 'memorable'])"
+post,set(['post'])
+exciting,set(['exciting'])
+super,set(['super'])
+class,set(['class'])
+change,set(['change'])
+kid,"set(['beat', u'kid'])"
+autism,"set(['smoking', u'lung', 'autism', 'cancer', u'disease'])"
+anatomy,set(['anatomy'])
+changing,set(['changing'])
+interactively,set(['interactively'])
+remember,set(['remember'])
+cloth,"set(['cloth', 'clothing', 'fabric'])"
+many,"set(['many', 'various', 'certain'])"
+could,"set(['may', 'could', 'might'])"
+changed,set(['changed'])
+request,set(['request'])
+traditional,set(['traditional'])
+person,"set(['person', 'someone', u'child'])"
+plus,set(['plus'])
+place,set(['place'])
+allow,"set(['allowing', 'allow'])"
+interesting,set(['interesting'])
+model,set([u'model'])
+basically,set(['basically'])
+sensing,"set(['shock', 'sensing', 'stimulating'])"
+nearby,set(['nearby'])

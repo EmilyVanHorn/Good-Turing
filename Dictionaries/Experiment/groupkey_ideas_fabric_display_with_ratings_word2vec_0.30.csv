@@ -1,0 +1,36 @@
+Super_Word,Value
+square,"set(['buildings', 'square', 'wall', 'runway', 'mural', 'construction', 'cape', 'campus', 'road'])"
+dont,"set(['little', 'dont', u'cry', u'reason', 'much', 'sleep', 'something', u'purpose'])"
+give,"set(['play', 'look', 'give', 'hang', 'make', u'get', 'watch', 'keep', 'reflect', 'start', 'take', 'want', u'turn', 'go', 'promote', 'put', u'change', 'wear'])"
+distracted,"set(['running', 'distracted', 'laying', 'working'])"
+people,set(['people'])
+back,set(['back'])
+collection,set(['collection'])
+holidays,"set(['day', 'holidays'])"
+ex,set(['ex'])
+its,set(['its'])
+tshirt,set(['tshirt'])
+adult,"set(['sons', u'worker', 'adult', 'child'])"
+seats,"set(['office', 'candidate', 'seats'])"
+embarassed,set(['embarassed'])
+lesson,"set([u'classroom', 'school', 'college', u'student', 'teach', u'lesson'])"
+trade,"set([u'protest', 'support', 'trade'])"
+clothing,"set(['different', 'often', 'certain', 'etc', 'regular', 'various', 'clothing'])"
+tablecloth,"set(['sweating', 'anytime', u'pillow', 'sweat', 'tablecloth', u'stain', 'decorate'])"
+childrens,set(['childrens'])
+case,"set(['case', u'direction', 'hand'])"
+on,"set(['on', 'in'])"
+colorspatterns,set(['colorspatterns'])
+based,set(['based'])
+like,set(['like'])
+movie,"set(['shop', u'show', 'halloween', 'booth', 'billboard', 'girl', 'trip', 'carpet', 'superhero', 'shirt', 'hunting', 'dancing', 'movie', 'music', u'curtain', u'costume', u'advertisement', 'wedding', u'kid', u'theater', 'room', 'sleeve', 'car', 'bed', 'night', 'painting', 'clothes'])"
+later,"set(['later', 'older'])"
+redecorate,set(['redecorate'])
+whichever,set(['whichever'])
+data,"set(['load', 'data', u'video', u'message', 'ie', 'interactive'])"
+also,set(['also'])
+camo,set(['camo'])
+helps,"set(['need', 'used', 'helps'])"
+time,"set(['reception', u'time'])"
+presentation,"set([u'sheet', 'fabric', 'shifting', 'frame', 'color', u'pattern', 'blanket', 'projector', 'uniform', u'note', 'brighter', 'flag', 'design', 'reflective', 'image', 'type', 'screen', u'logo', u'presentation', 'display', 'darker'])"
+slideshows,set(['slideshows'])

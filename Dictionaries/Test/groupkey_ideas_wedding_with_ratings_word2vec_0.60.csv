@@ -1,0 +1,694 @@
+Super_Word,Value
+,set([''])
+all,set(['all'])
+code,set(['code'])
+orgythemed,set(['orgythemed'])
+midevil,set(['midevil'])
+horseback,set(['horseback'])
+per,set(['per'])
+smartphonetablet,set(['smartphonetablet'])
+chair,set(['chair'])
+everyones,set(['everyones'])
+calculate,"set(['calculate', 'upload'])"
+snowing,set(['snowing'])
+shellpearls,set(['shellpearls'])
+attired,set(['attired'])
+must,"set(['may', 'might', 'can', 'must'])"
+lord,set(['lord'])
+enjoying,set(['enjoying'])
+corralthemed,set(['corralthemed'])
+friendly,"set(['friendly', 'uncomfortable', 'comfortable'])"
+sitting,"set(['placed', 'holding', 'sitting'])"
+every,set(['every'])
+cook,set(['cook'])
+ticket,"set(['vote', 'electorate', 'ticket', 'ballot'])"
+cool,"set(['summers', 'winter', 'frozen', 'snow', 'ice', 'hot', 'sand', 'weather', 'rain', 'wet', 'cool', 'swimming'])"
+prize,set(['prize'])
+hawaii,"set(['bahamas', 'togo', 'hawaii'])"
+item,set([u'item'])
+race,set(['race'])
+harry,"set(['taylor', 'circus', 'potter', u'gangster', 'sailor', u'booth', 'wonderland', 'victor', 'willy', 'pat', 'photographer', 'vampire', 'mason', 'longtime', 'mike', 'killer', 'hunter', 'jackson', u'kid', 'doc', 'michael', 'alice', 'clown', 'wyatt', u'vega', 'mead', 'knight', 'harry'])"
+small,"set(['small', 'large'])"
+havent,set(['havent'])
+round,"set(['tie', 'round'])"
+work,set(['work'])
+force,set(['force'])
+attendee,set([u'attendee'])
+sign,set(['sign'])
+elegant,"set(['elegant', 'elaborate', 'interesting'])"
+design,set([u'design'])
+pajamas,set(['pajamas'])
+casual,set(['casual'])
+blouse,set(['blouse'])
+giving,"set(['giving', 'making'])"
+leis,set(['leis'])
+eyepatch,set(['eyepatch'])
+stunning,set(['stunning'])
+supplied,"set(['supplied', 'prepared'])"
+uniform,set([u'uniform'])
+cell,set(['cell'])
+jedi,set(['jedi'])
+indian,set(['indian'])
+new,set(['new'])
+ever,set(['ever'])
+exercise,set(['exercise'])
+toast,set(['toast'])
+outgoing,set(['outgoing'])
+full,set(['full'])
+hero,set([u'hero'])
+dwarf,"set(['giant', u'dwarf'])"
+lei,"set(['lei', 'ok'])"
+men,set(['men'])
+wrapping,"set(['wrapping', 'simulated'])"
+water,set(['water'])
+groups,"set(['group', 'groups'])"
+cult,set(['cult'])
+sing,"set(['sing', 'welcome'])"
+along,set(['along'])
+hightech,set(['hightech'])
+change,set(['change'])
+box,set([u'box'])
+great,set(['great'])
+ukeles,set(['ukeles'])
+32,set(['32'])
+inspired,set(['inspired'])
+experience,set(['experience'])
+leaving,set(['leaving'])
+amount,set(['amount'])
+patriotic,set(['patriotic'])
+honor,set(['honor'])
+pajama,set([u'pajama'])
+beautiful,"set(['beautiful', 'loved', 'beauty'])"
+matrimonial,set(['matrimonial'])
+love,set(['love'])
+apple,set(['apple'])
+family,set(['family'])
+heart,set([u'heart'])
+suddenly,set(['suddenly'])
+spooky,set(['spooky'])
+brought,"set(['brought', 'brings', 'put', 'bringing'])"
+fake,set(['fake'])
+environment,set(['environment'])
+sunbathing,set(['sunbathing'])
+wicker,set(['wicker'])
+visit,"set([u'visit', 'trip'])"
+only,set(['only'])
+next,set(['next'])
+rustic,set(['rustic'])
+pearl,set([u'pearl'])
+live,set(['live'])
+music,"set(['hip', 'solo', 'goth', 'drum', 'rap', 'dancing', 'dance', 'jazz', 'pop', 'music', 'hop', 'rock', 'musical'])"
+memory,set([u'memory'])
+mysterious,set(['mysterious'])
+toy,"set(['shop', 'mini', 'toy', 'themed', 'pet', 'vintage', 'lego', 'jam', 'smart'])"
+type,set(['type'])
+breathe,"set(['breathe', 'tear', 'freeze'])"
+saber,"set(['excite', 'boardgames', 'kettle', 'wand', 'bouquet', 'cloths', u'tiffany', u'kitten', 'cucumber', 'dildo', u'stripper', 'fangs', 'couture', 'furry', 'cannibal', 'torches', 'faux', 'bake', 'glove', 'cheerfully', 'glamour', 'pastel', 'elven', 'lightsabers', 'sneaky', 'flannel', u'seashell', 'fondue', 'poodle', 'debauchery', 'sparkle', 'yours', 'lightsaber', 'scabbard', u'petal', 'recycle', 'bridal', 'champagne', u'bale', 'juke', 'smeared', 'grandest', 'hula', 'saber', 'shovel', u'blaster', u'bib', 'workout', 'sunshine', 'manmade', 'brides', 'vase', 'zombie', 'stove', u'bun', 'wonka', 'redneck', 'floral', 'sexy', 'tights', 'roaring', 'squirt', 'raptor', 'toga', 'scary', u'noodle', 'towel', u'doggy', 'sabers', 'noone', 'booze', u'flake', 'outfits', 'wands', 'tiki', 'holliday', 'paddling', 'apparel', 'boa', 'prettiest', 'earp', 'lumberjack'])"
+successful,set(['successful'])
+halloween,"set(['mardi', 'gras', 'halloween', 'christmas'])"
+spoils,set(['spoils'])
+occurred,set(['occurred'])
+clue,"set(['pretend', 'exaggerate', 'clue'])"
+phone,"set(['phone', 'mail'])"
+flag,set(['flag'])
+carrying,set(['carrying'])
+everywhere,set(['everywhere'])
+adult,set(['adult'])
+known,set(['known'])
+sculptor,"set([u'sculptor', 'artist'])"
+charity,set(['charity'])
+couples,"set(['couples', 'relatives', 'families'])"
+pride,set(['pride'])
+practicing,set(['practicing'])
+volunteering,set(['volunteering'])
+this,"set(['this', 'it'])"
+car,"set(['car', 'racing'])"
+cowboy,"set([u'picture', 'cowboy', 'movie', u'scene', 'movies', 'poster', 'hollywood'])"
+offended,set(['offended'])
+cuddle,set(['cuddle'])
+crossed,set(['crossed'])
+era,"set(['era', 'period'])"
+island,set(['island'])
+growing,set(['growing'])
+arrive,"set(['arriving', 'arrive'])"
+laughter,set(['laughter'])
+control,set(['control'])
+spy,"set([u'spy', 'astronaut', 'pirate'])"
+pawn,set(['pawn'])
+spying,set(['spying'])
+paparazzo,set([u'paparazzo'])
+share,set(['share'])
+nascar,"set(['racer', 'nascar'])"
+bridesmaid,set(['bridesmaid'])
+airplane,"set(['underwater', 'airplane'])"
+times,set(['times'])
+serial,set(['serial'])
+respective,set(['respective'])
+end,"set(['start', 'end'])"
+conversation,"set([u'conversation', 'relationship'])"
+helium,set(['helium'])
+comfort,set(['comfort'])
+alcholo,set(['alcholo'])
+how,set(['how'])
+animal,set(['animal'])
+instead,set(['instead'])
+taylors,set(['taylors'])
+plant,set(['plant'])
+keepsake,set(['keepsake'])
+farm,set(['farm'])
+cadillac,set(['cadillac'])
+eighty,set([u'eighty'])
+decor,set(['decor'])
+collection,set(['collection'])
+frat,set(['frat'])
+blood,set(['blood'])
+backyard,set(['backyard'])
+hawk,"set(['roses', 'hawk'])"
+revealed,set(['revealed'])
+light,set(['light'])
+dragon,"set(['tiger', u'dragon'])"
+18th,set(['18th'])
+funniest,set(['funniest'])
+tall,set(['tall'])
+wing,set([u'wing'])
+backdrop,set(['backdrop'])
+flapper,set(['flapper'])
+developed,set(['developed'])
+itd,set(['itd'])
+wedding,"set(['ceremony', 'evening', 'weddings', 'midnight', 'procession', 'dinner', 'guests', 'night', 'wedding', 'banquet'])"
+displayed,set(['displayed'])
+mission,set(['mission'])
+trade,set(['trade'])
+held,set(['held'])
+spank,set(['spank'])
+paper,set(['paper'])
+its,set(['its'])
+perfect,set(['perfect'])
+style,"set(['styles', 'style'])"
+20,set([u'20'])
+scrapbook,set(['scrapbook'])
+fit,set(['fit'])
+23,set(['23'])
+houseplant,set(['houseplant'])
+arrangements,"set(['arrangements', 'constraints'])"
+actually,set(['actually'])
+better,set(['better'])
+resort,set(['resort'])
+pastainspired,set(['pastainspired'])
+durring,set(['durring'])
+covered,"set(['covered', 'decorated', 'surrounded', 'enclosed', 'shaped'])"
+hidden,set(['hidden'])
+criminal,set(['criminal'])
+eventually,set(['eventually'])
+them,"set(['them', 'themselves'])"
+good,set(['good'])
+thrones,"set(['garter', 'crowns', 'thrones'])"
+food,"set(['food', 'alcohol'])"
+spell,"set([u'trick', u'spell'])"
+band,"set(['album', u'band', u'song'])"
+bang,set(['bang'])
+front,set(['front'])
+twilight,set(['twilight'])
+day,set(['day'])
+pjs,set(['pjs'])
+name,set(['name'])
+hawaiin,set(['hawaiin'])
+clantonmclaurys,set(['clantonmclaurys'])
+events,"set(['events', 'event'])"
+token,set(['token'])
+peasant,set(['peasant'])
+flair,set(['flair'])
+hardhats,set(['hardhats'])
+everyone,"set(['everybody', 'everyone', 'anything', u'thing', 'everything', 'something', 'nothing', 'really'])"
+telescope,"set(['battery', 'laser', 'telescope'])"
+house,set(['house'])
+strip,set(['strip'])
+related,set(['related'])
+gun,"set(['powered', 'armor', u'weapon', u'gun', 'camouflage', 'weapons', 'equipment', u'craft'])"
+used,set(['used'])
+variety,"set(['number', 'multitude', 'variety'])"
+navy,"set(['navy', u'ship', 'ships'])"
+roleplaying,"set(['roleplaying', 'paintball', 'gadget'])"
+ring,set(['ring'])
+snorkeling,set(['snorkeling'])
+relive,set(['relive'])
+canvas,set(['canvas'])
+opened,set(['opened'])
+candlelight,set(['candlelight'])
+space,set(['space'])
+competing,set(['competing'])
+looking,"set(['looking', u'look'])"
+include,set(['include'])
+seriously,set(['seriously'])
+got,set(['got'])
+cause,"set(['cause', 'lead'])"
+pun,set([u'pun'])
+cutest,set(['cutest'])
+1920s,set(['1920s'])
+activity,"set(['activities', u'activity'])"
+little,set(['little'])
+free,set(['free'])
+70s,set(['70s'])
+attending,"set(['attending', 'hospital', u'nurse', 'school'])"
+rated,set(['rated'])
+care,set(['care'])
+aisle,set(['aisle'])
+yard,"set(['yard', u'bench'])"
+keep,"set(['give', 'bring', 'go', u'carry', 'select', 'fill', 'perform', 'make', 'send', 'add', 'take', 'build', 'get', 'enter', 'hang', 'stay', 'gain', 'hold', 'throw', 'shoot', 'keep', 'leave', 'collect', u'pick', 'spend', 'steer'])"
+turn,set(['turn'])
+american,set(['american'])
+prejudice,"set(['prejudice', 'alcoholism', u'drug', 'marital'])"
+hannibal,set(['hannibal'])
+first,set(['first'])
+origin,set(['origin'])
+feel,"set(['educate', 'help', 'prepare', 'feel', 'wish', 'submit', 'try', 'expect', 'want', 'ask', 'choose'])"
+one,"set(['zero', 'march', 'two', 'seven', 'one'])"
+fantasy,"set(['mystery', 'superhero', 'classic', 'horror', 'fictional', 'fantasy', 'shakespearean', u'adventure', 'magic', 'fairy', 'comic'])"
+done,set(['done'])
+wrapper,set(['wrapper'])
+message,"set(['message', 'copy'])"
+open,set(['open'])
+size,set([u'size'])
+guess,"set(['guess', 'partake', 'know', 'say', 'remember'])"
+ancient,"set(['greek', 'ancient'])"
+guest,"set(['tv', 'television', u'guest', u'celebrity', u'show'])"
+become,set(['become'])
+arch,"set(['entrance', 'arch'])"
+top,set(['top'])
+engagement,set(['engagement'])
+least,set(['least'])
+ton,set([u'ton'])
+too,"set(['extremely', 'too'])"
+decorations,set(['decorations'])
+wellwishes,set(['wellwishes'])
+festivity,set([u'festivity'])
+murder,set(['murder'])
+way,set(['way'])
+behind,set(['behind'])
+centered,set(['centered'])
+gym,set([u'gym'])
+universe,set(['universe'])
+serve,set(['serve'])
+released,"set(['release', 'released'])"
+part,set(['part'])
+western,set(['western'])
+newlywed,set([u'newlywed'])
+wide,set(['wide'])
+trek,set(['trek'])
+vial,set([u'vial'])
+gotten,set(['gotten'])
+bondage,set(['bondage'])
+tree,set(['tree'])
+nuptuals,set(['nuptuals'])
+hike,set(['hike'])
+politics,set(['politics'])
+goingson,set(['goingson'])
+future,set(['future'])
+silly,set(['silly'])
+maybe,set(['maybe'])
+athleticism,set(['athleticism'])
+collecting,set(['collecting'])
+festiveness,set(['festiveness'])
+angel,set([u'angel'])
+recyclable,set(['recyclable'])
+talking,set(['talking'])
+physiques,set(['physiques'])
+rainall,set(['rainall'])
+seem,set(['seem'])
+element,set([u'element'])
+saw,set([u'saw'])
+lie,set(['lie'])
+hawaiian,set(['hawaiian'])
+presents,"set(['presents', 'depicts'])"
+able,set(['able'])
+zoo,"set(['town', 'mountain', 'lawn', 'picnic', 'garden', 'park', 'zoo', 'disneyland', 'mansion', 'castle', 'barn', 'beach', 'gardens', 'tent'])"
+stargazing,set(['stargazing'])
+also,set(['also'])
+high,set(['high'])
+ornament,set(['ornament'])
+many,"set(['many', 'several', 'numerous', 'both'])"
+monoscope,set(['monoscope'])
+paparazzis,set(['paparazzis'])
+surf,set(['surf'])
+blue,"set(['blue', u'color', 'colors', 'black', 'white', 'red'])"
+play,"set(['play', 'played'])"
+sure,"set(['ready', 'sure'])"
+though,set(['though'])
+buffet,set(['buffet'])
+donation,set(['donation'])
+plenty,set(['plenty'])
+70,set([u'70'])
+pair,"set(['pair', 'chain'])"
+nationality,set([u'nationality'])
+class,set(['class'])
+especially,set(['especially'])
+room,set(['room'])
+sometimes,"set(['sometimes', 'commonly'])"
+face,"set(['hand', 'side', 'face'])"
+traditional,set(['traditional'])
+camo,set(['camo'])
+place,set(['place'])
+deeply,set(['deeply'])
+fact,set(['fact'])
+joining,set(['joining'])
+atmosphere,"set(['dust', 'atmosphere'])"
+gold,"set(['silver', 'gold'])"
+serenade,set(['serenade'])
+please,set(['please'])
+lay,"set([u'lay', 'sit'])"
+random,set(['random'])
+anniversary,set(['anniversary'])
+shoe,"set(['crazy', u'pot', 'torch', 'fancy', 'catching', u'shoe', 'girl', 'skirt', 'pink', 'helmet', 'horse', 'shirt', 'dressed', 'hey', 'stuffed', 'attire', 'feather', 'hat', 'wearing', 'sword', 'costumes', 'outfit', 'beast', u'rabbit', 'saddle', 'nude', 'dog', 'candy', u'cat', 'jacket', 'bride', 'skirts', 'costume'])"
+participate,"set(['meet', 'join', 'participate'])"
+ceterpiece,set(['ceterpiece'])
+fine,set(['fine'])
+debate,set(['debate'])
+decade,"set(['decade', u'year'])"
+enthusiast,"set([u'enthusiast', u'acrobat'])"
+based,set(['based'])
+crossfit,set(['crossfit'])
+state,set(['state'])
+controls,set(['controls'])
+loafers,set(['loafers'])
+theme,"set(['themes', 'theme', 'feature'])"
+going,"set(['going', 'coming'])"
+bliss,set(['bliss'])
+photo,set([u'photo'])
+marriage,"set(['lady', u'woman', 'marriage', 'husband', 'wife'])"
+rice,"set(['coconut', 'earthy', 'lace', 'sweet', 'liquor', u'recipe', 'bathing', 'foods', u'dish', 'breakfast', 'flavor', 'cotton', u'flower', 'cream', 'cooking', 'sparkling', 'beer', 'wood', 'tea', 'vegetable', 'rice', 'keg', 'dessert', 'corn', u'drink', 'pasta', 'drinking', 'spice', 'leather', 'recipes', 'lumber', 'cake', 'fresh', 'grass', 'soft', 'wine'])"
+local,set(['local'])
+pointed,set(['pointed'])
+do,set(['do'])
+villian,set(['villian'])
+colorful,"set(['stereotypical', 'colorful'])"
+rayban,set(['rayban'])
+props,"set(['microphones', 'anchors', 'recorders', 'disposable', 'tvs', u'accessory', 'recycled', 'kites', 'props', 'clamps', 'flops'])"
+overall,set([u'overall'])
+appetizer,set(['appetizer'])
+famous,set(['famous'])
+ones,set(['ones'])
+fallout,"set(['mining', 'shelter', 'mine', 'coal', 'fallout', 'waste'])"
+hippy,set([u'hippy'])
+celebrate,"set(['feast', 'celebrate'])"
+ghetto,set(['ghetto'])
+bar,set(['bar'])
+progressive,set(['progressive'])
+youll,set(['youll'])
+married,set(['married'])
+disney,set(['disney'])
+raunchy,set(['raunchy'])
+sustainable,set(['sustainable'])
+70sinspired,set(['70sinspired'])
+view,set(['view'])
+guessing,set(['guessing'])
+declared,set(['declared'])
+set,"set(['set', u'setting'])"
+art,set(['art'])
+fair,set(['fair'])
+sex,set(['sex'])
+culture,set(['culture'])
+see,set(['see'])
+are,"set(['are', 'were'])"
+sea,"set(['pacific', 'sea', 'ocean'])"
+close,set(['close'])
+sport,"set(['basketball', 'club', 'football', 'venue', 'teams', 'volleyball', 'sports', 'baseball', u'sport'])"
+constellation,set([u'constellation'])
+best,set(['best'])
+wonder,set(['wonder'])
+cosplay,set(['cosplay'])
+camping,"set(['skiing', 'outdoor', 'hiking', 'camping', 'outdoors'])"
+away,set(['away'])
+sail,set(['sail'])
+rings,set(['rings'])
+victorian,set(['victorian'])
+centerpieces,set(['centerpieces'])
+favor,set(['favor'])
+outside,set(['outside'])
+horrible,set(['horrible'])
+probably,set(['probably'])
+approach,set(['approach'])
+decorate,set(['decorate'])
+wage,"set(['wage', 'budget'])"
+thewir,set(['thewir'])
+nature,set(['nature'])
+joy,set(['joy'])
+team,"set(['cup', u'season', 'nfl', 'stadium', 'win', 'team'])"
+tranditional,set(['tranditional'])
+carbatmobile,set(['carbatmobile'])
+wear,"set(['uniforms', 'dress', 'hats', 'suits', 'wear', 'clothing', 'clothes'])"
+oompa,set(['oompa'])
+ceramony,set(['ceramony'])
+come,set(['come'])
+geocaches,set(['geocaches'])
+country,"set(['country', 'nation'])"
+invited,"set(['invited', 'paid', 'disgusted', 'hired', 'donated', 'encouraged'])"
+equal,set(['equal'])
+foreign,set(['foreign'])
+etc,set(['etc'])
+jersey,"set(['orleans', 'jersey'])"
+potluck,set(['potluck'])
+exhibit,"set(['exhibit', 'enjoy', 'incorporate', 'provide', 'recognize', 'create', 'contribute', 'encourage', 'involve', 'explore', 'maintain', 'combine'])"
+afterwards,"set(['after', 'afterwards'])"
+drunk,"set(['sober', 'drunk'])"
+kazoo,set([u'kazoo'])
+community,set(['community'])
+60,set([u'60'])
+pole,set(['pole'])
+initiative,set(['initiative'])
+church,"set(['catholic', 'church'])"
+table,"set(['table', 'tables'])"
+throughout,set(['throughout'])
+eyepatches,set(['eyepatches'])
+chalice,set(['chalice'])
+fanciest,set(['fanciest'])
+addition,set(['addition'])
+west,"set(['west', 'south'])"
+tropical,"set(['tropical', 'undersea', 'northeast', 'forest', 'rainforest'])"
+sleepover,set(['sleepover'])
+drank,"set(['planted', 'drank', 'eaten'])"
+extravagant,set(['extravagant'])
+treat,"set(['imitate', 'donate', 'treat'])"
+mars,"set(['planet', 'sun', 'venus', 'mars'])"
+board,set(['board'])
+baloon,set(['baloon'])
+life,set([u'life'])
+1950s,set(['1950s'])
+fire,set(['fire'])
+thousand,set([u'thousand'])
+xxx,"set(['mj', 'xxx', 'rs'])"
+centerpiece,set([u'centerpiece'])
+lives,set(['lives'])
+wantd,set(['wantd'])
+aviation,"set(['aviation', 'airline'])"
+smartphones,set(['smartphones'])
+fur,set(['fur'])
+heroheroine,set(['heroheroine'])
+value,set(['value'])
+air,set(['air'])
+cast,set(['cast'])
+bikini,set([u'bikini'])
+joke,set([u'joke'])
+fun,"set(['fun', 'luck'])"
+beachside,set(['beachside'])
+taking,"set(['taken', 'taking'])"
+real,set(['real'])
+vest,set(['vest'])
+century,set(['century'])
+engaged,set(['engaged'])
+site,"set(['website', 'site'])"
+decoration,"set([u'decoration', 'decorative', 'crafts'])"
+need,"set(['need', 'allowing', 'allow'])"
+vow,"set(['gifts', u'vow', 'gift'])"
+gothic,"set(['romantic', 'poetry', 'renaissance', 'gothic', 'painting', 'medieval'])"
+in,set(['in'])
+technology,set(['technology'])
+superheroes,set(['superheroes'])
+different,"set(['individual', 'certain', 'different', 'other', 'multiple'])"
+nuptials,set(['nuptials'])
+doctor,set([u'doctor'])
+balloon,"set([u'kite', 'pin', 'deck', 'walkway', u'belt', 'balloon', 'jar', 'paddle', 'brick', 'wheel', 'shell', 'gear', u'glass', 'boxes', u'trunk', 'belts', 'shotgun', u'cap', 'smooth', 'roof', 'patch', 'bag', 'bottle', 'basket'])"
+masquerade,"set(['masquerade', 'postcard', 'orgy'])"
+speech,set([u'speech'])
+party,set(['party'])
+isle,set(['isle'])
+ball,"set(['hitting', 'player', 'ball'])"
+booths,set(['booths'])
+banter,set(['banter'])
+action,set(['action'])
+bouqet,set(['bouqet'])
+therell,set(['therell'])
+celebratory,set(['celebratory'])
+darned,set(['darned'])
+records,set(['records'])
+tricorder,set(['tricorder'])
+well,set(['well'])
+fighting,"set(['fighting', 'fight'])"
+thought,set(['thought'])
+person,set(['person'])
+without,set(['without'])
+tombstone,set(['tombstone'])
+loompas,set(['loompas'])
+entry,set(['entry'])
+otherwise,set(['otherwise'])
+left,set(['left'])
+summer,set(['summer'])
+money,"set(['money', 'cash'])"
+dancers,"set(['dances', 'dancers'])"
+rest,"set(['whole', 'rest'])"
+world,set(['world'])
+dueling,set(['dueling'])
+blow,set(['blow'])
+cut,set(['cut'])
+tablet,set([u'tablet'])
+rose,set([u'rose'])
+bell,set(['bell'])
+character,set([u'character'])
+hall,set(['hall'])
+hay,set(['hay'])
+location,set(['location'])
+reenact,set(['reenact'])
+spacerelated,set(['spacerelated'])
+ski,set(['ski'])
+kingdom,set([u'kingdom'])
+gangsterera,set(['gangsterera'])
+around,set(['around'])
+read,"set(['read', 'write'])"
+big,set(['big'])
+couple,set(['couple'])
+gonna,set(['gonna'])
+dark,"set(['naked', 'darkness', 'sky', 'deep', 'dark', 'bright'])"
+game,"set(['game', 'games', u'card'])"
+royalty,set(['royalty'])
+whatever,set(['whatever'])
+using,set(['using'])
+formal,set(['formal'])
+glittery,set(['glittery'])
+like,set(['like'])
+hunt,"set(['swim', 'hunt'])"
+50,set([u'50'])
+theyre,set(['theyre'])
+cuisines,"set(['cuisines', 'tribal', 'peoples'])"
+paintbrush,set(['paintbrush'])
+firescales,set(['firescales'])
+served,"set(['served', 'designated'])"
+butterfly,"set([u'butterfly', 'shower'])"
+sneaker,set([u'sneaker'])
+old,set(['old'])
+crowd,"set(['crowd', 'walk'])"
+people,set(['people'])
+library,set(['library'])
+growth,set(['growth'])
+proper,"set(['proper', 'appropriate', 'required'])"
+home,set(['home'])
+swimsuit,set(['swimsuit'])
+werent,set(['werent'])
+memories,set(['memories'])
+abound,"set(['cryptic', 'abound'])"
+creative,set(['creative'])
+provides,set(['provides'])
+someway,set(['someway'])
+nudist,set(['nudist'])
+kiteflying,set(['kiteflying'])
+worthy,set(['worthy'])
+post,set(['post'])
+super,set(['super'])
+stage,set(['stage'])
+throne,"set([u'throne', 'crown'])"
+on,set(['on'])
+wouldnt,set(['wouldnt'])
+getting,set(['getting'])
+of,set(['of'])
+jeer,set([u'jeer'])
+prop,set(['prop'])
+favorite,set(['favorite'])
+trinket,set(['trinket'])
+phyiscal,set(['phyiscal'])
+act,set(['act'])
+fireinspired,set(['fireinspired'])
+own,set(['own'])
+sunglass,set([u'sunglass'])
+mantle,set(['mantle'])
+techie,set(['techie'])
+selfie,set(['selfie'])
+honeymoon,set(['honeymoon'])
+garb,set(['garb'])
+seating,set(['seating'])
+respectable,set(['respectable'])
+doesnt,set(['doesnt'])
+artists,set(['artists'])
+insult,"set(['illusion', u'insult'])"
+charities,set(['charities'])
+pirates,set(['pirates'])
+deal,set(['deal'])
+area,set(['area'])
+support,set(['support'])
+secret,set(['secret'])
+long,set(['long'])
+custom,set(['custom'])
+cats,"set(['feed', 'horses', 'animals', 'hunting', 'fish', 'hamsters', 'dogs', 'cats', 'prey', 'pets', 'wild', 'flowers', u'bird'])"
+inner,set(['inner'])
+lot,set([u'lot'])
+suit,set([u'suit'])
+biggest,"set(['biggest', 'greatest'])"
+war,"set([u'war', 'wars'])"
+boquet,set(['boquet'])
+happy,set(['happy'])
+form,set(['form'])
+aspca,set(['aspca'])
+cabinet,set(['cabinet'])
+properly,"set(['appropriately', 'properly'])"
+line,set(['line'])
+ear,"set(['finger', 'eye', 'shape', 'tail', 'hair', 'fitting', 'necks', 'teeth', u'ear', 'glasses'])"
+true,set(['true'])
+made,set(['made'])
+gaze,set(['gaze'])
+consist,"set(['represent', 'belong', 'consist'])"
+geocaching,"set(['portable', 'geocaching', 'calculator', u'tool', 'chat', 'gps', 'photography', 'math', 'interactive'])"
+characteristic,"set(['characteristic', 'phenomenon', 'aspect'])"
+attached,set(['attached'])
+up,set(['up'])
+byob,set(['byob'])
+nicest,set(['nicest'])
+lays,set(['lays'])
+piece,"set(['instrument', 'piece', u'arrangement'])"
+even,set(['even'])
+sunnies,set(['sunnies'])
+sort,set(['sort'])
+constant,"set(['variance', 'constant'])"
+nudity,set(['nudity'])
+direction,set(['direction'])
+general,set(['general'])
+single,set(['single'])
+watched,set(['watched'])
+levity,set(['levity'])
+contest,"set([u'winner', 'contest'])"
+photobook,set(['photobook'])
+peace,set(['peace'])
+boot,"set(['microphone', u'boot', 'frame', u'envelope', 'flip', 'display', 'slide', 'camera', 'exit', 'slip', 'screen', u'bubble', 'anchor'])"
+field,set(['field'])
+book,"set(['poem', u'story', 'tale', 'book', 'books', 'shakespeare', 'dream'])"
+special,set(['special'])
+you,set(['you'])
+roll,set(['roll'])
+mock,set(['mock'])
+nice,set(['nice'])
+lapel,set(['lapel'])
+star,set(['star'])
+time,"set(['moment', 'time'])"
+friends,"set(['friends', u'friend'])"
+guestbook,set(['guestbook'])
+building,"set(['building', 'construction'])"
+land,set(['land'])
+remote,set(['remote'])
+snuggliest,set(['snuggliest'])
+dvd,"set(['dvd', 'video'])"
+age,set(['age'])
+groom,set(['groom'])
+mask,"set(['paint', 'mask', 'masks', 'instantly'])"
+together,set(['together'])
+u,set([u'u'])
+reception,set(['reception'])
+literally,set(['literally'])
+international,set(['international'])
+tootin,set(['tootin'])
+original,set(['original'])

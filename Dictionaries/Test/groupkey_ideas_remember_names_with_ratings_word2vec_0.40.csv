@@ -1,0 +1,6 @@
+Super_Word,Value
+named,set(['named'])
+medium,set([u'medium'])
+check,"set(['anyone', 'ask', 'check'])"
+phonesocial,set(['phonesocial'])
+name,set(['name'])
