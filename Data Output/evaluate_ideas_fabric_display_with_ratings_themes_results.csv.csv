@@ -1,0 +1,177 @@
+,corr_true,dataset,decline_slope,exp_slope,method,run,threshold
+0,1.0,camouflage in different settings/situations,-9.770114946,-0.383216751947,word2vec,word2vec_0.20,0.20
+1,1.0,camouflage in different settings/situations,-2.87356322,-0.0821867562199,word2vec,word2vec_0.30,0.30
+2,1.0,camouflage in different settings/situations,-35.63218391,-0.332064229406,word2vec,word2vec_0.40,0.40
+3,1.0,camouflage in different settings/situations,-48.27586207,-0.286306738852,word2vec,word2vec_0.50,0.50
+4,1.0,camouflage in different settings/situations,-27.5862069,-0.140178703186,word2vec,word2vec_0.60,0.60
+5,1.0,camouflage in different settings/situations,-20.68965517,-0.100670161868,word2vec,word2vec_0.70,0.70
+6,1.0,camouflage in different settings/situations,-20.68965517,-0.100670161868,word2vec,word2vec_0.80,0.80
+7,1.0,camouflage in different settings/situations,-20.68965517,-0.100670161868,word2vec,word2vec_0.90,0.90
+8,0.918211649975,create novel ways for visual artists to express themselves and display their work,-1.17211544603,-0.0701378865995,word2vec,word2vec_0.20,0.20
+9,0.945756248048,create novel ways for visual artists to express themselves and display their work,-3.33050801271,-0.0971100063803,word2vec,word2vec_0.30,0.30
+10,0.889261136199,create novel ways for visual artists to express themselves and display their work,-3.58684165771,-0.0509109608035,word2vec,word2vec_0.40,0.40
+11,0.987889637767,create novel ways for visual artists to express themselves and display their work,-5.30806512714,-0.0534010543508,word2vec,word2vec_0.50,0.50
+12,0.916198635077,create novel ways for visual artists to express themselves and display their work,-3.118464172,-0.0281920916431,word2vec,word2vec_0.60,0.60
+13,0.845351948461,create novel ways for visual artists to express themselves and display their work,-5.54825926257,-0.0355613472369,word2vec,word2vec_0.70,0.70
+14,0.845351948461,create novel ways for visual artists to express themselves and display their work,-5.54825926257,-0.0355613472369,word2vec,word2vec_0.80,0.80
+15,0.845351948461,create novel ways for visual artists to express themselves and display their work,-5.54825926257,-0.0355613472369,word2vec,word2vec_0.90,0.90
+16,0.727145716677,enhance human-to-human communication,-4.166666665,-0.110924374773,word2vec,word2vec_0.20,0.20
+17,0.0276285583738,enhance human-to-human communication,-2.5,-0.048455006504,word2vec,word2vec_0.30,0.30
+18,0.875933924207,enhance human-to-human communication,1.25,0.0206963425791,word2vec,word2vec_0.40,0.40
+19,0.937455894238,enhance human-to-human communication,-0.833333335,-0.006786403608,word2vec,word2vec_0.50,0.50
+20,0.476932516456,enhance human-to-human communication,2.916666665,0.0182146328025,word2vec,word2vec_0.60,0.60
+21,0.98414232457,enhance human-to-human communication,-1.666666665,-0.00886438347153,word2vec,word2vec_0.70,0.70
+22,0.98414232457,enhance human-to-human communication,-1.666666665,-0.00886438347153,word2vec,word2vec_0.80,0.80
+23,0.98414232457,enhance human-to-human communication,-1.666666665,-0.00886438347153,word2vec,word2vec_0.90,0.90
+24,-0.528827215905,enhance live show experiences,1.851851852,,word2vec,word2vec_0.20,0.20
+25,0.730224319164,enhance live show experiences,-0.462962963,-0.0255762612269,word2vec,word2vec_0.30,0.30
+26,0.999998861831,enhance live show experiences,-10.185185185,-0.113621890749,word2vec,word2vec_0.40,0.40
+27,0.962024887598,enhance live show experiences,-5.09259259,-0.0416686028886,word2vec,word2vec_0.50,0.50
+28,0.995726219793,enhance live show experiences,-12.037037035,-0.0740312677163,word2vec,word2vec_0.60,0.60
+29,0.751936486637,enhance live show experiences,-7.407407405,-0.0348179640584,word2vec,word2vec_0.70,0.70
+30,0.751936486637,enhance live show experiences,-7.407407405,-0.0348179640584,word2vec,word2vec_0.80,0.80
+31,0.751936486637,enhance live show experiences,-7.407407405,-0.0348179640584,word2vec,word2vec_0.90,0.90
+32,0.0,enhance the comfort or entertainment value of items in a household bathroom,,,word2vec,word2vec_0.20,0.20
+33,0.0,enhance the comfort or entertainment value of items in a household bathroom,,,word2vec,word2vec_0.30,0.30
+34,0.0,enhance the comfort or entertainment value of items in a household bathroom,,,word2vec,word2vec_0.40,0.40
+35,0.0,enhance the comfort or entertainment value of items in a household bathroom,,,word2vec,word2vec_0.50,0.50
+36,0.0,enhance the comfort or entertainment value of items in a household bathroom,,,word2vec,word2vec_0.60,0.60
+37,0.0,enhance the comfort or entertainment value of items in a household bathroom,,,word2vec,word2vec_0.70,0.70
+38,0.0,enhance the comfort or entertainment value of items in a household bathroom,,,word2vec,word2vec_0.80,0.80
+39,0.0,enhance the comfort or entertainment value of items in a household bathroom,,,word2vec,word2vec_0.90,0.90
+40,1.0,enhance the customer experience at restaurants,-4.5,-0.193820026016,word2vec,word2vec_0.20,0.20
+41,1.0,enhance the customer experience at restaurants,-1.0,-0.0177287669604,word2vec,word2vec_0.30,0.30
+42,1.0,enhance the customer experience at restaurants,7.0,0.107209969648,word2vec,word2vec_0.40,0.40
+43,1.0,enhance the customer experience at restaurants,10.5,0.107209969648,word2vec,word2vec_0.50,0.50
+44,1.0,enhance the customer experience at restaurants,-2.5,-0.0177287669604,word2vec,word2vec_0.60,0.60
+45,-1.0,enhance the customer experience at restaurants,1.0,0.00575232888909,word2vec,word2vec_0.70,0.70
+46,-1.0,enhance the customer experience at restaurants,1.0,0.00575232888909,word2vec,word2vec_0.80,0.80
+47,-1.0,enhance the customer experience at restaurants,1.0,0.00575232888909,word2vec,word2vec_0.90,0.90
+48,0.284102208913,enhance the educational experience of students inside and outside the classroom,5.555555555,,word2vec,word2vec_0.20,0.20
+49,0.972058137844,enhance the educational experience of students inside and outside the classroom,2.8619528595,,word2vec,word2vec_0.30,0.30
+50,0.510609145317,enhance the educational experience of students inside and outside the classroom,-7.07070707,-0.106939909973,word2vec,word2vec_0.40,0.40
+51,0.841984693803,enhance the educational experience of students inside and outside the classroom,-11.44781145,-0.0968382169448,word2vec,word2vec_0.50,0.50
+52,0.962852117319,enhance the educational experience of students inside and outside the classroom,-9.42760943,-0.056882333546,word2vec,word2vec_0.60,0.60
+53,0.841984693803,enhance the educational experience of students inside and outside the classroom,-5.723905725,-0.0327299937496,word2vec,word2vec_0.70,0.70
+54,0.860855782857,enhance the educational experience of students inside and outside the classroom,-11.11111111,-0.0545722347063,word2vec,word2vec_0.80,0.80
+55,0.860855782857,enhance the educational experience of students inside and outside the classroom,-11.11111111,-0.0545722347063,word2vec,word2vec_0.90,0.90
+56,0.0,enhance the player or audience experience at sporting events,,,word2vec,word2vec_0.20,0.20
+57,0.0,enhance the player or audience experience at sporting events,,,word2vec,word2vec_0.30,0.30
+58,0.0,enhance the player or audience experience at sporting events,,,word2vec,word2vec_0.40,0.40
+59,0.0,enhance the player or audience experience at sporting events,,,word2vec,word2vec_0.50,0.50
+60,0.0,enhance the player or audience experience at sporting events,,,word2vec,word2vec_0.60,0.60
+61,0.0,enhance the player or audience experience at sporting events,,,word2vec,word2vec_0.70,0.70
+62,0.0,enhance the player or audience experience at sporting events,,,word2vec,word2vec_0.80,0.80
+63,0.0,enhance the player or audience experience at sporting events,,,word2vec,word2vec_0.90,0.90
+64,0.925850310336,increase productivity/efficiency in everyday life,-3.89735894429,-0.0633834597998,word2vec,word2vec_0.20,0.20
+65,0.989156639286,increase productivity/efficiency in everyday life,-6.96698679514,-0.082851160015,word2vec,word2vec_0.30,0.30
+66,0.935138821944,increase productivity/efficiency in everyday life,-11.7046818723,-0.0849465424606,word2vec,word2vec_0.40,0.40
+67,0.797493737166,increase productivity/efficiency in everyday life,-9.587034814,-0.063063405134,word2vec,word2vec_0.50,0.50
+68,0.874117174679,increase productivity/efficiency in everyday life,-4.89015606143,-0.0238546259966,word2vec,word2vec_0.60,0.60
+69,0.770040233979,increase productivity/efficiency in everyday life,-3.827130852,-0.0182273962146,word2vec,word2vec_0.70,0.70
+70,0.77156800366,increase productivity/efficiency in everyday life,-2.39495798257,-0.0110043998336,word2vec,word2vec_0.80,0.80
+71,0.77156800366,increase productivity/efficiency in everyday life,-2.39495798257,-0.0110043998336,word2vec,word2vec_0.90,0.90
+72,0.870615121709,make and display more effective advertisements in stores and in the general public,-3.48069985571,-0.0792598161384,word2vec,word2vec_0.20,0.20
+73,0.870324023638,make and display more effective advertisements in stores and in the general public,-7.12860750321,-0.102657923753,word2vec,word2vec_0.30,0.30
+74,0.79497406188,make and display more effective advertisements in stores and in the general public,-7.36544011536,-0.0642433550581,word2vec,word2vec_0.40,0.40
+75,0.765585135972,make and display more effective advertisements in stores and in the general public,-6.504689755,-0.0494879693869,word2vec,word2vec_0.50,0.50
+76,0.498071122678,make and display more effective advertisements in stores and in the general public,-4.00396825393,-0.0254514167918,word2vec,word2vec_0.60,0.60
+77,0.468250212946,make and display more effective advertisements in stores and in the general public,-2.90386002929,-0.017587470291,word2vec,word2vec_0.70,0.70
+78,0.468250212946,make and display more effective advertisements in stores and in the general public,-2.90386002929,-0.017587470291,word2vec,word2vec_0.80,0.80
+79,0.468250212946,make and display more effective advertisements in stores and in the general public,-2.90386002929,-0.017587470291,word2vec,word2vec_0.90,0.90
+80,0.852679033298,make clothing/wearables that are fun and add to entertainment experiences,-0.0557093564,-0.00343772284137,word2vec,word2vec_0.20,0.20
+81,0.644301144506,make clothing/wearables that are fun and add to entertainment experiences,-0.2703177658,-0.0102850050282,word2vec,word2vec_0.30,0.30
+82,0.583963120093,make clothing/wearables that are fun and add to entertainment experiences,-0.010166906,0.000178249668808,word2vec,word2vec_0.40,0.40
+83,0.461144696459,make clothing/wearables that are fun and add to entertainment experiences,-0.744406999,-0.0090724444879,word2vec,word2vec_0.50,0.50
+84,0.508101390974,make clothing/wearables that are fun and add to entertainment experiences,-0.791217302,-0.00731611904702,word2vec,word2vec_0.60,0.60
+85,0.695191136373,make clothing/wearables that are fun and add to entertainment experiences,0.042766008,0.00070105974578,word2vec,word2vec_0.70,0.70
+86,0.854157369465,make clothing/wearables that are fun and add to entertainment experiences,1.039540201,0.0077897530383,word2vec,word2vec_0.80,0.80
+87,0.854157369465,make clothing/wearables that are fun and add to entertainment experiences,1.039540201,0.0077897530383,word2vec,word2vec_0.90,0.90
+88,0.836504012878,"make clothing/wearables that enhance people's safety in different situations, activities, and work environments",-3.015615679,-0.104358984155,word2vec,word2vec_0.20,0.20
+89,0.858418537998,"make clothing/wearables that enhance people's safety in different situations, activities, and work environments",-6.665613925,-0.112713589317,word2vec,word2vec_0.30,0.30
+90,0.780016971849,"make clothing/wearables that enhance people's safety in different situations, activities, and work environments",-5.55672527,-0.0737593958852,word2vec,word2vec_0.40,0.40
+91,0.474560033313,"make clothing/wearables that enhance people's safety in different situations, activities, and work environments",-1.530547077,-0.0149273779078,word2vec,word2vec_0.50,0.50
+92,0.537852936798,"make clothing/wearables that enhance people's safety in different situations, activities, and work environments",0.684422922,0.00451367224021,word2vec,word2vec_0.60,0.60
+93,0.607389538795,"make clothing/wearables that enhance people's safety in different situations, activities, and work environments",-2.500684282,-0.0136953109675,word2vec,word2vec_0.70,0.70
+94,0.709420913274,"make clothing/wearables that enhance people's safety in different situations, activities, and work environments",-1.581991087,-0.00837976645173,word2vec,word2vec_0.80,0.80
+95,0.709420913274,"make clothing/wearables that enhance people's safety in different situations, activities, and work environments",-1.581991087,-0.00837976645173,word2vec,word2vec_0.90,0.90
+96,-0.185255884196,make clothing/wearables that help people express themselves,0.121835255135,,word2vec,word2vec_0.20,0.20
+97,0.578338099902,make clothing/wearables that help people express themselves,-0.261232479865,-0.00708644244891,word2vec,word2vec_0.30,0.30
+98,0.480754869688,make clothing/wearables that help people express themselves,-1.68764345428,-0.0266110596851,word2vec,word2vec_0.40,0.40
+99,0.510375208991,make clothing/wearables that help people express themselves,-2.62181888696,-0.0280209912774,word2vec,word2vec_0.50,0.50
+100,0.507422826889,make clothing/wearables that help people express themselves,-2.27844397061,-0.0175732213403,word2vec,word2vec_0.60,0.60
+101,0.496612570444,make clothing/wearables that help people express themselves,-2.08126568944,-0.0130426472388,word2vec,word2vec_0.70,0.70
+102,0.487931625776,make clothing/wearables that help people express themselves,-2.02319877037,-0.0125765807888,word2vec,word2vec_0.80,0.80
+103,0.487931625776,make clothing/wearables that help people express themselves,-2.02319877037,-0.0125765807888,word2vec,word2vec_0.90,0.90
+104,0.532507195781,make household items/decor more visually aesthetic,0.89836617219,,word2vec,word2vec_0.20,0.20
+105,0.577763559082,make household items/decor more visually aesthetic,0.542392918798,0.0311860970575,word2vec,word2vec_0.30,0.30
+106,0.619548698552,make household items/decor more visually aesthetic,-0.525616499524,-0.0133380908844,word2vec,word2vec_0.40,0.40
+107,0.526890739753,make household items/decor more visually aesthetic,-1.22957426833,-0.0191402870583,word2vec,word2vec_0.50,0.50
+108,0.696472931989,make household items/decor more visually aesthetic,0.0436194541667,0.000361301617421,word2vec,word2vec_0.60,0.60
+109,0.263091543026,make household items/decor more visually aesthetic,0.628686778929,0.00425995617194,word2vec,word2vec_0.70,0.70
+110,0.421337425719,make household items/decor more visually aesthetic,0.167838837857,0.00104865586842,word2vec,word2vec_0.80,0.80
+111,0.421337425719,make household items/decor more visually aesthetic,0.167838837857,0.00104865586842,word2vec,word2vec_0.90,0.90
+112,-1.0,make it easier / more comfortable for people to fall asleep in the bedroom,4.27350427,0.14132915271,word2vec,word2vec_0.20,0.20
+113,1.0,make it easier / more comfortable for people to fall asleep in the bedroom,-14.529914528,-0.460730838505,word2vec,word2vec_0.30,0.30
+114,1.0,make it easier / more comfortable for people to fall asleep in the bedroom,-6.83760684,-0.159700842954,word2vec,word2vec_0.40,0.40
+115,1.0,make it easier / more comfortable for people to fall asleep in the bedroom,-16.23931624,-0.101708895891,word2vec,word2vec_0.50,0.50
+116,1.0,make it easier / more comfortable for people to fall asleep in the bedroom,-30.76923077,-0.159700842872,word2vec,word2vec_0.60,0.60
+117,0.0,make it easier / more comfortable for people to fall asleep in the bedroom,0.0,0.0,word2vec,word2vec_0.70,0.70
+118,0.0,make it easier / more comfortable for people to fall asleep in the bedroom,0.0,0.0,word2vec,word2vec_0.80,0.80
+119,0.0,make it easier / more comfortable for people to fall asleep in the bedroom,0.0,0.0,word2vec,word2vec_0.90,0.90
+120,0.0,make life for comfortable for pets/animals,,,word2vec,word2vec_0.20,0.20
+121,0.0,make life for comfortable for pets/animals,,,word2vec,word2vec_0.30,0.30
+122,0.0,make life for comfortable for pets/animals,,,word2vec,word2vec_0.40,0.40
+123,0.0,make life for comfortable for pets/animals,,,word2vec,word2vec_0.50,0.50
+124,0.0,make life for comfortable for pets/animals,,,word2vec,word2vec_0.60,0.60
+125,0.0,make life for comfortable for pets/animals,,,word2vec,word2vec_0.70,0.70
+126,0.0,make life for comfortable for pets/animals,,,word2vec,word2vec_0.80,0.80
+127,0.0,make life for comfortable for pets/animals,,,word2vec,word2vec_0.90,0.90
+128,1.0,make new tech hardware products,-31.81818182,-0.439332693874,word2vec,word2vec_0.20,0.20
+129,1.0,make new tech hardware products,-39.3939394,-0.388180171448,word2vec,word2vec_0.30,0.30
+130,1.0,make new tech hardware products,-21.21212122,-0.166331421832,word2vec,word2vec_0.40,0.40
+131,1.0,make new tech hardware products,-3.03030303,-0.0202033860852,word2vec,word2vec_0.50,0.50
+132,0.0,make new tech hardware products,0.0,0.0,word2vec,word2vec_0.60,0.60
+133,0.0,make new tech hardware products,0.0,0.0,word2vec,word2vec_0.70,0.70
+134,0.0,make new tech hardware products,0.0,0.0,word2vec,word2vec_0.80,0.80
+135,0.0,make new tech hardware products,0.0,0.0,word2vec,word2vec_0.90,0.90
+136,0.726201983229,make physically interactive games for the entertainment for adults and/or of children,-1.3492632509,-0.0624135294997,word2vec,word2vec_0.20,0.20
+137,0.569551083088,make physically interactive games for the entertainment for adults and/or of children,-1.76249915496,-0.0507478344831,word2vec,word2vec_0.30,0.30
+138,0.547185208393,make physically interactive games for the entertainment for adults and/or of children,-3.60975319806,-0.0485187686166,word2vec,word2vec_0.40,0.40
+139,0.484978656617,make physically interactive games for the entertainment for adults and/or of children,-3.30943470194,-0.0352970095359,word2vec,word2vec_0.50,0.50
+140,0.449956468259,make physically interactive games for the entertainment for adults and/or of children,-6.73220865382,-0.0414116737972,word2vec,word2vec_0.60,0.60
+141,0.428297617336,make physically interactive games for the entertainment for adults and/or of children,-4.85400501091,-0.0267831156626,word2vec,word2vec_0.70,0.70
+142,0.394847492618,make physically interactive games for the entertainment for adults and/or of children,-4.87080943939,-0.0268313497213,word2vec,word2vec_0.80,0.80
+143,0.354044839698,make physically interactive games for the entertainment for adults and/or of children,-4.73649330509,-0.0258883534028,word2vec,word2vec_0.90,0.90
+144,0.986722846709,make portable technologies,-3.67077832866,-0.129831256356,word2vec,word2vec_0.20,0.20
+145,0.902478275489,make portable technologies,-5.68482265586,-0.0942606121046,word2vec,word2vec_0.30,0.30
+146,0.937794769932,make portable technologies,-3.81039003,-0.0440357293914,word2vec,word2vec_0.40,0.40
+147,0.793870254704,make portable technologies,-3.33490408057,-0.0286518695524,word2vec,word2vec_0.50,0.50
+148,0.758579097096,make portable technologies,-3.63832391971,-0.0223388077665,word2vec,word2vec_0.60,0.60
+149,0.904242564239,make portable technologies,-5.90970513771,-0.0293494147913,word2vec,word2vec_0.70,0.70
+150,0.904242564239,make portable technologies,-5.90970513771,-0.0293494147913,word2vec,word2vec_0.80,0.80
+151,0.904242564239,make portable technologies,-5.90970513771,-0.0293494147913,word2vec,word2vec_0.90,0.90
+152,0.0,make products that are useful in a household kitchen,,,word2vec,word2vec_0.20,0.20
+153,0.0,make products that are useful in a household kitchen,,,word2vec,word2vec_0.30,0.30
+154,0.0,make products that are useful in a household kitchen,,,word2vec,word2vec_0.40,0.40
+155,0.0,make products that are useful in a household kitchen,,,word2vec,word2vec_0.50,0.50
+156,0.0,make products that are useful in a household kitchen,,,word2vec,word2vec_0.60,0.60
+157,0.0,make products that are useful in a household kitchen,,,word2vec,word2vec_0.70,0.70
+158,0.0,make products that are useful in a household kitchen,,,word2vec,word2vec_0.80,0.80
+159,0.0,make products that are useful in a household kitchen,,,word2vec,word2vec_0.90,0.90
+160,0.262499052502,make traveling/navigation easier / more comfortable,0.1113360324,0.00943669610931,word2vec,word2vec_0.20,0.20
+161,0.915432792296,make traveling/navigation easier / more comfortable,-5.303643725,-0.0984814285182,word2vec,word2vec_0.30,0.30
+162,0.926367057201,make traveling/navigation easier / more comfortable,-10.587044534,-0.138814932541,word2vec,word2vec_0.40,0.40
+163,0.926011603747,make traveling/navigation easier / more comfortable,-15.72874494,-0.174717126818,word2vec,word2vec_0.50,0.50
+164,0.994136410099,make traveling/navigation easier / more comfortable,-7.024291496,-0.0418211827425,word2vec,word2vec_0.60,0.60
+165,0.876391023872,make traveling/navigation easier / more comfortable,-4.655870444,-0.0264754260129,word2vec,word2vec_0.70,0.70
+166,0.876391023872,make traveling/navigation easier / more comfortable,-4.655870444,-0.0264754260129,word2vec,word2vec_0.80,0.80
+167,0.876391023872,make traveling/navigation easier / more comfortable,-4.655870444,-0.0264754260129,word2vec,word2vec_0.90,0.90
+168,1.0,replace static content with more dynamic/interactive content,-16.48351648,-0.333214678916,word2vec,word2vec_0.20,0.20
+169,1.0,replace static content with more dynamic/interactive content,-14.65201465,-0.208275942401,word2vec,word2vec_0.30,0.30
+170,1.0,replace static content with more dynamic/interactive content,-5.12820513,-0.0621479067749,word2vec,word2vec_0.40,0.40
+171,1.0,replace static content with more dynamic/interactive content,-16.84981685,-0.121125766711,word2vec,word2vec_0.50,0.50
+172,1.0,replace static content with more dynamic/interactive content,-3.66300367,-0.0192197062435,word2vec,word2vec_0.60,0.60
+173,1.0,replace static content with more dynamic/interactive content,-3.66300367,-0.0192197062435,word2vec,word2vec_0.70,0.70
+174,0.0,replace static content with more dynamic/interactive content,0.0,0.0,word2vec,word2vec_0.80,0.80
+175,0.0,replace static content with more dynamic/interactive content,0.0,0.0,word2vec,word2vec_0.90,0.90
