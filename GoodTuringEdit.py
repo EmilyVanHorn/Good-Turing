@@ -660,10 +660,6 @@ def evaluate4(file, logs, method, threshold, dataset):#-------------------EVALUA
             current = i          
         if(current <= end):                            #for each time slice
             line = format(line)          #line becomes just array content rather than the whole line
-               
-            
-            
-            
             logs.append(["\tIDEA " + str(i) + " -----"])
             # print groupType
             groupList = []
@@ -839,10 +835,7 @@ def evaluate6(file, logs):#-------------------------------------------------EVAL
     #             'Normal',
     #             'NewAtEnd',
     #             'Exciting']              #the list of input filenames
-    datasets = ['ideas_wedding_with_ratings',
-                'ideas_fabric_display_with_ratings',
-                'ideas_remember_names_with_ratings',
-                'ideas_fabric_display_with_ratings_themes']
+    datasets = ['ideas_remember_names_with_ratings']
     # versions = [evaluate4(file, logs, "getGroup", 0.5)]       #array of functions to try out
     #             evaluate4(file, logs, "getGroup", 0.9),
     #             evaluate4(file, logs, "getGroup3", 0.5),
@@ -859,14 +852,10 @@ def evaluate6(file, logs):#-------------------------------------------------EVAL
     outLine = []                                    #one line of output taken from "returnedOut"
     # i = 0
 
-    output.append(["dataset", "method",             #header
-               "timeSlice", "GT_predict", "true"])
-
     for dataset in datasets:                     #for each dataset
         print "datasets: ", dataset
         input_file = data = pd.read_csv("Input/%s.csv" %dataset)
-        if(dataset == "ideas_remember_names_with_ratings" or
-           dataset == "ideas_fabric_display_with_ratings_themes"):
+        if(dataset == "ideas_fabric_display_with_ratings_themes"):
             for theme, theme_data in input_file.groupby("theme"):
                 print "theme: ", theme
                 for method in methods:
@@ -892,7 +881,10 @@ def evaluate6(file, logs):#-------------------------------------------------EVAL
             writeOut(output, output_file)
             output = []
         elif(dataset == "ideas_wedding_with_ratings" or
-             dataset == "ideas_fabric_display_with_ratings"):
+             dataset == "ideas_fabric_display_with_ratings" or
+             dataset == "ideas_remember_names_with_ratings"):
+            output.append(["dataset", "method",             #header
+               "timeSlice", "GT_predict", "new_TRUE"])
             for author, author_data in input_file.groupby("authorID"):
                 print "author: ", author
                 for method in methods:
@@ -914,7 +906,7 @@ def evaluate6(file, logs):#-------------------------------------------------EVAL
                             output.append(outLine) 
                 # j = j+1                       
             # i = i+1
-            output_file = "Data Output/Experiment/%s_results.csv" %dataset
+            output_file = "Data Output/Experiment/%s_results_author.csv" %dataset
             writeOut(output, output_file)
             output = []
 
@@ -1068,7 +1060,7 @@ logs = []                                           #log  output to print
 #itemsSeen = {}
 
 #getInput
-file = getInputFile(INPUT_FILE)
+#file = getInputFile(INPUT_FILE)
 
 #setup Log File
 logs.append(["VERSION:\t" + str(VERSION)])

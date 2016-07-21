@@ -1,9 +1,12 @@
 {
-  "anyone": "check", 
+  "anyone": "submit", 
   "named": "named", 
-  "medium": "medium", 
-  "name": "name", 
-  "ask": "check", 
-  "check": "check", 
-  "phonesocial": "phonesocial"
+  "himherself": "himherself", 
+  "group": "group", 
+  "submit": "submit", 
+  "ask": "submit", 
+  "photo": "photo", 
+  "tag": "tag", 
+  "heshe": "heshe", 
+  "hope": "hope"
 }
