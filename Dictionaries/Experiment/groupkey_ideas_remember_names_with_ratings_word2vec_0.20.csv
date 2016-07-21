@@ -1,4 +1,7 @@
 Super_Word,Value
-check,"set(['anyone', 'ask', u'medium', 'check'])"
-phonesocial,set(['phonesocial'])
-name,"set(['named', 'name'])"
+named,set(['named'])
+himherself,set(['himherself'])
+group,set(['group'])
+photo,"set(['photo', u'tag'])"
+heshe,set(['heshe'])
+hope,"set(['anyone', 'ask', 'submit', 'hope'])"

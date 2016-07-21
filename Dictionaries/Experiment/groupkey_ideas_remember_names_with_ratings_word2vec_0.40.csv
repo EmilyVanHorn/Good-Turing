@@ -1,6 +1,9 @@
 Super_Word,Value
 named,set(['named'])
-medium,set([u'medium'])
-check,"set(['anyone', 'ask', 'check'])"
-phonesocial,set(['phonesocial'])
-name,set(['name'])
+himherself,set(['himherself'])
+group,set(['group'])
+submit,"set(['anyone', 'ask', 'submit'])"
+photo,set(['photo'])
+tag,set([u'tag'])
+heshe,set(['heshe'])
+hope,set(['hope'])
