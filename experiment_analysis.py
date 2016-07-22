@@ -8,8 +8,9 @@ data_dir = "Data Output/Experiment/"
 # iterate over the files in the data directory
 for fname in os.listdir(data_dir):
     # skip pesky mac hidden files
-    if fname is not ".DS_Store": 
+    if ".DS_Store" not in fname: 
         # read in the data
+        print os.path.join(data_dir, fname)
         data = pd.read_csv(os.path.join(data_dir, fname)) 
         # log-transform GT-predict for plotting on logarithmic scale and exponential slope estimation
         data['GT_predict_log'] = np.log10(data['GT_predict'])
@@ -20,7 +21,7 @@ for fname in os.listdir(data_dir):
         evaluation = []
         for dataset, dataset_data in data.groupby("dataset"):
             for method, method_data in dataset_data.groupby("method"):
-                print method_data.columns
+                # print method_data.columns
                 # correlation with the TRUE
                 corr_true = stats.linregress(method_data['GT_predict'], method_data['new_TRUE'])[2]
                 # slope
