@@ -1,0 +1,513 @@
+,corr_true,dataset,decline_slope,exp_slope,method,run,threshold
+0,0.0,Any clues from the social setting?,,,word2vec,word2vec_0.20,0.20
+1,0.0,Any clues from the social setting?,,,word2vec,word2vec_0.30,0.30
+2,0.0,Any clues from the social setting?,,,word2vec,word2vec_0.40,0.40
+3,0.0,Any clues from the social setting?,,,word2vec,word2vec_0.50,0.50
+4,0.0,Any clues from the social setting?,,,word2vec,word2vec_0.60,0.60
+5,0.0,Any clues from the social setting?,,,word2vec,word2vec_0.70,0.70
+6,0.0,Any clues from the social setting?,,,word2vec,word2vec_0.80,0.80
+7,0.0,Any clues from the social setting?,,,word2vec,word2vec_0.90,0.90
+8,0.0,Are they talking with anyone else there?,0.0,,word2vec,word2vec_0.20,0.20
+9,0.766549734356,Are they talking with anyone else there?,-0.910402069429,-0.0283324604976,word2vec,word2vec_0.30,0.30
+10,0.968946464325,Are they talking with anyone else there?,-1.79796127171,-0.0312311205574,word2vec,word2vec_0.40,0.40
+11,0.938903160672,Are they talking with anyone else there?,-1.68866018857,-0.0218126785503,word2vec,word2vec_0.50,0.50
+12,0.941430738329,Are they talking with anyone else there?,-4.55996706714,-0.0360386520981,word2vec,word2vec_0.60,0.60
+13,0.737773934069,Are they talking with anyone else there?,-1.63161390771,-0.0113038556711,word2vec,word2vec_0.70,0.70
+14,-0.0803276722958,Are they talking with anyone else there?,0.582740733143,0.00361524407861,word2vec,word2vec_0.80,0.80
+15,-0.0803276722958,Are they talking with anyone else there?,0.582740733143,0.00361524407861,word2vec,word2vec_0.90,0.90
+16,0.851087543027,Be the bad guy.,0.00496031739286,-0.00119370555559,word2vec,word2vec_0.20,0.20
+17,0.7494154516,Be the bad guy.,-4.06816893429,-0.0845670538038,word2vec,word2vec_0.30,0.30
+18,0.7494154516,Be the bad guy.,-4.06816893429,-0.0845670538038,word2vec,word2vec_0.40,0.40
+19,0.746011573644,Be the bad guy.,-5.76247165536,-0.058410133814,word2vec,word2vec_0.50,0.50
+20,0.610457813224,Be the bad guy.,-7.84013605464,-0.0491306618105,word2vec,word2vec_0.60,0.60
+21,0.645005214266,Be the bad guy.,-5.57964852679,-0.0316712916033,word2vec,word2vec_0.70,0.70
+22,0.876040463077,Be the bad guy.,-4.74702380893,-0.0258723153587,word2vec,word2vec_0.80,0.80
+23,0.876040463077,Be the bad guy.,-4.74702380893,-0.0258723153587,word2vec,word2vec_0.90,0.90
+24,-0.170753589212,Can you convince someone else to help you?,1.33674943414,0.0453065231378,word2vec,word2vec_0.20,0.20
+25,0.773844033095,Can you convince someone else to help you?,-1.44997967886,-0.0202830472914,word2vec,word2vec_0.30,0.30
+26,0.895021222772,Can you convince someone else to help you?,-2.84471939229,-0.0343775144358,word2vec,word2vec_0.40,0.40
+27,0.438639372353,Can you convince someone else to help you?,0.554286761429,0.0054068416002,word2vec,word2vec_0.50,0.50
+28,0.315034902346,Can you convince someone else to help you?,1.51236827143,0.0130564247368,word2vec,word2vec_0.60,0.60
+29,0.380237204349,Can you convince someone else to help you?,1.40735996543,0.010260050177,word2vec,word2vec_0.70,0.70
+30,0.363487019337,Can you convince someone else to help you?,1.07627847343,0.00703255566116,word2vec,word2vec_0.80,0.80
+31,0.363487019337,Can you convince someone else to help you?,1.07627847343,0.00703255566116,word2vec,word2vec_0.90,0.90
+32,0.0,Can you guess their name based on their style or appearance?,,,word2vec,word2vec_0.20,0.20
+33,0.0,Can you guess their name based on their style or appearance?,,,word2vec,word2vec_0.30,0.30
+34,0.0,Can you guess their name based on their style or appearance?,,,word2vec,word2vec_0.40,0.40
+35,0.0,Can you guess their name based on their style or appearance?,,,word2vec,word2vec_0.50,0.50
+36,0.0,Can you guess their name based on their style or appearance?,,,word2vec,word2vec_0.60,0.60
+37,0.0,Can you guess their name based on their style or appearance?,,,word2vec,word2vec_0.70,0.70
+38,0.0,Can you guess their name based on their style or appearance?,,,word2vec,word2vec_0.80,0.80
+39,0.0,Can you guess their name based on their style or appearance?,,,word2vec,word2vec_0.90,0.90
+40,0.673923806427,Can you trick them into writing their name?,-0.982351009709,-0.0434104178783,word2vec,word2vec_0.20,0.20
+41,0.883979233008,Can you trick them into writing their name?,-3.69273589218,-0.054478250928,word2vec,word2vec_0.30,0.30
+42,0.727666562154,Can you trick them into writing their name?,-5.56468165882,-0.0740646542657,word2vec,word2vec_0.40,0.40
+43,0.775895384194,Can you trick them into writing their name?,-6.11019967518,-0.0527791232034,word2vec,word2vec_0.50,0.50
+44,0.851849940934,Can you trick them into writing their name?,-6.04083672818,-0.0453060232392,word2vec,word2vec_0.60,0.60
+45,0.847666062818,Can you trick them into writing their name?,-5.50314288855,-0.0386114674994,word2vec,word2vec_0.70,0.70
+46,0.83468959074,Can you trick them into writing their name?,-5.61760253618,-0.0378642609388,word2vec,word2vec_0.80,0.80
+47,0.880118524646,Can you trick them into writing their name?,-5.57437907473,-0.0340901302261,word2vec,word2vec_0.90,0.90
+48,0.0725291471253,Can you use your phone?,2.44424420589,,word2vec,word2vec_0.20,0.20
+49,0.268438755633,Can you use your phone?,1.75832050286,0.0365579454071,word2vec,word2vec_0.30,0.30
+50,0.572062179784,Can you use your phone?,-0.304771140357,-0.00331624168941,word2vec,word2vec_0.40,0.40
+51,0.610820033815,Can you use your phone?,-1.25768264143,-0.00799231829247,word2vec,word2vec_0.50,0.50
+52,0.610820033815,Can you use your phone?,-1.25768264143,-0.00799231829247,word2vec,word2vec_0.60,0.60
+53,0.501361488836,Can you use your phone?,-1.93418630357,-0.0108299356829,word2vec,word2vec_0.70,0.70
+54,0.501361488836,Can you use your phone?,-1.93418630357,-0.0108299356829,word2vec,word2vec_0.80,0.80
+55,0.501361488836,Can you use your phone?,-1.93418630357,-0.0108299356829,word2vec,word2vec_0.90,0.90
+56,0.0,"Do you have a mutual friend there you can ask, while away?",,,word2vec,word2vec_0.20,0.20
+57,0.0,"Do you have a mutual friend there you can ask, while away?",,,word2vec,word2vec_0.30,0.30
+58,0.0,"Do you have a mutual friend there you can ask, while away?",,,word2vec,word2vec_0.40,0.40
+59,0.0,"Do you have a mutual friend there you can ask, while away?",,,word2vec,word2vec_0.50,0.50
+60,0.0,"Do you have a mutual friend there you can ask, while away?",,,word2vec,word2vec_0.60,0.60
+61,0.0,"Do you have a mutual friend there you can ask, while away?",,,word2vec,word2vec_0.70,0.70
+62,0.0,"Do you have a mutual friend there you can ask, while away?",,,word2vec,word2vec_0.80,0.80
+63,0.0,"Do you have a mutual friend there you can ask, while away?",,,word2vec,word2vec_0.90,0.90
+64,0.972628782819,Do you have any other friends in common you could bring up?,7.89473684,,word2vec,word2vec_0.20,0.20
+65,0.93756230225,Do you have any other friends in common you could bring up?,10.52631579,,word2vec,word2vec_0.30,0.30
+66,0.934816177067,Do you have any other friends in common you could bring up?,11.2440191395,0.270395167303,word2vec,word2vec_0.40,0.40
+67,0.432692704659,Do you have any other friends in common you could bring up?,3.58851675,0.0318345399673,word2vec,word2vec_0.50,0.50
+68,0.601178150052,Do you have any other friends in common you could bring up?,-0.23923445,-0.00163885488217,word2vec,word2vec_0.60,0.60
+69,0.954437204985,Do you have any other friends in common you could bring up?,-1.4354067,-0.00775608309684,word2vec,word2vec_0.70,0.70
+70,0.954437204985,Do you have any other friends in common you could bring up?,-1.4354067,-0.00775608309684,word2vec,word2vec_0.80,0.80
+71,0.954437204985,Do you have any other friends in common you could bring up?,-1.4354067,-0.00775608309684,word2vec,word2vec_0.90,0.90
+72,0.459242717691,Do you know any games or songs that might prompt them?,3.0666666667,,word2vec,word2vec_0.20,0.20
+73,0.917922971658,Do you know any games or songs that might prompt them?,-2.243939394,-0.0293469533438,word2vec,word2vec_0.30,0.30
+74,0.883670635428,Do you know any games or songs that might prompt them?,2.556060606,0.0295414401994,word2vec,word2vec_0.40,0.40
+75,0.863242592059,Do you know any games or songs that might prompt them?,6.337878788,0.059189168661,word2vec,word2vec_0.50,0.50
+76,0.549455846469,Do you know any games or songs that might prompt them?,4.745454545,0.0363022594066,word2vec,word2vec_0.60,0.60
+77,0.792240466524,Do you know any games or songs that might prompt them?,-2.996969697,-0.0186440482138,word2vec,word2vec_0.70,0.70
+78,0.715821685765,Do you know any games or songs that might prompt them?,-6.181818182,-0.0300489876323,word2vec,word2vec_0.80,0.80
+79,0.715821685765,Do you know any games or songs that might prompt them?,-6.181818182,-0.0300489876323,word2vec,word2vec_0.90,0.90
+80,0.836592066636,Do you think giving an example of instances where someone said your name wrong/right would help?,0.0930780268929,0.00942655437462,word2vec,word2vec_0.20,0.20
+81,0.754703530948,Do you think giving an example of instances where someone said your name wrong/right would help?,-0.497342785,-0.0150241645499,word2vec,word2vec_0.30,0.30
+82,0.597508727765,Do you think giving an example of instances where someone said your name wrong/right would help?,-0.5178542875,-0.00693985482982,word2vec,word2vec_0.40,0.40
+83,0.565043651516,Do you think giving an example of instances where someone said your name wrong/right would help?,-1.48799427893,-0.0110384230571,word2vec,word2vec_0.50,0.50
+84,0.67890841009,Do you think giving an example of instances where someone said your name wrong/right would help?,-2.06315946,-0.0120004505077,word2vec,word2vec_0.60,0.60
+85,0.663020135938,Do you think giving an example of instances where someone said your name wrong/right would help?,-0.625189535714,-0.00344765629961,word2vec,word2vec_0.70,0.70
+86,0.416376891243,Do you think giving an example of instances where someone said your name wrong/right would help?,-0.639045517143,-0.00314243812403,word2vec,word2vec_0.80,0.80
+87,0.416376891243,Do you think giving an example of instances where someone said your name wrong/right would help?,-0.639045517143,-0.00314243812403,word2vec,word2vec_0.90,0.90
+88,0.0,Does going thru alphabet help?,,,word2vec,word2vec_0.20,0.20
+89,0.0,Does going thru alphabet help?,,,word2vec,word2vec_0.30,0.30
+90,0.0,Does going thru alphabet help?,,,word2vec,word2vec_0.40,0.40
+91,0.0,Does going thru alphabet help?,,,word2vec,word2vec_0.50,0.50
+92,0.0,Does going thru alphabet help?,,,word2vec,word2vec_0.60,0.60
+93,0.0,Does going thru alphabet help?,,,word2vec,word2vec_0.70,0.70
+94,0.0,Does going thru alphabet help?,,,word2vec,word2vec_0.80,0.80
+95,0.0,Does going thru alphabet help?,,,word2vec,word2vec_0.90,0.90
+96,0.761877245506,Exchange contact info?,-4.29292929,-0.106044456084,word2vec,word2vec_0.20,0.20
+97,0.693375245009,Exchange contact info?,-2.02020202,-0.0435750878595,word2vec,word2vec_0.30,0.30
+98,0.884646880169,Exchange contact info?,2.525252525,0.0444705416684,word2vec,word2vec_0.40,0.40
+99,0.188982234664,Exchange contact info?,0.505050505,0.00487991864458,word2vec,word2vec_0.50,0.50
+100,0.92711460313,Exchange contact info?,-5.050505055,-0.0435750878985,word2vec,word2vec_0.60,0.60
+101,0.80390524748,Exchange contact info?,-0.505050505,-0.00398446483491,word2vec,word2vec_0.70,0.70
+102,0.966198526579,Exchange contact info?,-7.07070707,-0.0435750878532,word2vec,word2vec_0.80,0.80
+103,0.966198526579,Exchange contact info?,-7.07070707,-0.0435750878532,word2vec,word2vec_0.90,0.90
+104,0.656507612594,Get lucky.,-0.129803691071,-0.0124541850445,word2vec,word2vec_0.20,0.20
+105,0.224478555882,Get lucky.,1.42862274675,0.072185503687,word2vec,word2vec_0.30,0.30
+106,0.399048186505,Get lucky.,3.56511811639,0.125940860056,word2vec,word2vec_0.40,0.40
+107,0.155229977723,Get lucky.,3.88202248818,0.0967789873985,word2vec,word2vec_0.50,0.50
+108,0.410115366507,Get lucky.,4.30962586357,0.0578313947801,word2vec,word2vec_0.60,0.60
+109,0.13590954194,Get lucky.,1.16394214036,0.00981018514823,word2vec,word2vec_0.70,0.70
+110,0.257848630402,Get lucky.,0.677619953214,0.00542176290786,word2vec,word2vec_0.80,0.80
+111,0.257848630402,Get lucky.,0.677619953214,0.00542176290786,word2vec,word2vec_0.90,0.90
+112,0.965530739812,How can you trick them into saying their name?,-4.006941334,-0.104491490473,word2vec,word2vec_0.20,0.20
+113,0.87192079999,How can you trick them into saying their name?,-5.627519033,-0.0874218677943,word2vec,word2vec_0.30,0.30
+114,0.906833009965,How can you trick them into saying their name?,-7.37348858,-0.0846189954174,word2vec,word2vec_0.40,0.40
+115,0.736394262809,How can you trick them into saying their name?,-4.529780565,-0.0447076127034,word2vec,word2vec_0.50,0.50
+116,0.969535170922,How can you trick them into saying their name?,-5.632557097,-0.034594490063,word2vec,word2vec_0.60,0.60
+117,0.969535170922,How can you trick them into saying their name?,-5.632557097,-0.034594490063,word2vec,word2vec_0.70,0.70
+118,0.969535170922,How can you trick them into saying their name?,-5.632557097,-0.034594490063,word2vec,word2vec_0.80,0.80
+119,0.969535170922,How can you trick them into saying their name?,-5.632557097,-0.034594490063,word2vec,word2vec_0.90,0.90
+120,0.184887151218,How can you use social media?,0.408781798818,,word2vec,word2vec_0.20,0.20
+121,0.260650432373,How can you use social media?,0.880768145853,,word2vec,word2vec_0.30,0.30
+122,0.657105659404,How can you use social media?,-0.13993464778,-0.00171879441022,word2vec,word2vec_0.40,0.40
+123,0.40904844181,How can you use social media?,0.778335574044,0.0162877056368,word2vec,word2vec_0.50,0.50
+124,0.312870868786,How can you use social media?,1.35475122218,0.0244822532444,word2vec,word2vec_0.60,0.60
+125,0.468401425291,How can you use social media?,2.8034368722,0.0379114402166,word2vec,word2vec_0.70,0.70
+126,0.581161378185,How can you use social media?,1.06755460484,0.0108962669937,word2vec,word2vec_0.80,0.80
+127,0.48803343887,How can you use social media?,0.0509063827033,0.000676674525469,word2vec,word2vec_0.90,0.90
+128,0.83223971945,How do you trigger your memory?,-9.375,-0.102059991328,word2vec,word2vec_0.20,0.20
+129,0.872979711473,How do you trigger your memory?,-11.25,-0.102059991328,word2vec,word2vec_0.30,0.30
+130,0.877641762775,How do you trigger your memory?,-15.0,-0.102059991328,word2vec,word2vec_0.40,0.40
+131,0.720576692123,How do you trigger your memory?,-8.75,-0.0536049848239,word2vec,word2vec_0.50,0.50
+132,1.0,How do you trigger your memory?,-9.375,-0.0450883151745,word2vec,word2vec_0.60,0.60
+133,1.0,How do you trigger your memory?,-6.25,-0.0289959734888,word2vec,word2vec_0.70,0.70
+134,0.0,How do you trigger your memory?,0.0,0.0,word2vec,word2vec_0.80,0.80
+135,0.0,How do you trigger your memory?,0.0,0.0,word2vec,word2vec_0.90,0.90
+136,0.507486431184,"How do you try to remember other things? What memory tricks might you use (e.g., associations, images)?",4.2753623192,,word2vec,word2vec_0.20,0.20
+137,0.708205058026,"How do you try to remember other things? What memory tricks might you use (e.g., associations, images)?",1.88405797,0.0356480212518,word2vec,word2vec_0.30,0.30
+138,0.929386446827,"How do you try to remember other things? What memory tricks might you use (e.g., associations, images)?",-4.287439613,-0.04447948364,word2vec,word2vec_0.40,0.40
+139,0.859491706309,"How do you try to remember other things? What memory tricks might you use (e.g., associations, images)?",-1.123188406,-0.0102912275035,word2vec,word2vec_0.50,0.50
+140,0.714752636511,"How do you try to remember other things? What memory tricks might you use (e.g., associations, images)?",-3.514492756,-0.0240184746882,word2vec,word2vec_0.60,0.60
+141,0.50835224672,"How do you try to remember other things? What memory tricks might you use (e.g., associations, images)?",2.258454105,0.0148204270241,word2vec,word2vec_0.70,0.70
+142,0.50835224672,"How do you try to remember other things? What memory tricks might you use (e.g., associations, images)?",2.258454105,0.0148204270241,word2vec,word2vec_0.80,0.80
+143,0.50835224672,"How do you try to remember other things? What memory tricks might you use (e.g., associations, images)?",2.258454105,0.0148204270241,word2vec,word2vec_0.90,0.90
+144,1.0,How do you usually remember stuff?,-10.22727273,-0.13830269821,word2vec,word2vec_0.20,0.20
+145,1.0,How do you usually remember stuff?,-10.22727273,-0.13830269821,word2vec,word2vec_0.30,0.30
+146,1.0,How do you usually remember stuff?,7.95454545,0.0835460514066,word2vec,word2vec_0.40,0.40
+147,1.0,How do you usually remember stuff?,7.95454545,0.0835460514066,word2vec,word2vec_0.50,0.50
+148,1.0,How do you usually remember stuff?,13.63636364,0.104735350545,word2vec,word2vec_0.60,0.60
+149,1.0,How do you usually remember stuff?,13.63636364,0.104735350545,word2vec,word2vec_0.70,0.70
+150,1.0,How do you usually remember stuff?,6.81818182,0.0377885608991,word2vec,word2vec_0.80,0.80
+151,1.0,How do you usually remember stuff?,6.81818182,0.0377885608991,word2vec,word2vec_0.90,0.90
+152,0.699312726868,How might you involve technology?,-0.252226615333,-0.0066231587665,word2vec,word2vec_0.20,0.20
+153,0.390050147065,How might you involve technology?,-1.500556559,-0.0260749491609,word2vec,word2vec_0.30,0.30
+154,0.422129851475,How might you involve technology?,-0.525237073833,-0.00606775081127,word2vec,word2vec_0.40,0.40
+155,0.487683205693,How might you involve technology?,1.7668979665,0.0180343058189,word2vec,word2vec_0.50,0.50
+156,0.669372264748,How might you involve technology?,0.706405883333,0.00580690996089,word2vec,word2vec_0.60,0.60
+157,0.524963619514,How might you involve technology?,1.490913468,0.0115774191025,word2vec,word2vec_0.70,0.70
+158,0.495021131627,How might you involve technology?,2.54849528083,0.0180692263061,word2vec,word2vec_0.80,0.80
+159,0.495196524151,How might you involve technology?,1.54437135383,0.0102356664476,word2vec,word2vec_0.90,0.90
+160,0.98867881002,"If the name is difficult and you forget it, will you keep asking them for their name? Or would you give them a nickname?",-13.18181818,-0.233680708657,word2vec,word2vec_0.20,0.20
+161,0.980318082956,"If the name is difficult and you forget it, will you keep asking them for their name? Or would you give them a nickname?",-6.363636365,-0.083165710905,word2vec,word2vec_0.30,0.30
+162,0.881658717158,"If the name is difficult and you forget it, will you keep asking them for their name? Or would you give them a nickname?",-9.545454545,-0.0831657108784,word2vec,word2vec_0.40,0.40
+163,0.85890686943,"If the name is difficult and you forget it, will you keep asking them for their name? Or would you give them a nickname?",-8.18181818,-0.0496923160555,word2vec,word2vec_0.50,0.50
+164,0.85890686943,"If the name is difficult and you forget it, will you keep asking them for their name? Or would you give them a nickname?",-8.18181818,-0.0496923160555,word2vec,word2vec_0.60,0.60
+165,0.85890686943,"If the name is difficult and you forget it, will you keep asking them for their name? Or would you give them a nickname?",-8.18181818,-0.0496923160555,word2vec,word2vec_0.70,0.70
+166,0.661904546382,"If the name is difficult and you forget it, will you keep asking them for their name? Or would you give them a nickname?",-3.636363635,-0.020696342571,word2vec,word2vec_0.80,0.80
+167,0.661904546382,"If the name is difficult and you forget it, will you keep asking them for their name? Or would you give them a nickname?",-3.636363635,-0.020696342571,word2vec,word2vec_0.90,0.90
+168,0.595549242569,"If you could step out of the situation/environment (e.g., go somewhere else and come back) for 15-20 minutes, what might you do?",-1.82045604214,-0.0712213282241,word2vec,word2vec_0.20,0.20
+169,0.349098516758,"If you could step out of the situation/environment (e.g., go somewhere else and come back) for 15-20 minutes, what might you do?",-2.84530625514,-0.0581918643669,word2vec,word2vec_0.30,0.30
+170,0.873972405726,"If you could step out of the situation/environment (e.g., go somewhere else and come back) for 15-20 minutes, what might you do?",-9.95756112857,-0.0918525797318,word2vec,word2vec_0.40,0.40
+171,0.860589205759,"If you could step out of the situation/environment (e.g., go somewhere else and come back) for 15-20 minutes, what might you do?",-8.44953152314,-0.0667129802823,word2vec,word2vec_0.50,0.50
+172,0.989931108794,"If you could step out of the situation/environment (e.g., go somewhere else and come back) for 15-20 minutes, what might you do?",-8.86328725029,-0.0481162369939,word2vec,word2vec_0.60,0.60
+173,0.959358284681,"If you could step out of the situation/environment (e.g., go somewhere else and come back) for 15-20 minutes, what might you do?",-4.00307219657,-0.0190378138202,word2vec,word2vec_0.70,0.70
+174,0.959358284681,"If you could step out of the situation/environment (e.g., go somewhere else and come back) for 15-20 minutes, what might you do?",-4.00307219657,-0.0190378138202,word2vec,word2vec_0.80,0.80
+175,0.959358284681,"If you could step out of the situation/environment (e.g., go somewhere else and come back) for 15-20 minutes, what might you do?",-4.00307219657,-0.0190378138202,word2vec,word2vec_0.90,0.90
+176,-0.127256953127,"Imagine if you had a different persona (e.g., a politician collecting signatures). What strategies might be available to you?",3.333333335,0.0624693683313,word2vec,word2vec_0.20,0.20
+177,0.636284762773,"Imagine if you had a different persona (e.g., a politician collecting signatures). What strategies might be available to you?",3.333333335,0.0334733948308,word2vec,word2vec_0.30,0.30
+178,0.35921060421,"Imagine if you had a different persona (e.g., a politician collecting signatures). What strategies might be available to you?",1.666666665,0.0140143617866,word2vec,word2vec_0.40,0.40
+179,0.35921060421,"Imagine if you had a different persona (e.g., a politician collecting signatures). What strategies might be available to you?",1.666666665,0.0140143617866,word2vec,word2vec_0.50,0.50
+180,0.877799578367,"Imagine if you had a different persona (e.g., a politician collecting signatures). What strategies might be available to you?",1.666666665,0.0140143617866,word2vec,word2vec_0.60,0.60
+181,0.917662935509,"Imagine if you had a different persona (e.g., a politician collecting signatures). What strategies might be available to you?",0.0,0.0,word2vec,word2vec_0.70,0.70
+182,0.917662935509,"Imagine if you had a different persona (e.g., a politician collecting signatures). What strategies might be available to you?",0.0,0.0,word2vec,word2vec_0.80,0.80
+183,0.917662935509,"Imagine if you had a different persona (e.g., a politician collecting signatures). What strategies might be available to you?",0.0,0.0,word2vec,word2vec_0.90,0.90
+184,0.965757158332,Lead them on...,-6.621794871,-0.115905791954,word2vec,word2vec_0.20,0.20
+185,0.786974251356,Lead them on...,-12.318376068,-0.133514917876,word2vec,word2vec_0.30,0.30
+186,0.410857601272,Lead them on...,-9.318376068,-0.0896765071726,word2vec,word2vec_0.40,0.40
+187,0.481559989447,Lead them on...,-4.581196581,-0.0286380187875,word2vec,word2vec_0.50,0.50
+188,0.566317758488,Lead them on...,-10.794871795,-0.0568246471866,word2vec,word2vec_0.60,0.60
+189,0.550224102236,Lead them on...,-8.73931624,-0.044359469551,word2vec,word2vec_0.70,0.70
+190,0.550224102236,Lead them on...,-8.73931624,-0.044359469551,word2vec,word2vec_0.80,0.80
+191,0.550224102236,Lead them on...,-8.73931624,-0.044359469551,word2vec,word2vec_0.90,0.90
+192,0.0640608512536,"People's names are often on objects (e.g., driver's license). What other objects might their names be on? How might you exploit this fact?",0.22419750722,,word2vec,word2vec_0.20,0.20
+193,0.638539657342,"People's names are often on objects (e.g., driver's license). What other objects might their names be on? How might you exploit this fact?",-0.603020549861,-0.0111702003361,word2vec,word2vec_0.30,0.30
+194,0.467529443866,"People's names are often on objects (e.g., driver's license). What other objects might their names be on? How might you exploit this fact?",-0.739531446935,-0.00995548936049,word2vec,word2vec_0.40,0.40
+195,0.540216870284,"People's names are often on objects (e.g., driver's license). What other objects might their names be on? How might you exploit this fact?",-1.17807832692,-0.0121264485019,word2vec,word2vec_0.50,0.50
+196,0.593260915125,"People's names are often on objects (e.g., driver's license). What other objects might their names be on? How might you exploit this fact?",-0.951954040117,-0.00913558985049,word2vec,word2vec_0.60,0.60
+197,0.561252366794,"People's names are often on objects (e.g., driver's license). What other objects might their names be on? How might you exploit this fact?",-1.17361292082,-0.00893865805695,word2vec,word2vec_0.70,0.70
+198,0.574689354984,"People's names are often on objects (e.g., driver's license). What other objects might their names be on? How might you exploit this fact?",-1.39486786724,-0.00977418428571,word2vec,word2vec_0.80,0.80
+199,0.630254485189,"People's names are often on objects (e.g., driver's license). What other objects might their names be on? How might you exploit this fact?",-1.3579876946,-0.0093157571894,word2vec,word2vec_0.90,0.90
+200,0.509693478783,"People's names often mean something (e.g., associated with Nicknames, named after family members). How might you exploit this fact?",-0.528721901279,-0.0229324772035,word2vec,word2vec_0.20,0.20
+201,0.62604652924,"People's names often mean something (e.g., associated with Nicknames, named after family members). How might you exploit this fact?",0.393813859407,0.0117920463304,word2vec,word2vec_0.30,0.30
+202,0.614229093174,"People's names often mean something (e.g., associated with Nicknames, named after family members). How might you exploit this fact?",-0.307907982181,-0.00467885174968,word2vec,word2vec_0.40,0.40
+203,0.389811756895,"People's names often mean something (e.g., associated with Nicknames, named after family members). How might you exploit this fact?",0.046557983848,0.000630830582068,word2vec,word2vec_0.50,0.50
+204,0.381501348874,"People's names often mean something (e.g., associated with Nicknames, named after family members). How might you exploit this fact?",-0.211680654755,-0.00112496856564,word2vec,word2vec_0.60,0.60
+205,0.405495593913,"People's names often mean something (e.g., associated with Nicknames, named after family members). How might you exploit this fact?",-1.1566594939,-0.00603147925149,word2vec,word2vec_0.70,0.70
+206,0.514071081788,"People's names often mean something (e.g., associated with Nicknames, named after family members). How might you exploit this fact?",-0.848297215809,-0.00414596289111,word2vec,word2vec_0.80,0.80
+207,0.514071081788,"People's names often mean something (e.g., associated with Nicknames, named after family members). How might you exploit this fact?",-0.848297215809,-0.00414596289111,word2vec,word2vec_0.90,0.90
+208,0.649121131773,"Think about specific social settings (e.g., weddings, game nights, bars). What features of the social setting might you leverage? For example, who or what is in your environment that might be helpful?",-1.51527292097,-0.043869188017,word2vec,word2vec_0.20,0.20
+209,0.737622432456,"Think about specific social settings (e.g., weddings, game nights, bars). What features of the social setting might you leverage? For example, who or what is in your environment that might be helpful?",-4.7059104203,-0.0604518212833,word2vec,word2vec_0.30,0.30
+210,0.728642408716,"Think about specific social settings (e.g., weddings, game nights, bars). What features of the social setting might you leverage? For example, who or what is in your environment that might be helpful?",-5.36716835952,-0.0504404427128,word2vec,word2vec_0.40,0.40
+211,0.769552942033,"Think about specific social settings (e.g., weddings, game nights, bars). What features of the social setting might you leverage? For example, who or what is in your environment that might be helpful?",-5.37090286036,-0.0445100196489,word2vec,word2vec_0.50,0.50
+212,0.696808898242,"Think about specific social settings (e.g., weddings, game nights, bars). What features of the social setting might you leverage? For example, who or what is in your environment that might be helpful?",-4.33570290097,-0.0321534817232,word2vec,word2vec_0.60,0.60
+213,0.815044510178,"Think about specific social settings (e.g., weddings, game nights, bars). What features of the social setting might you leverage? For example, who or what is in your environment that might be helpful?",-5.38671098612,-0.0322312460661,word2vec,word2vec_0.70,0.70
+214,0.824515318028,"Think about specific social settings (e.g., weddings, game nights, bars). What features of the social setting might you leverage? For example, who or what is in your environment that might be helpful?",-4.27141762152,-0.0240879514774,word2vec,word2vec_0.80,0.80
+215,0.83351294394,"Think about specific social settings (e.g., weddings, game nights, bars). What features of the social setting might you leverage? For example, who or what is in your environment that might be helpful?",-3.63631785873,-0.0198483631981,word2vec,word2vec_0.90,0.90
+216,0.917119569935,Try talking about the past with them?,-3.360224089,-0.0519772883984,word2vec,word2vec_0.20,0.20
+217,0.83407405147,Try talking about the past with them?,-2.567787114,-0.0207494344901,word2vec,word2vec_0.30,0.30
+218,0.906953371289,Try talking about the past with them?,-1.803921569,-0.0124307494541,word2vec,word2vec_0.40,0.40
+219,0.906953371289,Try talking about the past with them?,-1.803921569,-0.0124307494541,word2vec,word2vec_0.50,0.50
+220,-0.50750892673,Try talking about the past with them?,0.484033613,0.0030940154907,word2vec,word2vec_0.60,0.60
+221,0.953910530672,Try talking about the past with them?,-6.252100841,-0.0303319166365,word2vec,word2vec_0.70,0.70
+222,0.953910530672,Try talking about the past with them?,-6.252100841,-0.0303319166365,word2vec,word2vec_0.80,0.80
+223,0.953910530672,Try talking about the past with them?,-6.252100841,-0.0303319166365,word2vec,word2vec_0.90,0.90
+224,-1.0,Use a party game.,0.88888889,0.0334237555304,word2vec,word2vec_0.20,0.20
+225,-1.0,Use a party game.,1.77777778,0.0334237555304,word2vec,word2vec_0.30,0.30
+226,-1.0,Use a party game.,1.11111111,0.0122344564046,word2vec,word2vec_0.40,0.40
+227,1.0,Use a party game.,-5.11111111,-0.0379321530408,word2vec,word2vec_0.50,0.50
+228,1.0,Use a party game.,6.88888889,0.0463887326592,word2vec,word2vec_0.60,0.60
+229,1.0,Use a party game.,1.33333333,0.0086001717402,word2vec,word2vec_0.70,0.70
+230,1.0,Use a party game.,-1.77777778,-0.0100419383065,word2vec,word2vec_0.80,0.80
+231,1.0,Use a party game.,-1.77777778,-0.0100419383065,word2vec,word2vec_0.90,0.90
+232,0.905935125811,Use or create nicknames. Be sly!,-2.76878694,-0.0629332433416,word2vec,word2vec_0.20,0.20
+233,0.906993994249,Use or create nicknames. Be sly!,-3.257247395,-0.0516727431773,word2vec,word2vec_0.30,0.30
+234,0.996795967411,Use or create nicknames. Be sly!,-5.822403603,-0.0612299094255,word2vec,word2vec_0.40,0.40
+235,0.959070914355,Use or create nicknames. Be sly!,-10.98283141,-0.093229692895,word2vec,word2vec_0.50,0.50
+236,0.978172980615,Use or create nicknames. Be sly!,-13.547987616,-0.0907276180632,word2vec,word2vec_0.60,0.60
+237,0.996661071481,Use or create nicknames. Be sly!,-12.012383901,-0.0729846570816,word2vec,word2vec_0.70,0.70
+238,0.980809956413,Use or create nicknames. Be sly!,-10.924148607,-0.0646075287525,word2vec,word2vec_0.80,0.80
+239,0.980809956413,Use or create nicknames. Be sly!,-10.924148607,-0.0646075287525,word2vec,word2vec_0.90,0.90
+240,0.55102682491,What conversation prompts might get them to tell a story where they'd say their own name?,-0.204545454,-0.00272680423103,word2vec,word2vec_0.20,0.20
+241,0.437235403666,What conversation prompts might get them to tell a story where they'd say their own name?,-0.204545454,-0.00272680423103,word2vec,word2vec_0.30,0.30
+242,0.568663979607,What conversation prompts might get them to tell a story where they'd say their own name?,-5.924242425,-0.0595904278435,word2vec,word2vec_0.40,0.40
+243,0.848966448439,What conversation prompts might get them to tell a story where they'd say their own name?,-7.371212121,-0.053126081247,word2vec,word2vec_0.50,0.50
+244,0.88100260006,What conversation prompts might get them to tell a story where they'd say their own name?,-5.719696968,-0.0392361965176,word2vec,word2vec_0.60,0.60
+245,0.923127119476,What conversation prompts might get them to tell a story where they'd say their own name?,-5.719696968,-0.0392361965176,word2vec,word2vec_0.70,0.70
+246,0.957262970307,What conversation prompts might get them to tell a story where they'd say their own name?,-4.977272725,-0.0332914061888,word2vec,word2vec_0.80,0.80
+247,0.957262970307,What conversation prompts might get them to tell a story where they'd say their own name?,-4.977272725,-0.0332914061888,word2vec,word2vec_0.90,0.90
+248,0.640813368969,What do you have in your pocket that you might could use?,-2.00164226204,,word2vec,word2vec_0.20,0.20
+249,0.250033577925,What do you have in your pocket that you might could use?,-1.18043124702,-0.0254623365204,word2vec,word2vec_0.30,0.30
+250,0.698862152038,What do you have in your pocket that you might could use?,-4.04536506036,-0.0442482553886,word2vec,word2vec_0.40,0.40
+251,0.748127101128,What do you have in your pocket that you might could use?,-3.36210888774,-0.0346288168906,word2vec,word2vec_0.50,0.50
+252,0.743642892795,What do you have in your pocket that you might could use?,-7.16021133952,-0.0524765292722,word2vec,word2vec_0.60,0.60
+253,0.638626331541,What do you have in your pocket that you might could use?,-5.75522897643,-0.0383373386055,word2vec,word2vec_0.70,0.70
+254,0.598215111084,What do you have in your pocket that you might could use?,-7.11220533321,-0.046905174176,word2vec,word2vec_0.80,0.80
+255,0.598215111084,What do you have in your pocket that you might could use?,-7.11220533321,-0.046905174176,word2vec,word2vec_0.90,0.90
+256,0.998423039707,"What features of names (e.g., spelling, sound-alikes, rhymes, associations) could you leverage?",-4.4278838799,-0.234477684225,word2vec,word2vec_0.20,0.20
+257,0.974454804735,"What features of names (e.g., spelling, sound-alikes, rhymes, associations) could you leverage?",-5.932161957,-0.0855421131399,word2vec,word2vec_0.30,0.30
+258,-0.0275876662949,"What features of names (e.g., spelling, sound-alikes, rhymes, associations) could you leverage?",0.227807485,0.00218615920477,word2vec,word2vec_0.40,0.40
+259,0.774649786928,"What features of names (e.g., spelling, sound-alikes, rhymes, associations) could you leverage?",-1.558517951,-0.0108172207816,word2vec,word2vec_0.50,0.50
+260,0.774649786928,"What features of names (e.g., spelling, sound-alikes, rhymes, associations) could you leverage?",-1.558517951,-0.0108172207816,word2vec,word2vec_0.60,0.60
+261,0.141484627543,"What features of names (e.g., spelling, sound-alikes, rhymes, associations) could you leverage?",0.531092439,0.00354343995166,word2vec,word2vec_0.70,0.70
+262,0.789809427067,"What features of names (e.g., spelling, sound-alikes, rhymes, associations) could you leverage?",0.000381969999999,-7.25268773399e-05,word2vec,word2vec_0.80,0.80
+263,0.789809427067,"What features of names (e.g., spelling, sound-alikes, rhymes, associations) could you leverage?",0.000381969999999,-7.25268773399e-05,word2vec,word2vec_0.90,0.90
+264,0.567406530372,"What if you had people with you that you really trusted to do stuff (e.g, a best friend or significant other)?",-0.248672819027,-0.0207689785309,word2vec,word2vec_0.20,0.20
+265,0.65172338541,"What if you had people with you that you really trusted to do stuff (e.g, a best friend or significant other)?",-0.662910611482,-0.0298688265103,word2vec,word2vec_0.30,0.30
+266,0.889549346166,"What if you had people with you that you really trusted to do stuff (e.g, a best friend or significant other)?",-3.08120886209,-0.0511418437766,word2vec,word2vec_0.40,0.40
+267,0.731448104061,"What if you had people with you that you really trusted to do stuff (e.g, a best friend or significant other)?",-2.52460435264,-0.0265964772454,word2vec,word2vec_0.50,0.50
+268,0.447856311224,"What if you had people with you that you really trusted to do stuff (e.g, a best friend or significant other)?",-0.931983649364,-0.00748955885709,word2vec,word2vec_0.60,0.60
+269,0.273510598888,"What if you had people with you that you really trusted to do stuff (e.g, a best friend or significant other)?",-0.390575409727,-0.0025792205579,word2vec,word2vec_0.70,0.70
+270,0.500178547118,"What if you had people with you that you really trusted to do stuff (e.g, a best friend or significant other)?",-0.668993139,-0.0040930165409,word2vec,word2vec_0.80,0.80
+271,0.482287050213,"What if you had people with you that you really trusted to do stuff (e.g, a best friend or significant other)?",-0.584818054909,-0.00355214275511,word2vec,word2vec_0.90,0.90
+272,1.0,What is the most embarrassing way you could find out?,-7.14285714,-0.0669467896017,word2vec,word2vec_0.20,0.20
+273,1.0,What is the most embarrassing way you could find out?,-28.57142857,-0.14612803567,word2vec,word2vec_0.30,0.30
+274,0.0,What is the most embarrassing way you could find out?,0.0,0.0,word2vec,word2vec_0.40,0.40
+275,0.0,What is the most embarrassing way you could find out?,0.0,0.0,word2vec,word2vec_0.50,0.50
+276,0.0,What is the most embarrassing way you could find out?,0.0,0.0,word2vec,word2vec_0.60,0.60
+277,0.0,What is the most embarrassing way you could find out?,0.0,0.0,word2vec,word2vec_0.70,0.70
+278,0.0,What is the most embarrassing way you could find out?,0.0,0.0,word2vec,word2vec_0.80,0.80
+279,0.0,What is the most embarrassing way you could find out?,0.0,0.0,word2vec,word2vec_0.90,0.90
+280,-0.113729429001,What memory tricks do you use?,1.5261136712,,word2vec,word2vec_0.20,0.20
+281,0.861186175792,What memory tricks do you use?,-3.041858678,-0.0840264597897,word2vec,word2vec_0.30,0.30
+282,0.940774819477,What memory tricks do you use?,-3.156298002,-0.0493576390438,word2vec,word2vec_0.40,0.40
+283,0.923448551297,What memory tricks do you use?,-4.773041475,-0.0539046696862,word2vec,word2vec_0.50,0.50
+284,0.455910590029,What memory tricks do you use?,0.030337944,0.000208666441814,word2vec,word2vec_0.60,0.60
+285,0.532326631494,What memory tricks do you use?,-3.300691246,-0.023280957509,word2vec,word2vec_0.70,0.70
+286,0.896479638452,What memory tricks do you use?,-3.831797235,-0.0224840645295,word2vec,word2vec_0.80,0.80
+287,0.896479638452,What memory tricks do you use?,-3.831797235,-0.0224840645295,word2vec,word2vec_0.90,0.90
+288,0.680156364678,"What might you do if you weren't easily embarrassed (e.g., purposely call them the wrong name)?",-2.41551156766,-0.0668195651227,word2vec,word2vec_0.20,0.20
+289,0.551809775171,"What might you do if you weren't easily embarrassed (e.g., purposely call them the wrong name)?",-2.30552349457,-0.0465909097887,word2vec,word2vec_0.30,0.30
+290,0.597092652307,"What might you do if you weren't easily embarrassed (e.g., purposely call them the wrong name)?",-2.05607101806,-0.0348688355877,word2vec,word2vec_0.40,0.40
+291,0.18732646246,"What might you do if you weren't easily embarrassed (e.g., purposely call them the wrong name)?",-0.996333084265,-0.0118959833368,word2vec,word2vec_0.50,0.50
+292,0.51728674802,"What might you do if you weren't easily embarrassed (e.g., purposely call them the wrong name)?",-2.12613005613,-0.0182883912158,word2vec,word2vec_0.60,0.60
+293,0.516294464729,"What might you do if you weren't easily embarrassed (e.g., purposely call them the wrong name)?",-1.5303103764,-0.0105637810228,word2vec,word2vec_0.70,0.70
+294,0.541558104318,"What might you do if you weren't easily embarrassed (e.g., purposely call them the wrong name)?",-1.27647999676,-0.00831484849801,word2vec,word2vec_0.80,0.80
+295,0.541558104318,"What might you do if you weren't easily embarrassed (e.g., purposely call them the wrong name)?",-1.27647999676,-0.00831484849801,word2vec,word2vec_0.90,0.90
+296,1.0,What other personal questions might lead to their name?,-1.92307692,-0.0347621062013,word2vec,word2vec_0.20,0.20
+297,1.0,What other personal questions might lead to their name?,13.46153846,0.18708664334,word2vec,word2vec_0.30,0.30
+298,-1.0,What other personal questions might lead to their name?,8.65384615,0.0901766303129,word2vec,word2vec_0.40,0.40
+299,-1.0,What other personal questions might lead to their name?,3.84615385,0.0321846834024,word2vec,word2vec_0.50,0.50
+300,-1.0,What other personal questions might lead to their name?,3.84615385,0.0321846834024,word2vec,word2vec_0.60,0.60
+301,1.0,What other personal questions might lead to their name?,-30.76923077,-0.159700842872,word2vec,word2vec_0.70,0.70
+302,1.0,What other personal questions might lead to their name?,-15.38461538,-0.0725506671249,word2vec,word2vec_0.80,0.80
+303,1.0,What other personal questions might lead to their name?,-15.38461538,-0.0725506671249,word2vec,word2vec_0.90,0.90
+304,0.741184711601,"What situation (e.g., game, story, conversation topic) could you create to get at their name?",-0.0893745818137,,word2vec,word2vec_0.20,0.20
+305,0.688646302207,"What situation (e.g., game, story, conversation topic) could you create to get at their name?",-1.0522484429,-0.031325467791,word2vec,word2vec_0.30,0.30
+306,0.694688172963,"What situation (e.g., game, story, conversation topic) could you create to get at their name?",-1.96485368249,-0.0423596235521,word2vec,word2vec_0.40,0.40
+307,0.76850154441,"What situation (e.g., game, story, conversation topic) could you create to get at their name?",-2.04585128931,-0.0285035124843,word2vec,word2vec_0.50,0.50
+308,0.813524373229,"What situation (e.g., game, story, conversation topic) could you create to get at their name?",-2.02912657321,-0.0191372876058,word2vec,word2vec_0.60,0.60
+309,0.725024886093,"What situation (e.g., game, story, conversation topic) could you create to get at their name?",-1.9535014762,-0.0150124062129,word2vec,word2vec_0.70,0.70
+310,0.621299918407,"What situation (e.g., game, story, conversation topic) could you create to get at their name?",-2.19938422522,-0.0156091041292,word2vec,word2vec_0.80,0.80
+311,0.621299918407,"What situation (e.g., game, story, conversation topic) could you create to get at their name?",-2.19938422522,-0.0156091041292,word2vec,word2vec_0.90,0.90
+312,0.813921631683,"What would be the pick-up line for introducing them to someone else? (i.e Hey Jason, this is _____ from school!""",-2.84177023061,-0.122220039178,word2vec,word2vec_0.20,0.20
+313,0.684617502026,"What would be the pick-up line for introducing them to someone else? (i.e Hey Jason, this is _____ from school!""",-2.33459764329,-0.0702124622956,word2vec,word2vec_0.30,0.30
+314,0.815399931102,"What would be the pick-up line for introducing them to someone else? (i.e Hey Jason, this is _____ from school!""",-2.55364128679,-0.0395740287005,word2vec,word2vec_0.40,0.40
+315,0.797209364969,"What would be the pick-up line for introducing them to someone else? (i.e Hey Jason, this is _____ from school!""",-3.61962696107,-0.0322648529562,word2vec,word2vec_0.50,0.50
+316,0.665633329717,"What would be the pick-up line for introducing them to someone else? (i.e Hey Jason, this is _____ from school!""",-2.04741723214,-0.0141087497897,word2vec,word2vec_0.60,0.60
+317,0.54785014598,"What would be the pick-up line for introducing them to someone else? (i.e Hey Jason, this is _____ from school!""",-2.04442935679,-0.0121998344714,word2vec,word2vec_0.70,0.70
+318,0.651523482286,"What would be the pick-up line for introducing them to someone else? (i.e Hey Jason, this is _____ from school!""",-3.20406510893,-0.0178974513547,word2vec,word2vec_0.80,0.80
+319,0.651523482286,"What would be the pick-up line for introducing them to someone else? (i.e Hey Jason, this is _____ from school!""",-3.20406510893,-0.0178974513547,word2vec,word2vec_0.90,0.90
+320,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.20,0.20
+321,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.30,0.30
+322,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.40,0.40
+323,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.50,0.50
+324,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.60,0.60
+325,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.70,0.70
+326,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.80,0.80
+327,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.90,0.90
+328,0.699346717013,Where might their name be written?,0.5124223594,,word2vec,word2vec_0.20,0.20
+329,0.699346717013,Where might their name be written?,0.5124223594,,word2vec,word2vec_0.30,0.30
+330,0.664687391343,Where might their name be written?,-2.6242236023,-0.0224554642972,word2vec,word2vec_0.40,0.40
+331,0.71088854418,Where might their name be written?,-6.319875777,-0.0617099619862,word2vec,word2vec_0.50,0.50
+332,0.766404642601,Where might their name be written?,-8.385093168,-0.0713910354162,word2vec,word2vec_0.60,0.60
+333,0.850551772456,Where might their name be written?,-8.229813664,-0.066810855,word2vec,word2vec_0.70,0.70
+334,0.937162266228,Where might their name be written?,-5.49689441,-0.0391691059402,word2vec,word2vec_0.80,0.80
+335,0.937162266228,Where might their name be written?,-5.49689441,-0.0391691059402,word2vec,word2vec_0.90,0.90
+336,0.833557981637,Why not ask the host?,0.109611586179,,word2vec,word2vec_0.20,0.20
+337,0.46619884821,Why not ask the host?,-3.95594689393,-0.0713275907245,word2vec,word2vec_0.30,0.30
+338,0.653325624989,Why not ask the host?,0.2416794675,0.00430043792653,word2vec,word2vec_0.40,0.40
+339,0.45170446719,Why not ask the host?,2.46353595286,0.0245332403343,word2vec,word2vec_0.50,0.50
+340,0.8580499854,Why not ask the host?,-0.826823203571,-0.00502418597039,word2vec,word2vec_0.60,0.60
+341,0.338115153684,Why not ask the host?,1.21135981286,0.00721392901782,word2vec,word2vec_0.70,0.70
+342,0.918393159477,Why not ask the host?,-3.27452271214,-0.0154999644182,word2vec,word2vec_0.80,0.80
+343,0.918393159477,Why not ask the host?,-3.27452271214,-0.0154999644182,word2vec,word2vec_0.90,0.90
+344,1.0,Why not excuse yourself for a moment to clear your head?,-8.88888889,-0.255272505147,word2vec,word2vec_0.20,0.20
+345,-1.0,Why not excuse yourself for a moment to clear your head?,2.22222222,0.0457574905172,word2vec,word2vec_0.30,0.30
+346,-1.0,Why not excuse yourself for a moment to clear your head?,2.22222222,0.0457574905172,word2vec,word2vec_0.40,0.40
+347,1.0,Why not excuse yourself for a moment to clear your head?,-44.44444444,-0.255272505069,word2vec,word2vec_0.50,0.50
+348,1.0,Why not excuse yourself for a moment to clear your head?,-22.22222222,-0.109144469413,word2vec,word2vec_0.60,0.60
+349,1.0,Why not excuse yourself for a moment to clear your head?,-22.22222222,-0.109144469413,word2vec,word2vec_0.70,0.70
+350,1.0,Why not excuse yourself for a moment to clear your head?,-22.22222222,-0.109144469413,word2vec,word2vec_0.80,0.80
+351,1.0,Why not excuse yourself for a moment to clear your head?,-22.22222222,-0.109144469413,word2vec,word2vec_0.90,0.90
+352,0.0,Why not get them talking?,,,word2vec,word2vec_0.20,0.20
+353,0.0,Why not get them talking?,,,word2vec,word2vec_0.30,0.30
+354,0.0,Why not get them talking?,,,word2vec,word2vec_0.40,0.40
+355,0.0,Why not get them talking?,,,word2vec,word2vec_0.50,0.50
+356,0.0,Why not get them talking?,,,word2vec,word2vec_0.60,0.60
+357,0.0,Why not get them talking?,,,word2vec,word2vec_0.70,0.70
+358,0.0,Why not get them talking?,,,word2vec,word2vec_0.80,0.80
+359,0.0,Why not get them talking?,,,word2vec,word2vec_0.90,0.90
+360,1.0,Would it be a good idea to ask someone in their inner circle? Or would people be too conscious about forgetting the name?,-12.307692308,-0.414973347988,word2vec,word2vec_0.20,0.20
+361,1.0,Would it be a good idea to ask someone in their inner circle? Or would people be too conscious about forgetting the name?,-4.61538462,-0.113943352437,word2vec,word2vec_0.30,0.30
+362,1.0,Would it be a good idea to ask someone in their inner circle? Or would people be too conscious about forgetting the name?,-4.61538462,-0.113943352437,word2vec,word2vec_0.40,0.40
+363,1.0,Would it be a good idea to ask someone in their inner circle? Or would people be too conscious about forgetting the name?,-9.23076923,-0.113943352296,word2vec,word2vec_0.50,0.50
+364,1.0,Would it be a good idea to ask someone in their inner circle? Or would people be too conscious about forgetting the name?,-26.15384615,-0.171935299254,word2vec,word2vec_0.60,0.60
+365,1.0,Would it be a good idea to ask someone in their inner circle? Or would people be too conscious about forgetting the name?,-15.38461538,-0.0725506671249,word2vec,word2vec_0.70,0.70
+366,1.0,Would it be a good idea to ask someone in their inner circle? Or would people be too conscious about forgetting the name?,-15.38461538,-0.0725506671249,word2vec,word2vec_0.80,0.80
+367,1.0,Would it be a good idea to ask someone in their inner circle? Or would people be too conscious about forgetting the name?,-15.38461538,-0.0725506671249,word2vec,word2vec_0.90,0.90
+368,0.996030378963,You are Sherlock HOlmes! Deduct!,-11.2962962965,-0.303727511619,word2vec,word2vec_0.20,0.20
+369,0.995082098632,You are Sherlock HOlmes! Deduct!,-20.74074074,-0.255272505086,word2vec,word2vec_0.30,0.30
+370,0.999705454784,You are Sherlock HOlmes! Deduct!,-21.48148148,-0.167226875558,word2vec,word2vec_0.40,0.40
+371,0.990656814464,You are Sherlock HOlmes! Deduct!,-14.074074075,-0.0941628577441,word2vec,word2vec_0.50,0.50
+372,1.0,You are Sherlock HOlmes! Deduct!,-14.814814815,-0.0763050816042,word2vec,word2vec_0.60,0.60
+373,1.0,You are Sherlock HOlmes! Deduct!,-14.814814815,-0.0763050816042,word2vec,word2vec_0.70,0.70
+374,1.0,You are Sherlock HOlmes! Deduct!,-14.814814815,-0.0763050816042,word2vec,word2vec_0.80,0.80
+375,1.0,You are Sherlock HOlmes! Deduct!,-14.814814815,-0.0763050816042,word2vec,word2vec_0.90,0.90
+376,0.0,allow them to introduce themselves to others and listen,,,word2vec,word2vec_0.20,0.20
+377,0.0,allow them to introduce themselves to others and listen,,,word2vec,word2vec_0.30,0.30
+378,0.0,allow them to introduce themselves to others and listen,,,word2vec,word2vec_0.40,0.40
+379,0.0,allow them to introduce themselves to others and listen,,,word2vec,word2vec_0.50,0.50
+380,0.0,allow them to introduce themselves to others and listen,,,word2vec,word2vec_0.60,0.60
+381,0.0,allow them to introduce themselves to others and listen,,,word2vec,word2vec_0.70,0.70
+382,0.0,allow them to introduce themselves to others and listen,,,word2vec,word2vec_0.80,0.80
+383,0.0,allow them to introduce themselves to others and listen,,,word2vec,word2vec_0.90,0.90
+384,0.0,ask for their siblings names,,,word2vec,word2vec_0.20,0.20
+385,0.0,ask for their siblings names,,,word2vec,word2vec_0.30,0.30
+386,0.0,ask for their siblings names,,,word2vec,word2vec_0.40,0.40
+387,0.0,ask for their siblings names,,,word2vec,word2vec_0.50,0.50
+388,0.0,ask for their siblings names,,,word2vec,word2vec_0.60,0.60
+389,0.0,ask for their siblings names,,,word2vec,word2vec_0.70,0.70
+390,0.0,ask for their siblings names,,,word2vec,word2vec_0.80,0.80
+391,0.0,ask for their siblings names,,,word2vec,word2vec_0.90,0.90
+392,0.130970148255,ask someone else,1.8801410105,0.13532368333,word2vec,word2vec_0.20,0.20
+393,0.999102565556,ask someone else,-2.23266745,-0.0407675757224,word2vec,word2vec_0.30,0.30
+394,0.98093470223,ask someone else,-5.52291422,-0.0636463210193,word2vec,word2vec_0.40,0.40
+395,0.967849125197,ask someone else,-6.110458285,-0.0486647093154,word2vec,word2vec_0.50,0.50
+396,0.975109091078,ask someone else,-2.87896592,-0.020071233125,word2vec,word2vec_0.60,0.60
+397,0.98034516808,ask someone else,-0.17626322,-0.00117695269855,word2vec,word2vec_0.70,0.70
+398,0.648289105545,ask someone else,1.175088135,0.00768743080577,word2vec,word2vec_0.80,0.80
+399,0.376499808537,ask someone else,3.877790835,0.0243993085326,word2vec,word2vec_0.90,0.90
+400,0.0,ask them how they get their name,0.0,,word2vec,word2vec_0.20,0.20
+401,0.255506665553,ask them how they get their name,-2.4933862435,-0.148935571108,word2vec,word2vec_0.30,0.30
+402,0.596592715597,ask them how they get their name,-3.829365079,-0.0961081933948,word2vec,word2vec_0.40,0.40
+403,0.354387692261,ask them how they get their name,-1.19047619,-0.0234083205925,word2vec,word2vec_0.50,0.50
+404,0.354387692261,ask them how they get their name,-1.19047619,-0.0234083205925,word2vec,word2vec_0.60,0.60
+405,0.736449064182,ask them how they get their name,-4.126984126,-0.0683175737014,word2vec,word2vec_0.70,0.70
+406,0.71528804607,ask them how they get their name,-2.969576718,-0.0452372144678,word2vec,word2vec_0.80,0.80
+407,0.71528804607,ask them how they get their name,-2.969576718,-0.0452372144678,word2vec,word2vec_0.90,0.90
+408,0.0,ask them to put their contact info in your phone,,,word2vec,word2vec_0.20,0.20
+409,0.0,ask them to put their contact info in your phone,,,word2vec,word2vec_0.30,0.30
+410,0.0,ask them to put their contact info in your phone,,,word2vec,word2vec_0.40,0.40
+411,0.0,ask them to put their contact info in your phone,,,word2vec,word2vec_0.50,0.50
+412,0.0,ask them to put their contact info in your phone,,,word2vec,word2vec_0.60,0.60
+413,0.0,ask them to put their contact info in your phone,,,word2vec,word2vec_0.70,0.70
+414,0.0,ask them to put their contact info in your phone,,,word2vec,word2vec_0.80,0.80
+415,0.0,ask them to put their contact info in your phone,,,word2vec,word2vec_0.90,0.90
+416,0.0,ask them to show you driver license to see when they pass the test,,,word2vec,word2vec_0.20,0.20
+417,0.0,ask them to show you driver license to see when they pass the test,,,word2vec,word2vec_0.30,0.30
+418,0.0,ask them to show you driver license to see when they pass the test,,,word2vec,word2vec_0.40,0.40
+419,0.0,ask them to show you driver license to see when they pass the test,,,word2vec,word2vec_0.50,0.50
+420,0.0,ask them to show you driver license to see when they pass the test,,,word2vec,word2vec_0.60,0.60
+421,0.0,ask them to show you driver license to see when they pass the test,,,word2vec,word2vec_0.70,0.70
+422,0.0,ask them to show you driver license to see when they pass the test,,,word2vec,word2vec_0.80,0.80
+423,0.0,ask them to show you driver license to see when they pass the test,,,word2vec,word2vec_0.90,0.90
+424,0.0,ask them to tell you who of famous people share their name,,,word2vec,word2vec_0.20,0.20
+425,0.0,ask them to tell you who of famous people share their name,,,word2vec,word2vec_0.30,0.30
+426,0.0,ask them to tell you who of famous people share their name,,,word2vec,word2vec_0.40,0.40
+427,0.0,ask them to tell you who of famous people share their name,,,word2vec,word2vec_0.50,0.50
+428,0.0,ask them to tell you who of famous people share their name,,,word2vec,word2vec_0.60,0.60
+429,0.0,ask them to tell you who of famous people share their name,,,word2vec,word2vec_0.70,0.70
+430,0.0,ask them to tell you who of famous people share their name,,,word2vec,word2vec_0.80,0.80
+431,0.0,ask them to tell you who of famous people share their name,,,word2vec,word2vec_0.90,0.90
+432,0.928571428555,check twitter,-5.555555557,,word2vec,word2vec_0.20,0.20
+433,0.0,check twitter,-2.77777778,-0.088045629593,word2vec,word2vec_0.30,0.30
+434,0.995870594917,check twitter,-2.777777775,-0.0395906229847,word2vec,word2vec_0.40,0.40
+435,0.995870594928,check twitter,2.777777775,0.0173810531121,word2vec,word2vec_0.50,0.50
+436,0.995870594928,check twitter,2.777777775,0.0173810531121,word2vec,word2vec_0.60,0.60
+437,0.995870594928,check twitter,2.777777775,0.0173810531121,word2vec,word2vec_0.70,0.70
+438,0.891042111105,check twitter,-8.333333335,-0.0395906230325,word2vec,word2vec_0.80,0.80
+439,0.891042111105,check twitter,-8.333333335,-0.0395906230325,word2vec,word2vec_0.90,0.90
+440,0.926819058027,how did you get your name,-0.80357143,-0.0194590330514,word2vec,word2vec_0.20,0.20
+441,0.969872191286,how did you get your name,-7.589285715,-0.0925230508652,word2vec,word2vec_0.30,0.30
+442,0.995293626852,how did you get your name,-10.982142855,-0.107504662516,word2vec,word2vec_0.40,0.40
+443,0.967948746238,how did you get your name,-4.107142855,-0.0305972303536,word2vec,word2vec_0.50,0.50
+444,0.636284762976,how did you get your name,-3.75,-0.0194590330152,word2vec,word2vec_0.60,0.60
+445,0.636284762976,how did you get your name,-3.75,-0.0194590330152,word2vec,word2vec_0.70,0.70
+446,0.636284762976,how did you get your name,-3.75,-0.0194590330152,word2vec,word2vec_0.80,0.80
+447,0.636284762976,how did you get your name,-3.75,-0.0194590330152,word2vec,word2vec_0.90,0.90
+448,0.672723516424,introduce yourself and they will introduce themselves,-2.16931217,-0.0947403085085,word2vec,word2vec_0.20,0.20
+449,0.790037715967,introduce yourself and they will introduce themselves,-2.1031746027,-0.0655147013474,word2vec,word2vec_0.30,0.30
+450,0.742333116213,introduce yourself and they will introduce themselves,-5.370370371,-0.0898185062328,word2vec,word2vec_0.40,0.40
+451,0.66178732838,introduce yourself and they will introduce themselves,-7.460317461,-0.0677944868793,word2vec,word2vec_0.50,0.50
+452,0.591958858698,introduce yourself and they will introduce themselves,-4.232804233,-0.0318615170474,word2vec,word2vec_0.60,0.60
+453,0.578774140673,introduce yourself and they will introduce themselves,-5.013227512,-0.0350128062256,word2vec,word2vec_0.70,0.70
+454,0.594068895646,introduce yourself and they will introduce themselves,-5.145502647,-0.0322781072857,word2vec,word2vec_0.80,0.80
+455,0.594068895646,introduce yourself and they will introduce themselves,-5.145502647,-0.0322781072857,word2vec,word2vec_0.90,0.90
+456,0.0,play the game listing all things starting with first letter of their name,,,word2vec,word2vec_0.20,0.20
+457,0.0,play the game listing all things starting with first letter of their name,,,word2vec,word2vec_0.30,0.30
+458,0.0,play the game listing all things starting with first letter of their name,,,word2vec,word2vec_0.40,0.40
+459,0.0,play the game listing all things starting with first letter of their name,,,word2vec,word2vec_0.50,0.50
+460,0.0,play the game listing all things starting with first letter of their name,,,word2vec,word2vec_0.60,0.60
+461,0.0,play the game listing all things starting with first letter of their name,,,word2vec,word2vec_0.70,0.70
+462,0.0,play the game listing all things starting with first letter of their name,,,word2vec,word2vec_0.80,0.80
+463,0.0,play the game listing all things starting with first letter of their name,,,word2vec,word2vec_0.90,0.90
+464,0.0,remember the people you met them with,,,word2vec,word2vec_0.20,0.20
+465,0.0,remember the people you met them with,,,word2vec,word2vec_0.30,0.30
+466,0.0,remember the people you met them with,,,word2vec,word2vec_0.40,0.40
+467,0.0,remember the people you met them with,,,word2vec,word2vec_0.50,0.50
+468,0.0,remember the people you met them with,,,word2vec,word2vec_0.60,0.60
+469,0.0,remember the people you met them with,,,word2vec,word2vec_0.70,0.70
+470,0.0,remember the people you met them with,,,word2vec,word2vec_0.80,0.80
+471,0.0,remember the people you met them with,,,word2vec,word2vec_0.90,0.90
+472,1.0,talk to them until you find out name,-14.28571429,,word2vec,word2vec_0.20,0.20
+473,1.0,talk to them until you find out name,-10.38961039,-0.196294645166,word2vec,word2vec_0.30,0.30
+474,1.0,talk to them until you find out name,-6.4935065,-0.0713559086081,word2vec,word2vec_0.40,0.40
+475,1.0,talk to them until you find out name,-16.88311688,-0.117113399069,word2vec,word2vec_0.50,0.50
+476,1.0,talk to them until you find out name,-7.79220779,-0.0501666094496,word2vec,word2vec_0.60,0.60
+477,1.0,talk to them until you find out name,-7.79220779,-0.0501666094496,word2vec,word2vec_0.70,0.70
+478,1.0,talk to them until you find out name,-18.18181818,-0.0871501757092,word2vec,word2vec_0.80,0.80
+479,1.0,talk to them until you find out name,-18.18181818,-0.0871501757092,word2vec,word2vec_0.90,0.90
+480,0.730830110086,what about reminding them of situation you met them?,-1.6033673922,-0.0696082058349,word2vec,word2vec_0.20,0.20
+481,0.655597089528,what about reminding them of situation you met them?,-2.141893196,-0.0644929536589,word2vec,word2vec_0.30,0.30
+482,0.561752136296,what about reminding them of situation you met them?,0.770194717,0.0178979204685,word2vec,word2vec_0.40,0.40
+483,0.672454511459,what about reminding them of situation you met them?,-3.362251784,-0.0237928642954,word2vec,word2vec_0.50,0.50
+484,0.698345332933,what about reminding them of situation you met them?,-3.362251784,-0.0237928642954,word2vec,word2vec_0.60,0.60
+485,0.481841824787,what about reminding them of situation you met them?,-5.51635499,-0.030134718975,word2vec,word2vec_0.70,0.70
+486,0.481841824787,what about reminding them of situation you met them?,-5.51635499,-0.030134718975,word2vec,word2vec_0.80,0.80
+487,0.481841824787,what about reminding them of situation you met them?,-5.51635499,-0.030134718975,word2vec,word2vec_0.90,0.90
+488,0.0,what song has their name in,,,word2vec,word2vec_0.20,0.20
+489,0.0,what song has their name in,,,word2vec,word2vec_0.30,0.30
+490,0.0,what song has their name in,,,word2vec,word2vec_0.40,0.40
+491,0.0,what song has their name in,,,word2vec,word2vec_0.50,0.50
+492,0.0,what song has their name in,,,word2vec,word2vec_0.60,0.60
+493,0.0,what song has their name in,,,word2vec,word2vec_0.70,0.70
+494,0.0,what song has their name in,,,word2vec,word2vec_0.80,0.80
+495,0.0,what song has their name in,,,word2vec,word2vec_0.90,0.90
+496,0.888614649109,what song has their name in it,-4.58503401343,-0.0654517622415,word2vec,word2vec_0.20,0.20
+497,0.786032759578,what song has their name in it,-6.36734693771,-0.101963367844,word2vec,word2vec_0.30,0.30
+498,0.673683434521,what song has their name in it,-4.35374149686,-0.0436569594381,word2vec,word2vec_0.40,0.40
+499,0.548147537353,what song has their name in it,-1.63265306114,-0.0142950483785,word2vec,word2vec_0.50,0.50
+500,0.435717659861,what song has their name in it,-1.71428571429,-0.014644604277,word2vec,word2vec_0.60,0.60
+501,0.919676661728,what song has their name in it,-10.0816326534,-0.065955461918,word2vec,word2vec_0.70,0.70
+502,0.919676661728,what song has their name in it,-10.0816326534,-0.065955461918,word2vec,word2vec_0.80,0.80
+503,0.919676661728,what song has their name in it,-10.0816326534,-0.065955461918,word2vec,word2vec_0.90,0.90
+504,0.0,why did you get your name,,,word2vec,word2vec_0.20,0.20
+505,0.0,why did you get your name,,,word2vec,word2vec_0.30,0.30
+506,0.0,why did you get your name,,,word2vec,word2vec_0.40,0.40
+507,0.0,why did you get your name,,,word2vec,word2vec_0.50,0.50
+508,0.0,why did you get your name,,,word2vec,word2vec_0.60,0.60
+509,0.0,why did you get your name,,,word2vec,word2vec_0.70,0.70
+510,0.0,why did you get your name,,,word2vec,word2vec_0.80,0.80
+511,0.0,why did you get your name,,,word2vec,word2vec_0.90,0.90
