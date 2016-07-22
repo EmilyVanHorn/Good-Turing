@@ -31,6 +31,7 @@ Session.set("List1Author", "SomeAuthor1");
 Session.set("List2Author", "SomeAuthor2");
 Session.set("sortDir", 1);
 Session.set("sortField", "authorID");
+Session.set("Dataset", "fabricInput");
 
 //SESSION VARIABLES!!!
 //List1Author
@@ -85,6 +86,26 @@ Template.ideasList2.helpers({
 
 Template.authorsList.helpers({
     author: function(){
+        if(Session.get("Dataset") == "fabricAuthor"){
+            if(Session.get("sortField") == "authorID"){
+                return Authors.find({dataset: "fabricInput"}, {sort: {authorID: Session.get("sortDir")}});  
+            } 
+            else if(Session.get("sortField") == "GT"){
+                return Authors.find({dataset: "fabricInput"}, {sort: {GT_predict: Session.get("sortDir")}});   
+            }    
+        }
+        else if(Session.get("Dataset") == "test"){
+            if(Session.get("sortField") == "authorID"){
+                return Authors.find({dataset: "test"}, {sort: {authorID: Session.get("sortDir")}});  
+            } 
+            else if(Session.get("sortField") == "GT"){
+                return Authors.find({dataset: "test"}, {sort: {GT_predict: Session.get("sortDir")}});   
+            }  
+        }
+        
+        
+        
+        
         if(Session.get("sortField") == "authorID"){
             return Authors.find({}, {sort: {authorID: Session.get("sortDir")}});  
         } 
@@ -119,17 +140,14 @@ Template.authorsList.events({
     }
 });
 
-Template.DatasetList.helpers({
-    dataset: function(){
-        return [{
-            name: "one"
-        },
-        {
-            name: "two"
-        },
-        {
-            name: "three"
-        }]; 
+
+
+Template.DatasetList.events({
+    'click #fabric-Author': function(e){
+        Session.set("Dataset", "fabricInput");   
+    },
+    'click #test': function(e){
+        Session.set("Dataset", "test");   
     }
 });
 

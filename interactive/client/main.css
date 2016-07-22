@@ -9,7 +9,7 @@ html, body{
     border: 1px solid;
 }
 .list{
-    max-height: 1000px;
+    max-height: 600px;
     overflow: scroll;
 }
 .author{
