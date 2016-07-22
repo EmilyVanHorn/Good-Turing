@@ -1,0 +1,101 @@
+<template name="main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="menu visible btn-toolbar">
+                <div class="btn-group" role="group">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">DataSet</button>
+                    <ul class="dropdown-menu">
+                        {{> DatasetList}}
+                    </ul>
+                </div>
+                <div class="btn-group" role="group">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Method</button>
+                    <ul class="dropdown-menu">
+                        {{> MethodList}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="list visible col-sm-3" id="List1">
+                <h1>{{authorIDList1}}{{clicked1}}</h1>
+                {{> ideasList1}}
+            </div>
+            <div class="list visible col-sm-3 col-sm-offset-1" id="List2">
+                <h1>{{authorIDList2}}{{clicked2}}</h1>
+                {{> ideasList2}}
+            </div>
+            <div class="list visible col-sm-3 col-sm-offset-1">
+                <h1>Authors</h1>
+                {{> authorsList}}
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="ideasList1">
+    {{#each idea}}
+        {{> ideaItem}}
+    {{/each}}
+</template>
+
+<template name="ideasList2">
+    {{#each idea}}
+        {{> ideaItem}}
+    {{/each}}
+</template>
+
+<template name="ideaItem">
+    <div class="visible">
+        {{content}}
+        {{authorID}}
+    </div>
+</template>
+
+<template name="authorsList">
+    <div class="btn-group" role="group">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Sort</button>
+            <ul class="dropdown-menu">
+                {{> Sort}}
+            </ul>
+    </div>
+        
+    <div>    
+        {{#each author}}
+        {{> authorItem}}
+        {{/each}}
+    </div> 
+</template>
+
+<template name="Sort">
+    <li id="ascending"><a href="#">A-Z</a></li>
+    <li id="descending"><a href="#">Z-A</a></li>
+    <li id="authorID"><a href="#">authorID</a></li>
+    <li id="GT"><a href="#">GT Prediction</a></li>
+</template>
+
+
+<template name="authorItem">
+    <div class="visible author">
+        <p>{{authorID}}</p>
+        <p class="stat">GT Prediction: {{GT}}</p>
+    </div>
+</template>
+
+<template name="DatasetList">
+    {{#each dataset}}
+    {{> dropdownItem}}
+    {{/each}}
+</template>
+
+<template name="dropdownItem">
+    <li id="{{dataset}}">
+        <a href="#">{{name}}</a>
+    </li>
+</template>
+
+<template name="MethodList">
+    {{#each method}}
+    {{> dropdownItem}}
+    {{/each}}
+</template>
