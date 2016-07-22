@@ -319,14 +319,14 @@
 317,0.54785014598,"What would be the pick-up line for introducing them to someone else? (i.e Hey Jason, this is _____ from school!""",-2.04442935679,-0.0121998344714,word2vec,word2vec_0.70,0.70
 318,0.651523482286,"What would be the pick-up line for introducing them to someone else? (i.e Hey Jason, this is _____ from school!""",-3.20406510893,-0.0178974513547,word2vec,word2vec_0.80,0.80
 319,0.651523482286,"What would be the pick-up line for introducing them to someone else? (i.e Hey Jason, this is _____ from school!""",-3.20406510893,-0.0178974513547,word2vec,word2vec_0.90,0.90
-320,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.20,0.20
-321,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.30,0.30
-322,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.40,0.40
-323,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.50,0.50
-324,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.60,0.60
-325,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.70,0.70
-326,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.80,0.80
-327,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone ? Or try to be nice and remember for next time?",,,word2vec,word2vec_0.90,0.90
+320,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone",,,word2vec,word2vec_0.20,0.20
+321,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone",,,word2vec,word2vec_0.30,0.30
+322,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone",,,word2vec,word2vec_0.40,0.40
+323,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone",,,word2vec,word2vec_0.50,0.50
+324,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone",,,word2vec,word2vec_0.60,0.60
+325,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone",,,word2vec,word2vec_0.70,0.70
+326,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone",,,word2vec,word2vec_0.80,0.80
+327,0.0,"When you learn their name and you know it will be difficult, do you think it is wise to write it in your phone",,,word2vec,word2vec_0.90,0.90
 328,0.699346717013,Where might their name be written?,0.5124223594,,word2vec,word2vec_0.20,0.20
 329,0.699346717013,Where might their name be written?,0.5124223594,,word2vec,word2vec_0.30,0.30
 330,0.664687391343,Where might their name be written?,-2.6242236023,-0.0224554642972,word2vec,word2vec_0.40,0.40
