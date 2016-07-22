@@ -89,7 +89,7 @@ Template.authorsList.helpers({
             return Authors.find({}, {sort: {authorID: Session.get("sortDir")}});  
         } 
         else if(Session.get("sortField") == "GT"){
-            return Authors.find({}, {sort: {GT: Session.get("sortDir")}});   
+            return Authors.find({}, {sort: {GT_predict: Session.get("sortDir")}});   
         }
     }
 });
