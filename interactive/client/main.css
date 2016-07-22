@@ -1,0 +1,32 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.container-fluid{
+    border: 1px solid red;
+}
+.visible{
+    border: 1px solid;
+}
+.list{
+}
+.author{
+    padding: 10px;
+    width: 100%;
+    overflow: auto;
+}
+    .stat{
+        float: right;   
+    }
+
+
+.selectedList1{
+    border-color: red;
+}
+.selectedList2{
+    border-color: blue;
+}
+.menu{
+    min-height: 100px;
+    margin-bottom: 20px;
+}
