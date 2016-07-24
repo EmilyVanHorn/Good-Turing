@@ -71,31 +71,50 @@
     <li id="ascending"><a href="#">A-Z</a></li>
     <li id="descending"><a href="#">Z-A</a></li>
     <li id="authorID"><a href="#">authorID</a></li>
-    <li id="GT"><a href="#">GT Prediction</a></li>
+    <li id="theme"><a href="#">theme</a></li>
+    <li id="corr_true"><a href="#">corr_true</a></li>
+    <li id="dataset"><a href="#">dataset</a></li>
+    <li id="decline_slope"><a href="#">decline_slope</a></li>
+    <li id="exp_slope"><a href="#">exp_slope</a></li>
+    <li id="method"><a href="#">method</a></li>
+    <li id="threshold"><a href="#">threshold</a></li>
 </template>
 
 
 <template name="authorItem">
     <div class="visible author">
+        {{#if thing}}
         <p>{{authorID}}</p>
-        <p class="stat">GT Prediction: {{GT}}</p>
+        {{else}}
+        <p>{{theme}}</p>
+        {{/if}}<br>
+        <p class="stat">corr_true: {{corr_true}}</p><br>
+        <p class="stat">decline_slope: {{decline_slope}}</p><br>
+        <p class="stat">exp_slope: {{exp_slope}}</p><br>
+        <p class="stat">dataset: {{dataset}}</p><br>
+        <p class="stat">method: {{run}}</p><br>
+        
     </div>
 </template>
 
 <template name="DatasetList">
     <li id="fabric-Author"><a href="#">fabric-Author</a></li>
+    <li id="fabric-Theme"><a href="#">fabric-Theme</a></li>
+    <li id="names-Author"><a href="#">names-Author</a></li>
+    <li id="names-Theme"><a href="#">names-Theme</a></li>
+    <li id="wedding-Author"><a href="#">wedding-Author</a></li>
     <li id="test"><a href="#">test</a></li>
     
 </template>
 
-<template name="dropdownItem">
-    <li id="{{dataset}}">
-        <a href="#">{{name}}</a>
-    </li>
-</template>
-
 <template name="MethodList">
-    {{#each method}}
-    {{> dropdownItem}}
-    {{/each}}
+    <li id="all"><a href="#">all</a></li>
+    <li id="two"><a href="#">word2Vec 0.2</a></li>
+    <li id="three"><a href="#">word2Vec 0.3</a></li>
+    <li id="four"><a href="#">word2Vec 0.4</a></li>
+    <li id="five"><a href="#">word2Vec 0.5</a></li>
+    <li id="six"><a href="#">word2Vec 0.6</a></li>
+    <li id="seven"><a href="#">word2Vec 0.7</a></li>
+    <li id="eight"><a href="#">word2Vec 0.8</a></li>
+    <li id="nine"><a href="#">word2Vec 0.9</a></li>
 </template>
